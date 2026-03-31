@@ -1,35 +1,7 @@
 {
-  "name": "bitsocial-web",
-  "version": "0.1.0",
+  "name": "bitsocial-about",
   "private": true,
-  "description": "Official Bitsocial web frontend: landing page, docs, apps explorer, and future flagship client",
-  "license": "AGPL-3.0-only",
-  "author": "Bitsocial Forge",
-  "workspaces": [
-    "docs-site"
-  ],
   "type": "module",
-  "scripts": {
-    "start": "concurrently -k -n web,docs -c blue,cyan \"yarn start:web\" \"yarn start:docs\"",
-    "start:web": "node scripts/start-dev.mjs",
-    "start:docs": "portless docs.bitsocial node scripts/start-docs.mjs",
-    "start:android-usb": "node scripts/start-android-usb.mjs",
-    "start:ios-sim": "node scripts/start-ios-sim.mjs",
-    "build": "tsgo --noEmit --project tsconfig.json && vite build && yarn docs:build",
-    "docs:build": "yarn --cwd docs-site build --out-dir ../dist/docs && yarn --cwd docs-site pagefind --site ../dist/docs",
-    "knip": "knip --production --include dependencies,unlisted,binaries --no-progress",
-    "knip:full": "knip --no-progress --no-exit-code",
-    "lint": "oxlint --config oxlint.json --react-plugin",
-    "lint:fix": "oxlint --config oxlint.json --fix --react-plugin",
-    "format": "oxfmt .",
-    "format:check": "oxfmt --check .",
-    "typecheck": "tsgo --noEmit --project tsconfig.json",
-    "preview": "vite preview",
-    "doctor": "react-doctor . -y",
-    "doctor:score": "react-doctor . --score -y",
-    "doctor:verbose": "react-doctor . --verbose -y",
-    "commit": "cz"
-  },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.4",
@@ -49,49 +21,5 @@
     "tailwind-merge": "^3.4.0",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.182.0"
-  },
-  "devDependencies": {
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@types/three": "^0.182.0",
-    "@typescript/native-preview": "^7.0.0-dev.20251226.1",
-    "@vitejs/plugin-react": "^6.0.0",
-    "autoprefixer": "^10.4.19",
-    "commitizen": "^4.3.1",
-    "concurrently": "^9.2.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "element-source": "0.0.5",
-    "husky": "4",
-    "knip": "6.1.0",
-    "lint-staged": "^16.2.7",
-    "oxfmt": "^0.20.0",
-    "oxlint": "^1.35.0",
-    "portless": "0.7.0",
-    "postcss": "^8.4.38",
-    "react-doctor": "0.0.28",
-    "react-grab": "0.1.28",
-    "react-scan": "0.5.3",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^6.0.2",
-    "vite": "8.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && cz --hook || true"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "oxlint --config oxlint.json --fix --react-plugin",
-      "oxfmt"
-    ],
-    "*.{json,css}": "oxfmt"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "packageManager": "yarn@4.13.0"
+  }
 }
