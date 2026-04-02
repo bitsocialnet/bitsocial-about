@@ -1,21 +1,28 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
+  "routes": [
     {
-      "source": "/stats",
-      "destination": "http://91.234.199.189:8080/stats"
+      "src": "^/stats/?$",
+      "dest": "http://91.234.199.189:8080/stats"
     },
     {
-      "source": "/stats/",
-      "destination": "http://91.234.199.189:8080/stats/"
+      "src": "^/stats/(.*)$",
+      "dest": "http://91.234.199.189:8080/stats/$1"
     },
     {
-      "source": "/stats/:path*",
-      "destination": "http://91.234.199.189:8080/stats/:path*"
+      "src": "^/docs/?$",
+      "dest": "/api/docs"
     },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "^/docs/(.*)$",
+      "dest": "/api/docs?path=$1"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
