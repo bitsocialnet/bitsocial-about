@@ -51,8 +51,6 @@ Use the repeatable commands first:
 yarn doctor:check
 yarn perf:check
 yarn perf:record --target about --scenario apps-search
-yarn perf:record --target chain --scenario newsletter-input
-yarn perf:record --target docs --scenario language-search
 ```
 
 `doctor:check` runs pinned source diagnostics on the affected projects. These are static findings, not runtime counts. `perf:check` first runs collector compatibility and deliberate-regression selftests, then drives the real app scenarios in `scripts/react-perf/config.mjs` with three samples and 4× CPU throttling, enforcing per-phase component-update, commit, render-duration, and action-latency limits. `perf:record` defaults to one unthrottled sample and writes JSON plus a Chrome trace under `.react-perf/`. Use `--url <explicit-local-url>` to reuse a compatible server; otherwise the runner owns an isolated server on an available port. Its machine-wide browser lock must remain serialized with Playwright, Doctor scan, and other browser work. Report target/scenario, build mode, CPU/sample settings, per-instance counts, timing method, limits, dropped events, and evidence paths. Do not edit baselines simply to make a regression pass.
@@ -61,6 +59,6 @@ The initial scenarios cover controlled app search, newsletter typing without sub
 
 The about `apps-search` scenario exercises `/projects` as five committed query changes. It waits for both the URL and controlled input to reflect each character before sending the next one. This verifies committed-render budgets, not rapid-typing responsiveness: passing it does not establish that the input retains characters when keystrokes arrive before router navigation commits. Test rapid typing separately at the relevant CPU settings and preserve its evidence independently.
 
-Normal production output excludes the collector. For production React component timings, use a separate `build:profile:about`, `build:profile:chain`, or `build:profile:docs` build with the official `react-dom/profiling` renderer; outputs live in `dist-profile/` and preserve normal deployment artifacts. Serve the matching output and pass its URL to `perf:record`. A regular production preview can measure page timing but lacks this component instrumentation. Development and profiling-build baselines are distinct; never compare them as equivalent.
+Normal production output excludes the collector. For production React component timings, use the separate `build:profile` build with the official `react-dom/profiling` renderer; its output lives in `dist-profile/` and preserve normal deployment artifacts. Serve the matching output and pass its URL to `perf:record`. A regular production preview can measure page timing but lacks this component instrumentation. Development and profiling-build baselines are distinct; never compare them as equivalent.
 
 Doctor's optional `doctor:scan <url>` can still record native Chrome traces. Its injected transient `__REACT_DOCTOR_RUNTIME_SCAN__` probe is not the repository collector and its JSON component summary is not a complete committed-render counter. Keep its browser isolated and preserve the trace path. Use native traces to investigate effects, cascading work and scheduler phases; Agentation only supplies visual annotation context. Source attribution remains available independently through `__ELEMENT_SOURCE__` in development.

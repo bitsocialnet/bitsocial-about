@@ -6,7 +6,7 @@ allowed-tools: Bash(playwright-cli:*), Bash(./scripts/pw-session.sh:*), Bash(nod
 
 # Browser verification
 
-Check the affected flow and report observed results. Use the task's existing server URL; the canonical URL is `https://bitsocial.localhost`, but another worktree can have a different route. Verify route and workspace in the current source; the about, chain, docs, and stats sites have distinct launch commands.
+Check the affected flow and report observed results. Use the task's existing server URL; the canonical URL is `https://bitsocial.localhost`, but another worktree can have a different route. Verify the route in the current source; `yarn start` launches this site, while the docs, Chain, and stats sites run from their own repositories.
 
 Use Chrome for a small browser change. Add Firefox and WebKit for shared CSS/layout/responsiveness, browser-sensitive behavior or APIs, broad interaction changes, releases, or an explicit user requirement. Include a mobile viewport when affected; resizing checks layout, not touch emulation. Run selected engines sequentially and record which were exercised.
 

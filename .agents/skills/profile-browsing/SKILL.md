@@ -11,7 +11,7 @@ Reuse a compatible server in this worktree. If one is needed, the task owner sta
 
 Keep one browser active machine-wide through `./scripts/pw-session.sh`. Use the `playwright-cli` skill for session lifecycle and affected-flow coverage. Browser work and other heavy checks remain serialized. Profile a small flow directly; delegate a substantial independent route set to `profiler` only when useful, with a supplied URL, unique session name, criteria, and evidence to return. Wait for its browser cleanup before another browser task starts.
 
-Use `yarn doctor:check` for automatic source diagnostics, `yarn perf:check` for repeatable runtime regression checks, and `yarn perf:record --target <about|chain|docs>` for JSON and native-trace evidence. Read the measurement reference before interpreting committed render counts or timings.
+Use `yarn doctor:check` for automatic source diagnostics, `yarn perf:check` for repeatable runtime regression checks, and `yarn perf:record --target about` for JSON and native-trace evidence. Read the measurement reference before interpreting committed render counts or timings.
 
 Read [measurement guidance](references/measurement.md) for browser observers, document-versus-hash timing, and this checkout's React evidence. Use the approved collector and runner for affected scenarios. An authorized instrumentation task may extend them; keep ordinary profiling changes scoped to evidence collection.
 

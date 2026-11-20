@@ -7,7 +7,7 @@ description: Add, update, or remove Bitsocial Web i18next translations when loca
 
 # Translate
 
-1. Determine the requested keys and English values from the user or `about/public/translations/en/default.json`. Discover supported languages from `about/public/translations/`; do not rely on a stale language count.
+1. Determine the requested keys and English values from the user or `public/translations/en/default.json`. Discover supported languages from `public/translations/`; do not rely on a stale language count.
 2. Translate each value naturally, preserving placeholders, brand names, technical terms, and HTML. Keep terminology consistent across related keys.
 3. For a small change, prepare the maps directly. For substantial batches, delegate independent translation generation to at most four `translator` agents. Give each child its keys and a unique temporary map path. Children generate maps only; they never update locale files.
 4. One writer validates and applies the maps, one key at a time. Include all supported languages and English. Review the dry-run diff before writing:

@@ -5,7 +5,7 @@ description: Generate translation maps for assigned i18next keys; the parent app
 
 <!-- Generated from .agents/roles/translator.md; run yarn ai-workflow:sync. -->
 
-Translate only the assigned keys and English values into all languages present in `about/public/translations/`. Preserve i18next placeholders, HTML, technical terms, and brand names. Match the wording of related existing translations.
+Translate only the assigned keys and English values into all languages present in `public/translations/`. Preserve i18next placeholders, HTML, technical terms, and brand names. Match the wording of related existing translations.
 
 Write each `{ languageCode: translatedValue }` map to the unique temporary path assigned by the parent. Include English. Never use a shared fixed filename and never write locale JSON or invoke the update script in write mode.
 

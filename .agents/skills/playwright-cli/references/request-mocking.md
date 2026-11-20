@@ -11,4 +11,4 @@ playwright-cli -s=check-task unroute 'https://observed-host.example/media/image.
 
 Replace the example URL with the observed request. For a fixture response, `route` accepts `--body` and `--content-type`; conditional responses or delays can use `page.route` in `run-code`. Remove the exact owned route in cleanup, or close the task's isolated session.
 
-The monorepo contains separate static sites and stats services. An app-origin HTTP mock does not by itself simulate other workspace services, WebSocket/RPC behavior, or service-worker-intercepted requests. Verify that the targeted request was intercepted before attributing the observed UI to the mock. Do not introduce broad `**/*` rules or strip credentials from unrelated traffic.
+An app-origin HTTP mock does not by itself simulate other services, WebSocket/RPC behavior, or service-worker-intercepted requests. Verify that the targeted request was intercepted before attributing the observed UI to the mock. Do not introduce broad `**/*` rules or strip credentials from unrelated traffic.
