@@ -129,8 +129,8 @@ for (const outputPath of ["about/public/llms.txt", "about/public/llms-full.txt"]
   }
 }
 
-const fullCorpora = ["about/public/llms-full.txt", "docs/static/llms-full.txt"].filter((outputPath) =>
-  outputs.has(outputPath),
+const fullCorpora = ["about/public/llms-full.txt", "docs/static/llms-full.txt"].filter(
+  (outputPath) => outputs.has(outputPath),
 );
 for (const outputPath of fullCorpora) {
   const contents = outputs.get(outputPath);

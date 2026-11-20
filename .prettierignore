@@ -1,3 +1,5 @@
 # Keep bundled skill assets and generated compatibility copies byte-identical.
 .agents/skills/**
 .claude/skills/**
+# Synced byte-for-byte from bitsocialnet/5chan by the org review-workflow sync script.
+.github/workflows/claude-code-review.yml

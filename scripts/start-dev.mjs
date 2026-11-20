@@ -43,7 +43,10 @@ if (command === portlessBin) {
   // The docs dev server runs from a sibling bitsocial-docs checkout (BITSOCIAL_DOCS_DIR overrides
   // ../bitsocial-docs) and records the URL it claims there; the about server reads it on each /docs
   // request.
-  const docsCheckout = path.resolve(repoRoot, process.env.BITSOCIAL_DOCS_DIR || "../bitsocial-docs");
+  const docsCheckout = path.resolve(
+    repoRoot,
+    process.env.BITSOCIAL_DOCS_DIR || "../bitsocial-docs",
+  );
   childEnv.DOCS_DEV_URL_FILE = path.join(docsCheckout, ".dev-servers", "docs-url");
   browserOpenUrl = publicUrl;
 

@@ -52,7 +52,13 @@ const excludedDocDirs = new Set([
   "src",
   "static",
 ]);
-const excludedDocFiles = new Set(["AGENTS.md", "CLAUDE.md", "README.md", "index.mdx", "search.mdx"]);
+const excludedDocFiles = new Set([
+  "AGENTS.md",
+  "CLAUDE.md",
+  "README.md",
+  "index.mdx",
+  "search.mdx",
+]);
 // Pages the docs site does not build; indexing them would publish links to
 // routes that do not exist. Keep this aligned with the Docusaurus exclude list.
 const excludedDocPaths = new Set(["agent-playbooks/verification.md"]);
@@ -426,7 +432,12 @@ function runGh(args) {
 
 async function readRepoReadme(repo) {
   log(`fetching README for ${repo}`);
-  const raw = runGh(["api", `repos/${repo}/readme`, "-H", "Accept: application/vnd.github.raw+json"]);
+  const raw = runGh([
+    "api",
+    `repos/${repo}/readme`,
+    "-H",
+    "Accept: application/vnd.github.raw+json",
+  ]);
   const content = sanitizeReadme(raw, repo);
 
   return {
