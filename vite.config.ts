@@ -156,11 +156,11 @@ function appLogoSyncPlugin(): Plugin {
             const current = await fs.readFile(target, "utf8").catch(() => "");
             if (current !== svg) {
               await fs.writeFile(target, svg);
-              logger.info(`Updated about/public/assets/apps/${file} from ${url}`);
+              logger.info(`Updated public/assets/apps/${file} from ${url}`);
             }
           } catch (error) {
             logger.warn(
-              `Kept the committed about/public/assets/apps/${file}: could not sync it from ${url} (${error instanceof Error ? error.message : String(error)})`,
+              `Kept the committed public/assets/apps/${file}: could not sync it from ${url} (${error instanceof Error ? error.message : String(error)})`,
             );
           }
         }),
@@ -170,7 +170,7 @@ function appLogoSyncPlugin(): Plugin {
 }
 
 function staticMetadataPlugin() {
-  let outDir = path.resolve(__dirname, "../dist");
+  let outDir = path.resolve(__dirname, "dist");
 
   return {
     name: "bitsocial-static-metadata",
@@ -190,7 +190,7 @@ function staticMetadataPlugin() {
 
 function ssrServerBuildPlugin(profiling: boolean) {
   let configRoot = __dirname;
-  let clientOutDir = path.resolve(__dirname, "../dist");
+  let clientOutDir = path.resolve(__dirname, "dist");
 
   return {
     name: "bitsocial-ssr-server-build",
@@ -217,11 +217,11 @@ function ssrServerBuildPlugin(profiling: boolean) {
         plugins: [react()],
         build: {
           ssr: path.resolve(configRoot, "src/entry-server.tsx"),
-          // The production API handler resolves this fixed path even when
-          // Vercel overrides the client output directory to about/dist.
+          // The production API handler resolves this fixed path. It must stay outside the
+          // client output directory (dist), which Vercel serves as public static files.
           outDir: profiling
             ? path.join(clientOutDir, "server")
-            : path.resolve(configRoot, "../dist/server"),
+            : path.resolve(configRoot, "dist-server"),
           emptyOutDir: false,
           rollupOptions: {
             output: {
@@ -279,7 +279,7 @@ export default defineConfig(({ command, mode }) => {
       open: process.env.PORTLESS_URL || (process.env.PORTLESS === "0" ? true : previewOpenUrl),
     },
     build: {
-      outDir: path.resolve(__dirname, profiling ? "../dist-profile/about" : "../dist"),
+      outDir: path.resolve(__dirname, profiling ? "dist-profile" : "dist"),
       minify: profiling ? false : undefined,
       sourcemap: profiling,
       emptyOutDir: true,

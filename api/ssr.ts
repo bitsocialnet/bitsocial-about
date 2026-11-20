@@ -16,7 +16,7 @@ interface RenderedResponse {
 }
 
 export default async function handler(request: RequestLike, response: ResponseLike) {
-  const serverEntryUrl = new URL("../../dist/server/entry-server.js", import.meta.url).href;
+  const serverEntryUrl = new URL("../dist-server/entry-server.js", import.meta.url).href;
   const serverEntry = (await import(serverEntryUrl)) as {
     renderAboutRequest: (request: RequestLike) => Promise<RenderedResponse>;
   };

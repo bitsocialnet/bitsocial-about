@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { cp, mkdir, mkdtemp, readFile, rm, stat, symlink, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readdir, readFile, rm, stat, symlink, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -12,8 +12,7 @@ const repoRoot = fileURLToPath(new URL("../../", import.meta.url));
 test("Vercel's client output override keeps the SSR handler runnable", async (t) => {
   const fixture = await mkdtemp(path.join(os.tmpdir(), "bitsocial-ssr-"));
   t.after(() => rm(fixture, { recursive: true, force: true }));
-  await mkdir(path.join(fixture, "about/api"), { recursive: true });
-  await cp(path.join(repoRoot, "package.json"), path.join(fixture, "package.json"));
+  await mkdir(path.join(fixture, "api"), { recursive: true });
   await cp(path.join(repoRoot, "scripts/react-perf"), path.join(fixture, "scripts/react-perf"), {
     recursive: true,
   });
@@ -26,29 +25,29 @@ test("Vercel's client output override keeps the SSR handler runnable", async (t)
     "vite.config.ts",
     "package.json",
   ]) {
-    await cp(path.join(repoRoot, "about", entry), path.join(fixture, "about", entry), {
+    await cp(path.join(repoRoot, entry), path.join(fixture, entry), {
       recursive: true,
     });
   }
 
-  // Match the Vercel project: client files go to about/dist, while the API
-  // handler resolves its server bundle relative to about/api/ssr.js.
+  // Match the Vercel project: client files go to the public output directory
+  // dist, while the API handler resolves its server bundle relative to api/ssr.js.
   execFileSync(
     process.execPath,
     [
       path.join(repoRoot, "node_modules/vite/bin/vite.js"),
       "build",
       "--config",
-      "about/vite.config.ts",
+      "vite.config.ts",
       "--outDir",
       "dist",
     ],
     { cwd: fixture, stdio: "pipe", env: { ...process.env, NODE_ENV: "production" } },
   );
 
-  const handlerSource = await readFile(path.join(repoRoot, "about/api/ssr.ts"), "utf8");
+  const handlerSource = await readFile(path.join(repoRoot, "api/ssr.ts"), "utf8");
   const { code } = await transform(handlerSource, { loader: "ts", format: "esm" });
-  const handlerPath = path.join(fixture, "about/api/ssr.js");
+  const handlerPath = path.join(fixture, "api/ssr.js");
   await writeFile(handlerPath, code);
   const { default: handler } = await import(pathToFileURL(handlerPath).href);
 
@@ -81,10 +80,16 @@ test("Vercel's client output override keeps the SSR handler runnable", async (t)
     assert.ok(!result.body.includes("<!--app-html-->"), `${url} must render the app shell`);
     const script = result.body.match(/<script[^>]+src="(\/assets\/[^" ]+)"/);
     assert.ok(script, "SSR must reference the built client script");
-    await readFile(path.join(fixture, "about/dist", script[1]));
+    await readFile(path.join(fixture, "dist", script[1]));
   }
 
-  const productionServer = path.join(fixture, "dist/server/entry-server.js");
+  // Vercel serves everything in dist as public files, so the server bundle must live elsewhere.
+  const publicFiles = await readdir(path.join(fixture, "dist"), { recursive: true });
+  assert.ok(
+    !publicFiles.some((file) => path.basename(file) === "entry-server.js"),
+    "the SSR server bundle must not be inside the public output directory",
+  );
+  const productionServer = path.join(fixture, "dist-server/entry-server.js");
   const productionMtime = (await stat(productionServer)).mtimeMs;
   execFileSync(
     process.execPath,
@@ -92,13 +97,13 @@ test("Vercel's client output override keeps the SSR handler runnable", async (t)
       path.join(repoRoot, "node_modules/vite/bin/vite.js"),
       "build",
       "--config",
-      "about/vite.config.ts",
+      "vite.config.ts",
       "--mode",
       "profiling",
     ],
     { cwd: fixture, stdio: "pipe", env: { ...process.env, NODE_ENV: "production" } },
   );
-  await readFile(path.join(fixture, "dist-profile/about/server/entry-server.js"));
+  await readFile(path.join(fixture, "dist-profile/server/entry-server.js"));
   assert.equal(
     (await stat(productionServer)).mtimeMs,
     productionMtime,

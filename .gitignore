@@ -4,6 +4,7 @@
 node_modules
 dist
 dist-chain
+dist-server
 .vite
 docs/.docusaurus
 about/playwright-report
