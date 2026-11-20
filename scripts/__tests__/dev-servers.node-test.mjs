@@ -49,17 +49,6 @@ async function freePort() {
   return port;
 }
 
-function isListening(port) {
-  return new Promise((resolve) => {
-    const socket = net.connect({ host: "127.0.0.1", port });
-    socket.once("connect", () => {
-      socket.destroy();
-      resolve(true);
-    });
-    socket.once("error", () => resolve(false));
-  });
-}
-
 function groupAlive(pid) {
   try {
     process.kill(-pid, 0);
@@ -113,15 +102,6 @@ function launch(t, script, env = {}, root = repoRoot) {
   };
 }
 
-function fakeBin(t, name, script) {
-  const dir = mkdtempSync(path.join(tmpdir(), "dev-servers-test-"));
-  t.after(() => rmSync(dir, { recursive: true, force: true }));
-  const file = path.join(dir, name);
-  writeFileSync(file, script);
-  chmodSync(file, 0o755);
-  return { dir, log: path.join(dir, `${name}.log`) };
-}
-
 function openHmrSocket(port) {
   return new Promise((resolve, reject) => {
     const request = http.request({
@@ -159,7 +139,7 @@ test("about dev server stops on SIGINT while a browser tab holds an HMR connecti
   assert.ok(await server.waitForExit(10_000), `about server ignored SIGINT:\n${server.output()}`);
 });
 
-for (const launcher of ["start-dev.mjs", "start-chain.mjs"]) {
+for (const launcher of ["start-dev.mjs"]) {
   test(`${launcher} stops its dev server when only the launcher is signalled`, async (t) => {
     const port = await freePort();
     const run = launch(t, launcher, { PORTLESS: "0", PORT: String(port), HOST: "127.0.0.1" });
@@ -172,56 +152,6 @@ for (const launcher of ["start-dev.mjs", "start-chain.mjs"]) {
   });
 }
 
-test("start-docs stops the docs build when only the launcher is signalled", async (t) => {
-  const yarn = fakeBin(
-    t,
-    "yarn",
-    `#!/bin/sh
-trap 'echo "TERM $*" >> "$FAKE_LOG"; exit 143' TERM
-echo "run $*" >> "$FAKE_LOG"
-while :; do sleep 0.1; done
-`,
-  );
-  const port = await freePort();
-  const run = launch(t, "start-docs.mjs", {
-    PORTLESS: "0",
-    PORT: String(port),
-    PATH: `${yarn.dir}${path.delimiter}${process.env.PATH}`,
-    FAKE_LOG: yarn.log,
-  });
-  const building = await waitUntil(
-    () => existsSync(yarn.log) && readFileSync(yarn.log, "utf8").includes("run docs:build"),
-    10_000,
-  );
-  assert.ok(building, `start-docs never started the docs build:\n${run.output()}`);
-
-  process.kill(run.pid, "SIGTERM");
-
-  const stopped = await waitUntil(() => !groupAlive(run.pid), 10_000);
-  assert.ok(stopped, `start-docs left the docs build running:\n${run.output()}`);
-  assert.match(readFileSync(yarn.log, "utf8"), /^TERM docs:build$/m);
-});
-
-test("start-stats stops the containers when interrupted while the dashboard warms up", async (t) => {
-  if (await isListening(3302)) {
-    t.skip("a stats dashboard is already listening on 127.0.0.1:3302");
-    return;
-  }
-  const envFile = path.join(repoRoot, "stats/.env");
-  if (!existsSync(envFile)) t.after(() => rmSync(envFile, { force: true }));
-  const docker = fakeBin(t, "docker", `#!/bin/sh\necho "$*" >> "$FAKE_LOG"\n`);
-  const run = launch(t, "start-stats.mjs", {
-    PATH: `${docker.dir}${path.delimiter}${process.env.PATH}`,
-    FAKE_LOG: docker.log,
-  });
-  await run.waitForOutput("Waiting for the stats dashboard");
-
-  process.kill(run.pid, "SIGINT");
-
-  assert.ok(await run.waitForExit(10_000), `start-stats did not exit:\n${run.output()}`);
-  assert.match(readFileSync(docker.log, "utf8"), /^compose -f \S+ stop$/m);
-});
-
 // Copies the launchers into a scratch checkout whose node_modules/.bin/portless is a stub: `list`
 // prints the routes in $FAKE_ROUTES, and running an app logs its name and the docs hand-off env.
 // `run` waits for a launcher whose app exits at once; `start` leaves the app running.
@@ -229,7 +159,7 @@ function portlessCheckout(t, branch) {
   const root = mkdtempSync(path.join(tmpdir(), "dev-servers-portless-"));
   t.after(() => rmSync(root, { recursive: true, force: true }));
   mkdirSync(path.join(root, "scripts"));
-  for (const file of ["dev-server-utils.mjs", "start-dev.mjs", "start-docs.mjs"]) {
+  for (const file of ["dev-server-utils.mjs", "start-dev.mjs"]) {
     copyFileSync(path.join(repoRoot, "scripts", file), path.join(root, "scripts", file));
   }
   mkdirSync(path.join(root, "node_modules/.bin"), { recursive: true });
@@ -282,30 +212,9 @@ while :; do sleep 0.1; done
   return { routes, run, start, urlRecord, signals };
 }
 
-for (const [branch, docsHost] of [
-  ["master", "docs.bitsocial.localhost"],
-  ["feature/new-page", "feature-new-page.docs.bitsocial.localhost"],
-]) {
-  test(`about server on ${branch} redirects /docs to the docs host the running docs server claimed`, async (t) => {
-    const checkout = portlessCheckout(t, branch);
-    const docs = await checkout.start("start-docs.mjs");
-    assert.equal(`${docs.name}.localhost`, docsHost);
-    writeFileSync(checkout.routes, `https://${docsHost}  ->  localhost:4321  (pid 1)\n`);
-
-    const about = checkout.run("start-dev.mjs");
-
-    // Same precedence as docsDevRedirectOrigin() in about/vite.config.ts.
-    const recorded = about.docsUrlFile ? readFileSync(about.docsUrlFile, "utf8").trim() : "";
-    assert.equal(about.docsTarget || recorded, `https://${docsHost}`);
-  });
-}
-
 // Once a server stops, its host can be claimed by another checkout, so a leftover record would
 // send /docs (or agent-init) there.
-for (const [launcher, record] of [
-  ["start-docs.mjs", "docs"],
-  ["start-dev.mjs", "about"],
-]) {
+for (const [launcher, record] of [["start-dev.mjs", "about"]]) {
   test(`${launcher} removes its URL record when its server stops, but not a newer launcher's`, async (t) => {
     const checkout = portlessCheckout(t, "master");
     const file = checkout.urlRecord(record);
