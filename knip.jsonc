@@ -5,7 +5,7 @@
     "portless",
   ],
   "ignoreFiles": [
-    // These CLIs are intentionally run from docs or one-off maintenance flows rather than package scripts.
+    // These CLIs are intentionally run from agent playbooks or one-off maintenance flows rather than package scripts.
     "scripts/sync-hero-tagline-segments.mjs",
     "scripts/update-translations.js",
   ],
@@ -13,10 +13,4 @@
     // Loaded from Tailwind config, but still misreported by Knip in this repo's config graph.
     "tailwindcss-animate",
   ],
-  "workspaces": {
-    "chain": {
-      // One module per HTML entry: Knip's Vite plugin only follows the root index.html.
-      "entry": ["src/main.tsx!", "src/rich-list-main.tsx!", "src/chart-main.tsx!"],
-    },
-  },
 }

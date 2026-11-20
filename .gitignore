@@ -3,12 +3,10 @@
 .vercel
 node_modules
 dist
-dist-chain
 dist-server
 .vite
-docs/.docusaurus
-about/playwright-report
-about/test-results
+playwright-report
+test-results
 .yarn/*
 !.yarn/patches/
 !.yarn/patches/**
@@ -18,18 +16,9 @@ __pycache__/
 bun.lock
 bun.lockb
 /.cursor/
-stats/.env
-stats/deploy/.env
-stats/monitor/.env
-stats/monitor/.ipfs
-stats/monitor/.plebbit
-stats/monitor/bin
-stats/monitor/history
-stats/monitor/monitorState.json
 /.claude/worktrees
 .codegraph
 .dev-servers/
-chain/.env.production
 
 # Local React profiling captures and isolated profiling builds.
 .react-perf/
