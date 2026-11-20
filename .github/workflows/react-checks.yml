@@ -5,21 +5,20 @@ on:
     branches: [master]
     paths:
       [
-        "about/**",
-        "chain/**",
-        "docs/**",
+        "api/**",
+        "public/**",
+        "src/**",
+        "index.html",
+        "tailwind.config.ts",
+        "tsconfig.json",
+        "tsconfig.node.json",
+        "vercel.json",
+        "vite.config.ts",
         "scripts/react-perf/**",
         "scripts/__tests__/about-navigation.node-test.mjs",
         "scripts/__tests__/about-ssr.node-test.mjs",
         "scripts/__tests__/analytics.node-test.mjs",
-        "scripts/__tests__/bso-holders.node-test.mjs",
-        "scripts/__tests__/bso-price-history.node-test.mjs",
-        "scripts/__tests__/chain-client-state.node-test.mjs",
-        "scripts/__tests__/docs-client-state.node-test.mjs",
-        "scripts/__tests__/hook-runner.mjs",
         "scripts/__tests__/release-integrity.node-test.mjs",
-        "scripts/generate-bso-holders.mjs",
-        "scripts/generate-bso-price-history.mjs",
         "scripts/pw-session.sh",
         "package.json",
         "yarn.lock",
@@ -29,21 +28,20 @@ on:
     branches: [master]
     paths:
       [
-        "about/**",
-        "chain/**",
-        "docs/**",
+        "api/**",
+        "public/**",
+        "src/**",
+        "index.html",
+        "tailwind.config.ts",
+        "tsconfig.json",
+        "tsconfig.node.json",
+        "vercel.json",
+        "vite.config.ts",
         "scripts/react-perf/**",
         "scripts/__tests__/about-navigation.node-test.mjs",
         "scripts/__tests__/about-ssr.node-test.mjs",
         "scripts/__tests__/analytics.node-test.mjs",
-        "scripts/__tests__/bso-holders.node-test.mjs",
-        "scripts/__tests__/bso-price-history.node-test.mjs",
-        "scripts/__tests__/chain-client-state.node-test.mjs",
-        "scripts/__tests__/docs-client-state.node-test.mjs",
-        "scripts/__tests__/hook-runner.mjs",
         "scripts/__tests__/release-integrity.node-test.mjs",
-        "scripts/generate-bso-holders.mjs",
-        "scripts/generate-bso-price-history.mjs",
         "scripts/pw-session.sh",
         "package.json",
         "yarn.lock",
@@ -79,14 +77,6 @@ jobs:
         run: node --test scripts/__tests__/about-ssr.node-test.mjs
       - name: Verify analytics page-view sanitizing and gating
         run: node --test scripts/__tests__/analytics.node-test.mjs
-      - name: Verify BSO holder classification
-        run: node --test scripts/__tests__/bso-holders.node-test.mjs
-      - name: Verify BSO price history merging
-        run: node --test scripts/__tests__/bso-price-history.node-test.mjs
-      - name: Verify chain theme and rich list history state
-        run: node --test scripts/__tests__/chain-client-state.node-test.mjs
-      - name: Verify docs client language and search state
-        run: node --test scripts/__tests__/docs-client-state.node-test.mjs
       - name: Verify release integrity API caching
         run: node --test scripts/__tests__/release-integrity.node-test.mjs
       - run: corepack yarn doctor:check
