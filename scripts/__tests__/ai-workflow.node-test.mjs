@@ -213,37 +213,38 @@ test("LLM corpus checks follow current source headings and still reject missing 
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
   for (const relative of [
     "scripts/check-llms-files.mjs",
-    "about/src/lib/apps-data.ts",
-    "chain/src/sections",
-    "about/public/translations/en/default.json",
-    "about/public/llms.txt",
-    "about/public/llms-full.txt",
-    "chain/public/llms.txt",
-    "chain/public/llms-full.txt",
-    "docs/static/llms.txt",
-    "docs/static/llms-full.txt",
+    "src/lib/apps-data.ts",
+    "public/translations/en/default.json",
+    "public/llms.txt",
+    "public/llms-full.txt",
   ]) {
     const target = path.join(root, relative);
     fs.mkdirSync(path.dirname(target), { recursive: true });
     fs.cpSync(path.join(repository, relative), target, { recursive: true });
   }
+  // Without the sibling docs and Chain checkouts, only this site's llms files are checked.
   const run = () =>
     spawnSync(process.execPath, [path.join(root, "scripts/check-llms-files.mjs")], {
       encoding: "utf8",
+      env: {
+        ...process.env,
+        BITSOCIAL_DOCS_DIR: path.join(root, "missing-docs"),
+        BITSOCIAL_CHAIN_SITE_DIR: path.join(root, "missing-chain"),
+      },
     });
-  assert.equal(run().status, 0);
-  const translationsPath = path.join(root, "about/public/translations/en/default.json");
+  const standalone = run();
+  assert.equal(standalone.status, 0, standalone.stderr);
+  assert.match(standalone.stdout, /skipped docs checks/);
+  assert.match(standalone.stdout, /skipped chain checks/);
+  const translationsPath = path.join(root, "public/translations/en/default.json");
   const translations = JSON.parse(fs.readFileSync(translationsPath, "utf8"));
   const original = translations.browserPeer.title;
   const replacement = "A revised browser section heading.";
   translations.browserPeer.title = replacement;
   fs.writeFileSync(translationsPath, JSON.stringify(translations));
-  for (const relative of ["about/public/llms-full.txt", "docs/static/llms-full.txt"]) {
-    const target = path.join(root, relative);
-    fs.writeFileSync(target, fs.readFileSync(target, "utf8").replaceAll(original, replacement));
-  }
+  const corpus = path.join(root, "public/llms-full.txt");
+  fs.writeFileSync(corpus, fs.readFileSync(corpus, "utf8").replaceAll(original, replacement));
   assert.equal(run().status, 0, "copy changes should not require editing the checker");
-  const corpus = path.join(root, "about/public/llms-full.txt");
   fs.writeFileSync(corpus, fs.readFileSync(corpus, "utf8").replaceAll(replacement, ""));
   const missingCoverage = run();
   assert.notEqual(missingCoverage.status, 0);

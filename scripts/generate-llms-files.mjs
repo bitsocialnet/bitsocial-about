@@ -11,8 +11,14 @@ const chainProofOfConceptRepo = "bitsocialnet/bitsocial-chain";
 const docsOrigin = "https://docs.bitsocial.net";
 const hooksOrigin = "https://hooks.bitsocial.net";
 const statsOrigin = "https://stats.bitsocial.net";
-const aboutPublicDir = path.join(repoRoot, "about", "public");
-const chainRoot = path.join(repoRoot, "chain");
+// The llms files span three sites: this repository, the docs site and the Chain landing site.
+// The other two are read from sibling checkouts, and their own llms files are written there.
+const docsRoot = path.resolve(repoRoot, process.env.BITSOCIAL_DOCS_DIR || "../bitsocial-docs");
+const chainRoot = path.resolve(
+  repoRoot,
+  process.env.BITSOCIAL_CHAIN_SITE_DIR || "../bitsocial-chain/site",
+);
+const aboutPublicDir = path.join(repoRoot, "public");
 const chainPublicDir = path.join(chainRoot, "public");
 const chainIndexPath = path.join(chainRoot, "index.html");
 const chainAppPath = path.join(chainRoot, "src", "App.tsx");
@@ -25,29 +31,28 @@ const chainEnglishTranslationsPath = path.join(
   "en",
   "default.json",
 );
-const docsRoot = path.join(repoRoot, "docs");
 const docsStaticDir = path.join(docsRoot, "static");
-const appsDataPath = path.join(repoRoot, "about", "src", "lib", "apps-data.ts");
+const appsDataPath = path.join(repoRoot, "src", "lib", "apps-data.ts");
 const aboutEnglishTranslationsPath = path.join(
   repoRoot,
-  "about",
   "public",
   "translations",
   "en",
   "default.json",
 );
-const rootReadmePath = path.join(repoRoot, "README.md");
+// Dot directories (.git, .agents, .claude, ...) are skipped as well: the docs site is its own
+// repository root, so its tooling sits next to the pages.
 const excludedDocDirs = new Set([
-  ".docusaurus",
   "agent-runs",
   "build",
   "dist",
   "i18n",
   "node_modules",
+  "scripts",
   "src",
   "static",
 ]);
-const excludedDocFiles = new Set(["AGENTS.md", "README.md", "index.mdx", "search.mdx"]);
+const excludedDocFiles = new Set(["AGENTS.md", "CLAUDE.md", "README.md", "index.mdx", "search.mdx"]);
 // Pages the docs site does not build; indexing them would publish links to
 // routes that do not exist. Keep this aligned with the Docusaurus exclude list.
 const excludedDocPaths = new Set(["agent-playbooks/verification.md"]);
@@ -316,7 +321,7 @@ async function collectDocs(dir = docsRoot, prefix = "") {
 
   for (const entry of entries.sort((left, right) => left.name.localeCompare(right.name))) {
     if (entry.isDirectory()) {
-      if (excludedDocDirs.has(entry.name)) continue;
+      if (entry.name.startsWith(".") || excludedDocDirs.has(entry.name)) continue;
       docs.push(...(await collectDocs(path.join(dir, entry.name), path.join(prefix, entry.name))));
       continue;
     }
@@ -353,7 +358,7 @@ async function collectDocs(dir = docsRoot, prefix = "") {
 function parseAppsFromAppsData(source, translations) {
   const appsSectionIndex = source.indexOf("export const APPS");
   if (appsSectionIndex === -1) {
-    throw new Error("could not find APPS in about/src/lib/apps-data.ts");
+    throw new Error("could not find APPS in src/lib/apps-data.ts");
   }
 
   const appsSection = source.slice(appsSectionIndex);
@@ -372,7 +377,7 @@ function parseAppsFromAppsData(source, translations) {
   }));
 
   if (apps.length === 0) {
-    throw new Error("could not parse any public apps from about/src/lib/apps-data.ts");
+    throw new Error("could not parse any public apps from src/lib/apps-data.ts");
   }
 
   return apps;
@@ -405,10 +410,6 @@ function sanitizeReadme(raw, repo) {
   );
 }
 
-function readLocalRootReadme() {
-  return readFile(rootReadmePath, "utf8");
-}
-
 function runGh(args) {
   const result = spawnSync("gh", args, {
     cwd: repoRoot,
@@ -425,10 +426,7 @@ function runGh(args) {
 
 async function readRepoReadme(repo) {
   log(`fetching README for ${repo}`);
-  const raw =
-    repo === "bitsocialnet/bitsocial-web"
-      ? await readLocalRootReadme()
-      : runGh(["api", `repos/${repo}/readme`, "-H", "Accept: application/vnd.github.raw+json"]);
+  const raw = runGh(["api", `repos/${repo}/readme`, "-H", "Accept: application/vnd.github.raw+json"]);
   const content = sanitizeReadme(raw, repo);
 
   return {
@@ -1295,10 +1293,9 @@ ${renderReadmeCorpus(readmes)}
 `);
 }
 
-async function writeOutput(relativePath, contents) {
-  const outputPath = path.join(repoRoot, relativePath);
+async function writeOutput(outputPath, contents) {
   await writeFile(outputPath, `${redactSensitiveRuntimeExamples(contents)}\n`);
-  log(`wrote ${relativePath}`);
+  log(`wrote ${path.relative(process.cwd(), outputPath)}`);
 }
 
 async function main() {
@@ -1306,20 +1303,17 @@ async function main() {
     throw new Error(`missing expected directory: ${path.relative(repoRoot, aboutPublicDir)}`);
   }
 
-  if (!existsSync(docsStaticDir)) {
-    throw new Error(`missing expected directory: ${path.relative(repoRoot, docsStaticDir)}`);
-  }
-
-  if (!existsSync(chainPublicDir)) {
-    throw new Error(`missing expected directory: ${path.relative(repoRoot, chainPublicDir)}`);
-  }
-
-  if (!existsSync(chainIndexPath)) {
-    throw new Error(`missing expected file: ${path.relative(repoRoot, chainIndexPath)}`);
-  }
-
-  if (!existsSync(rootReadmePath)) {
-    throw new Error(`missing expected file: ${path.relative(repoRoot, rootReadmePath)}`);
+  const missingSiblings = [
+    [docsStaticDir, "the bitsocial-docs checkout", "BITSOCIAL_DOCS_DIR"],
+    [chainIndexPath, "the bitsocial-chain site", "BITSOCIAL_CHAIN_SITE_DIR"],
+    [chainPublicDir, "the bitsocial-chain site", "BITSOCIAL_CHAIN_SITE_DIR"],
+  ].filter(([required]) => !existsSync(required));
+  if (missingSiblings.length > 0) {
+    for (const [required, name, variable] of missingSiblings) {
+      console.log(`[llms] skipped: ${name} is missing (${required} not found; set ${variable})`);
+    }
+    console.log("[llms] the llms files need the docs and Chain sources; nothing was written");
+    return;
   }
 
   if (!existsSync(aboutEnglishTranslationsPath)) {
@@ -1339,15 +1333,21 @@ async function main() {
   const readmes = await collectRepoReadmes(apps);
   const chainProofOfConceptReadme = await readRepoReadme(chainProofOfConceptRepo);
 
-  await writeOutput("about/public/llms.txt", buildSiteLlms(docs, landing, apps));
-  await writeOutput("about/public/llms-full.txt", buildSiteLlmsFull(docs, readmes, landing, apps));
-  await writeOutput("chain/public/llms.txt", buildChainLlms(chain));
+  await writeOutput(path.join(aboutPublicDir, "llms.txt"), buildSiteLlms(docs, landing, apps));
   await writeOutput(
-    "chain/public/llms-full.txt",
+    path.join(aboutPublicDir, "llms-full.txt"),
+    buildSiteLlmsFull(docs, readmes, landing, apps),
+  );
+  await writeOutput(path.join(chainPublicDir, "llms.txt"), buildChainLlms(chain));
+  await writeOutput(
+    path.join(chainPublicDir, "llms-full.txt"),
     buildChainLlmsFull(chain, docs, chainProofOfConceptReadme),
   );
-  await writeOutput("docs/static/llms.txt", buildDocsLlms(docs, landing));
-  await writeOutput("docs/static/llms-full.txt", buildDocsLlmsFull(docs, readmes, landing));
+  await writeOutput(path.join(docsStaticDir, "llms.txt"), buildDocsLlms(docs, landing));
+  await writeOutput(
+    path.join(docsStaticDir, "llms-full.txt"),
+    buildDocsLlmsFull(docs, readmes, landing),
+  );
 }
 
 main().catch((error) => {

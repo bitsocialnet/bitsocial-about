@@ -1,16 +1,41 @@
+import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const outputPaths = [
-  "about/public/llms.txt",
-  "about/public/llms-full.txt",
-  "chain/public/llms.txt",
-  "chain/public/llms-full.txt",
-  "docs/static/llms.txt",
-  "docs/static/llms-full.txt",
+// The docs and Chain llms files live in sibling checkouts. Their checks run when the checkout is
+// present and are skipped otherwise, so this repository can check its own files on its own.
+const docsRoot = path.resolve(repoRoot, process.env.BITSOCIAL_DOCS_DIR || "../bitsocial-docs");
+const chainRoot = path.resolve(
+  repoRoot,
+  process.env.BITSOCIAL_CHAIN_SITE_DIR || "../bitsocial-chain/site",
+);
+const siblings = [
+  ["docs", "the bitsocial-docs checkout", path.join(docsRoot, "static"), "BITSOCIAL_DOCS_DIR"],
+  ["chain", "the bitsocial-chain site", path.join(chainRoot, "public"), "BITSOCIAL_CHAIN_SITE_DIR"],
 ];
+const present = new Set(["about"]);
+for (const [site, name, dir, variable] of siblings) {
+  if (existsSync(path.join(dir, "llms.txt"))) {
+    present.add(site);
+  } else {
+    console.log(
+      `[llms-check] skipped ${site} checks: ${name} is missing (${dir}/llms.txt not found; set ${variable})`,
+    );
+  }
+}
+const outputFiles = {
+  "about/public/llms.txt": path.join(repoRoot, "public/llms.txt"),
+  "about/public/llms-full.txt": path.join(repoRoot, "public/llms-full.txt"),
+  "chain/public/llms.txt": path.join(chainRoot, "public/llms.txt"),
+  "chain/public/llms-full.txt": path.join(chainRoot, "public/llms-full.txt"),
+  "docs/static/llms.txt": path.join(docsRoot, "static/llms.txt"),
+  "docs/static/llms-full.txt": path.join(docsRoot, "static/llms-full.txt"),
+};
+const outputPaths = Object.keys(outputFiles).filter((outputPath) =>
+  present.has(outputPath.split("/", 1)[0]),
+);
 const stalePatterns = [
   ["legacy Chain route", /https:\/\/bitsocial\.net\/chain\//u],
   ["development-only blog route", /https:\/\/bitsocial\.net\/blog(?:[/?#]|$)/u],
@@ -26,7 +51,7 @@ const stalePatterns = [
   ["non-resolving libp2p.direct apex link", /\]\(https:\/\/libp2p\.direct\)/u],
 ];
 const landingTranslations = JSON.parse(
-  await readFile(path.join(repoRoot, "about/public/translations/en/default.json"), "utf8"),
+  await readFile(path.join(repoRoot, "public/translations/en/default.json"), "utf8"),
 );
 // Check the same semantic sections after copy edits without pinning old slogans.
 const requiredLandingCopy = [
@@ -63,7 +88,7 @@ function findRelativeMarkdownLinks(value) {
 
 const outputs = new Map();
 for (const outputPath of outputPaths) {
-  const contents = await readFile(path.join(repoRoot, outputPath), "utf8");
+  const contents = await readFile(outputFiles[outputPath], "utf8");
   assert(contents.startsWith("# "), `${outputPath} must start with an H1`);
   assert(/^>\s+\S/mu.test(contents), `${outputPath} must include a summary blockquote`);
   outputs.set(outputPath, contents);
@@ -82,7 +107,7 @@ for (const outputPath of outputPaths) {
   }
 }
 
-const appsData = await readFile(path.join(repoRoot, "about/src/lib/apps-data.ts"), "utf8");
+const appsData = await readFile(path.join(repoRoot, "src/lib/apps-data.ts"), "utf8");
 const appsSection = appsData.slice(appsData.indexOf("export const APPS"));
 const appSlugs = [...appsSection.matchAll(/^\s{4}slug:\s*"([^"]+)",/gmu)].map((match) => match[1]);
 const appRepos = [
@@ -91,8 +116,8 @@ const appRepos = [
     [...appsSection.matchAll(/^\s{4}githubRepo:\s*"([^"]+)",/gmu)].map((match) => match[1]),
   ),
 ];
-assert(appSlugs.length > 0, "could not parse app slugs from about/src/lib/apps-data.ts");
-assert(appRepos.length > 1, "could not parse app repositories from about/src/lib/apps-data.ts");
+assert(appSlugs.length > 0, "could not parse app slugs from src/lib/apps-data.ts");
+assert(appRepos.length > 1, "could not parse app repositories from src/lib/apps-data.ts");
 
 for (const outputPath of ["about/public/llms.txt", "about/public/llms-full.txt"]) {
   const contents = outputs.get(outputPath);
@@ -104,43 +129,46 @@ for (const outputPath of ["about/public/llms.txt", "about/public/llms-full.txt"]
   }
 }
 
-for (const outputPath of ["about/public/llms-full.txt", "docs/static/llms-full.txt"]) {
+const fullCorpora = ["about/public/llms-full.txt", "docs/static/llms-full.txt"].filter((outputPath) =>
+  outputs.has(outputPath),
+);
+for (const outputPath of fullCorpora) {
   const contents = outputs.get(outputPath);
   for (const repo of appRepos) {
     assert(contents.includes(`Repository: ${repo}`), `${outputPath} omits ${repo} README`);
   }
 }
 
-const chainSectionsIndex = await readFile(
-  path.join(repoRoot, "chain/src/sections/index.tsx"),
-  "utf8",
-);
-const chainSectionFiles = [
-  ...chainSectionsIndex.matchAll(/^import\s+\w+\s+from\s+"\.\/([^"]+)";$/gmu),
-].map((match) => `${match[1]}.tsx`);
-assert(chainSectionFiles.length > 0, "could not parse Chain sections from their rendered index");
+let chainSectionFiles = [];
+if (present.has("chain")) {
+  const chainSectionsIndex = await readFile(path.join(chainRoot, "src/sections/index.tsx"), "utf8");
+  chainSectionFiles = [
+    ...chainSectionsIndex.matchAll(/^import\s+\w+\s+from\s+"\.\/([^"]+)";$/gmu),
+  ].map((match) => `${match[1]}.tsx`);
+  assert(chainSectionFiles.length > 0, "could not parse Chain sections from their rendered index");
 
-for (const filename of chainSectionFiles) {
-  const sectionSource = await readFile(path.join(repoRoot, "chain/src/sections", filename), "utf8");
-  const id = sectionSource.match(/\bid="([^"]+)"/u)?.[1];
-  assert(id, `could not parse a section id from chain/src/sections/${filename}`);
+  for (const filename of chainSectionFiles) {
+    const sectionSource = await readFile(path.join(chainRoot, "src/sections", filename), "utf8");
+    const id = sectionSource.match(/\bid="([^"]+)"/u)?.[1];
+    assert(id, `could not parse a section id from chain/src/sections/${filename}`);
+
+    for (const outputPath of ["chain/public/llms.txt", "chain/public/llms-full.txt"]) {
+      assert(
+        outputs.get(outputPath).includes(`https://chain.bitsocial.net/#${id}`),
+        `${outputPath} omits Chain section ${id}`,
+      );
+    }
+  }
 
   for (const outputPath of ["chain/public/llms.txt", "chain/public/llms-full.txt"]) {
     assert(
-      outputs.get(outputPath).includes(`https://chain.bitsocial.net/#${id}`),
-      `${outputPath} omits Chain section ${id}`,
+      outputs.get(outputPath).includes("The missing social layer of crypto"),
+      `${outputPath} omits the Chain hero`,
     );
   }
 }
 
-for (const outputPath of ["chain/public/llms.txt", "chain/public/llms-full.txt"]) {
-  assert(
-    outputs.get(outputPath).includes("The missing social layer of crypto"),
-    `${outputPath} omits the Chain hero`,
-  );
-}
-
-for (const outputPath of ["about/public/llms-full.txt", "docs/static/llms-full.txt"]) {
+for (const outputPath of fullCorpora) {
   const contents = outputs.get(outputPath);
   for (const excerpt of requiredLandingCopy) {
     assert(contents.includes(excerpt), `${outputPath} omits landing copy: ${excerpt}`);
