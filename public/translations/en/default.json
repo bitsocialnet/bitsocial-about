@@ -957,7 +957,7 @@
         "title": "Summary",
         "body": [
           "bitsocial.net collects very little data.",
-          "The code for bitsocial.net is free and open source and lives in the public bitsocial-web repository.",
+          "The code for bitsocial.net is free and open source and lives in the public bitsocial-about repository.",
           "If you sign up for the newsletter, the email address you enter is sent to the mailing-list service configured for the site.",
           "Other than that, bitsocial.net uses privacy-focused traffic and performance measurement, stores your language preference in browser storage, and loads fonts from Google Fonts."
         ]

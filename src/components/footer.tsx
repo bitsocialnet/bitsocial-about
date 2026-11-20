@@ -202,7 +202,7 @@ export default function Footer() {
           </noscript>
           <div className="flex items-center gap-3 text-xs">
             <a
-              href="https://github.com/bitsocialnet/bitsocial-web"
+              href="https://github.com/bitsocialnet/bitsocial-about"
               target="_blank"
               rel="noopener noreferrer"
               className="touch-target inline-flex items-center transition-colors hover:text-foreground"

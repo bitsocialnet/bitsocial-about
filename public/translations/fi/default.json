@@ -741,7 +741,7 @@
         "title": "Yhteenveto",
         "body": [
           "bitsocial.net kerää hyvin vähän tietoja.",
-          "bitsocial.netin koodi on vapaata ja avointa lähdekoodia, ja se löytyy julkisesta bitsocial-web-repositoriosta.",
+          "bitsocial.netin koodi on vapaata ja avointa lähdekoodia, ja se löytyy julkisesta bitsocial-about-repositoriosta.",
           "Jos ilmoittaudut uutiskirjeeseen, syöttämäsi sähköpostiosoite lähetetään sivustolle määritettyyn postituslistapalveluun.",
           "Muuten bitsocial.net käyttää yksityisyyttä korostavaa liikenne- ja suorituskykymittausta, tallentaa kieliasetuksesi selaimen tallennustilaan ja lataa fontit Google Fontsista."
         ]

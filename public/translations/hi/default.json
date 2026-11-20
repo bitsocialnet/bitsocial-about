@@ -741,7 +741,7 @@
         "title": "सारांश",
         "body": [
           "bitsocial.net बहुत कम डेटा एकत्र करता है।",
-          "bitsocial.net का कोड मुक्त और ओपन सोर्स है और सार्वजनिक bitsocial-web repository में मौजूद है।",
+          "bitsocial.net का कोड मुक्त और ओपन सोर्स है और सार्वजनिक bitsocial-about repository में मौजूद है।",
           "यदि आप newsletter के लिए sign up करते हैं, तो आपके द्वारा दर्ज किया गया email address site के लिए configured mailing-list service को भेजा जाता है।",
           "इसके अलावा, bitsocial.net privacy-focused traffic और performance measurement का उपयोग करता है, आपकी language preference को browser storage में संग्रहीत करता है, और Google Fonts से fonts लोड करता है।"
         ]

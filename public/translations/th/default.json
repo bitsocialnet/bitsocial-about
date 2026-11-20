@@ -741,7 +741,7 @@
         "title": "สรุป",
         "body": [
           "bitsocial.net เก็บข้อมูลน้อยมาก",
-          "โค้ดของ bitsocial.net เป็นแบบ free และ open source และอยู่ใน repository สาธารณะ bitsocial-web",
+          "โค้ดของ bitsocial.net เป็นแบบ free และ open source และอยู่ใน repository สาธารณะ bitsocial-about",
           "หากคุณสมัครรับจดหมายข่าว ที่อยู่อีเมลที่คุณกรอกจะถูกส่งไปยังบริการ mailing-list ที่กำหนดไว้สำหรับเว็บไซต์",
           "นอกเหนือจากนั้น bitsocial.net ใช้การวัดปริมาณการใช้งานและประสิทธิภาพที่ให้ความสำคัญกับความเป็นส่วนตัว บันทึกการตั้งค่าภาษาไว้ใน browser storage และโหลดฟอนต์จาก Google Fonts"
         ]

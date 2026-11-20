@@ -741,7 +741,7 @@
         "title": "概要",
         "body": [
           "bitsocial.net は非常に少量のデータしか収集しません。",
-          "bitsocial.net のコードは自由でオープンソースであり、公開されている bitsocial-web repository にあります。",
+          "bitsocial.net のコードは自由でオープンソースであり、公開されている bitsocial-about repository にあります。",
           "ニュースレターに登録すると、入力したメールアドレスはサイト用に設定されたメーリングリストサービスに送信されます。",
           "それ以外では、bitsocial.net はプライバシー重視のトラフィックおよびパフォーマンス測定を行い、言語設定をブラウザーのストレージに保存し、フォントを Google Fonts から読み込みます。"
         ]

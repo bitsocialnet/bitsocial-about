@@ -741,7 +741,7 @@
         "title": "Özet",
         "body": [
           "bitsocial.net çok az veri toplar.",
-          "bitsocial.net için kullanılan kod özgür ve açık kaynaklıdır ve genel bitsocial-web repository içinde yer alır.",
+          "bitsocial.net için kullanılan kod özgür ve açık kaynaklıdır ve genel bitsocial-about repository içinde yer alır.",
           "Bültene kaydolursanız, girdiğiniz e-posta adresi site için yapılandırılmış mailing-list hizmetine gönderilir.",
           "Bunun dışında bitsocial.net gizlilik odaklı trafik ve performans ölçümü kullanır, dil tercihinizi tarayıcı depolamasında saklar ve yazı tiplerini Google Fonts'tan yükler."
         ]

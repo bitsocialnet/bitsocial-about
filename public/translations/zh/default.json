@@ -741,7 +741,7 @@
         "title": "摘要",
         "body": [
           "bitsocial.net 收集的数据非常少。",
-          "bitsocial.net 的代码是自由且开源的，位于公开的 bitsocial-web repository 中。",
+          "bitsocial.net 的代码是自由且开源的，位于公开的 bitsocial-about repository 中。",
           "如果你订阅 newsletter，你输入的电子邮件地址会发送到为该站点配置的 mailing-list service。",
           "除此之外，bitsocial.net 使用注重隐私的流量和性能测量，将你的语言偏好存储在浏览器存储中，并从 Google Fonts 加载字体。"
         ]

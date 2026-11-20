@@ -4,4 +4,4 @@
 export const BITSOCIAL_TOPIC_URL = "https://github.com/topics/bitsocial";
 
 export const SUBMIT_APP_URL =
-  "https://github.com/bitsocialnet/bitsocial-web/issues/new?title=%5BApp+Submission%5D+&labels=app-submission&template=app-submission.md";
+  "https://github.com/bitsocialnet/bitsocial-about/issues/new?title=%5BApp+Submission%5D+&labels=app-submission&template=app-submission.md";

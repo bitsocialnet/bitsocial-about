@@ -741,7 +741,7 @@
         "title": "요약",
         "body": [
           "bitsocial.net은 매우 적은 양의 데이터만 수집합니다.",
-          "bitsocial.net의 코드는 자유 소프트웨어이자 오픈 소스이며, 공개 bitsocial-web repository에 있습니다.",
+          "bitsocial.net의 코드는 자유 소프트웨어이자 오픈 소스이며, 공개 bitsocial-about repository에 있습니다.",
           "뉴스레터에 가입하면 입력한 이메일 주소가 사이트에 구성된 메일링 리스트 서비스로 전송됩니다.",
           "그 외에는 bitsocial.net이 개인정보 중심의 트래픽 및 성능 측정을 사용하고, 언어 기본 설정을 브라우저 저장소에 저장하며, Google Fonts에서 글꼴을 불러옵니다."
         ]
