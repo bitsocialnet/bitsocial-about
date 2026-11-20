@@ -40,15 +40,15 @@ async function bundle(app, production) {
     const exports = [
       'export * as lazy from "./index.ts";',
       'export * as client from "./client.ts";',
-      app === "about" ? 'export { APPS } from "@/lib/apps-data";' : "",
+      'export { APPS } from "@/lib/apps-data";',
     ].join("\n");
     const { outputFiles } = await build({
       stdin: {
         contents: exports,
         loader: "ts",
-        resolveDir: path.join(repoRoot, app, "src/lib/analytics"),
+        resolveDir: path.join(repoRoot, "src/lib/analytics"),
       },
-      alias: { "@": path.join(repoRoot, app, "src") },
+      alias: { "@": path.join(repoRoot, "src") },
       bundle: true,
       define: { "import.meta.env.PROD": String(production) },
       format: "esm",
@@ -127,33 +127,9 @@ test("about maps every route in app.tsx to a fixed path and route template", asy
   }
 });
 
-test("chain maps its three pages and nothing else", async (t) => {
-  browserAt(t, "https://chain.bitsocial.net/");
-  const { client } = await load("chain");
-  const cases = [
-    ["/", "/"],
-    ["/index.html", "/"],
-    ["/chart", "/chart"],
-    ["/chart/", "/chart"],
-    ["/chart/index.html", "/chart"],
-    ["/rich-list", "/rich-list"],
-    ["/rich-list/", "/rich-list"],
-    ["/rich-list/index.html", "/rich-list"],
-    [`/rich-list/?address=${wallet}#holders`, "/rich-list"],
-    [`/rich-list/${wallet}`, "/not-found"],
-    [`/chart/${wallet}`, "/not-found"],
-    ["/projects", "/not-found"],
-  ];
-  for (const [pathname, sentPath] of cases) {
-    assert.equal(client.getAnalyticsPath(pathname), sentPath, pathname);
-    assert.equal(client.getAnalyticsPath(sentPath), sentPath, sentPath);
-  }
-});
-
 test("sent URLs drop the fragment and every query parameter but non-identifying utm_ tags", async (t) => {
   browserAt(t, "https://bitsocial.net/");
   const about = await load("about");
-  const chain = await load("chain");
   const query = `utm_source=newsletter&ref=x&lang=it&utm_campaign=launch&address=${wallet}`;
   assert.equal(
     about.client.getAnalyticsUrl(`https://bitsocial.net/projects/5chan/?${query}#mirrors`),
@@ -169,31 +145,11 @@ test("sent URLs drop the fragment and every query parameter but non-identifying 
     ),
     "https://bitsocial.net/?utm_term=bso",
   );
-  assert.equal(
-    chain.client.getAnalyticsUrl(
-      `https://chain.bitsocial.net/rich-list/?wallet=${wallet}&utm_source=x#history`,
-    ),
-    "https://chain.bitsocial.net/rich-list?utm_source=x",
-  );
-  assert.equal(
-    chain.client.getAnalyticsUrl("https://chain.bitsocial.net/chart/?theme=dark&lang=de"),
-    "https://chain.bitsocial.net/chart",
-  );
-  assert.equal(
-    chain.client.getAnalyticsUrl(
-      `https://chain.bitsocial.net/?utm_source=${wallet}&utm_medium=a%40b.co&utm_campaign=bso`,
-    ),
-    "https://chain.bitsocial.net/?utm_campaign=bso",
-  );
   // An identifier can sit in the parameter name, so only the standard campaign tag names are kept.
   const identifyingKeys = `utm_alice%40example.com=campaign&utm_${wallet}=x&utm_id=1&utm_source=x`;
   assert.equal(
     about.client.getAnalyticsUrl(`https://bitsocial.net/?${identifyingKeys}`),
     "https://bitsocial.net/?utm_source=x",
-  );
-  assert.equal(
-    chain.client.getAnalyticsUrl(`https://chain.bitsocial.net/?${identifyingKeys}`),
-    "https://chain.bitsocial.net/?utm_source=x",
   );
 });
 
@@ -231,17 +187,6 @@ test("utm_ tags survive the SDK's query reset when the live location is the same
     assert.deepEqual(
       client.sanitizeAnalyticsEvent({ type: "pageview", url: "https://bitsocial.net/projects" }),
       { type: "pageview", url: "https://bitsocial.net/projects?utm_source=x" },
-    );
-  });
-  await t.test("chain /rich-list/", async (t) => {
-    browserAt(t, `https://chain.bitsocial.net/rich-list/?address=${wallet}&utm_source=x#history`);
-    const { client } = await load("chain");
-    assert.deepEqual(
-      client.sanitizeAnalyticsEvent({
-        type: "pageview",
-        url: "https://chain.bitsocial.net/rich-list",
-      }),
-      { type: "pageview", url: "https://chain.bitsocial.net/rich-list?utm_source=x" },
     );
   });
   await t.test("a different live page lends nothing", async (t) => {
@@ -305,11 +250,6 @@ test("custom events keep only the page, without campaign tags", async (t) => {
       "https://bitsocial.net/projects/5chan/?utm_campaign=x&ref=y",
       "https://bitsocial.net/projects/5chan",
     ],
-    [
-      "chain",
-      "https://chain.bitsocial.net/rich-list/?utm_source=x",
-      "https://chain.bitsocial.net/rich-list",
-    ],
   ]) {
     await t.test(app, async (t) => {
       browserAt(t, url);
@@ -324,8 +264,8 @@ test("custom events keep only the page, without campaign tags", async (t) => {
   }
 });
 
-for (const app of ["about", "chain"]) {
-  const origin = app === "about" ? "https://bitsocial.net" : "https://chain.bitsocial.net";
+for (const app of ["about"]) {
+  const origin = "https://bitsocial.net";
 
   test(`${app}: beforeSend drops everything from a browser driven by automation`, async (t) => {
     browserAt(t, `${origin}/`, { webdriver: true });
@@ -353,16 +293,6 @@ const excludedEnvironments = {
     ["https://chain.bitsocial.net/", true],
     ["http://bitsocial.net/", true],
     ["https://bitsocial.net/", false],
-    [null, true],
-  ],
-  chain: [
-    ["http://localhost:5173/", true],
-    ["https://chain.bitsocial.localhost/", true],
-    ["https://bitsocial-chain.vercel.app/", true],
-    ["https://bitsocial.net/", true],
-    ["https://www.chain.bitsocial.net/", true],
-    ["http://chain.bitsocial.net/", true],
-    ["https://chain.bitsocial.net/", false],
     [null, true],
   ],
 };
@@ -411,17 +341,6 @@ test("about: production hosts initialize once and send page views with route tem
   }
 });
 
-test("chain: one page view per page with the page as its route", async (t) => {
-  const sdk = browserAt(t, "https://chain.bitsocial.net/rich-list/");
-  const { lazy, client } = await load("chain");
-  lazy.trackPageView("/rich-list/");
-  await settle();
-  assert.deepEqual(calls(sdk.inject), [
-    [{ disableAutoTrack: true, beforeSend: client.sanitizeAnalyticsEvent, mode: "production" }],
-  ]);
-  assert.deepEqual(calls(sdk.pageview), [[{ path: "/rich-list", route: "/rich-list" }]]);
-});
-
 test("about: project link events carry only the project slug and platform", async (t) => {
   const sdk = browserAt(t, "https://bitsocial.net/projects/5chan");
   const { lazy } = await load("about");
@@ -442,8 +361,8 @@ test("about: project link events carry only the project slug and platform", asyn
   ]);
 });
 
-for (const app of ["about", "chain"]) {
-  const origin = app === "about" ? "https://bitsocial.net" : "https://chain.bitsocial.net";
+for (const app of ["about"]) {
+  const origin = "https://bitsocial.net";
 
   test(`${app}: newsletter events carry only the outcome`, async (t) => {
     const sdk = browserAt(t, `${origin}/`);

@@ -44,7 +44,7 @@ export default defineConfig({
   webServer: process.env.PLAYWRIGHT_BASE_URL
     ? undefined
     : {
-        command: `PORTLESS=0 BROWSER=none ABOUT_PORT=${port} yarn start:about`,
+        command: `PORTLESS=0 BROWSER=none ABOUT_PORT=${port} yarn start`,
         reuseExistingServer: true,
         timeout: 60_000,
         url: baseURL,

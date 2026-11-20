@@ -10,7 +10,7 @@ const repoRoot = fileURLToPath(new URL("../../", import.meta.url));
 const successCacheControl = "public, s-maxage=300, stale-while-revalidate=86400";
 const latestReleaseUrl = "https://api.github.com/repos/bitsocialnet/5chan/releases/latest";
 const download = { app: "5chan", asset: "download", variant: "linux-arm64" };
-const handlerSource = await readFile(path.join(repoRoot, "about/api/release-integrity.ts"), "utf8");
+const handlerSource = await readFile(path.join(repoRoot, "api/release-integrity.ts"), "utf8");
 const { code: handlerCode } = await transform(handlerSource, { loader: "ts", format: "esm" });
 let handlerInstances = 0;
 

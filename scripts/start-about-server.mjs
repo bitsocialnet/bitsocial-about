@@ -22,7 +22,7 @@ if (!Number.isInteger(requestedPort) || requestedPort <= 0) {
 }
 
 const port = usingPortless ? requestedPort : await resolvePort(requestedPort);
-const aboutRoot = path.join(repoRoot, "about");
+const aboutRoot = repoRoot;
 const templatePath = path.join(aboutRoot, "index.html");
 const hmrServer = createHttpServer();
 const releaseIntegrityHandlerPath = path.join(aboutRoot, "api/release-integrity.ts");

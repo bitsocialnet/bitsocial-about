@@ -7,11 +7,11 @@ import { build } from "esbuild";
 const repoRoot = fileURLToPath(new URL("../../", import.meta.url));
 let instances = 0;
 
-/** Bundles one `about/src` module and imports a fresh instance of it. */
+/** Bundles one `src` module and imports a fresh instance of it. */
 async function load(modulePath, plugins = []) {
   const { outputFiles } = await build({
-    entryPoints: [path.join(repoRoot, "about/src", modulePath)],
-    alias: { "@": path.join(repoRoot, "about/src") },
+    entryPoints: [path.join(repoRoot, "src", modulePath)],
+    alias: { "@": path.join(repoRoot, "src") },
     bundle: true,
     format: "esm",
     platform: "neutral",

@@ -323,7 +323,7 @@ export function startVite(host, port) {
       "exec",
       "vite",
       "--config",
-      "about/vite.config.ts",
+      "vite.config.ts",
       "--host",
       host,
       "--port",

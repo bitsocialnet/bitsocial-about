@@ -12,7 +12,7 @@
     "start:ios-sim": "node scripts/start-ios-sim.mjs",
     "preview": "vite preview --config vite.config.ts",
     "build": "tsgo --noEmit --project tsconfig.json && vite build --config vite.config.ts",
-    "build:verify": "node scripts/verify-build.mjs",
+    "build:verify": "yarn build",
     "build:profile": "vite build --config vite.config.ts --mode profiling",
     "typecheck": "tsgo --noEmit --project tsconfig.json",
     "test:planet-theme": "playwright test --config playwright.config.ts",
