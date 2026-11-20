@@ -13,11 +13,9 @@ Select checks from the changed behavior and remaining uncertainty. Reuse success
 
 ## Project checks
 
-- `yarn build:verify` selects the affected workspace. For a known scope use `yarn build:about`, `yarn build:chain`, `yarn build:stats-monitor`, or `yarn docs:build:verify`.
-- `yarn build` intentionally runs the full production about/docs build, including all docs locales. Use it for release-wide validation or changes that warrant that scope.
+- `yarn build` (also `yarn build:verify`) typechecks and runs the production client and SSR build.
 - `yarn lint`, `yarn typecheck`, and `yarn format:check` cover existing repository gates; for a narrow script edit use its focused syntax/fixture/format checks first.
 - Manifest/lock changes require `corepack yarn install`, `yarn deps:check-pinned`, and `yarn deps:check-hardened`. `yarn knip` is advisory for dependencies/imports.
-- Docs translation checks are in [translations.md](translations.md); do not run the bulk translation writer for a focused docs change.
 
 ## Browser evidence and ownership
 
@@ -33,6 +31,6 @@ One agent owns heavy verification. Inspect active workloads and serialize instal
 
 ## Automatic React checks
 
-`yarn agent:verify` runs the selected builds followed by `yarn doctor:check` and `yarn perf:check`. `perf:check` includes the collector compatibility and deliberate-regression selftest, so neither CI nor the agent verification path needs a separate `perf:test` pass. Profiling and Chromium browser tests use sandboxed system Chrome. Keep Chrome up to date. `yarn perf:install` checks for Chrome, and `yarn perf:install --force` explicitly installs or refreshes it system-wide. Hosted CI refreshes Chrome stable before profiling. Use target/scenario filters for focused reruns after the full relevant pass. Scenario budgets are explicit in `scripts/react-perf/config.mjs`; preserve evidence and fix a regression before considering a justified baseline change. Ordinary production builds omit Bippy; separate `build:profile:*` commands supply official React profiling instrumentation.
+`yarn agent:verify` runs the selected builds followed by `yarn doctor:check` and `yarn perf:check`. `perf:check` includes the collector compatibility and deliberate-regression selftest, so neither CI nor the agent verification path needs a separate `perf:test` pass. Profiling and Chromium browser tests use sandboxed system Chrome. Keep Chrome up to date. `yarn perf:install` checks for Chrome, and `yarn perf:install --force` explicitly installs or refreshes it system-wide. Hosted CI refreshes Chrome stable before profiling. Use target/scenario filters for focused reruns after the full relevant pass. Scenario budgets are explicit in `scripts/react-perf/config.mjs`; preserve evidence and fix a regression before considering a justified baseline change. Ordinary production builds omit Bippy; the separate `build:profile` command supplies official React profiling instrumentation.
 
 The about `apps-search` scenario is paced by committed URL/input values for each character. Its passing result covers that committed-query sequence, not rapid-typing responsiveness. Use a separate fast-input reproduction when evaluating character loss or input responsiveness.
