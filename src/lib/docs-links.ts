@@ -21,6 +21,8 @@ export const DOCS_LINKS = {
 
 export const CHAIN_SITE_URL = "https://chain.bitsocial.net" as const;
 
+export const CHAIN_DOMAINS_URL = `${CHAIN_SITE_URL}/domains/` as const;
+
 export const STATS_SITE_URL = "https://stats.bitsocial.net" as const;
 
 export const HOOKS_SITE_URL = "https://hooks.bitsocial.net" as const;

@@ -29,7 +29,7 @@ import {
   HERO_FALLBACK_MOBILE_QUERY,
   type HeroFallbackTheme,
 } from "@/lib/hero-fallback";
-import { HOOKS_SITE_URL } from "@/lib/docs-links";
+import { CHAIN_DOMAINS_URL } from "@/lib/docs-links";
 import { hasInitialRenderCommitted, useIsHydrated } from "@/lib/initial-render";
 import { goToMailingListSection } from "@/lib/mailing-list-nav";
 import { rememberScrollReturn } from "@/lib/scroll-return";
@@ -44,7 +44,7 @@ const HighlightIndexCtx = createContext(-1);
 // Mirrors the hooks.bitsocial.net hero version link: quiet gray text with a blue dot.
 // Inline flow (not flex) keeps the dot and arrow beside the words when longer
 // translations wrap on phones.
-const developersCtaClassName = cn(
+const domainsCtaClassName = cn(
   "relative text-balance text-xs text-muted-foreground",
   "transition-colors duration-200 hover:text-foreground",
   // Invisible hit-area: keeps the link visually small but gives it a ~44px
@@ -338,16 +338,16 @@ export default function Hero() {
       >
         <div className="mb-[var(--space-hero-actions-gap)] flex justify-center md:mb-[var(--space-hero-stack-gap)]">
           <a
-            href={HOOKS_SITE_URL}
+            href={CHAIN_DOMAINS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className={developersCtaClassName}
+            className={domainsCtaClassName}
           >
             <span
               aria-hidden="true"
               className="me-2.5 inline-block h-1.5 w-1.5 rounded-full bg-blue-glow align-middle shadow-[0_0_10px_#2563eb66]"
             />
-            {t("hero.developersCta")}
+            {t("hero.domainsCta")}
             <ArrowUpRight
               aria-hidden="true"
               className="ms-2.5 inline-block h-3.5 w-3.5 align-[-0.2em]"
