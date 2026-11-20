@@ -8,7 +8,6 @@ import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
 import {
-  devServerUrlFile,
   ensurePortlessProxy,
   ensurePinnedNodeVersion,
   getPortlessAppName,
@@ -41,8 +40,11 @@ if (command === portlessBin) {
 
   args = [appName, process.execPath, aboutServerScript];
   releaseUrlRecord = recordDevServerUrl("about", publicUrl);
-  // start-docs records the docs URL it claims; the about server reads it on each /docs request.
-  childEnv.DOCS_DEV_URL_FILE = devServerUrlFile("docs");
+  // The docs dev server runs from a sibling bitsocial-docs checkout (BITSOCIAL_DOCS_DIR overrides
+  // ../bitsocial-docs) and records the URL it claims there; the about server reads it on each /docs
+  // request.
+  const docsCheckout = path.resolve(repoRoot, process.env.BITSOCIAL_DOCS_DIR || "../bitsocial-docs");
+  childEnv.DOCS_DEV_URL_FILE = path.join(docsCheckout, ".dev-servers", "docs-url");
   browserOpenUrl = publicUrl;
 
   if (appName !== "bitsocial") {

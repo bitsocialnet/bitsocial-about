@@ -7,6 +7,7 @@ import {
   mkdirSync,
   mkdtempSync,
   readFileSync,
+  realpathSync,
   rmSync,
   writeFileSync,
 } from "node:fs";
@@ -26,6 +27,7 @@ for (const name of [
   "HOST",
   "DOCS_DEV_PROXY_TARGET",
   "DOCS_DEV_URL_FILE",
+  "BITSOCIAL_DOCS_DIR",
 ]) {
   delete baseEnv[name];
 }
@@ -190,10 +192,10 @@ while :; do sleep 0.1; done
     const [name, docsTarget, docsUrlFile] = appLines().at(-1).split("|");
     return { name, docsTarget, docsUrlFile };
   };
-  const run = (script) => {
+  const run = (script, extraEnv = {}) => {
     const result = spawnSync(process.execPath, [path.join(root, "scripts", script)], {
       cwd: root,
-      env: { ...baseEnv, ...env },
+      env: { ...baseEnv, ...env, ...extraEnv },
       encoding: "utf8",
       timeout: 30_000,
     });
@@ -209,8 +211,21 @@ while :; do sleep 0.1; done
   };
   const urlRecord = (name) => path.join(root, ".dev-servers", `${name}-url`);
   const signals = () => (existsSync(signalLog) ? readFileSync(signalLog, "utf8").trim() : "");
-  return { routes, run, start, urlRecord, signals };
+  return { root, routes, run, start, urlRecord, signals };
 }
+
+test("about server reads the docs URL recorded by the sibling bitsocial-docs checkout", async (t) => {
+  const checkout = portlessCheckout(t, "master");
+  assert.equal(
+    checkout.run("start-dev.mjs").docsUrlFile,
+    path.resolve(realpathSync(checkout.root), "../bitsocial-docs/.dev-servers/docs-url"),
+  );
+
+  const docsCheckout = mkdtempSync(path.join(tmpdir(), "dev-servers-docs-checkout-"));
+  t.after(() => rmSync(docsCheckout, { recursive: true, force: true }));
+  const about = checkout.run("start-dev.mjs", { BITSOCIAL_DOCS_DIR: docsCheckout });
+  assert.equal(about.docsUrlFile, path.join(docsCheckout, ".dev-servers", "docs-url"));
+});
 
 // Once a server stops, its host can be claimed by another checkout, so a leftover record would
 // send /docs (or agent-init) there.
