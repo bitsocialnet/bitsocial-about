@@ -453,7 +453,7 @@ function buildAboutSeoMetadata(urlState: SeoUrlState, t?: TFunction): SeoMetadat
       translateSeoValue(
         t,
         "seo.about.description",
-        "Meet the Bitsocial core team and learn about the peer-to-peer social protocol they have been building since early 2022.",
+        "Meet the Bitsocial core team, find who to ask about each part of the project, and see how it grew since early 2022 and everyone who contributed.",
       ),
     ),
     ...buildIndexingMetadata("/about", urlState),
@@ -469,7 +469,7 @@ function buildAboutSeoMetadata(urlState: SeoUrlState, t?: TFunction): SeoMetadat
         url: canonicalUrl,
         name: "About Bitsocial | Core Team",
         description:
-          "Meet the Bitsocial core team and learn about the peer-to-peer social protocol they have been building since early 2022.",
+          "Meet the Bitsocial core team, find who to ask about each part of the project, and see how it grew since early 2022 and everyone who contributed.",
         isPartOf: {
           "@id": `${SITE_ORIGIN}/#website`,
         },

@@ -1000,25 +1000,136 @@
   },
   "about": {
     "sectionLabel": "About Us",
-    "title": "Bitsocial Core Team",
+    "title": "The people building Bitsocial",
     "subtitle": "Bitsocial has been in active development since early 2022, a grassroots project funded from day one by founder Esteban Abaroa out of his own savings.",
     "members": {
-      "esteban": {
-        "role": "Founder, Lead Developer 2022–2026"
-      },
       "rinse": {
-        "role": "Co-Founder and Core Developer"
+        "role": "Co-Founder and Core Developer",
+        "ask": "Ask about <askLink>the protocol, nodes and anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Co-Founder and Core Developer, Founder & CEO of <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Co-Founder and Core Developer, Founder & CEO of <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Ask about <askLink>apps, hosted services, the website and docs</askLink>"
       }
     },
-    "memberProfileAlt": "Profile photo of {{name}}"
+    "memberProfileAlt": "Profile photo of {{name}}",
+    "organizations": "The code is on GitHub in three organizations: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> and <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Support Bitsocial",
+    "contributeCta": "Contribute on GitHub",
+    "team": {
+      "title": "Core team"
+    },
+    "ask": {
+      "title": "Who to ask about what",
+      "intro": "Questions about a part of Bitsocial go to its maintainer, on Telegram or as an issue in one of its repositories.",
+      "privateNote": "Some repositories are private and not listed.",
+      "telegramLabel": "Message {{name}} on Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protocol",
+        "description": "How communities, posts, signatures and challenges work on the wire; pkc-js and its API."
+      },
+      "network": {
+        "name": "Nodes and network",
+        "description": "Running a node or a community, the CLI and RPC, .bso names, seeding, voting and discovery."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Challenges a community can require before posting, and the spam blocker."
+      },
+      "apps": {
+        "name": "Apps",
+        "description": "5chan, Seedit and the other clients, and the React hooks every client is built on."
+      },
+      "services": {
+        "name": "Hosted services",
+        "description": "Forge Images, Forge RPC, the 5chan and Seedit archives, search, link previews and bots."
+      },
+      "web": {
+        "name": "Website, docs and research",
+        "description": "bitsocial.net, the docs, network stats, protocol proposals (BSIPs) and research projects."
+      }
+    },
+    "growth": {
+      "title": "How Bitsocial grew",
+      "intro": "Commits per month across every public repository in the three organizations, stacked by area.",
+      "commits_one": "commit by people",
+      "commits_other": "commits by people",
+      "repositories_one": "public repository",
+      "repositories_other": "public repositories",
+      "organizations_one": "GitHub organization",
+      "organizations_other": "GitHub organizations",
+      "legendLabel": "Areas, from the base of the chart up",
+      "axisLabel": "Commits per month",
+      "chartLabel_one": "Stacked area chart of commits by people per month from {{start}} to {{end}}, by area. {{year}} has {{value}} commit so far, against {{previousValue}} in {{previousYear}}.",
+      "chartLabel_other": "Stacked area chart of commits by people per month from {{start}} to {{end}}, by area. {{year}} has {{value}} commits so far, against {{previousValue}} in {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, partial",
+      "repositoriesAnnotation_one": "{{value}} repository at the end of {{year}}, {{now}} now",
+      "repositoriesAnnotation_other": "{{value}} repositories at the end of {{year}}, {{now}} now",
+      "startedAnnotation_one": "{{value}} of them had its first commit in {{year}}",
+      "startedAnnotation_other": "{{value}} of them had their first commit in {{year}}",
+      "partialAnnotation_ordinal_one": "{{month}} is partial, to the {{day}}st",
+      "partialAnnotation_ordinal_two": "{{month}} is partial, to the {{day}}nd",
+      "partialAnnotation_ordinal_few": "{{month}} is partial, to the {{day}}rd",
+      "partialAnnotation_ordinal_other": "{{month}} is partial, to the {{day}}th",
+      "caption": "Commits by people only: bots, release automation and copied history are excluded. Since early 2026 most development is AI-assisted.",
+      "partialAnnotation_ordinal_many": "{{month}} is partial, to the {{day}}th"
+    },
+    "milestones": {
+      "title": "Milestones",
+      "items": {
+        "specification": "Protocol specification",
+        "protocolLibrary": "First working protocol library",
+        "reactHooks": "React hooks library for building apps",
+        "signedEncrypted": "Every publication signed and encrypted",
+        "cliNode": "First node you can run from the command line",
+        "ed25519": "Ed25519 keys and AES-GCM encryption",
+        "challenges": "Pluggable anti-spam challenges",
+        "fivechanRelease": "5chan 0.1.0, the first app on the network",
+        "rpc": "Apps can run on a remote node over RPC",
+        "commentUpdates": "Comment updates that scale to large communities",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Create and host a community from the desktop app",
+        "fivechanTypescript": "5chan rewritten in TypeScript",
+        "httpRouter": "HTTP routing tracker replaces the DHT",
+        "browserP2p": "Peer-to-peer in the browser, with no gateway",
+        "pushNotifications": "Push notifications on web, Android and desktop",
+        "boardDirectories": "5chan boards addressed by directory, like /biz/",
+        "spamBlocker": "Spam blocker service",
+        "bsoNames": ".bso names resolve to communities",
+        "aiModeration": "AI moderation challenge",
+        "pubsubVoting": "Trustless voting over pubsub",
+        "bsips": "Bitsocial Improvement Proposals (BSIPs)",
+        "archives": "Public archives and search for 5chan and Seedit",
+        "forgeImages": "Forge Images: free media hosting for apps"
+      }
+    },
+    "support": {
+      "title": "Support Bitsocial",
+      "body": "Donations go to the Bitsocial project as a whole.",
+      "donate": "Donate",
+      "comingSoon": "Donation link coming soon"
+    },
+    "thanks": {
+      "title": "Thank you also to",
+      "intro": "Everyone else who opened an issue or a pull request, or committed code, in a Bitsocial repository, in order of contributions.",
+      "wallLabel": "Contributors",
+      "contributions_one": "{{login}}, {{value}} contribution",
+      "contributions_other": "{{login}}, {{value}} contributions",
+      "nextLabel": "Your avatar could be next: find an open issue",
+      "cta": "Your avatar goes here after your first issue or pull request.",
+      "firstContribution": "Make your first contribution"
+    }
   },
   "seo": {
     "about": {
       "title": "About Bitsocial | Core Team",
-      "description": "Meet the Bitsocial core team and learn about the peer-to-peer social protocol they have been building since early 2022."
+      "description": "Meet the Bitsocial core team, find who to ask about each part of the project, and see how it grew since early 2022 and everyone who contributed."
     },
     "blog": {
       "title": "Bitsocial Blog | Updates, Releases, and Tutorials",

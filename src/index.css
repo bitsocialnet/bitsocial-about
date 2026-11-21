@@ -325,6 +325,14 @@
     --text-card-title: clamp(1.25rem, 1.1667rem + 0.3704vw, 1.5rem);
     --text-compact: clamp(0.8125rem, 0.7917rem + 0.0926vw, 0.875rem);
     --text-micro: clamp(0.6875rem, 0.6667rem + 0.0926vw, 0.75rem);
+    /* About page area colors, one per chart series, validated as a categorical palette on each
+       theme's background (adjacent pairs, color-vision deficiency, 3:1 contrast). */
+    --about-area-protocol: #1a4fd0;
+    --about-area-network: #028039;
+    --about-area-antispam: #894ed6;
+    --about-area-apps: #c55c04;
+    --about-area-services: #db479a;
+    --about-area-web: #6b8c00;
   }
   .dark {
     color-scheme: dark;
@@ -370,6 +378,7 @@
       rgba(118, 128, 140, 0.072),
       rgba(52, 58, 68, 0.09)
     );
+    --about-area-web: #7da405;
   }
 }
 
