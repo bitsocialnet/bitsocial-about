@@ -51,6 +51,8 @@ corepack yarn deps:check-pinned
 corepack yarn deps:check-hardened
 ```
 
+`corepack yarn about:data` regenerates `src/data/about-stats.json`, the commit chart, repository count and contributor wall of `/about`, from the public repositories of the three GitHub organizations (token from `GITHUB_TOKEN` or `gh auth token`). Commit the refreshed file; map a new repository to its area in `src/data/about-areas.json` when the script warns about it.
+
 The llms files also cover the docs and Chain sites, so `llms:generate` needs sibling checkouts of [bitsocial-docs](https://github.com/bitsocialnet/bitsocial-docs) at `../bitsocial-docs` and [bitsocial-chain](https://github.com/bitsocialnet/bitsocial-chain) with the site at `../bitsocial-chain/site` (override with `BITSOCIAL_DOCS_DIR` and `BITSOCIAL_CHAIN_SITE_DIR`). Without them it writes nothing, and `llms:check` checks only this site's files.
 
 ## Deployment

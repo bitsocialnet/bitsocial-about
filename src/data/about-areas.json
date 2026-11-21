@@ -1,0 +1,150 @@
+{
+  "maintainers": [
+    { "id": "rinse", "github": "Rinse12" },
+    { "id": "tom", "github": "tomcasaburi" }
+  ],
+  "repoLabels": {
+    "bitsocialnet/bitsocial-about": "bitsocial.net"
+  },
+  "areas": [
+    {
+      "id": "protocol",
+      "groups": [
+        {
+          "maintainers": ["rinse"],
+          "repos": [
+            "pkcprotocol/pkc-js",
+            "pkcprotocol/pkc-http-router",
+            "pkcprotocol/pkc-protocol-test",
+            "pkcprotocol/pkc-js-benchmarks",
+            "pkcprotocol/active-page-sort",
+            "pkcprotocol/flair-page-sort"
+          ]
+        }
+      ],
+      "unlisted": [
+        "pkcprotocol/assets",
+        "pkcprotocol/node-proper-lockfile",
+        "pkcprotocol/pkc-logger"
+      ]
+    },
+    {
+      "id": "network",
+      "groups": [
+        {
+          "maintainers": ["rinse"],
+          "repos": [
+            "bitsocialnet/bitsocial-cli",
+            "bitsocialnet/bitsocial-seeder",
+            "bitsocialnet/5chan-board-manager",
+            "bitsocialnet/pubsub-voting",
+            "bitsocialnet/bso-resolver"
+          ]
+        },
+        {
+          "maintainers": ["tom"],
+          "repos": ["bitsocialnet/pubsub-provider", "bitsocialnet/bitsocial-discovery"]
+        }
+      ],
+      "unlisted": []
+    },
+    {
+      "id": "antispam",
+      "groups": [
+        {
+          "maintainers": ["rinse", "tom"],
+          "repos": ["bitsocialnet/spam-blocker"]
+        },
+        {
+          "maintainers": ["rinse"],
+          "repos": [
+            "bitsocialnet/captcha-canvas-challenge",
+            "bitsocialnet/voucher-challenge",
+            "bitsocialnet/evm-contract-challenge",
+            "bitsocialnet/wordfilter-challenge",
+            "bitsocialnet/tipping-challenge",
+            "bitsocialnet/challenge-composer"
+          ]
+        },
+        {
+          "maintainers": ["tom"],
+          "repos": [
+            "bitsocialnet/ai-moderation-challenge",
+            "bitsocialnet/flags-challenge",
+            "bitsocialnet/r9k-challenge",
+            "bitsocialnet/base64-challenge",
+            "bitsocialnet/image-classifier-bitsocial-moderator-bot",
+            "bitsocialnet/mintpass"
+          ]
+        }
+      ],
+      "unlisted": []
+    },
+    {
+      "id": "apps",
+      "groups": [
+        {
+          "maintainers": ["tom"],
+          "repos": [
+            "bitsocialnet/5chan",
+            "bitsocialnet/seedit",
+            "bitsocialnet/bitsocial-react-hooks",
+            "bitsocialnet/wetube",
+            "bitsocialnet/bitbones",
+            "bitsocialnet/bitsocial-forum",
+            "bitsocialnet/bitsocial-chat",
+            "bitsocialnet/lists"
+          ]
+        }
+      ],
+      "unlisted": []
+    },
+    {
+      "id": "services",
+      "groups": [
+        {
+          "maintainers": ["tom"],
+          "repos": [
+            "bitsocialforge/forge-images",
+            "bitsocialforge/5archive",
+            "bitsocialforge/seeditarchive",
+            "bitsocialnet/bitsocial-indexer",
+            "bitsocialnet/bitsocial-previewer",
+            "bitsocialnet/bitsocial-telegram-bots"
+          ]
+        }
+      ],
+      "unlisted": []
+    },
+    {
+      "id": "web",
+      "groups": [
+        {
+          "maintainers": ["tom"],
+          "repos": [
+            "bitsocialnet/bitsocial-about",
+            "bitsocialnet/bitsocial-docs",
+            "bitsocialnet/bitsocial-stats",
+            "bitsocialnet/BSIPs",
+            "bitsocialnet/bitsocial-chain",
+            "bitsocialnet/bitsocial-graph",
+            "bitsocialnet/bitsocial-algorithms",
+            "bitsocialnet/bitsocial-mesh",
+            "bitsocialnet/bitsocial-token",
+            "bitsocialnet/gitcommons",
+            "bitsocialnet/modelswarm",
+            "bitsocialnet/infinipedia",
+            "bitsocialnet/prediction-markets",
+            "bitsocialforge/bitsocialforge.com"
+          ]
+        }
+      ],
+      "unlisted": [
+        "bitsocialnet/assets",
+        "bitsocialnet/bitsocial-github-alerts",
+        "bitsocialnet/bitsocial-web",
+        "bitsocialnet/hopium"
+      ]
+    }
+  ]
+}

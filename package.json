@@ -4,11 +4,11 @@
   "private": true,
   "description": "Bitsocial public landing and ecosystem site.",
   "license": "AGPL-3.0-only",
+  "author": "Bitsocial Forge",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bitsocialnet/bitsocial-about.git"
   },
-  "author": "Bitsocial Forge",
   "type": "module",
   "scripts": {
     "start": "node scripts/start-dev.mjs",
@@ -22,6 +22,7 @@
     "test:planet-theme": "playwright test --config playwright.config.ts",
     "llms:generate": "node scripts/generate-llms-files.mjs",
     "llms:check": "node scripts/check-llms-files.mjs",
+    "about:data": "node scripts/generate-about-data.mjs",
     "deps:check-pinned": "node scripts/check-pinned-versions.mjs",
     "deps:check-hardened": "YARN_ENABLE_HARDENED_MODE=1 yarn install --immutable",
     "deps:install:hardened": "YARN_ENABLE_HARDENED_MODE=1 yarn install",
