@@ -1,7 +1,13 @@
 {
   "maintainers": [
-    { "id": "rinse", "github": "Rinse12" },
-    { "id": "tom", "github": "tomcasaburi" }
+    {
+      "id": "rinse",
+      "github": "Rinse12"
+    },
+    {
+      "id": "tom",
+      "github": "tomcasaburi"
+    }
   ],
   "repoLabels": {
     "bitsocialnet/bitsocial-about": "bitsocial.net"
@@ -52,12 +58,9 @@
       "id": "antispam",
       "groups": [
         {
-          "maintainers": ["rinse", "tom"],
-          "repos": ["bitsocialnet/spam-blocker"]
-        },
-        {
           "maintainers": ["rinse"],
           "repos": [
+            "bitsocialnet/spam-blocker",
             "bitsocialnet/captcha-canvas-challenge",
             "bitsocialnet/voucher-challenge",
             "bitsocialnet/evm-contract-challenge",
@@ -69,6 +72,7 @@
         {
           "maintainers": ["tom"],
           "repos": [
+            "bitsocialnet/spam-blocker",
             "bitsocialnet/ai-moderation-challenge",
             "bitsocialnet/flags-challenge",
             "bitsocialnet/r9k-challenge",
