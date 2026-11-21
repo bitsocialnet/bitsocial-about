@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "আমাদের সম্পর্কে",
-    "title": "Bitsocial কোর টিম",
+    "title": "যাঁরা Bitsocial তৈরি করছেন",
     "subtitle": "Bitsocial ২০২২ সালের শুরু থেকে সক্রিয়ভাবে তৈরি হয়ে আসছে, এটি একটি তৃণমূল প্রকল্প যা প্রথম দিন থেকেই প্রতিষ্ঠাতা Esteban Abaroa তাঁর নিজের সঞ্চয় থেকে অর্থায়ন করে আসছেন।",
     "members": {
-      "esteban": {
-        "role": "বিটসোশ্যাল প্রতিষ্ঠাতা, লিড ডেভেলপার ২০২২–২০২৬।"
-      },
       "rinse": {
-        "role": "বিটসোশ্যাল সহ-প্রতিষ্ঠাতা, মূল দেব।"
+        "role": "বিটসোশ্যাল সহ-প্রতিষ্ঠাতা, মূল দেব।",
+        "ask": "<askLink>প্রোটোকল, নোড ও অ্যান্টি-স্প্যাম</askLink> নিয়ে জিজ্ঞাসা করুন"
       },
       "tommaso": {
-        "role": "বিটসোশ্যাল সহ-প্রতিষ্ঠাতা এবং মূল বিকাশকারী, [[ফোরজি]]-এর প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা"
+        "role": "বিটসোশ্যাল সহ-প্রতিষ্ঠাতা এবং মূল বিকাশকারী, [[ফোরজি]]-এর প্রতিষ্ঠাতা ও প্রধান নির্বাহী কর্মকর্তা",
+        "ask": "<askLink>অ্যাপ, হোস্টেড সেবা, ওয়েবসাইট ও ডকুমেন্টেশন</askLink> নিয়ে জিজ্ঞাসা করুন"
       }
     },
-    "memberProfileAlt": "{{name}} এর প্রোফাইল ফটো"
+    "memberProfileAlt": "{{name}} এর প্রোফাইল ফটো",
+    "organizations": "কোড GitHub-এ তিনটি অর্গানাইজেশনে আছে: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> ও <bitsocialforge>bitsocialforge</bitsocialforge>।",
+    "supportCta": "Bitsocial-কে সমর্থন করুন",
+    "contributeCta": "GitHub-এ অবদান রাখুন",
+    "team": {
+      "title": "কোর টিম"
+    },
+    "ask": {
+      "title": "কোন বিষয়ে কাকে জিজ্ঞাসা করবেন",
+      "intro": "Bitsocial-এর কোনো অংশ নিয়ে প্রশ্ন থাকলে সেটির রক্ষণাবেক্ষণকারীকে জিজ্ঞাসা করুন, Telegram-এ বা সেটির কোনো রিপোজিটরিতে ইস্যু খুলে।",
+      "privateNote": "কিছু রিপোজিটরি প্রাইভেট, তাই এখানে তালিকায় নেই।",
+      "telegramLabel": "Telegram-এ {{name}}-কে মেসেজ করুন"
+    },
+    "areas": {
+      "protocol": {
+        "name": "প্রোটোকল",
+        "description": "কমিউনিটি, পোস্ট, স্বাক্ষর ও চ্যালেঞ্জ প্রোটোকল স্তরে কীভাবে কাজ করে; pkc-js ও এর API।"
+      },
+      "network": {
+        "name": "নোড ও নেটওয়ার্ক",
+        "description": "নোড বা কমিউনিটি চালানো, CLI ও RPC, .bso নাম, সিডিং, ভোটিং ও ডিসকভারি।"
+      },
+      "antispam": {
+        "name": "অ্যান্টি-স্প্যাম",
+        "description": "পোস্ট করার আগে কোনো কমিউনিটি যেসব চ্যালেঞ্জ চাইতে পারে, এবং স্প্যাম ব্লকার।"
+      },
+      "apps": {
+        "name": "অ্যাপ",
+        "description": "5chan, Seedit ও অন্যান্য ক্লায়েন্ট, এবং যে React হুকের ওপর প্রতিটি ক্লায়েন্ট তৈরি।"
+      },
+      "services": {
+        "name": "হোস্টেড সেবা",
+        "description": "Forge Images, Forge RPC, 5chan ও Seedit-এর আর্কাইভ, সার্চ, লিংক প্রিভিউ ও বট।"
+      },
+      "web": {
+        "name": "ওয়েবসাইট, ডকুমেন্টেশন ও গবেষণা",
+        "description": "bitsocial.net, ডকুমেন্টেশন, নেটওয়ার্ক পরিসংখ্যান, প্রোটোকল প্রস্তাব (BSIPs) ও গবেষণা প্রকল্প।"
+      }
+    },
+    "growth": {
+      "title": "Bitsocial কীভাবে বেড়েছে",
+      "intro": "তিনটি অর্গানাইজেশনের সব পাবলিক রিপোজিটরি মিলিয়ে মাসিক কমিট, ক্ষেত্র অনুযায়ী স্তরে স্তরে সাজানো।",
+      "commits_one": "মানুষের করা কমিট",
+      "commits_other": "মানুষের করা কমিট",
+      "repositories_one": "পাবলিক রিপোজিটরি",
+      "repositories_other": "পাবলিক রিপোজিটরি",
+      "organizations_one": "GitHub অর্গানাইজেশন",
+      "organizations_other": "GitHub অর্গানাইজেশন",
+      "legendLabel": "ক্ষেত্রসমূহ, চার্টের নিচ থেকে ওপরে",
+      "axisLabel": "মাসিক কমিট",
+      "chartLabel_one": "{{start}} থেকে {{end}} পর্যন্ত মানুষের করা মাসিক কমিটের ক্ষেত্রভিত্তিক স্তূপীকৃত এরিয়া চার্ট। {{year}} সালে এখন পর্যন্ত {{value}}টি কমিট, যেখানে {{previousYear}} সালে ছিল {{previousValue}}টি।",
+      "chartLabel_other": "{{start}} থেকে {{end}} পর্যন্ত মানুষের করা মাসিক কমিটের ক্ষেত্রভিত্তিক স্তূপীকৃত এরিয়া চার্ট। {{year}} সালে এখন পর্যন্ত {{value}}টি কমিট, যেখানে {{previousYear}} সালে ছিল {{previousValue}}টি।",
+      "periodSummary_one": "{{period}}: {{value}}টি কমিট। {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}}টি কমিট। {{areas}}",
+      "yearCommits_one": "{{value}}টি কমিট",
+      "yearCommits_other": "{{value}}টি কমিট",
+      "partialMonthLabel": "{{month}}, আংশিক",
+      "repositoriesAnnotation_one": "{{year}} সালের শেষে {{value}}টি রিপোজিটরি, এখন {{now}}টি",
+      "repositoriesAnnotation_other": "{{year}} সালের শেষে {{value}}টি রিপোজিটরি, এখন {{now}}টি",
+      "startedAnnotation_one": "এর মধ্যে {{value}}টির প্রথম কমিট {{year}} সালে",
+      "startedAnnotation_other": "এর মধ্যে {{value}}টির প্রথম কমিট {{year}} সালে",
+      "partialAnnotation_ordinal_other": "{{month}}-এর তথ্য আংশিক, {{day}} তারিখ পর্যন্ত",
+      "caption": "শুধু মানুষের করা কমিট: বট, রিলিজ অটোমেশন ও অন্য রিপোজিটরি থেকে কপি করা হিস্ট্রি বাদ দেওয়া হয়েছে। ২০২৬ সালের শুরু থেকে বেশিরভাগ ডেভেলপমেন্ট AI-এর সহায়তায় হচ্ছে।",
+      "partialAnnotation_ordinal_one": "{{month}}-এর তথ্য আংশিক, {{day}} তারিখ পর্যন্ত",
+      "partialAnnotation_ordinal_two": "{{month}}-এর তথ্য আংশিক, {{day}} তারিখ পর্যন্ত",
+      "partialAnnotation_ordinal_few": "{{month}}-এর তথ্য আংশিক, {{day}} তারিখ পর্যন্ত",
+      "partialAnnotation_ordinal_many": "{{month}}-এর তথ্য আংশিক, {{day}} তারিখ পর্যন্ত"
+    },
+    "milestones": {
+      "title": "মাইলফলক",
+      "items": {
+        "specification": "প্রোটোকল স্পেসিফিকেশন",
+        "protocolLibrary": "প্রথম কার্যকর প্রোটোকল লাইব্রেরি",
+        "reactHooks": "অ্যাপ তৈরির জন্য React হুক লাইব্রেরি",
+        "signedEncrypted": "প্রতিটি প্রকাশনা স্বাক্ষরিত ও এনক্রিপ্টেড",
+        "cliNode": "কমান্ড লাইন থেকে চালানো যায় এমন প্রথম নোড",
+        "ed25519": "Ed25519 কী ও AES-GCM এনক্রিপশন",
+        "challenges": "প্লাগযোগ্য অ্যান্টি-স্প্যাম চ্যালেঞ্জ",
+        "fivechanRelease": "5chan 0.1.0, নেটওয়ার্কের প্রথম অ্যাপ",
+        "rpc": "RPC-র মাধ্যমে অ্যাপ দূরবর্তী নোডে চলতে পারে",
+        "commentUpdates": "বড় কমিউনিটিতেও স্কেল করে এমন কমেন্ট আপডেট",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "ডেস্কটপ অ্যাপ থেকে কমিউনিটি তৈরি ও হোস্ট করা",
+        "fivechanTypescript": "TypeScript-এ নতুন করে লেখা 5chan",
+        "httpRouter": "DHT-এর জায়গায় HTTP রাউটিং ট্র্যাকার",
+        "browserP2p": "ব্রাউজারেই peer-to-peer, কোনো গেটওয়ে ছাড়া",
+        "pushNotifications": "ওয়েব, Android ও ডেস্কটপে পুশ নোটিফিকেশন",
+        "boardDirectories": "ডিরেক্টরি দিয়ে 5chan বোর্ডের ঠিকানা, যেমন /biz/",
+        "spamBlocker": "স্প্যাম ব্লকার সেবা",
+        "bsoNames": ".bso নাম দিয়ে কমিউনিটিতে পৌঁছানো",
+        "aiModeration": "AI মডারেশন চ্যালেঞ্জ",
+        "pubsubVoting": "pubsub-এর মাধ্যমে ট্রাস্টলেস ভোটিং",
+        "bsips": "Bitsocial উন্নতি প্রস্তাব (BSIPs)",
+        "archives": "5chan ও Seedit-এর পাবলিক আর্কাইভ ও সার্চ",
+        "forgeImages": "Forge Images: অ্যাপের জন্য বিনামূল্যে মিডিয়া হোস্টিং"
+      }
+    },
+    "support": {
+      "title": "Bitsocial-কে সমর্থন করুন",
+      "body": "অনুদান পুরো Bitsocial প্রকল্পের জন্য যায়।",
+      "donate": "অনুদান দিন",
+      "comingSoon": "অনুদানের লিংক শিগগিরই আসছে"
+    },
+    "thanks": {
+      "title": "আরও যাঁদের ধন্যবাদ জানাই",
+      "intro": "আর যাঁরা কোনো Bitsocial রিপোজিটরিতে ইস্যু বা পুল রিকোয়েস্ট খুলেছেন, কিংবা কোড কমিট করেছেন, অবদানের সংখ্যা অনুযায়ী সাজানো।",
+      "wallLabel": "অবদানকারীরা",
+      "contributions_one": "{{login}}, {{value}}টি অবদান",
+      "contributions_other": "{{login}}, {{value}}টি অবদান",
+      "nextLabel": "পরের অ্যাভাটারটি আপনার হতে পারে: একটি খোলা ইস্যু খুঁজুন",
+      "cta": "আপনার প্রথম ইস্যু বা পুল রিকোয়েস্টের পর আপনার অ্যাভাটার এখানে দেখা যাবে।",
+      "firstContribution": "আপনার প্রথম অবদান রাখুন"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial সম্পর্কে | কোর টিম",
-      "description": "Bitsocial কোর টিমের সঙ্গে পরিচিত হোন এবং ২০২২ সালের শুরু থেকে তাঁরা যে peer-to-peer সোশ্যাল প্রোটোকল তৈরি করছেন, সে সম্পর্কে জানুন।"
+      "description": "Bitsocial কোর টিমের সঙ্গে পরিচিত হোন, প্রকল্পের প্রতিটি অংশ নিয়ে কাকে জিজ্ঞাসা করবেন জানুন, আর দেখুন ২০২২ সালের শুরু থেকে এটি কীভাবে বেড়েছে ও কারা অবদান রেখেছেন।"
     },
     "blog": {
       "title": "Bitsocial ব্লগ | আপডেট, রিলিজ ও টিউটোরিয়াল",

@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Über uns",
-    "title": "Bitsocial-Kernteam",
+    "title": "Die Menschen hinter Bitsocial",
     "subtitle": "Bitsocial befindet sich seit Anfang 2022 in aktiver Entwicklung, ein basisdemokratisches Projekt, das vom ersten Tag an von Gründer Esteban Abaroa aus eigenen Ersparnissen finanziert wird.",
     "members": {
-      "esteban": {
-        "role": "Bitsocial-Gründer, leitender Entwickler 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial-Mitbegründer, Kernentwickler."
+        "role": "Bitsocial-Mitbegründer, Kernentwickler.",
+        "ask": "Fragen zu <askLink>Protokoll, Nodes und Anti-Spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial-Mitbegründer und Kernentwickler, Gründer und CEO von <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bitsocial-Mitbegründer und Kernentwickler, Gründer und CEO von <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Fragen zu <askLink>Apps, gehosteten Diensten, Website und Dokumentation</askLink>"
       }
     },
-    "memberProfileAlt": "Profilfoto von {{name}}"
+    "memberProfileAlt": "Profilfoto von {{name}}",
+    "organizations": "Der Code liegt auf GitHub in drei Organisationen: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> und <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Bitsocial unterstützen",
+    "contributeCta": "Auf GitHub mitwirken",
+    "team": {
+      "title": "Kernteam"
+    },
+    "ask": {
+      "title": "Wer wofür zuständig ist",
+      "intro": "Fragen zu einem Teil von Bitsocial gehen an die Person, die ihn betreut, per Telegram oder als Issue in einem der zugehörigen Repositorys.",
+      "privateNote": "Einige Repositorys sind privat und hier nicht aufgeführt.",
+      "telegramLabel": "{{name}} auf Telegram schreiben"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokoll",
+        "description": "Wie Communitys, Beiträge, Signaturen und Challenges auf Protokollebene funktionieren; pkc-js und seine API."
+      },
+      "network": {
+        "name": "Nodes und Netzwerk",
+        "description": "Einen Node oder eine Community betreiben, CLI und RPC, .bso-Namen, Seeding, Abstimmungen und Auffindbarkeit."
+      },
+      "antispam": {
+        "name": "Anti-Spam",
+        "description": "Challenges, die eine Community vor dem Posten verlangen kann, und der Spam-Blocker."
+      },
+      "apps": {
+        "name": "Apps",
+        "description": "5chan, Seedit und die anderen Clients sowie die React-Hooks, auf denen jeder Client aufbaut."
+      },
+      "services": {
+        "name": "Gehostete Dienste",
+        "description": "Forge Images, Forge RPC, die Archive von 5chan und Seedit, Suche, Linkvorschauen und Bots."
+      },
+      "web": {
+        "name": "Website, Dokumentation und Forschung",
+        "description": "bitsocial.net, die Dokumentation, Netzwerkstatistiken, Protokollvorschläge (BSIPs) und Forschungsprojekte."
+      }
+    },
+    "growth": {
+      "title": "Wie Bitsocial gewachsen ist",
+      "intro": "Commits pro Monat in allen öffentlichen Repositorys der drei Organisationen, gestapelt nach Bereich.",
+      "commits_one": "Commit von Menschen",
+      "commits_other": "Commits von Menschen",
+      "repositories_one": "öffentliches Repository",
+      "repositories_other": "öffentliche Repositorys",
+      "organizations_one": "GitHub-Organisation",
+      "organizations_other": "GitHub-Organisationen",
+      "legendLabel": "Bereiche, vom unteren Rand des Diagramms nach oben",
+      "axisLabel": "Commits pro Monat",
+      "chartLabel_one": "Gestapeltes Flächendiagramm der Commits von Menschen pro Monat von {{start}} bis {{end}}, nach Bereich. {{year}} hat bisher {{value}} Commit, gegenüber {{previousValue}} im Jahr {{previousYear}}.",
+      "chartLabel_other": "Gestapeltes Flächendiagramm der Commits von Menschen pro Monat von {{start}} bis {{end}}, nach Bereich. {{year}} hat bisher {{value}} Commits, gegenüber {{previousValue}} im Jahr {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} Commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} Commits. {{areas}}",
+      "yearCommits_one": "{{value}} Commit",
+      "yearCommits_other": "{{value}} Commits",
+      "partialMonthLabel": "{{month}}, unvollständig",
+      "repositoriesAnnotation_one": "{{value}} Repository Ende {{year}}, jetzt {{now}}",
+      "repositoriesAnnotation_other": "{{value}} Repositorys Ende {{year}}, jetzt {{now}}",
+      "startedAnnotation_one": "{{value}} davon hatte den ersten Commit {{year}}",
+      "startedAnnotation_other": "{{value}} davon hatten ihren ersten Commit {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} ist unvollständig, bis zum {{day}}.",
+      "caption": "Nur Commits von Menschen: Bots, Release-Automatisierung und aus anderen Repositorys kopierte Historie sind ausgenommen. Seit Anfang 2026 entsteht der Großteil der Entwicklung mit KI-Unterstützung.",
+      "partialAnnotation_ordinal_one": "{{month}} ist unvollständig, bis zum {{day}}.",
+      "partialAnnotation_ordinal_two": "{{month}} ist unvollständig, bis zum {{day}}.",
+      "partialAnnotation_ordinal_few": "{{month}} ist unvollständig, bis zum {{day}}.",
+      "partialAnnotation_ordinal_many": "{{month}} ist unvollständig, bis zum {{day}}."
+    },
+    "milestones": {
+      "title": "Meilensteine",
+      "items": {
+        "specification": "Protokollspezifikation",
+        "protocolLibrary": "Erste funktionierende Protokollbibliothek",
+        "reactHooks": "React-Hooks-Bibliothek für die App-Entwicklung",
+        "signedEncrypted": "Jede Veröffentlichung signiert und verschlüsselt",
+        "cliNode": "Erster Node für die Kommandozeile",
+        "ed25519": "Ed25519-Schlüssel und AES-GCM-Verschlüsselung",
+        "challenges": "Modulare Anti-Spam-Challenges",
+        "fivechanRelease": "5chan 0.1.0, die erste App im Netzwerk",
+        "rpc": "Apps können per RPC einen entfernten Node nutzen",
+        "commentUpdates": "Kommentar-Updates, die für große Communitys skalieren",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Communitys in der Desktop-App erstellen und hosten",
+        "fivechanTypescript": "5chan in TypeScript neu geschrieben",
+        "httpRouter": "HTTP-Routing-Tracker ersetzt die DHT",
+        "browserP2p": "Peer-to-Peer im Browser, ohne Gateway",
+        "pushNotifications": "Push-Benachrichtigungen für Web, Android und Desktop",
+        "boardDirectories": "5chan-Boards per Verzeichnis adressiert, etwa /biz/",
+        "spamBlocker": "Spam-Blocker-Dienst",
+        "bsoNames": ".bso-Namen verweisen auf Communitys",
+        "aiModeration": "KI-Moderations-Challenge",
+        "pubsubVoting": "Vertrauenslose Abstimmungen über pubsub",
+        "bsips": "Bitsocial-Verbesserungsvorschläge (BSIPs)",
+        "archives": "Öffentliche Archive und Suche für 5chan und Seedit",
+        "forgeImages": "Forge Images: kostenloses Medienhosting für Apps"
+      }
+    },
+    "support": {
+      "title": "Bitsocial unterstützen",
+      "body": "Spenden gehen an das Bitsocial-Projekt als Ganzes.",
+      "donate": "Spenden",
+      "comingSoon": "Spendenlink folgt in Kürze"
+    },
+    "thanks": {
+      "title": "Danke auch an",
+      "intro": "Alle anderen, die in einem Bitsocial-Repository ein Issue oder einen Pull Request eröffnet oder Code committet haben, sortiert nach Anzahl der Beiträge.",
+      "wallLabel": "Mitwirkende",
+      "contributions_one": "{{login}}, {{value}} Beitrag",
+      "contributions_other": "{{login}}, {{value}} Beiträge",
+      "nextLabel": "Dein Avatar könnte der nächste sein: Such dir ein offenes Issue",
+      "cta": "Dein Avatar erscheint hier nach deinem ersten Issue oder Pull Request.",
+      "firstContribution": "Ersten Beitrag leisten"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Über Bitsocial | Kernteam",
-      "description": "Lernen Sie das Bitsocial-Kernteam kennen und erfahren Sie mehr über das soziale Peer-to-Peer-Protokoll, das es seit Anfang 2022 entwickelt."
+      "description": "Lerne das Bitsocial-Kernteam kennen, finde heraus, wen du zu welchem Teil des Projekts fragen kannst, und sieh, wie es seit Anfang 2022 gewachsen ist und wer alles beigetragen hat."
     },
     "blog": {
       "title": "Bitsocial-Blog | Updates, Releases und Tutorials",

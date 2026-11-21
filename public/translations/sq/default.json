@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Rreth nesh",
-    "title": "Ekipi qendror i Bitsocial",
+    "title": "Njerëzit që ndërtojnë Bitsocial",
     "subtitle": "Bitsocial ka qenë në zhvillim aktiv që nga fillimi i vitit 2022, një projekt i nisur nga baza dhe i financuar që nga dita e parë nga themeluesi Esteban Abaroa me kursimet e tij personale.",
     "members": {
-      "esteban": {
-        "role": "Themeluesi i Bitsocial, zhvilluesi kryesor 2022–2026."
-      },
       "rinse": {
-        "role": "Bashkëthemeluesi i Bitsocial, zhvilluesi kryesor."
+        "role": "Bashkëthemeluesi i Bitsocial, zhvilluesi kryesor.",
+        "ask": "Pyet për <askLink>protokollin, nyjet dhe anti-spam-in</askLink>"
       },
       "tommaso": {
-        "role": "Bashkëthemeluesi dhe zhvilluesi kryesor i Bitsocial, themeluesi dhe CEO i <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bashkëthemeluesi dhe zhvilluesi kryesor i Bitsocial, themeluesi dhe CEO i <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Pyet për <askLink>aplikacionet, shërbimet e hostuara, faqen dhe dokumentacionin</askLink>"
       }
     },
-    "memberProfileAlt": "Fotografia e profilit të {{name}}"
+    "memberProfileAlt": "Fotografia e profilit të {{name}}",
+    "organizations": "Kodi ndodhet në GitHub, në tri organizata: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> dhe <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Mbështet Bitsocial",
+    "contributeCta": "Kontribuo në GitHub",
+    "team": {
+      "title": "Ekipi qendror"
+    },
+    "ask": {
+      "title": "Kë të pyesësh për çfarë",
+      "intro": "Pyetjet për një pjesë të Bitsocial i drejtohen mirëmbajtësit të saj, në Telegram ose si issue në një nga depot e saj.",
+      "privateNote": "Disa depo janë private dhe nuk shfaqen këtu.",
+      "telegramLabel": "Dërgoji mesazh {{name}} në Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokolli",
+        "description": "Si funksionojnë në rrjet komunitetet, postimet, nënshkrimet dhe sfidat; pkc-js dhe API-ja e tij."
+      },
+      "network": {
+        "name": "Nyjet dhe rrjeti",
+        "description": "Ekzekutimi i një nyjeje ose komuniteti, CLI dhe RPC, emrat .bso, seeding, votimi dhe zbulimi."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Sfidat që një komunitet mund të kërkojë para postimit, dhe bllokuesi i spam-it."
+      },
+      "apps": {
+        "name": "Aplikacionet",
+        "description": "5chan, Seedit dhe klientët e tjerë, si dhe hook-et React mbi të cilat ndërtohet çdo klient."
+      },
+      "services": {
+        "name": "Shërbimet e hostuara",
+        "description": "Forge Images, Forge RPC, arkivat e 5chan dhe Seedit, kërkimi, parapamjet e lidhjeve dhe botët."
+      },
+      "web": {
+        "name": "Faqja, dokumentacioni dhe kërkimi",
+        "description": "bitsocial.net, dokumentacioni, statistikat e rrjetit, propozimet e protokollit (BSIPs) dhe projektet kërkimore."
+      }
+    },
+    "growth": {
+      "title": "Si u rrit Bitsocial",
+      "intro": "Commit-et në muaj në të gjitha depot publike të tri organizatave, të grumbulluara sipas fushës.",
+      "commits_one": "commit nga njerëz",
+      "commits_other": "commit-e nga njerëz",
+      "repositories_one": "depo publike",
+      "repositories_other": "depo publike",
+      "organizations_one": "organizatë në GitHub",
+      "organizations_other": "organizata në GitHub",
+      "legendLabel": "Fushat, nga baza e grafikut lart",
+      "axisLabel": "Commit-e në muaj",
+      "chartLabel_one": "Grafik me zona të grumbulluara i commit-eve nga njerëz në muaj ({{start}} – {{end}}), sipas fushës. {{year}} ka deri tani {{value}} commit, kundrejt {{previousValue}} në {{previousYear}}.",
+      "chartLabel_other": "Grafik me zona të grumbulluara i commit-eve nga njerëz në muaj ({{start}} – {{end}}), sipas fushës. {{year}} ka deri tani {{value}} commit-e, kundrejt {{previousValue}} në {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commit-e. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commit-e",
+      "partialMonthLabel": "{{month}}, i pjesshëm",
+      "repositoriesAnnotation_one": "{{value}} depo në fund të {{year}}, {{now}} tani",
+      "repositoriesAnnotation_other": "{{value}} depo në fund të {{year}}, {{now}} tani",
+      "startedAnnotation_one": "{{value}} prej tyre pati commit-in e parë në {{year}}",
+      "startedAnnotation_other": "{{value}} prej tyre patën commit-in e parë në {{year}}",
+      "partialAnnotation_ordinal_other": "Të dhënat për {{month}} janë të pjesshme, deri më {{day}}",
+      "caption": "Vetëm commit-e nga njerëz: botët, automatizimi i publikimeve dhe historiku i kopjuar nga depo të tjera përjashtohen. Që nga fillimi i 2026, pjesa më e madhe e zhvillimit bëhet me ndihmën e mjeteve të AI-së.",
+      "partialAnnotation_ordinal_one": "Të dhënat për {{month}} janë të pjesshme, deri më {{day}}",
+      "partialAnnotation_ordinal_many": "Të dhënat për {{month}} janë të pjesshme, deri më {{day}}",
+      "partialAnnotation_ordinal_two": "Të dhënat për {{month}} janë të pjesshme, deri më {{day}}",
+      "partialAnnotation_ordinal_few": "Të dhënat për {{month}} janë të pjesshme, deri më {{day}}"
+    },
+    "milestones": {
+      "title": "Arritjet kryesore",
+      "items": {
+        "specification": "Specifikimi i protokollit",
+        "protocolLibrary": "Biblioteka e parë funksionale e protokollit",
+        "reactHooks": "Bibliotekë hook-esh React për ndërtimin e aplikacioneve",
+        "signedEncrypted": "Çdo publikim i nënshkruar dhe i enkriptuar",
+        "cliNode": "Nyja e parë që ekzekutohet nga rreshti i komandave",
+        "ed25519": "Çelësa Ed25519 dhe enkriptim AES-GCM",
+        "challenges": "Sfida anti-spam modulare",
+        "fivechanRelease": "5chan 0.1.0, aplikacioni i parë në rrjet",
+        "rpc": "Aplikacionet mund të punojnë në një nyje të largët përmes RPC",
+        "commentUpdates": "Përditësime komentesh që shkallëzohen për komunitete të mëdha",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Krijo dhe hosto një komunitet nga aplikacioni desktop",
+        "fivechanTypescript": "5chan i rishkruar në TypeScript",
+        "httpRouter": "Gjurmuesi i rrugëzimit HTTP zëvendëson DHT",
+        "browserP2p": "Peer-to-peer në shfletues, pa gateway",
+        "pushNotifications": "Njoftime push në web, Android dhe desktop",
+        "boardDirectories": "Bordet e 5chan me adresë sipas direktorisë, si /biz/",
+        "spamBlocker": "Shërbimi i bllokimit të spam-it",
+        "bsoNames": "Emrat .bso çojnë te komunitetet",
+        "aiModeration": "Sfidë moderimi me AI",
+        "pubsubVoting": "Votim pa ndërmjetës të besuar përmes pubsub",
+        "bsips": "Propozimet e Përmirësimit të Bitsocial (BSIPs)",
+        "archives": "Arkiva publike dhe kërkim për 5chan dhe Seedit",
+        "forgeImages": "Forge Images: hostim falas mediash për aplikacionet"
+      }
+    },
+    "support": {
+      "title": "Mbështet Bitsocial",
+      "body": "Donacionet shkojnë për projektin Bitsocial në tërësi.",
+      "donate": "Dhuro",
+      "comingSoon": "Lidhja për donacione vjen së shpejti"
+    },
+    "thanks": {
+      "title": "Faleminderit edhe",
+      "intro": "Të gjithë të tjerëve që hapën një issue ose pull request, ose bënë commit kodi, në një depo të Bitsocial, sipas numrit të kontributeve.",
+      "wallLabel": "Kontribuesit",
+      "contributions_one": "{{login}}, {{value}} kontribut",
+      "contributions_other": "{{login}}, {{value}} kontribute",
+      "nextLabel": "Avatari yt mund të jetë i radhës: gjej një issue të hapur",
+      "cta": "Avatari yt shfaqet këtu pas issue-s ose pull request-it tënd të parë.",
+      "firstContribution": "Bëj kontributin tënd të parë"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Rreth Bitsocial | Ekipi qendror",
-      "description": "Njihuni me ekipin qendror të Bitsocial dhe mësoni për protokollin social peer-to-peer që po ndërton që nga fillimi i vitit 2022."
+      "description": "Njihuni me ekipin qendror të Bitsocial, shihni kë të pyesni për secilën pjesë të projektit, si është rritur që nga fillimi i 2022 dhe të gjithë ata që kanë kontribuar."
     },
     "blog": {
       "title": "Blogu i Bitsocial | Përditësime, versione dhe udhëzues",

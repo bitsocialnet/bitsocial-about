@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Σχετικά με εμάς",
-    "title": "Βασική ομάδα του Bitsocial",
+    "title": "Οι άνθρωποι πίσω από το Bitsocial",
     "subtitle": "Το Bitsocial βρίσκεται υπό ενεργή ανάπτυξη από τις αρχές του 2022, ένα έργο από τη βάση που χρηματοδοτείται από την πρώτη μέρα από τον ιδρυτή Esteban Abaroa με τις δικές του οικονομίες.",
     "members": {
-      "esteban": {
-        "role": "Ιδρυτής Bitsocial, επικεφαλής προγραμματιστής 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial Co-Founder, core dev."
+        "role": "Bitsocial Co-Founder, core dev.",
+        "ask": "Ρωτήστε για <askLink>το πρωτόκολλο, τους κόμβους και το αντι-spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial συνιδρυτής και βασικός προγραμματιστής, ιδρυτής και διευθύνων σύμβουλος της <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bitsocial συνιδρυτής και βασικός προγραμματιστής, ιδρυτής και διευθύνων σύμβουλος της <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Ρωτήστε για <askLink>τις εφαρμογές, τις φιλοξενούμενες υπηρεσίες, τον ιστότοπο και την τεκμηρίωση</askLink>"
       }
     },
-    "memberProfileAlt": "Φωτογραφία προφίλ του {{name}}"
+    "memberProfileAlt": "Φωτογραφία προφίλ του {{name}}",
+    "organizations": "Ο κώδικας βρίσκεται στο GitHub, σε τρεις οργανισμούς: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> και <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Υποστηρίξτε το Bitsocial",
+    "contributeCta": "Συνεισφέρετε στο GitHub",
+    "team": {
+      "title": "Βασική ομάδα"
+    },
+    "ask": {
+      "title": "Ποιον να ρωτήσετε για τι",
+      "intro": "Οι ερωτήσεις για κάθε μέρος του Bitsocial απευθύνονται σε όποιον το συντηρεί, στο Telegram ή ως ζήτημα σε ένα από τα αποθετήριά του.",
+      "privateNote": "Ορισμένα αποθετήρια είναι ιδιωτικά και δεν εμφανίζονται εδώ.",
+      "telegramLabel": "Επικοινωνία με {{name}} στο Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Πρωτόκολλο",
+        "description": "Πώς λειτουργούν σε επίπεδο πρωτοκόλλου οι κοινότητες, οι αναρτήσεις, οι υπογραφές και οι προκλήσεις· το pkc-js και το API του."
+      },
+      "network": {
+        "name": "Κόμβοι και δίκτυο",
+        "description": "Λειτουργία κόμβου ή κοινότητας, το CLI και το RPC, τα ονόματα .bso, το seeding, οι ψηφοφορίες και η ανακάλυψη."
+      },
+      "antispam": {
+        "name": "Αντι-spam",
+        "description": "Οι προκλήσεις που μπορεί να απαιτεί μια κοινότητα πριν από τη δημοσίευση, και η υπηρεσία αποκλεισμού spam."
+      },
+      "apps": {
+        "name": "Εφαρμογές",
+        "description": "Το 5chan, το Seedit και οι υπόλοιποι clients, καθώς και τα React hooks πάνω στα οποία χτίζεται κάθε client."
+      },
+      "services": {
+        "name": "Φιλοξενούμενες υπηρεσίες",
+        "description": "Forge Images, Forge RPC, οι αρχειοθήκες του 5chan και του Seedit, η αναζήτηση, οι προεπισκοπήσεις συνδέσμων και τα bots."
+      },
+      "web": {
+        "name": "Ιστότοπος, τεκμηρίωση και έρευνα",
+        "description": "Το bitsocial.net, η τεκμηρίωση, τα στατιστικά του δικτύου, οι προτάσεις πρωτοκόλλου (BSIPs) και τα ερευνητικά έργα."
+      }
+    },
+    "growth": {
+      "title": "Πώς μεγάλωσε το Bitsocial",
+      "intro": "Commits ανά μήνα σε όλα τα δημόσια αποθετήρια των τριών οργανισμών, στοιβαγμένα ανά τομέα.",
+      "commits_one": "commit από ανθρώπους",
+      "commits_other": "commits από ανθρώπους",
+      "repositories_one": "δημόσιο αποθετήριο",
+      "repositories_other": "δημόσια αποθετήρια",
+      "organizations_one": "οργανισμός στο GitHub",
+      "organizations_other": "οργανισμοί στο GitHub",
+      "legendLabel": "Τομείς, από τη βάση του γραφήματος προς τα πάνω",
+      "axisLabel": "Commits ανά μήνα",
+      "chartLabel_one": "Γράφημα στοιβαγμένων περιοχών με τα commits από ανθρώπους ανά μήνα για την περίοδο {{start}} – {{end}}, ανά τομέα. Το {{year}} έχει μέχρι στιγμής {{value}} commit, έναντι {{previousValue}} το {{previousYear}}.",
+      "chartLabel_other": "Γράφημα στοιβαγμένων περιοχών με τα commits από ανθρώπους ανά μήνα για την περίοδο {{start}} – {{end}}, ανά τομέα. Το {{year}} έχει μέχρι στιγμής {{value}} commits, έναντι {{previousValue}} το {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, μερικά δεδομένα",
+      "repositoriesAnnotation_one": "{{value}} αποθετήριο στο τέλος του {{year}}, {{now}} σήμερα",
+      "repositoriesAnnotation_other": "{{value}} αποθετήρια στο τέλος του {{year}}, {{now}} σήμερα",
+      "startedAnnotation_one": "{{value}} από αυτά είχε το πρώτο του commit το {{year}}",
+      "startedAnnotation_other": "{{value}} από αυτά είχαν το πρώτο τους commit το {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}}: μερικά δεδομένα, έως την {{day}}η",
+      "caption": "Μόνο commits από ανθρώπους: εξαιρούνται τα bots, η αυτοματοποίηση εκδόσεων και το ιστορικό που αντιγράφηκε από άλλα αποθετήρια. Από τις αρχές του 2026 το μεγαλύτερο μέρος της ανάπτυξης γίνεται με τη βοήθεια AI.",
+      "partialAnnotation_ordinal_one": "{{month}}: μερικά δεδομένα, έως την {{day}}η",
+      "partialAnnotation_ordinal_two": "{{month}}: μερικά δεδομένα, έως την {{day}}η",
+      "partialAnnotation_ordinal_few": "{{month}}: μερικά δεδομένα, έως την {{day}}η",
+      "partialAnnotation_ordinal_many": "{{month}}: μερικά δεδομένα, έως την {{day}}η"
+    },
+    "milestones": {
+      "title": "Ορόσημα",
+      "items": {
+        "specification": "Προδιαγραφή του πρωτοκόλλου",
+        "protocolLibrary": "Πρώτη λειτουργική βιβλιοθήκη του πρωτοκόλλου",
+        "reactHooks": "Βιβλιοθήκη React hooks για τη δημιουργία εφαρμογών",
+        "signedEncrypted": "Κάθε δημοσίευση υπογεγραμμένη και κρυπτογραφημένη",
+        "cliNode": "Πρώτος κόμβος που τρέχει από τη γραμμή εντολών",
+        "ed25519": "Κλειδιά Ed25519 και κρυπτογράφηση AES-GCM",
+        "challenges": "Αρθρωτές προκλήσεις αντι-spam",
+        "fivechanRelease": "5chan 0.1.0, η πρώτη εφαρμογή στο δίκτυο",
+        "rpc": "Οι εφαρμογές μπορούν να τρέχουν σε απομακρυσμένο κόμβο μέσω RPC",
+        "commentUpdates": "Ενημερώσεις σχολίων που κλιμακώνονται σε μεγάλες κοινότητες",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Δημιουργία και φιλοξενία κοινότητας από την εφαρμογή υπολογιστή",
+        "fivechanTypescript": "Το 5chan ξαναγράφτηκε σε TypeScript",
+        "httpRouter": "Tracker δρομολόγησης HTTP στη θέση του DHT",
+        "browserP2p": "Peer-to-peer στο πρόγραμμα περιήγησης, χωρίς πύλη",
+        "pushNotifications": "Ειδοποιήσεις push σε web, Android και υπολογιστή",
+        "boardDirectories": "Boards του 5chan με διεύθυνση καταλόγου, όπως /biz/",
+        "spamBlocker": "Υπηρεσία αποκλεισμού spam",
+        "bsoNames": "Τα ονόματα .bso αντιστοιχίζονται σε κοινότητες",
+        "aiModeration": "Πρόκληση εποπτείας με AI",
+        "pubsubVoting": "Ψηφοφορία χωρίς ανάγκη εμπιστοσύνης μέσω pubsub",
+        "bsips": "Προτάσεις Βελτίωσης του Bitsocial (BSIPs)",
+        "archives": "Δημόσιες αρχειοθήκες και αναζήτηση για 5chan και Seedit",
+        "forgeImages": "Forge Images: δωρεάν φιλοξενία πολυμέσων για εφαρμογές"
+      }
+    },
+    "support": {
+      "title": "Υποστηρίξτε το Bitsocial",
+      "body": "Οι δωρεές πηγαίνουν στο έργο Bitsocial στο σύνολό του.",
+      "donate": "Δωρεά",
+      "comingSoon": "Ο σύνδεσμος δωρεών έρχεται σύντομα"
+    },
+    "thanks": {
+      "title": "Ευχαριστούμε επίσης",
+      "intro": "Όλους τους υπόλοιπους που άνοιξαν ένα ζήτημα ή ένα pull request, ή έκαναν commit κώδικα, σε ένα αποθετήριο του Bitsocial, με σειρά συνεισφορών.",
+      "wallLabel": "Συνεισφέροντες",
+      "contributions_one": "{{login}}, {{value}} συνεισφορά",
+      "contributions_other": "{{login}}, {{value}} συνεισφορές",
+      "nextLabel": "Το avatar σας θα μπορούσε να είναι το επόμενο: βρείτε ένα ανοιχτό ζήτημα",
+      "cta": "Το avatar σας εμφανίζεται εδώ μετά το πρώτο σας ζήτημα ή pull request.",
+      "firstContribution": "Κάντε την πρώτη σας συνεισφορά"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Σχετικά με το Bitsocial | Βασική ομάδα",
-      "description": "Γνωρίστε τη βασική ομάδα του Bitsocial και μάθετε για το κοινωνικό πρωτόκολλο peer-to-peer που αναπτύσσει από τις αρχές του 2022."
+      "description": "Γνωρίστε τη βασική ομάδα του Bitsocial, βρείτε ποιον να ρωτήσετε για κάθε μέρος του έργου και δείτε πώς μεγάλωσε από τις αρχές του 2022 και όλους όσοι συνεισέφεραν."
     },
     "blog": {
       "title": "Blog του Bitsocial | Ενημερώσεις, εκδόσεις και οδηγοί",

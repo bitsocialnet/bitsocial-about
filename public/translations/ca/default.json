@@ -784,20 +784,140 @@
   },
   "about": {
     "sectionLabel": "Qui som",
-    "title": "Equip central de Bitsocial",
+    "title": "Les persones que construeixen Bitsocial",
     "subtitle": "Bitsocial està en desenvolupament actiu des de principis del 2022, un projecte de base finançat des del primer dia pel fundador Esteban Abaroa amb els seus propis estalvis.",
     "members": {
-      "esteban": {
-        "role": "Fundador de Bitsocial, desenvolupador principal 2022–2026."
-      },
       "rinse": {
-        "role": "Cofundador de Bitsocial, desenvolupador principal."
+        "role": "Cofundador de Bitsocial, desenvolupador principal.",
+        "ask": "Pregunta sobre <askLink>el protocol, els nodes i l'anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Cofundador de Bitsocial i desenvolupador principal, fundador i CEO de <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Cofundador de Bitsocial i desenvolupador principal, fundador i CEO de <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Pregunta sobre <askLink>les aplicacions, els serveis allotjats, el web i la documentació</askLink>"
       }
     },
-    "memberProfileAlt": "Foto de perfil de {{name}}"
+    "memberProfileAlt": "Foto de perfil de {{name}}",
+    "organizations": "El codi és a GitHub, en tres organitzacions: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> i <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Dona suport a Bitsocial",
+    "contributeCta": "Contribueix a GitHub",
+    "team": {
+      "title": "Equip central"
+    },
+    "ask": {
+      "title": "A qui preguntar segons el tema",
+      "intro": "Les preguntes sobre una part de Bitsocial van a qui la manté, per Telegram o com a incidència en un dels seus repositoris.",
+      "privateNote": "Alguns repositoris són privats i no apareixen a la llista.",
+      "telegramLabel": "Escriu a {{name}} per Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protocol",
+        "description": "Com funcionen a nivell de protocol les comunitats, les publicacions, les signatures i els reptes; pkc-js i la seva API."
+      },
+      "network": {
+        "name": "Nodes i xarxa",
+        "description": "Executar un node o una comunitat, la CLI i l'RPC, els noms .bso, el seeding, les votacions i el descobriment."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Els reptes que una comunitat pot exigir abans de publicar, i el bloquejador de spam."
+      },
+      "apps": {
+        "name": "Aplicacions",
+        "description": "5chan, Seedit i els altres clients, i els hooks de React sobre els quals es construeix cada client."
+      },
+      "services": {
+        "name": "Serveis allotjats",
+        "description": "Forge Images, Forge RPC, els arxius de 5chan i Seedit, la cerca, les previsualitzacions d'enllaços i els bots."
+      },
+      "web": {
+        "name": "Web, documentació i recerca",
+        "description": "bitsocial.net, la documentació, les estadístiques de la xarxa, les propostes de protocol (BSIPs) i els projectes de recerca."
+      }
+    },
+    "growth": {
+      "title": "Com ha crescut Bitsocial",
+      "intro": "Commits per mes a tots els repositoris públics de les tres organitzacions, apilats per àrea.",
+      "commits_one": "commit humà",
+      "commits_many": "commits humans",
+      "commits_other": "commits humans",
+      "repositories_one": "repositori públic",
+      "repositories_many": "repositoris públics",
+      "repositories_other": "repositoris públics",
+      "organizations_one": "organització de GitHub",
+      "organizations_many": "organitzacions de GitHub",
+      "organizations_other": "organitzacions de GitHub",
+      "legendLabel": "Àrees, de la base del gràfic cap amunt",
+      "axisLabel": "Commits per mes",
+      "chartLabel_one": "Gràfic d'àrees apilades dels commits humans per mes entre {{start}} i {{end}}, per àrea. El {{year}} porta {{value}} commit fins ara, davant de {{previousValue}} el {{previousYear}}.",
+      "chartLabel_many": "Gràfic d'àrees apilades dels commits humans per mes entre {{start}} i {{end}}, per àrea. El {{year}} porta {{value}} commits fins ara, davant de {{previousValue}} el {{previousYear}}.",
+      "chartLabel_other": "Gràfic d'àrees apilades dels commits humans per mes entre {{start}} i {{end}}, per àrea. El {{year}} porta {{value}} commits fins ara, davant de {{previousValue}} el {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_many": "{{period}}: {{value}} commits. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_many": "{{value}} commits",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, parcial",
+      "repositoriesAnnotation_one": "{{value}} repositori a finals del {{year}}, {{now}} ara",
+      "repositoriesAnnotation_many": "{{value}} repositoris a finals del {{year}}, {{now}} ara",
+      "repositoriesAnnotation_other": "{{value}} repositoris a finals del {{year}}, {{now}} ara",
+      "startedAnnotation_one": "{{value}} d'ells va tenir el primer commit el {{year}}",
+      "startedAnnotation_many": "{{value}} d'ells van tenir el primer commit el {{year}}",
+      "startedAnnotation_other": "{{value}} d'ells van tenir el primer commit el {{year}}",
+      "partialAnnotation_ordinal_other": "Mes incomplet: {{month}}, fins al dia {{day}}",
+      "caption": "Només commits de persones: s'exclouen els bots, l'automatització de versions i l'historial copiat d'altres repositoris. Des de principis del 2026, la major part del desenvolupament es fa amb ajuda de la IA.",
+      "partialAnnotation_ordinal_one": "Mes incomplet: {{month}}, fins al dia {{day}}",
+      "partialAnnotation_ordinal_two": "Mes incomplet: {{month}}, fins al dia {{day}}",
+      "partialAnnotation_ordinal_few": "Mes incomplet: {{month}}, fins al dia {{day}}",
+      "partialAnnotation_ordinal_many": "Mes incomplet: {{month}}, fins al dia {{day}}"
+    },
+    "milestones": {
+      "title": "Fites",
+      "items": {
+        "specification": "Especificació del protocol",
+        "protocolLibrary": "Primera biblioteca funcional del protocol",
+        "reactHooks": "Biblioteca de hooks de React per crear aplicacions",
+        "signedEncrypted": "Totes les publicacions, signades i xifrades",
+        "cliNode": "Primer node que es pot executar des de la línia d'ordres",
+        "ed25519": "Claus Ed25519 i xifratge AES-GCM",
+        "challenges": "Reptes anti-spam modulars",
+        "fivechanRelease": "5chan 0.1.0, la primera aplicació de la xarxa",
+        "rpc": "Les aplicacions poden funcionar amb un node remot via RPC",
+        "commentUpdates": "Actualitzacions de comentaris que escalen a comunitats grans",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Crear i allotjar una comunitat des de l'aplicació d'escriptori",
+        "fivechanTypescript": "5chan reescrit en TypeScript",
+        "httpRouter": "Un tracker d'encaminament HTTP substitueix la DHT",
+        "browserP2p": "Peer-to-peer al navegador, sense passarel·la",
+        "pushNotifications": "Notificacions push al web, Android i escriptori",
+        "boardDirectories": "Taulers de 5chan accessibles per directori, com /biz/",
+        "spamBlocker": "Servei de bloqueig de spam",
+        "bsoNames": "Els noms .bso es resolen en comunitats",
+        "aiModeration": "Repte de moderació amb IA",
+        "pubsubVoting": "Votacions sense necessitat de confiança via pubsub",
+        "bsips": "Propostes de Millora de Bitsocial (BSIPs)",
+        "archives": "Arxius públics i cerca per a 5chan i Seedit",
+        "forgeImages": "Forge Images: allotjament multimèdia gratuït per a aplicacions"
+      }
+    },
+    "support": {
+      "title": "Dona suport a Bitsocial",
+      "body": "Les donacions van al projecte Bitsocial en conjunt.",
+      "donate": "Fes una donació",
+      "comingSoon": "Enllaç de donació aviat disponible"
+    },
+    "thanks": {
+      "title": "Gràcies també a",
+      "intro": "Totes les altres persones que han obert una incidència o una pull request, o han fet commits de codi, en un repositori de Bitsocial, per ordre de contribucions.",
+      "wallLabel": "Col·laboradors",
+      "contributions_one": "{{login}}, {{value}} contribució",
+      "contributions_many": "{{login}}, {{value}} contribucions",
+      "contributions_other": "{{login}}, {{value}} contribucions",
+      "nextLabel": "El teu avatar podria ser el següent: troba una incidència oberta",
+      "cta": "El teu avatar apareixerà aquí després de la teva primera incidència o pull request.",
+      "firstContribution": "Fes la teva primera contribució"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1079,7 @@
   "seo": {
     "about": {
       "title": "Sobre Bitsocial | Equip central",
-      "description": "Coneixeu l'equip central de Bitsocial i descobriu el protocol social peer-to-peer que desenvolupa des de principis del 2022."
+      "description": "Coneix l'equip central de Bitsocial, descobreix a qui preguntar sobre cada part del projecte i mira com ha crescut des de principis del 2022 i tothom qui hi ha contribuït."
     },
     "blog": {
       "title": "Blog de Bitsocial | Novetats, versions i tutorials",

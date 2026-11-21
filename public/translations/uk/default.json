@@ -784,20 +784,149 @@
   },
   "about": {
     "sectionLabel": "Про нас",
-    "title": "Основна команда Bitsocial",
+    "title": "Люди, які створюють Bitsocial",
     "subtitle": "Bitsocial активно розвивається з початку 2022 року — це низовий проєкт, який від першого дня фінансує засновник Esteban Abaroa з власних заощаджень.",
     "members": {
-      "esteban": {
-        "role": "Засновник Bitsocial, головний розробник 2022–2026."
-      },
       "rinse": {
-        "role": "Співзасновник Bitsocial, основний розробник."
+        "role": "Співзасновник Bitsocial, основний розробник.",
+        "ask": "Запитуйте про <askLink>протокол, вузли й антиспам</askLink>"
       },
       "tommaso": {
-        "role": "Співзасновник і основний розробник Bitsocial, засновник і генеральний директор <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Співзасновник і основний розробник Bitsocial, засновник і генеральний директор <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Запитуйте про <askLink>застосунки, хостингові сервіси, вебсайт і документацію</askLink>"
       }
     },
-    "memberProfileAlt": "Фото профілю {{name}}"
+    "memberProfileAlt": "Фото профілю {{name}}",
+    "organizations": "Код розміщено на GitHub у трьох організаціях: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> і <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Підтримати Bitsocial",
+    "contributeCta": "Долучитися на GitHub",
+    "team": {
+      "title": "Основна команда"
+    },
+    "ask": {
+      "title": "Кого про що питати",
+      "intro": "Питання про певну частину Bitsocial адресуйте тому, хто її супроводжує: у Telegram або як issue в одному з її репозиторіїв.",
+      "privateNote": "Деякі репозиторії приватні й тут не наведені.",
+      "telegramLabel": "Написати {{name}} у Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Протокол",
+        "description": "Як спільноти, дописи, підписи й перевірки працюють на рівні мережі; pkc-js і його API."
+      },
+      "network": {
+        "name": "Вузли й мережа",
+        "description": "Запуск вузла чи спільноти, CLI і RPC, імена .bso, сідинг, голосування й пошук спільнот."
+      },
+      "antispam": {
+        "name": "Антиспам",
+        "description": "Перевірки, які спільнота може вимагати перед публікацією, і блокувальник спаму."
+      },
+      "apps": {
+        "name": "Застосунки",
+        "description": "5chan, Seedit та інші клієнти, а також React-хуки, на яких побудовано кожен клієнт."
+      },
+      "services": {
+        "name": "Хостингові сервіси",
+        "description": "Forge Images, Forge RPC, архіви 5chan і Seedit, пошук, попередній перегляд посилань і боти."
+      },
+      "web": {
+        "name": "Вебсайт, документація й дослідження",
+        "description": "bitsocial.net, документація, статистика мережі, пропозиції щодо протоколу (BSIPs) і дослідницькі проєкти."
+      }
+    },
+    "growth": {
+      "title": "Як зростав Bitsocial",
+      "intro": "Коміти за місяць у всіх публічних репозиторіях трьох організацій, з накопиченням за напрямами.",
+      "commits_one": "коміт від людей",
+      "commits_few": "коміти від людей",
+      "commits_many": "комітів від людей",
+      "commits_other": "коміту від людей",
+      "repositories_one": "публічний репозиторій",
+      "repositories_few": "публічні репозиторії",
+      "repositories_many": "публічних репозиторіїв",
+      "repositories_other": "публічного репозиторію",
+      "organizations_one": "організація на GitHub",
+      "organizations_few": "організації на GitHub",
+      "organizations_many": "організацій на GitHub",
+      "organizations_other": "організації на GitHub",
+      "legendLabel": "Напрями, від низу діаграми вгору",
+      "axisLabel": "Коміти за місяць",
+      "chartLabel_one": "Діаграма з накопиченням: коміти від людей за місяцями ({{start}} – {{end}}), за напрямами. У {{year}} році поки що {{value}} коміт, у {{previousYear}} році — {{previousValue}}.",
+      "chartLabel_few": "Діаграма з накопиченням: коміти від людей за місяцями ({{start}} – {{end}}), за напрямами. У {{year}} році поки що {{value}} коміти, у {{previousYear}} році — {{previousValue}}.",
+      "chartLabel_many": "Діаграма з накопиченням: коміти від людей за місяцями ({{start}} – {{end}}), за напрямами. У {{year}} році поки що {{value}} комітів, у {{previousYear}} році — {{previousValue}}.",
+      "chartLabel_other": "Діаграма з накопиченням: коміти від людей за місяцями ({{start}} – {{end}}), за напрямами. У {{year}} році поки що {{value}} коміту, у {{previousYear}} році — {{previousValue}}.",
+      "periodSummary_one": "{{period}}: {{value}} коміт. {{areas}}",
+      "periodSummary_few": "{{period}}: {{value}} коміти. {{areas}}",
+      "periodSummary_many": "{{period}}: {{value}} комітів. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} коміту. {{areas}}",
+      "yearCommits_one": "{{value}} коміт",
+      "yearCommits_few": "{{value}} коміти",
+      "yearCommits_many": "{{value}} комітів",
+      "yearCommits_other": "{{value}} коміту",
+      "partialMonthLabel": "{{month}}, неповний",
+      "repositoriesAnnotation_one": "{{value}} репозиторій наприкінці {{year}} року, зараз {{now}}",
+      "repositoriesAnnotation_few": "{{value}} репозиторії наприкінці {{year}} року, зараз {{now}}",
+      "repositoriesAnnotation_many": "{{value}} репозиторіїв наприкінці {{year}} року, зараз {{now}}",
+      "repositoriesAnnotation_other": "{{value}} репозиторію наприкінці {{year}} року, зараз {{now}}",
+      "startedAnnotation_one": "{{value}} з них отримав перший коміт у {{year}} році",
+      "startedAnnotation_few": "{{value}} з них отримали перший коміт у {{year}} році",
+      "startedAnnotation_many": "{{value}} з них отримали перший коміт у {{year}} році",
+      "startedAnnotation_other": "{{value}} з них отримали перший коміт у {{year}} році",
+      "partialAnnotation_ordinal_other": "Дані за {{month}} неповні, до {{day}}-го числа",
+      "caption": "Лише коміти від людей: ботів, автоматизацію релізів та історію, скопійовану з інших репозиторіїв, не враховано. З початку 2026 року більшість розробки ведеться за допомогою інструментів ШІ.",
+      "partialAnnotation_ordinal_few": "Дані за {{month}} неповні, до {{day}}-го числа",
+      "partialAnnotation_ordinal_one": "Дані за {{month}} неповні, до {{day}}-го числа",
+      "partialAnnotation_ordinal_two": "Дані за {{month}} неповні, до {{day}}-го числа",
+      "partialAnnotation_ordinal_many": "Дані за {{month}} неповні, до {{day}}-го числа"
+    },
+    "milestones": {
+      "title": "Віхи",
+      "items": {
+        "specification": "Специфікація протоколу",
+        "protocolLibrary": "Перша робоча бібліотека протоколу",
+        "reactHooks": "Бібліотека React-хуків для створення застосунків",
+        "signedEncrypted": "Кожна публікація підписана й зашифрована",
+        "cliNode": "Перший вузол, який можна запустити з командного рядка",
+        "ed25519": "Ключі Ed25519 і шифрування AES-GCM",
+        "challenges": "Підключувані антиспам-перевірки",
+        "fivechanRelease": "5chan 0.1.0, перший застосунок у мережі",
+        "rpc": "Застосунки працюють із віддаленим вузлом через RPC",
+        "commentUpdates": "Оновлення коментарів, що масштабуються на великі спільноти",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Створення й хостинг спільноти з десктопного застосунку",
+        "fivechanTypescript": "5chan переписано на TypeScript",
+        "httpRouter": "HTTP-трекер маршрутизації замість DHT",
+        "browserP2p": "Peer-to-peer у браузері без шлюзу",
+        "pushNotifications": "Push-сповіщення у вебі, на Android і десктопі",
+        "boardDirectories": "Дошки 5chan з адресами-каталогами, як-от /biz/",
+        "spamBlocker": "Сервіс блокування спаму",
+        "bsoNames": "Імена .bso ведуть до спільнот",
+        "aiModeration": "Перевірка з ШІ-модерацією",
+        "pubsubVoting": "Голосування через pubsub без потреби в довірі",
+        "bsips": "Пропозиції щодо вдосконалення Bitsocial (BSIPs)",
+        "archives": "Публічні архіви й пошук для 5chan і Seedit",
+        "forgeImages": "Forge Images: безкоштовний медіахостинг для застосунків"
+      }
+    },
+    "support": {
+      "title": "Підтримати Bitsocial",
+      "body": "Пожертви йдуть на проєкт Bitsocial загалом.",
+      "donate": "Пожертвувати",
+      "comingSoon": "Посилання для пожертв з'явиться незабаром"
+    },
+    "thanks": {
+      "title": "Також дякуємо",
+      "intro": "Усім іншим, хто відкривав issue чи pull request або комітив код у репозиторії Bitsocial, у порядку кількості внесків.",
+      "wallLabel": "Учасники",
+      "contributions_one": "{{login}}, {{value}} внесок",
+      "contributions_few": "{{login}}, {{value}} внески",
+      "contributions_many": "{{login}}, {{value}} внесків",
+      "contributions_other": "{{login}}, {{value}} внеску",
+      "nextLabel": "Наступним може бути ваш аватар: знайдіть відкрите issue",
+      "cta": "Ваш аватар з'явиться тут після вашого першого issue чи pull request.",
+      "firstContribution": "Зробіть свій перший внесок"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1088,7 @@
   "seo": {
     "about": {
       "title": "Про Bitsocial | Основна команда",
-      "description": "Познайомтеся з основною командою Bitsocial і дізнайтеся про одноранговий соціальний протокол, який вона розробляє з початку 2022 року."
+      "description": "Познайомтеся з основною командою Bitsocial, дізнайтеся, кого питати про кожну частину проєкту, і подивіться, як він зростав з початку 2022 року та хто до нього долучився."
     },
     "blog": {
       "title": "Блог Bitsocial | Новини, релізи та посібники",

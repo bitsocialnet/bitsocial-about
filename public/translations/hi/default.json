@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "हमारे बारे में",
-    "title": "Bitsocial कोर टीम",
+    "title": "Bitsocial बनाने वाले लोग",
     "subtitle": "Bitsocial की सक्रिय रूप से शुरुआत 2022 की शुरुआत से ही चल रही है, यह एक जमीनी स्तर की परियोजना है जिसे पहले दिन से ही संस्थापक Esteban Abaroa ने अपनी बचत से वित्तपोषित किया है।",
     "members": {
-      "esteban": {
-        "role": "बिटसोशल संस्थापक, प्रमुख डेवलपर 2022–2026।"
-      },
       "rinse": {
-        "role": "बिटसोशल सह-संस्थापक, कोर डेव।"
+        "role": "बिटसोशल सह-संस्थापक, कोर डेव।",
+        "ask": "<askLink>प्रोटोकॉल, नोड और एंटी-स्पैम</askLink> के बारे में पूछें"
       },
       "tommaso": {
-        "role": "बिटसोशल के सह-संस्थापक और मुख्य डेवलपर, [[फोर्ज]] के संस्थापक और सीईओ"
+        "role": "बिटसोशल के सह-संस्थापक और मुख्य डेवलपर, [[फोर्ज]] के संस्थापक और सीईओ",
+        "ask": "<askLink>ऐप्स, होस्टेड सेवाओं, वेबसाइट और दस्तावेज़ों</askLink> के बारे में पूछें"
       }
     },
-    "memberProfileAlt": "{{name}} की प्रोफ़ाइल फ़ोटो"
+    "memberProfileAlt": "{{name}} की प्रोफ़ाइल फ़ोटो",
+    "organizations": "कोड GitHub पर तीन संगठनों में है: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> और <bitsocialforge>bitsocialforge</bitsocialforge>।",
+    "supportCta": "Bitsocial का समर्थन करें",
+    "contributeCta": "GitHub पर योगदान दें",
+    "team": {
+      "title": "कोर टीम"
+    },
+    "ask": {
+      "title": "किससे क्या पूछें",
+      "intro": "Bitsocial के किसी हिस्से से जुड़े सवाल उसके मेंटेनर से पूछें, Telegram पर या उसकी किसी रिपॉज़िटरी में issue खोलकर।",
+      "privateNote": "कुछ रिपॉज़िटरी निजी हैं और यहाँ सूचीबद्ध नहीं हैं।",
+      "telegramLabel": "Telegram पर {{name}} को संदेश भेजें"
+    },
+    "areas": {
+      "protocol": {
+        "name": "प्रोटोकॉल",
+        "description": "नेटवर्क पर समुदाय, पोस्ट, सिग्नेचर और चैलेंज कैसे काम करते हैं; pkc-js और उसका API।"
+      },
+      "network": {
+        "name": "नोड और नेटवर्क",
+        "description": "नोड या समुदाय चलाना, CLI और RPC, .bso नाम, सीडिंग, वोटिंग और डिस्कवरी।"
+      },
+      "antispam": {
+        "name": "एंटी-स्पैम",
+        "description": "वे चैलेंज जो कोई समुदाय पोस्ट करने से पहले माँग सकता है, और स्पैम ब्लॉकर।"
+      },
+      "apps": {
+        "name": "ऐप्स",
+        "description": "5chan, Seedit और बाकी क्लाइंट, और वे React hooks जिन पर हर क्लाइंट बना है।"
+      },
+      "services": {
+        "name": "होस्टेड सेवाएँ",
+        "description": "Forge Images, Forge RPC, 5chan और Seedit के आर्काइव, सर्च, लिंक प्रीव्यू और बॉट।"
+      },
+      "web": {
+        "name": "वेबसाइट, दस्तावेज़ और रिसर्च",
+        "description": "bitsocial.net, दस्तावेज़, नेटवर्क के आँकड़े, प्रोटोकॉल प्रस्ताव (BSIPs) और रिसर्च प्रोजेक्ट।"
+      }
+    },
+    "growth": {
+      "title": "Bitsocial कैसे बढ़ा",
+      "intro": "तीनों संगठनों की हर सार्वजनिक रिपॉज़िटरी में प्रति माह कमिट, क्षेत्र के अनुसार एक के ऊपर एक।",
+      "commits_one": "लोगों द्वारा किया गया कमिट",
+      "commits_other": "लोगों द्वारा किए गए कमिट",
+      "repositories_one": "सार्वजनिक रिपॉज़िटरी",
+      "repositories_other": "सार्वजनिक रिपॉज़िटरी",
+      "organizations_one": "GitHub संगठन",
+      "organizations_other": "GitHub संगठन",
+      "legendLabel": "क्षेत्र, चार्ट के नीचे से ऊपर की ओर",
+      "axisLabel": "प्रति माह कमिट",
+      "chartLabel_one": "{{start}} से {{end}} तक लोगों द्वारा किए गए मासिक कमिट का क्षेत्र-वार स्टैक्ड एरिया चार्ट। {{year}} में अब तक {{value}} कमिट हुआ है, जबकि {{previousYear}} में {{previousValue}} हुए थे।",
+      "chartLabel_other": "{{start}} से {{end}} तक लोगों द्वारा किए गए मासिक कमिट का क्षेत्र-वार स्टैक्ड एरिया चार्ट। {{year}} में अब तक {{value}} कमिट हुए हैं, जबकि {{previousYear}} में {{previousValue}} हुए थे।",
+      "periodSummary_one": "{{period}}: {{value}} कमिट। {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} कमिट। {{areas}}",
+      "yearCommits_one": "{{value}} कमिट",
+      "yearCommits_other": "{{value}} कमिट",
+      "partialMonthLabel": "{{month}}, आंशिक",
+      "repositoriesAnnotation_one": "{{year}} के अंत में {{value}} रिपॉज़िटरी, अब {{now}}",
+      "repositoriesAnnotation_other": "{{year}} के अंत में {{value}} रिपॉज़िटरी, अब {{now}}",
+      "startedAnnotation_one": "इनमें से {{value}} का पहला कमिट {{year}} में हुआ",
+      "startedAnnotation_other": "इनमें से {{value}} का पहला कमिट {{year}} में हुआ",
+      "partialAnnotation_ordinal_other": "{{month}} आंशिक है, {{day}} तारीख तक",
+      "caption": "केवल लोगों द्वारा किए गए कमिट: बॉट, रिलीज़ ऑटोमेशन और दूसरी रिपॉज़िटरी से कॉपी किया गया इतिहास शामिल नहीं है। 2026 की शुरुआत से ज़्यादातर डेवलपमेंट AI टूल्स की मदद से होता है।",
+      "partialAnnotation_ordinal_one": "{{month}} आंशिक है, {{day}} तारीख तक",
+      "partialAnnotation_ordinal_two": "{{month}} आंशिक है, {{day}} तारीख तक",
+      "partialAnnotation_ordinal_few": "{{month}} आंशिक है, {{day}} तारीख तक",
+      "partialAnnotation_ordinal_many": "{{month}} आंशिक है, {{day}} तारीख तक"
+    },
+    "milestones": {
+      "title": "मील के पत्थर",
+      "items": {
+        "specification": "प्रोटोकॉल स्पेसिफ़िकेशन",
+        "protocolLibrary": "पहली काम करने वाली प्रोटोकॉल लाइब्रेरी",
+        "reactHooks": "ऐप बनाने के लिए React hooks लाइब्रेरी",
+        "signedEncrypted": "हर पब्लिकेशन साइन और एन्क्रिप्ट किया हुआ",
+        "cliNode": "कमांड लाइन से चलने वाला पहला नोड",
+        "ed25519": "Ed25519 कुंजियाँ और AES-GCM एन्क्रिप्शन",
+        "challenges": "प्लग किए जा सकने वाले एंटी-स्पैम चैलेंज",
+        "fivechanRelease": "5chan 0.1.0, नेटवर्क का पहला ऐप",
+        "rpc": "ऐप RPC के ज़रिए रिमोट नोड पर चल सकते हैं",
+        "commentUpdates": "बड़े समुदायों तक स्केल होने वाले कमेंट अपडेट",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "डेस्कटॉप ऐप से समुदाय बनाएँ और होस्ट करें",
+        "fivechanTypescript": "5chan को TypeScript में दोबारा लिखा गया",
+        "httpRouter": "HTTP रूटिंग ट्रैकर ने DHT की जगह ली",
+        "browserP2p": "ब्राउज़र में peer-to-peer, बिना गेटवे के",
+        "pushNotifications": "वेब, Android और डेस्कटॉप पर पुश नोटिफ़िकेशन",
+        "boardDirectories": "डायरेक्टरी से खुलने वाले 5chan बोर्ड, जैसे /biz/",
+        "spamBlocker": "स्पैम ब्लॉकर सेवा",
+        "bsoNames": ".bso नाम समुदायों तक ले जाते हैं",
+        "aiModeration": "AI मॉडरेशन चैलेंज",
+        "pubsubVoting": "pubsub पर ट्रस्टलेस वोटिंग",
+        "bsips": "Bitsocial सुधार प्रस्ताव (BSIPs)",
+        "archives": "5chan और Seedit के लिए सार्वजनिक आर्काइव और सर्च",
+        "forgeImages": "Forge Images: ऐप्स के लिए मुफ़्त मीडिया होस्टिंग"
+      }
+    },
+    "support": {
+      "title": "Bitsocial का समर्थन करें",
+      "body": "दान पूरे Bitsocial प्रोजेक्ट को जाता है।",
+      "donate": "दान करें",
+      "comingSoon": "दान का लिंक जल्द आ रहा है"
+    },
+    "thanks": {
+      "title": "इनका भी धन्यवाद",
+      "intro": "बाकी सभी लोग जिन्होंने किसी Bitsocial रिपॉज़िटरी में issue या pull request खोला या कोड कमिट किया, योगदान की संख्या के क्रम में।",
+      "wallLabel": "योगदानकर्ता",
+      "contributions_one": "{{login}}, {{value}} योगदान",
+      "contributions_other": "{{login}}, {{value}} योगदान",
+      "nextLabel": "अगला अवतार आपका हो सकता है: कोई खुला issue ढूँढें",
+      "cta": "आपके पहले issue या pull request के बाद आपका अवतार यहाँ दिखेगा।",
+      "firstContribution": "अपना पहला योगदान करें"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial के बारे में | कोर टीम",
-      "description": "Bitsocial की कोर टीम से मिलें और उस पीयर-टू-पीयर सोशल प्रोटोकॉल के बारे में जानें, जिसे वे 2022 की शुरुआत से बना रहे हैं।"
+      "description": "Bitsocial की कोर टीम से मिलें, जानें कि प्रोजेक्ट के हर हिस्से के बारे में किससे पूछें, और देखें कि 2022 की शुरुआत से यह कैसे बढ़ा और किन-किन लोगों ने योगदान दिया।"
     },
     "blog": {
       "title": "Bitsocial ब्लॉग | अपडेट, रिलीज़ और ट्यूटोरियल",

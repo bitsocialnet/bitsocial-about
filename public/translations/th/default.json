@@ -784,20 +784,122 @@
   },
   "about": {
     "sectionLabel": "เกี่ยวกับเรา",
-    "title": "ทีมหลักของ Bitsocial",
+    "title": "ผู้คนที่สร้าง Bitsocial",
     "subtitle": "Bitsocial อยู่ระหว่างการพัฒนาอย่างต่อเนื่องมาตั้งแต่ต้นปี 2022 เป็นโครงการที่ขับเคลื่อนจากระดับรากหญ้า ซึ่งได้รับทุนสนับสนุนตั้งแต่วันแรกจากเงินเก็บส่วนตัวของผู้ก่อตั้ง Esteban Abaroa",
     "members": {
-      "esteban": {
-        "role": "ผู้ก่อตั้ง Bitsocial หัวหน้าฝ่ายพัฒนา 2022–2026"
-      },
       "rinse": {
-        "role": "ผู้ร่วมก่อตั้ง Bitsocial ผู้พัฒนาหลัก"
+        "role": "ผู้ร่วมก่อตั้ง Bitsocial ผู้พัฒนาหลัก",
+        "ask": "สอบถามเรื่อง<askLink>โปรโตคอล โหนด และการป้องกันสแปม</askLink>"
       },
       "tommaso": {
-        "role": "ผู้ร่วมก่อตั้ง Bitsocial และผู้พัฒนาหลัก ผู้ก่อตั้ง และ CEO ของ <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "ผู้ร่วมก่อตั้ง Bitsocial และผู้พัฒนาหลัก ผู้ก่อตั้ง และ CEO ของ <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "สอบถามเรื่อง<askLink>แอป บริการที่โฮสต์ให้ เว็บไซต์ และเอกสาร</askLink>"
       }
     },
-    "memberProfileAlt": "รูปโปรไฟล์ของ {{name}}"
+    "memberProfileAlt": "รูปโปรไฟล์ของ {{name}}",
+    "organizations": "โค้ดอยู่บน GitHub ในสามองค์กร ได้แก่ <pkcprotocol>pkcprotocol</pkcprotocol> <bitsocialnet>bitsocialnet</bitsocialnet> และ <bitsocialforge>bitsocialforge</bitsocialforge>",
+    "supportCta": "สนับสนุน Bitsocial",
+    "contributeCta": "ร่วมพัฒนาบน GitHub",
+    "team": {
+      "title": "ทีมหลัก"
+    },
+    "ask": {
+      "title": "เรื่องไหนควรถามใคร",
+      "intro": "คำถามเกี่ยวกับส่วนใดของ Bitsocial ให้ส่งถึงผู้ดูแลส่วนนั้น ทาง Telegram หรือเปิด issue ในที่เก็บโค้ดของส่วนนั้น",
+      "privateNote": "ที่เก็บโค้ดบางแห่งเป็นแบบส่วนตัวและไม่ได้แสดงไว้",
+      "telegramLabel": "ส่งข้อความถึง {{name}} ทาง Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "โปรโตคอล",
+        "description": "วิธีที่ชุมชน โพสต์ ลายเซ็น และความท้าทายทำงานบนเครือข่าย รวมถึง pkc-js และ API ของมัน"
+      },
+      "network": {
+        "name": "โหนดและเครือข่าย",
+        "description": "การรันโหนดหรือชุมชน CLI และ RPC ชื่อ .bso การ seed การโหวต และการค้นพบชุมชน"
+      },
+      "antispam": {
+        "name": "ป้องกันสแปม",
+        "description": "ความท้าทายที่ชุมชนกำหนดให้ทำก่อนโพสต์ได้ และบริการบล็อกสแปม"
+      },
+      "apps": {
+        "name": "แอป",
+        "description": "5chan, Seedit และไคลเอ็นต์อื่น ๆ รวมถึง React hooks ที่ทุกไคลเอ็นต์ใช้เป็นฐาน"
+      },
+      "services": {
+        "name": "บริการที่โฮสต์ให้",
+        "description": "Forge Images, Forge RPC คลังเก็บถาวรของ 5chan และ Seedit การค้นหา พรีวิวลิงก์ และบอต"
+      },
+      "web": {
+        "name": "เว็บไซต์ เอกสาร และงานวิจัย",
+        "description": "bitsocial.net เอกสาร สถิติเครือข่าย ข้อเสนอโปรโตคอล (BSIPs) และโครงการวิจัย"
+      }
+    },
+    "growth": {
+      "title": "Bitsocial เติบโตมาอย่างไร",
+      "intro": "จำนวนคอมมิตต่อเดือนจากที่เก็บโค้ดสาธารณะทุกแห่งในสามองค์กร ซ้อนกันตามด้าน",
+      "commits_other": "คอมมิตจากมนุษย์",
+      "repositories_other": "ที่เก็บโค้ดสาธารณะ",
+      "organizations_other": "องค์กรบน GitHub",
+      "legendLabel": "ด้านต่าง ๆ เรียงจากฐานของกราฟขึ้นไป",
+      "axisLabel": "คอมมิตต่อเดือน",
+      "chartLabel_other": "แผนภูมิพื้นที่แบบซ้อนแสดงคอมมิตจากมนุษย์ต่อเดือน ตั้งแต่ {{start}} ถึง {{end}} แยกตามด้าน ปี {{year}} มีแล้ว {{value}} คอมมิต เทียบกับ {{previousValue}} ในปี {{previousYear}}",
+      "periodSummary_other": "{{period}}: {{value}} คอมมิต {{areas}}",
+      "yearCommits_other": "{{value}} คอมมิต",
+      "partialMonthLabel": "{{month}} (ยังไม่ครบเดือน)",
+      "repositoriesAnnotation_other": "{{value}} ที่เก็บโค้ด ณ สิ้นปี {{year}} ปัจจุบัน {{now}}",
+      "startedAnnotation_other": "ในจำนวนนี้ {{value}} แห่งมีคอมมิตแรกในปี {{year}}",
+      "partialAnnotation_ordinal_other": "ข้อมูล {{month}} ยังไม่ครบ นับถึงวันที่ {{day}}",
+      "caption": "นับเฉพาะคอมมิตจากมนุษย์ ไม่รวมบอต ระบบอัตโนมัติสำหรับการออกรุ่น และประวัติที่คัดลอกมาจากที่เก็บโค้ดอื่น ตั้งแต่ต้นปี 2026 งานพัฒนาส่วนใหญ่ทำโดยมีเครื่องมือ AI ช่วย",
+      "partialAnnotation_ordinal_one": "ข้อมูล {{month}} ยังไม่ครบ นับถึงวันที่ {{day}}",
+      "partialAnnotation_ordinal_two": "ข้อมูล {{month}} ยังไม่ครบ นับถึงวันที่ {{day}}",
+      "partialAnnotation_ordinal_few": "ข้อมูล {{month}} ยังไม่ครบ นับถึงวันที่ {{day}}",
+      "partialAnnotation_ordinal_many": "ข้อมูล {{month}} ยังไม่ครบ นับถึงวันที่ {{day}}"
+    },
+    "milestones": {
+      "title": "เหตุการณ์สำคัญ",
+      "items": {
+        "specification": "ข้อกำหนดโปรโตคอล",
+        "protocolLibrary": "ไลบรารีโปรโตคอลตัวแรกที่ใช้งานได้",
+        "reactHooks": "ไลบรารี React hooks สำหรับสร้างแอป",
+        "signedEncrypted": "ทุกการเผยแพร่มีการลงนามและเข้ารหัส",
+        "cliNode": "โหนดแรกที่รันจากบรรทัดคำสั่งได้",
+        "ed25519": "คีย์ Ed25519 และการเข้ารหัส AES-GCM",
+        "challenges": "ความท้าทายป้องกันสแปมแบบเสียบเพิ่มได้",
+        "fivechanRelease": "5chan 0.1.0 แอปแรกบนเครือข่าย",
+        "rpc": "แอปทำงานกับโหนดระยะไกลผ่าน RPC ได้",
+        "commentUpdates": "การอัปเดตความคิดเห็นที่รองรับชุมชนขนาดใหญ่",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "สร้างและโฮสต์ชุมชนจากแอปเดสก์ท็อป",
+        "fivechanTypescript": "เขียน 5chan ใหม่ด้วย TypeScript",
+        "httpRouter": "ตัวติดตามเส้นทางแบบ HTTP แทนที่ DHT",
+        "browserP2p": "เพียร์ทูเพียร์ในเบราว์เซอร์ โดยไม่ต้องใช้เกตเวย์",
+        "pushNotifications": "การแจ้งเตือนแบบพุชบนเว็บ Android และเดสก์ท็อป",
+        "boardDirectories": "บอร์ด 5chan ระบุด้วยไดเรกทอรี เช่น /biz/",
+        "spamBlocker": "บริการบล็อกสแปม",
+        "bsoNames": "ชื่อ .bso ชี้ไปยังชุมชน",
+        "aiModeration": "ความท้าทายกลั่นกรองด้วย AI",
+        "pubsubVoting": "การโหวตผ่าน pubsub โดยไม่ต้องไว้วางใจใคร",
+        "bsips": "ข้อเสนอการปรับปรุง Bitsocial (BSIPs)",
+        "archives": "คลังเก็บถาวรสาธารณะและการค้นหาสำหรับ 5chan และ Seedit",
+        "forgeImages": "Forge Images: โฮสต์สื่อฟรีสำหรับแอป"
+      }
+    },
+    "support": {
+      "title": "สนับสนุน Bitsocial",
+      "body": "เงินบริจาคจะมอบให้กับโครงการ Bitsocial โดยรวม",
+      "donate": "บริจาค",
+      "comingSoon": "ลิงก์บริจาคจะมาเร็ว ๆ นี้"
+    },
+    "thanks": {
+      "title": "ขอขอบคุณเช่นกัน",
+      "intro": "ทุกคนที่เหลือซึ่งเคยเปิด issue หรือ pull request หรือคอมมิตโค้ดในที่เก็บโค้ดของ Bitsocial เรียงตามจำนวนการมีส่วนร่วม",
+      "wallLabel": "ผู้มีส่วนร่วม",
+      "contributions_other": "{{login}} มีส่วนร่วม {{value}} ครั้ง",
+      "nextLabel": "อวตารของคุณอาจเป็นรายต่อไป: หา issue ที่เปิดอยู่",
+      "cta": "อวตารของคุณจะแสดงที่นี่หลังจาก issue หรือ pull request แรกของคุณ",
+      "firstContribution": "เริ่มมีส่วนร่วมครั้งแรก"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1061,7 @@
   "seo": {
     "about": {
       "title": "เกี่ยวกับ Bitsocial | ทีมหลัก",
-      "description": "พบกับทีมหลักของ Bitsocial และเรียนรู้เกี่ยวกับโปรโตคอลโซเชียลแบบเพียร์ทูเพียร์ที่พวกเขาพัฒนามาตั้งแต่ต้นปี 2022"
+      "description": "พบกับทีมหลักของ Bitsocial ดูว่าควรถามใครเรื่องแต่ละส่วนของโครงการ ดูว่าโครงการเติบโตมาอย่างไรตั้งแต่ต้นปี 2022 และทุกคนที่มีส่วนร่วม"
     },
     "blog": {
       "title": "บล็อก Bitsocial | อัปเดต รุ่นใหม่ และบทแนะนำ",

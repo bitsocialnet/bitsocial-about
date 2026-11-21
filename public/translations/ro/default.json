@@ -784,20 +784,140 @@
   },
   "about": {
     "sectionLabel": "Despre noi",
-    "title": "Echipa de bază Bitsocial",
+    "title": "Oamenii care construiesc Bitsocial",
     "subtitle": "Bitsocial este în dezvoltare activă încă de la începutul anului 2022, un proiect pornit de la firul ierbii, finanțat din prima zi de fondatorul Esteban Abaroa din propriile economii.",
     "members": {
-      "esteban": {
-        "role": "Fondator Bitsocial, dezvoltator principal 2022–2026."
-      },
       "rinse": {
-        "role": "Co-fondator Bitsocial, dezvoltator de bază."
+        "role": "Co-fondator Bitsocial, dezvoltator de bază.",
+        "ask": "Întreabă despre <askLink>protocol, noduri și anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Co-fondator Bitsocial și dezvoltator de bază, fondator și CEO al <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Co-fondator Bitsocial și dezvoltator de bază, fondator și CEO al <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Întreabă despre <askLink>aplicații, servicii găzduite, site și documentație</askLink>"
       }
     },
-    "memberProfileAlt": "Fotografia de profil a lui {{name}}"
+    "memberProfileAlt": "Fotografia de profil a lui {{name}}",
+    "organizations": "Codul se află pe GitHub, în trei organizații: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> și <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Susține Bitsocial",
+    "contributeCta": "Contribuie pe GitHub",
+    "team": {
+      "title": "Echipa de bază"
+    },
+    "ask": {
+      "title": "Pe cine să întrebi și despre ce",
+      "intro": "Întrebările despre o parte din Bitsocial merg la cel care o întreține, pe Telegram sau ca issue într-unul dintre depozitele ei.",
+      "privateNote": "Unele depozite sunt private și nu apar în listă.",
+      "telegramLabel": "Trimite-i un mesaj lui {{name}} pe Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protocol",
+        "description": "Cum funcționează în rețea comunitățile, postările, semnăturile și provocările; pkc-js și API-ul său."
+      },
+      "network": {
+        "name": "Noduri și rețea",
+        "description": "Rularea unui nod sau a unei comunități, CLI și RPC, nume .bso, seeding, vot și descoperire."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Provocările pe care o comunitate le poate cere înainte de postare și serviciul de blocare a spamului."
+      },
+      "apps": {
+        "name": "Aplicații",
+        "description": "5chan, Seedit și ceilalți clienți, plus hook-urile React pe care se bazează fiecare client."
+      },
+      "services": {
+        "name": "Servicii găzduite",
+        "description": "Forge Images, Forge RPC, arhivele 5chan și Seedit, căutare, previzualizări de linkuri și boți."
+      },
+      "web": {
+        "name": "Site, documentație și cercetare",
+        "description": "bitsocial.net, documentația, statisticile rețelei, propunerile de protocol (BSIPs) și proiectele de cercetare."
+      }
+    },
+    "growth": {
+      "title": "Cum a crescut Bitsocial",
+      "intro": "Commituri pe lună în toate depozitele publice din cele trei organizații, stivuite pe domenii.",
+      "commits_one": "commit făcut de oameni",
+      "commits_few": "commituri făcute de oameni",
+      "commits_other": "de commituri făcute de oameni",
+      "repositories_one": "depozit public",
+      "repositories_few": "depozite publice",
+      "repositories_other": "de depozite publice",
+      "organizations_one": "organizație GitHub",
+      "organizations_few": "organizații GitHub",
+      "organizations_other": "de organizații GitHub",
+      "legendLabel": "Domenii, de la baza graficului în sus",
+      "axisLabel": "Commituri pe lună",
+      "chartLabel_one": "Grafic cu arii stivuite al commiturilor făcute de oameni pe lună, din {{start}} până în {{end}}, pe domenii. {{year}} are până acum {{value}} commit, față de {{previousValue}} în {{previousYear}}.",
+      "chartLabel_few": "Grafic cu arii stivuite al commiturilor făcute de oameni pe lună, din {{start}} până în {{end}}, pe domenii. {{year}} are până acum {{value}} commituri, față de {{previousValue}} în {{previousYear}}.",
+      "chartLabel_other": "Grafic cu arii stivuite al commiturilor făcute de oameni pe lună, din {{start}} până în {{end}}, pe domenii. {{year}} are până acum {{value}} de commituri, față de {{previousValue}} în {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_few": "{{period}}: {{value}} commituri. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} de commituri. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_few": "{{value}} commituri",
+      "yearCommits_other": "{{value}} de commituri",
+      "partialMonthLabel": "{{month}}, parțial",
+      "repositoriesAnnotation_one": "{{value}} depozit la sfârșitul lui {{year}}, {{now}} acum",
+      "repositoriesAnnotation_few": "{{value}} depozite la sfârșitul lui {{year}}, {{now}} acum",
+      "repositoriesAnnotation_other": "{{value}} de depozite la sfârșitul lui {{year}}, {{now}} acum",
+      "startedAnnotation_one": "{{value}} dintre ele a avut primul commit în {{year}}",
+      "startedAnnotation_few": "{{value}} dintre ele au avut primul commit în {{year}}",
+      "startedAnnotation_other": "{{value}} dintre ele au avut primul commit în {{year}}",
+      "partialAnnotation_ordinal_other": "Datele pentru {{month}} sunt parțiale, până pe {{day}}",
+      "caption": "Doar commituri făcute de oameni: boții, automatizarea lansărilor și istoricul copiat din alte depozite sunt excluse. De la începutul lui 2026, cea mai mare parte a dezvoltării se face cu ajutorul instrumentelor AI.",
+      "partialAnnotation_ordinal_one": "Datele pentru {{month}} sunt parțiale, până pe {{day}}",
+      "partialAnnotation_ordinal_two": "Datele pentru {{month}} sunt parțiale, până pe {{day}}",
+      "partialAnnotation_ordinal_few": "Datele pentru {{month}} sunt parțiale, până pe {{day}}",
+      "partialAnnotation_ordinal_many": "Datele pentru {{month}} sunt parțiale, până pe {{day}}"
+    },
+    "milestones": {
+      "title": "Repere",
+      "items": {
+        "specification": "Specificația protocolului",
+        "protocolLibrary": "Prima bibliotecă funcțională a protocolului",
+        "reactHooks": "Bibliotecă de hook-uri React pentru aplicații",
+        "signedEncrypted": "Fiecare publicație semnată și criptată",
+        "cliNode": "Primul nod care rulează din linia de comandă",
+        "ed25519": "Chei Ed25519 și criptare AES-GCM",
+        "challenges": "Provocări anti-spam modulare",
+        "fivechanRelease": "5chan 0.1.0, prima aplicație din rețea",
+        "rpc": "Aplicațiile pot rula pe un nod la distanță prin RPC",
+        "commentUpdates": "Actualizări de comentarii scalabile pentru comunități mari",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Creează și găzduiește o comunitate din aplicația desktop",
+        "fivechanTypescript": "5chan rescris în TypeScript",
+        "httpRouter": "Trackerul de rutare HTTP înlocuiește DHT",
+        "browserP2p": "Peer-to-peer în browser, fără gateway",
+        "pushNotifications": "Notificări push pe web, Android și desktop",
+        "boardDirectories": "Board-urile 5chan adresate prin director, ca /biz/",
+        "spamBlocker": "Serviciu de blocare a spamului",
+        "bsoNames": "Numele .bso duc la comunități",
+        "aiModeration": "Provocare de moderare cu AI",
+        "pubsubVoting": "Vot trustless prin pubsub",
+        "bsips": "Propuneri de îmbunătățire Bitsocial (BSIPs)",
+        "archives": "Arhive publice și căutare pentru 5chan și Seedit",
+        "forgeImages": "Forge Images: găzduire media gratuită pentru aplicații"
+      }
+    },
+    "support": {
+      "title": "Susține Bitsocial",
+      "body": "Donațiile merg către proiectul Bitsocial în ansamblu.",
+      "donate": "Donează",
+      "comingSoon": "Linkul de donații va apărea în curând"
+    },
+    "thanks": {
+      "title": "Mulțumim și",
+      "intro": "Tuturor celorlalți care au deschis un issue sau un pull request ori au făcut commit de cod într-un depozit Bitsocial, în ordinea contribuțiilor.",
+      "wallLabel": "Contributori",
+      "contributions_one": "{{login}}, {{value}} contribuție",
+      "contributions_few": "{{login}}, {{value}} contribuții",
+      "contributions_other": "{{login}}, {{value}} de contribuții",
+      "nextLabel": "Avatarul tău poate fi următorul: găsește un issue deschis",
+      "cta": "Avatarul tău apare aici după primul tău issue sau pull request.",
+      "firstContribution": "Fă-ți prima contribuție"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1079,7 @@
   "seo": {
     "about": {
       "title": "Despre Bitsocial | Echipa de bază",
-      "description": "Cunoaște echipa de bază Bitsocial și află mai multe despre protocolul social peer-to-peer pe care îl dezvoltă de la începutul anului 2022."
+      "description": "Cunoaște echipa de bază Bitsocial, află pe cine să întrebi despre fiecare parte a proiectului și vezi cum a crescut de la începutul lui 2022, precum și pe toți cei care au contribuit."
     },
     "blog": {
       "title": "Blogul Bitsocial | Noutăți, versiuni și tutoriale",

@@ -784,20 +784,122 @@
   },
   "about": {
     "sectionLabel": "Về chúng tôi",
-    "title": "Nhóm cốt lõi Bitsocial",
+    "title": "Những người xây dựng Bitsocial",
     "subtitle": "Bitsocial đã được phát triển tích cực từ đầu năm 2022, một dự án phát triển từ cộng đồng được nhà sáng lập Esteban Abaroa tự bỏ tiền túi tài trợ ngay từ ngày đầu tiên.",
     "members": {
-      "esteban": {
-        "role": "Người sáng lập Bitsocial, nhà phát triển chính 2022–2026."
-      },
       "rinse": {
-        "role": "Đồng sáng lập Bitsocial, nhà phát triển cốt lõi."
+        "role": "Đồng sáng lập Bitsocial, nhà phát triển cốt lõi.",
+        "ask": "Hỏi về <askLink>giao thức, nút và chống spam</askLink>"
       },
       "tommaso": {
-        "role": "Đồng sáng lập và nhà phát triển cốt lõi của Bitsocial, người sáng lập và CEO của <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Đồng sáng lập và nhà phát triển cốt lõi của Bitsocial, người sáng lập và CEO của <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Hỏi về <askLink>ứng dụng, dịch vụ do nhóm vận hành, trang web và tài liệu</askLink>"
       }
     },
-    "memberProfileAlt": "Ảnh hồ sơ của {{name}}"
+    "memberProfileAlt": "Ảnh hồ sơ của {{name}}",
+    "organizations": "Mã nguồn nằm trên GitHub trong ba tổ chức: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> và <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Ủng hộ Bitsocial",
+    "contributeCta": "Đóng góp trên GitHub",
+    "team": {
+      "title": "Nhóm cốt lõi"
+    },
+    "ask": {
+      "title": "Hỏi ai về điều gì",
+      "intro": "Câu hỏi về một phần của Bitsocial nên gửi cho người duy trì phần đó, qua Telegram hoặc dưới dạng issue trong một kho mã của phần đó.",
+      "privateNote": "Một số kho mã ở chế độ riêng tư và không được liệt kê.",
+      "telegramLabel": "Nhắn tin cho {{name}} trên Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Giao thức",
+        "description": "Cách cộng đồng, bài đăng, chữ ký và thử thách hoạt động trên mạng; pkc-js và API của nó."
+      },
+      "network": {
+        "name": "Nút và mạng",
+        "description": "Chạy một nút hoặc một cộng đồng, CLI và RPC, tên .bso, seeding, bỏ phiếu và khám phá."
+      },
+      "antispam": {
+        "name": "Chống spam",
+        "description": "Các thử thách mà cộng đồng có thể yêu cầu trước khi đăng bài, và dịch vụ chặn spam."
+      },
+      "apps": {
+        "name": "Ứng dụng",
+        "description": "5chan, Seedit và các client khác, cùng các React hook mà mọi client đều dựa trên."
+      },
+      "services": {
+        "name": "Dịch vụ do nhóm vận hành",
+        "description": "Forge Images, Forge RPC, kho lưu trữ 5chan và Seedit, tìm kiếm, xem trước liên kết và bot."
+      },
+      "web": {
+        "name": "Trang web, tài liệu và nghiên cứu",
+        "description": "bitsocial.net, tài liệu, thống kê mạng, đề xuất giao thức (BSIPs) và các dự án nghiên cứu."
+      }
+    },
+    "growth": {
+      "title": "Bitsocial đã phát triển như thế nào",
+      "intro": "Số commit mỗi tháng trên mọi kho mã công khai trong ba tổ chức, xếp chồng theo lĩnh vực.",
+      "commits_other": "commit do con người thực hiện",
+      "repositories_other": "kho mã công khai",
+      "organizations_other": "tổ chức GitHub",
+      "legendLabel": "Các lĩnh vực, từ đáy biểu đồ lên trên",
+      "axisLabel": "Commit mỗi tháng",
+      "chartLabel_other": "Biểu đồ vùng xếp chồng số commit do con người thực hiện mỗi tháng từ {{start}} đến {{end}}, theo lĩnh vực. Năm {{year}} đến nay có {{value}} commit, so với {{previousValue}} trong năm {{previousYear}}.",
+      "periodSummary_other": "{{period}}: {{value}} commit. {{areas}}",
+      "yearCommits_other": "{{value}} commit",
+      "partialMonthLabel": "{{month}}, chưa đầy đủ",
+      "repositoriesAnnotation_other": "{{value}} kho mã vào cuối năm {{year}}, hiện có {{now}}",
+      "startedAnnotation_other": "{{value}} trong số đó có commit đầu tiên vào năm {{year}}",
+      "partialAnnotation_ordinal_other": "Dữ liệu {{month}} chưa đầy đủ, tính đến ngày {{day}}",
+      "caption": "Chỉ tính commit do con người thực hiện: bot, tự động hóa phát hành và lịch sử sao chép từ kho mã khác đều bị loại trừ. Từ đầu năm 2026, phần lớn việc phát triển có sự hỗ trợ của công cụ AI.",
+      "partialAnnotation_ordinal_one": "Dữ liệu {{month}} chưa đầy đủ, tính đến ngày {{day}}",
+      "partialAnnotation_ordinal_two": "Dữ liệu {{month}} chưa đầy đủ, tính đến ngày {{day}}",
+      "partialAnnotation_ordinal_few": "Dữ liệu {{month}} chưa đầy đủ, tính đến ngày {{day}}",
+      "partialAnnotation_ordinal_many": "Dữ liệu {{month}} chưa đầy đủ, tính đến ngày {{day}}"
+    },
+    "milestones": {
+      "title": "Các cột mốc",
+      "items": {
+        "specification": "Đặc tả giao thức",
+        "protocolLibrary": "Thư viện giao thức hoạt động đầu tiên",
+        "reactHooks": "Thư viện React hook để xây dựng ứng dụng",
+        "signedEncrypted": "Mọi nội dung xuất bản đều được ký và mã hóa",
+        "cliNode": "Nút đầu tiên chạy được từ dòng lệnh",
+        "ed25519": "Khóa Ed25519 và mã hóa AES-GCM",
+        "challenges": "Thử thách chống spam dạng mô-đun",
+        "fivechanRelease": "5chan 0.1.0, ứng dụng đầu tiên trên mạng",
+        "rpc": "Ứng dụng có thể chạy trên nút từ xa qua RPC",
+        "commentUpdates": "Cập nhật bình luận mở rộng được cho cộng đồng lớn",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Tạo và lưu trữ cộng đồng từ ứng dụng desktop",
+        "fivechanTypescript": "5chan được viết lại bằng TypeScript",
+        "httpRouter": "Tracker định tuyến HTTP thay thế DHT",
+        "browserP2p": "Peer-to-peer ngay trong trình duyệt, không cần gateway",
+        "pushNotifications": "Thông báo đẩy trên web, Android và desktop",
+        "boardDirectories": "Board 5chan có địa chỉ theo thư mục, như /biz/",
+        "spamBlocker": "Dịch vụ chặn spam",
+        "bsoNames": "Tên .bso trỏ tới cộng đồng",
+        "aiModeration": "Thử thách kiểm duyệt bằng AI",
+        "pubsubVoting": "Bỏ phiếu không cần tin cậy qua pubsub",
+        "bsips": "Đề xuất cải tiến Bitsocial (BSIPs)",
+        "archives": "Kho lưu trữ công khai và tìm kiếm cho 5chan và Seedit",
+        "forgeImages": "Forge Images: lưu trữ media miễn phí cho ứng dụng"
+      }
+    },
+    "support": {
+      "title": "Ủng hộ Bitsocial",
+      "body": "Khoản quyên góp được dành cho toàn bộ dự án Bitsocial.",
+      "donate": "Quyên góp",
+      "comingSoon": "Liên kết quyên góp sắp ra mắt"
+    },
+    "thanks": {
+      "title": "Xin cảm ơn cả",
+      "intro": "Tất cả những người khác đã mở issue hoặc pull request, hoặc commit mã, trong một kho mã Bitsocial, xếp theo số lượt đóng góp.",
+      "wallLabel": "Người đóng góp",
+      "contributions_other": "{{login}}, {{value}} lượt đóng góp",
+      "nextLabel": "Ảnh đại diện tiếp theo có thể là của bạn: tìm một issue đang mở",
+      "cta": "Ảnh đại diện của bạn sẽ xuất hiện ở đây sau issue hoặc pull request đầu tiên.",
+      "firstContribution": "Đóng góp lần đầu"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1061,7 @@
   "seo": {
     "about": {
       "title": "Giới thiệu Bitsocial | Nhóm cốt lõi",
-      "description": "Gặp gỡ nhóm cốt lõi Bitsocial và tìm hiểu về giao thức mạng xã hội ngang hàng mà họ đã xây dựng từ đầu năm 2022."
+      "description": "Gặp gỡ nhóm cốt lõi Bitsocial, biết nên hỏi ai về từng phần của dự án, và xem dự án đã phát triển ra sao từ đầu năm 2022 cùng tất cả những người đã đóng góp."
     },
     "blog": {
       "title": "Blog Bitsocial | Cập nhật, bản phát hành và hướng dẫn",

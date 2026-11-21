@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Rólunk",
-    "title": "Bitsocial magcsapata",
+    "title": "Akik a Bitsocialt építik",
     "subtitle": "A Bitsocial 2022 eleje óta aktív fejlesztés alatt áll; egy alulról szerveződő projekt, amelyet az első naptól kezdve Esteban Abaroa alapító finanszíroz a saját megtakarításaiból.",
     "members": {
-      "esteban": {
-        "role": "A Bitsocial alapítója, vezető fejlesztő 2022–2026."
-      },
       "rinse": {
-        "role": "A Bitsocial társalapítója, fő fejlesztője."
+        "role": "A Bitsocial társalapítója, fő fejlesztője.",
+        "ask": "Kérdezz tőle: <askLink>protokoll, csomópontok és spamvédelem</askLink>"
       },
       "tommaso": {
-        "role": "A Bitsocial társalapítója és fő fejlesztője, a <forgeLink>Bitsocial Forge</forgeLink> alapítója és vezérigazgatója"
+        "role": "A Bitsocial társalapítója és fő fejlesztője, a <forgeLink>Bitsocial Forge</forgeLink> alapítója és vezérigazgatója",
+        "ask": "Kérdezz tőle: <askLink>appok, hosztolt szolgáltatások, weboldal és dokumentáció</askLink>"
       }
     },
-    "memberProfileAlt": "{{name}} profilfotója"
+    "memberProfileAlt": "{{name}} profilfotója",
+    "organizations": "A kód a GitHubon, három szervezetben található: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> és <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Támogasd a Bitsocialt",
+    "contributeCta": "Járulj hozzá a GitHubon",
+    "team": {
+      "title": "Magcsapat"
+    },
+    "ask": {
+      "title": "Kitől mit kérdezz",
+      "intro": "A Bitsocial egy-egy részével kapcsolatos kérdéseket a karbantartójának érdemes feltenni, Telegramon vagy issue-ként valamelyik tárolójában.",
+      "privateNote": "Néhány tároló privát, ezért nem szerepel a listában.",
+      "telegramLabel": "Üzenet {{name}} részére Telegramon"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokoll",
+        "description": "Hogyan működnek a hálózaton a közösségek, bejegyzések, aláírások és kihívások; a pkc-js és az API-ja."
+      },
+      "network": {
+        "name": "Csomópontok és hálózat",
+        "description": "Csomópont vagy közösség futtatása, a CLI és az RPC, .bso nevek, seedelés, szavazás és felfedezés."
+      },
+      "antispam": {
+        "name": "Spamvédelem",
+        "description": "Kihívások, amelyeket egy közösség posztolás előtt megkövetelhet, valamint a spamblokkoló."
+      },
+      "apps": {
+        "name": "Alkalmazások",
+        "description": "Az 5chan, a Seedit és a többi kliens, valamint a React hookok, amelyekre minden kliens épül."
+      },
+      "services": {
+        "name": "Hosztolt szolgáltatások",
+        "description": "Forge Images, Forge RPC, az 5chan és a Seedit archívumai, keresés, linkelőnézetek és botok."
+      },
+      "web": {
+        "name": "Weboldal, dokumentáció és kutatás",
+        "description": "bitsocial.net, a dokumentáció, hálózati statisztikák, protokolljavaslatok (BSIPs) és kutatási projektek."
+      }
+    },
+    "growth": {
+      "title": "Így nőtt a Bitsocial",
+      "intro": "Havi commitok a három szervezet összes nyilvános tárolójában, területenként halmozva.",
+      "commits_one": "emberi commit",
+      "commits_other": "emberi commit",
+      "repositories_one": "nyilvános tároló",
+      "repositories_other": "nyilvános tároló",
+      "organizations_one": "GitHub-szervezet",
+      "organizations_other": "GitHub-szervezet",
+      "legendLabel": "Területek, a diagram aljától felfelé",
+      "axisLabel": "Commitok havonta",
+      "chartLabel_one": "Halmozott területdiagram az emberi commitok havi számáról {{start}} és {{end}} között, területenként. A {{year}}. évben eddig {{value}} commit készült, a {{previousYear}}. évben {{previousValue}}.",
+      "chartLabel_other": "Halmozott területdiagram az emberi commitok havi számáról {{start}} és {{end}} között, területenként. A {{year}}. évben eddig {{value}} commit készült, a {{previousYear}}. évben {{previousValue}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commit. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commit",
+      "partialMonthLabel": "{{month}}, részleges",
+      "repositoriesAnnotation_one": "{{value}} tároló {{year}} végén, most {{now}}",
+      "repositoriesAnnotation_other": "{{value}} tároló {{year}} végén, most {{now}}",
+      "startedAnnotation_one": "Közülük {{value}} első commitja a {{year}}. évben készült",
+      "startedAnnotation_other": "Közülük {{value}} első commitja a {{year}}. évben készült",
+      "partialAnnotation_ordinal_other": "{{month}} részleges, csak a {{day}}. napig",
+      "caption": "Csak emberi commitok: a botok, a kiadási automatizálás és a más tárolókból másolt előzmények nem számítanak bele. 2026 eleje óta a fejlesztés nagy része MI-eszközök segítségével zajlik.",
+      "partialAnnotation_ordinal_one": "{{month}} részleges, csak az {{day}}. napig",
+      "partialAnnotation_ordinal_two": "{{month}} részleges, csak a {{day}}. napig",
+      "partialAnnotation_ordinal_few": "{{month}} részleges, csak a {{day}}. napig",
+      "partialAnnotation_ordinal_many": "{{month}} részleges, csak a {{day}}. napig"
+    },
+    "milestones": {
+      "title": "Mérföldkövek",
+      "items": {
+        "specification": "Protokollspecifikáció",
+        "protocolLibrary": "Az első működő protokollkönyvtár",
+        "reactHooks": "React hook-könyvtár appok építéséhez",
+        "signedEncrypted": "Minden közzététel aláírva és titkosítva",
+        "cliNode": "Az első parancssorból futtatható csomópont",
+        "ed25519": "Ed25519-kulcsok és AES-GCM-titkosítás",
+        "challenges": "Cserélhető spam elleni kihívások",
+        "fivechanRelease": "5chan 0.1.0, az első app a hálózaton",
+        "rpc": "Az appok távoli csomóponton is futhatnak RPC-n keresztül",
+        "commentUpdates": "Nagy közösségekre is skálázódó kommentfrissítések",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Közösség létrehozása és hosztolása az asztali appból",
+        "fivechanTypescript": "Az 5chan újraírva TypeScriptben",
+        "httpRouter": "HTTP-útválasztó tracker váltja a DHT-t",
+        "browserP2p": "Peer-to-peer a böngészőben, átjáró nélkül",
+        "pushNotifications": "Push-értesítések weben, Androidon és asztali gépen",
+        "boardDirectories": "Könyvtárral címezhető 5chan boardok, mint a /biz/",
+        "spamBlocker": "Spamblokkoló szolgáltatás",
+        "bsoNames": "A .bso nevek közösségekre mutatnak",
+        "aiModeration": "MI-moderációs kihívás",
+        "pubsubVoting": "Bizalmat nem igénylő szavazás pubsubon",
+        "bsips": "Bitsocial fejlesztési javaslatok (BSIPs)",
+        "archives": "Nyilvános archívumok és keresés az 5chanhez és a Seedithez",
+        "forgeImages": "Forge Images: ingyenes médiatárhely appoknak"
+      }
+    },
+    "support": {
+      "title": "Támogasd a Bitsocialt",
+      "body": "Az adományok a Bitsocial projekt egészét támogatják.",
+      "donate": "Adományozz",
+      "comingSoon": "Az adománylink hamarosan érkezik"
+    },
+    "thanks": {
+      "title": "Köszönjük nekik is",
+      "intro": "Mindenki más, aki issue-t vagy pull requestet nyitott, vagy kódot commitolt valamelyik Bitsocial-tárolóba, a hozzájárulások száma szerint sorba rendezve.",
+      "wallLabel": "Közreműködők",
+      "contributions_one": "{{login}}, {{value}} hozzájárulás",
+      "contributions_other": "{{login}}, {{value}} hozzájárulás",
+      "nextLabel": "A következő avatar a tiéd lehet: keress egy nyitott issue-t",
+      "cta": "Az első issue-d vagy pull requested után itt jelenik meg az avatarod.",
+      "firstContribution": "Tedd meg az első hozzájárulásodat"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "A Bitsocialról | Magcsapat",
-      "description": "Ismerd meg a Bitsocial magcsapatát és azt a peer-to-peer közösségi protokollt, amelyet 2022 eleje óta fejlesztenek."
+      "description": "Ismerd meg a Bitsocial magcsapatát, nézd meg, kitől mit kérdezhetsz a projekt egyes részeiről, hogyan nőtt 2022 eleje óta, és kik járultak hozzá."
     },
     "blog": {
       "title": "Bitsocial-blog | Frissítések, kiadások és útmutatók",

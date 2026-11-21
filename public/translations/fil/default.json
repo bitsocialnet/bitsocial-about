@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Tungkol sa amin",
-    "title": "Pangunahing Koponan ng Bitsocial",
+    "title": "Ang mga taong bumubuo ng Bitsocial",
     "subtitle": "Aktibong binubuo ang Bitsocial simula pa noong unang bahagi ng 2022, isang proyektong mula sa hanay ng mga ordinaryong tao na pinondohan mula sa unang araw ng tagapagtatag nitong si Esteban Abaroa mula sa sarili niyang ipon.",
     "members": {
-      "esteban": {
-        "role": "Bitsocial Founder, lead dev 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial Co-Founder, core dev."
+        "role": "Bitsocial Co-Founder, core dev.",
+        "ask": "Magtanong tungkol sa <askLink>protocol, mga node at anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial co-founder at pangunahing developer, founder at CEO ng <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bitsocial co-founder at pangunahing developer, founder at CEO ng <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Magtanong tungkol sa <askLink>mga app, hosted na serbisyo, website at docs</askLink>"
       }
     },
-    "memberProfileAlt": "Larawan sa profile ni {{name}}"
+    "memberProfileAlt": "Larawan sa profile ni {{name}}",
+    "organizations": "Nasa GitHub ang code, sa tatlong organisasyon: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> at <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Suportahan ang Bitsocial",
+    "contributeCta": "Mag-ambag sa GitHub",
+    "team": {
+      "title": "Pangunahing koponan"
+    },
+    "ask": {
+      "title": "Kanino magtatanong tungkol saan",
+      "intro": "Ang mga tanong tungkol sa isang bahagi ng Bitsocial ay para sa maintainer nito, sa Telegram o bilang issue sa isa sa mga repository nito.",
+      "privateNote": "Pribado ang ilang repository at hindi nakalista.",
+      "telegramLabel": "I-message si {{name}} sa Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protocol",
+        "description": "Kung paano gumagana sa network ang mga komunidad, post, signature at challenge; ang pkc-js at ang API nito."
+      },
+      "network": {
+        "name": "Mga node at network",
+        "description": "Pagpapatakbo ng node o komunidad, ang CLI at RPC, mga pangalang .bso, seeding, pagboto at discovery."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Mga challenge na puwedeng hingin ng komunidad bago mag-post, at ang spam blocker."
+      },
+      "apps": {
+        "name": "Mga app",
+        "description": "5chan, Seedit at iba pang client, at ang React hooks na pinagbabatayan ng bawat client."
+      },
+      "services": {
+        "name": "Mga hosted na serbisyo",
+        "description": "Forge Images, Forge RPC, ang mga archive ng 5chan at Seedit, search, link preview at mga bot."
+      },
+      "web": {
+        "name": "Website, docs at pananaliksik",
+        "description": "bitsocial.net, ang docs, mga istatistika ng network, mga panukala sa protocol (BSIPs) at mga proyektong pananaliksik."
+      }
+    },
+    "growth": {
+      "title": "Paano lumago ang Bitsocial",
+      "intro": "Mga commit bawat buwan sa lahat ng pampublikong repository ng tatlong organisasyon, naka-stack ayon sa area.",
+      "commits_one": "commit ng tao",
+      "commits_other": "commit ng mga tao",
+      "repositories_one": "pampublikong repository",
+      "repositories_other": "pampublikong repository",
+      "organizations_one": "organisasyon sa GitHub",
+      "organizations_other": "organisasyon sa GitHub",
+      "legendLabel": "Mga area, mula sa ibaba ng chart pataas",
+      "axisLabel": "Mga commit bawat buwan",
+      "chartLabel_one": "Stacked area chart ng mga commit ng tao bawat buwan mula {{start}} hanggang {{end}}, ayon sa area. May {{value}} commit na ang {{year}} sa ngayon, kumpara sa {{previousValue}} noong {{previousYear}}.",
+      "chartLabel_other": "Stacked area chart ng mga commit ng tao bawat buwan mula {{start}} hanggang {{end}}, ayon sa area. May {{value}} commit na ang {{year}} sa ngayon, kumpara sa {{previousValue}} noong {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commit. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commit",
+      "partialMonthLabel": "{{month}}, hindi pa buo",
+      "repositoriesAnnotation_one": "{{value}} repository sa pagtatapos ng {{year}}, {{now}} ngayon",
+      "repositoriesAnnotation_other": "{{value}} repository sa pagtatapos ng {{year}}, {{now}} ngayon",
+      "startedAnnotation_one": "{{value}} sa mga ito ang nagkaroon ng unang commit noong {{year}}",
+      "startedAnnotation_other": "{{value}} sa mga ito ang nagkaroon ng unang commit noong {{year}}",
+      "partialAnnotation_ordinal_other": "Hindi pa buo ang {{month}}, hanggang ika-{{day}} pa lang",
+      "caption": "Mga commit ng tao lang: hindi kasama ang mga bot, release automation at history na kinopya mula sa ibang repository. Mula unang bahagi ng 2026, karamihan ng development ay ginagawa sa tulong ng mga AI tool.",
+      "partialAnnotation_ordinal_one": "Hindi pa buo ang {{month}}, hanggang ika-{{day}} pa lang",
+      "partialAnnotation_ordinal_two": "Hindi pa buo ang {{month}}, hanggang ika-{{day}} pa lang",
+      "partialAnnotation_ordinal_few": "Hindi pa buo ang {{month}}, hanggang ika-{{day}} pa lang",
+      "partialAnnotation_ordinal_many": "Hindi pa buo ang {{month}}, hanggang ika-{{day}} pa lang"
+    },
+    "milestones": {
+      "title": "Mga milestone",
+      "items": {
+        "specification": "Espesipikasyon ng protocol",
+        "protocolLibrary": "Unang gumaganang protocol library",
+        "reactHooks": "React hooks library para gumawa ng mga app",
+        "signedEncrypted": "Naka-sign at naka-encrypt ang bawat publikasyon",
+        "cliNode": "Unang node na mapapatakbo mula sa command line",
+        "ed25519": "Ed25519 keys at AES-GCM encryption",
+        "challenges": "Mga pluggable na anti-spam challenge",
+        "fivechanRelease": "5chan 0.1.0, ang unang app sa network",
+        "rpc": "Puwedeng gumamit ang mga app ng remote node sa RPC",
+        "commentUpdates": "Mga update ng comment na kaya ang malalaking komunidad",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Gumawa at mag-host ng komunidad mula sa desktop app",
+        "fivechanTypescript": "Isinulat muli ang 5chan sa TypeScript",
+        "httpRouter": "Pinalitan ng HTTP routing tracker ang DHT",
+        "browserP2p": "Peer-to-peer sa browser, walang gateway",
+        "pushNotifications": "Push notification sa web, Android at desktop",
+        "boardDirectories": "Mga board ng 5chan ayon sa directory, gaya ng /biz/",
+        "spamBlocker": "Serbisyong spam blocker",
+        "bsoNames": "Tumuturo sa mga komunidad ang mga pangalang .bso",
+        "aiModeration": "AI moderation challenge",
+        "pubsubVoting": "Trustless na pagboto sa pubsub",
+        "bsips": "Bitsocial Improvement Proposals (BSIPs)",
+        "archives": "Pampublikong archive at search para sa 5chan at Seedit",
+        "forgeImages": "Forge Images: libreng media hosting para sa mga app"
+      }
+    },
+    "support": {
+      "title": "Suportahan ang Bitsocial",
+      "body": "Napupunta ang mga donasyon sa buong proyekto ng Bitsocial.",
+      "donate": "Mag-donate",
+      "comingSoon": "Malapit na ang link para sa donasyon"
+    },
+    "thanks": {
+      "title": "Salamat din sa",
+      "intro": "Lahat ng iba pang nagbukas ng issue o pull request, o nag-commit ng code, sa isang repository ng Bitsocial, ayon sa dami ng kontribusyon.",
+      "wallLabel": "Mga contributor",
+      "contributions_one": "{{login}}, {{value}} kontribusyon",
+      "contributions_other": "{{login}}, {{value}} kontribusyon",
+      "nextLabel": "Puwedeng ang avatar mo na ang susunod: maghanap ng bukas na issue",
+      "cta": "Lalabas dito ang avatar mo pagkatapos ng una mong issue o pull request.",
+      "firstContribution": "Gawin ang una mong kontribusyon"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Tungkol sa Bitsocial | Pangunahing Koponan",
-      "description": "Kilalanin ang pangunahing koponan ng Bitsocial at alamin ang tungkol sa peer-to-peer na social protocol na binubuo nila mula pa noong unang bahagi ng 2022."
+      "description": "Kilalanin ang pangunahing koponan ng Bitsocial, alamin kung kanino magtatanong tungkol sa bawat bahagi ng proyekto, at tingnan kung paano ito lumago mula unang bahagi ng 2022 at ang lahat ng nag-ambag."
     },
     "blog": {
       "title": "Bitsocial Blog | Mga Update, Release, at Tutorial",

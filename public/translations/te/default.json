@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "మా గురించి",
-    "title": "Bitsocial ప్రధాన బృందం",
+    "title": "Bitsocial‌ను నిర్మిస్తున్న వ్యక్తులు",
     "subtitle": "Bitsocial 2022 ప్రారంభం నుండి చురుకుగా అభివృద్ధి చెందుతోంది, ఇది ఒక క్షేత్రస్థాయి ప్రాజెక్ట్, వ్యవస్థాపకుడు Esteban Abaroa మొదటి రోజు నుండే తన సొంత పొదుపు నుండి దీనికి నిధులు సమకూర్చారు.",
     "members": {
-      "esteban": {
-        "role": "బిట్‌సోషల్ వ్యవస్థాపకుడు, లీడ్ డెవలపర్ 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial సహ వ్యవస్థాపకుడు, కోర్ దేవ్."
+        "role": "Bitsocial సహ వ్యవస్థాపకుడు, కోర్ దేవ్.",
+        "ask": "<askLink>ప్రోటోకాల్, నోడ్‌లు మరియు యాంటీ-స్పామ్</askLink> గురించి అడగండి"
       },
       "tommaso": {
-        "role": "Bitsocial సహ వ్యవస్థాపకుడు మరియు కోర్ డెవలపర్, <forgeLink>Bitsocial Forge</forgeLink> వ్యవస్థాపకుడు & CEO"
+        "role": "Bitsocial సహ వ్యవస్థాపకుడు మరియు కోర్ డెవలపర్, <forgeLink>Bitsocial Forge</forgeLink> వ్యవస్థాపకుడు & CEO",
+        "ask": "<askLink>యాప్‌లు, హోస్ట్ చేసిన సేవలు, వెబ్‌సైట్ మరియు డాక్స్</askLink> గురించి అడగండి"
       }
     },
-    "memberProfileAlt": "{{name}} యొక్క ప్రొఫైల్ ఫోటో"
+    "memberProfileAlt": "{{name}} యొక్క ప్రొఫైల్ ఫోటో",
+    "organizations": "కోడ్ GitHub‌లో మూడు సంస్థల్లో ఉంది: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> మరియు <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Bitsocial‌కు మద్దతు ఇవ్వండి",
+    "contributeCta": "GitHub‌లో సహకరించండి",
+    "team": {
+      "title": "ప్రధాన బృందం"
+    },
+    "ask": {
+      "title": "దేని గురించి ఎవరిని అడగాలి",
+      "intro": "Bitsocial‌లోని ఏ భాగం గురించైనా ప్రశ్నలను దాని నిర్వాహకుడికి Telegram‌లో లేదా దాని రిపాజిటరీలలో ఒకదానిలో issue‌గా పంపండి.",
+      "privateNote": "కొన్ని రిపాజిటరీలు ప్రైవేట్, అవి ఈ జాబితాలో లేవు.",
+      "telegramLabel": "Telegram‌లో {{name}}‌కు సందేశం పంపండి"
+    },
+    "areas": {
+      "protocol": {
+        "name": "ప్రోటోకాల్",
+        "description": "కమ్యూనిటీలు, పోస్ట్‌లు, సంతకాలు, సవాళ్లు నెట్‌వర్క్‌పై ఎలా పనిచేస్తాయి; pkc-js మరియు దాని API."
+      },
+      "network": {
+        "name": "నోడ్‌లు మరియు నెట్‌వర్క్",
+        "description": "నోడ్ లేదా కమ్యూనిటీని నడపడం, CLI మరియు RPC, .bso పేర్లు, సీడింగ్, ఓటింగ్ మరియు కనుగొనడం."
+      },
+      "antispam": {
+        "name": "యాంటీ-స్పామ్",
+        "description": "పోస్ట్ చేసే ముందు కమ్యూనిటీ కోరగల సవాళ్లు, మరియు స్పామ్ బ్లాకర్."
+      },
+      "apps": {
+        "name": "యాప్‌లు",
+        "description": "5chan, Seedit మరియు ఇతర క్లయింట్‌లు, ప్రతి క్లయింట్‌కు ఆధారమైన React hooks."
+      },
+      "services": {
+        "name": "హోస్ట్ చేసిన సేవలు",
+        "description": "Forge Images, Forge RPC, 5chan మరియు Seedit ఆర్కైవ్‌లు, సెర్చ్, లింక్ ప్రివ్యూలు మరియు బాట్‌లు."
+      },
+      "web": {
+        "name": "వెబ్‌సైట్, డాక్స్ మరియు పరిశోధన",
+        "description": "bitsocial.net, డాక్స్, నెట్‌వర్క్ గణాంకాలు, ప్రోటోకాల్ ప్రతిపాదనలు (BSIPs) మరియు పరిశోధన ప్రాజెక్టులు."
+      }
+    },
+    "growth": {
+      "title": "Bitsocial ఎలా ఎదిగింది",
+      "intro": "మూడు సంస్థల్లోని ప్రతి పబ్లిక్ రిపాజిటరీలో నెలవారీ కమిట్‌లు, విభాగాల వారీగా పేర్చి చూపబడ్డాయి.",
+      "commits_one": "మనుషులు చేసిన కమిట్",
+      "commits_other": "మనుషులు చేసిన కమిట్‌లు",
+      "repositories_one": "పబ్లిక్ రిపాజిటరీ",
+      "repositories_other": "పబ్లిక్ రిపాజిటరీలు",
+      "organizations_one": "GitHub సంస్థ",
+      "organizations_other": "GitHub సంస్థలు",
+      "legendLabel": "విభాగాలు, చార్ట్ అడుగు నుండి పైకి",
+      "axisLabel": "నెలకు కమిట్‌లు",
+      "chartLabel_one": "{{start}} నుండి {{end}} వరకు మనుషులు చేసిన నెలవారీ కమిట్‌ల స్టాక్డ్ ఏరియా చార్ట్, విభాగాల వారీగా. {{year}}‌లో ఇప్పటివరకు {{value}} కమిట్ ఉంది, {{previousYear}}‌లో {{previousValue}}.",
+      "chartLabel_other": "{{start}} నుండి {{end}} వరకు మనుషులు చేసిన నెలవారీ కమిట్‌ల స్టాక్డ్ ఏరియా చార్ట్, విభాగాల వారీగా. {{year}}‌లో ఇప్పటివరకు {{value}} కమిట్‌లు ఉన్నాయి, {{previousYear}}‌లో {{previousValue}}.",
+      "periodSummary_one": "{{period}}: {{value}} కమిట్. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} కమిట్‌లు. {{areas}}",
+      "yearCommits_one": "{{value}} కమిట్",
+      "yearCommits_other": "{{value}} కమిట్‌లు",
+      "partialMonthLabel": "{{month}}, అసంపూర్ణం",
+      "repositoriesAnnotation_one": "{{year}} చివరికి {{value}} రిపాజిటరీ, ఇప్పుడు {{now}}",
+      "repositoriesAnnotation_other": "{{year}} చివరికి {{value}} రిపాజిటరీలు, ఇప్పుడు {{now}}",
+      "startedAnnotation_one": "వాటిలో {{value}} రిపాజిటరీకి మొదటి కమిట్ {{year}}‌లో వచ్చింది",
+      "startedAnnotation_other": "వాటిలో {{value}} రిపాజిటరీలకు మొదటి కమిట్ {{year}}‌లో వచ్చింది",
+      "partialAnnotation_ordinal_other": "{{month}} అసంపూర్ణం, {{day}}వ తేదీ వరకు",
+      "caption": "మనుషులు చేసిన కమిట్‌లు మాత్రమే: బాట్‌లు, రిలీజ్ ఆటోమేషన్, ఇతర రిపాజిటరీల నుండి కాపీ చేసిన హిస్టరీ మినహాయించబడ్డాయి. 2026 ప్రారంభం నుండి చాలా అభివృద్ధి AI కోడింగ్ టూల్స్ సహాయంతో జరుగుతోంది.",
+      "partialAnnotation_ordinal_one": "{{month}} అసంపూర్ణం, {{day}}వ తేదీ వరకు",
+      "partialAnnotation_ordinal_two": "{{month}} అసంపూర్ణం, {{day}}వ తేదీ వరకు",
+      "partialAnnotation_ordinal_few": "{{month}} అసంపూర్ణం, {{day}}వ తేదీ వరకు",
+      "partialAnnotation_ordinal_many": "{{month}} అసంపూర్ణం, {{day}}వ తేదీ వరకు"
+    },
+    "milestones": {
+      "title": "మైలురాళ్లు",
+      "items": {
+        "specification": "ప్రోటోకాల్ స్పెసిఫికేషన్",
+        "protocolLibrary": "పనిచేసే మొదటి ప్రోటోకాల్ లైబ్రరీ",
+        "reactHooks": "యాప్‌లు నిర్మించడానికి React hooks లైబ్రరీ",
+        "signedEncrypted": "ప్రతి ప్రచురణకు సంతకం, ఎన్‌క్రిప్షన్",
+        "cliNode": "కమాండ్ లైన్ నుండి నడపగల మొదటి నోడ్",
+        "ed25519": "Ed25519 కీలు మరియు AES-GCM ఎన్‌క్రిప్షన్",
+        "challenges": "ప్లగ్ చేయగల యాంటీ-స్పామ్ సవాళ్లు",
+        "fivechanRelease": "5chan 0.1.0, నెట్‌వర్క్‌లో మొదటి యాప్",
+        "rpc": "యాప్‌లు RPC ద్వారా రిమోట్ నోడ్‌పై నడవగలవు",
+        "commentUpdates": "పెద్ద కమ్యూనిటీలకు స్కేల్ అయ్యే కామెంట్ అప్‌డేట్‌లు",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "డెస్క్‌టాప్ యాప్ నుండే కమ్యూనిటీని సృష్టించి హోస్ట్ చేయడం",
+        "fivechanTypescript": "TypeScript‌లో తిరిగి రాసిన 5chan",
+        "httpRouter": "DHT స్థానంలో HTTP రూటింగ్ ట్రాకర్",
+        "browserP2p": "గేట్‌వే లేకుండా బ్రౌజర్‌లోనే peer-to-peer",
+        "pushNotifications": "వెబ్, Android మరియు డెస్క్‌టాప్‌లో పుష్ నోటిఫికేషన్‌లు",
+        "boardDirectories": "/biz/ లాంటి డైరెక్టరీ చిరునామాలతో 5chan బోర్డులు",
+        "spamBlocker": "స్పామ్ బ్లాకర్ సేవ",
+        "bsoNames": ".bso పేర్లు కమ్యూనిటీలకు దారితీస్తాయి",
+        "aiModeration": "AI మోడరేషన్ సవాలు",
+        "pubsubVoting": "pubsub ద్వారా నమ్మకం అవసరం లేని ఓటింగ్",
+        "bsips": "Bitsocial మెరుగుదల ప్రతిపాదనలు (BSIPs)",
+        "archives": "5chan మరియు Seedit కోసం పబ్లిక్ ఆర్కైవ్‌లు, సెర్చ్",
+        "forgeImages": "Forge Images: యాప్‌ల కోసం ఉచిత మీడియా హోస్టింగ్"
+      }
+    },
+    "support": {
+      "title": "Bitsocial‌కు మద్దతు ఇవ్వండి",
+      "body": "విరాళాలు మొత్తం Bitsocial ప్రాజెక్ట్‌కే వెళ్తాయి.",
+      "donate": "విరాళం ఇవ్వండి",
+      "comingSoon": "విరాళం లింక్ త్వరలో వస్తుంది"
+    },
+    "thanks": {
+      "title": "వీరికి కూడా ధన్యవాదాలు",
+      "intro": "Bitsocial రిపాజిటరీలో issue లేదా pull request తెరిచిన, లేదా కోడ్ కమిట్ చేసిన మిగతా అందరూ, సహకారాల సంఖ్య క్రమంలో.",
+      "wallLabel": "సహకారులు",
+      "contributions_one": "{{login}}, {{value}} సహకారం",
+      "contributions_other": "{{login}}, {{value}} సహకారాలు",
+      "nextLabel": "తర్వాతి అవతార్ మీదే కావచ్చు: ఓపెన్ issue ఒకటి కనుగొనండి",
+      "cta": "మీ మొదటి issue లేదా pull request తర్వాత మీ అవతార్ ఇక్కడ కనిపిస్తుంది.",
+      "firstContribution": "మీ మొదటి సహకారం అందించండి"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial గురించి | ప్రధాన బృందం",
-      "description": "Bitsocial ప్రధాన బృందాన్ని కలవండి, 2022 ప్రారంభం నుండి వారు నిర్మిస్తున్న peer-to-peer సోషల్ ప్రోటోకాల్ గురించి తెలుసుకోండి."
+      "description": "Bitsocial ప్రధాన బృందాన్ని కలవండి, ప్రాజెక్ట్‌లోని ప్రతి భాగం గురించి ఎవరిని అడగాలో తెలుసుకోండి, 2022 ప్రారంభం నుండి అది ఎలా ఎదిగిందో మరియు సహకరించిన అందరినీ చూడండి."
     },
     "blog": {
       "title": "Bitsocial బ్లాగ్ | అప్‌డేట్‌లు, విడుదలలు, ట్యుటోరియల్స్",

@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Over ons",
-    "title": "Bitsocial-kernteam",
+    "title": "De mensen achter Bitsocial",
     "subtitle": "Bitsocial is sinds begin 2022 in actieve ontwikkeling, een project vanuit de basis dat vanaf dag één door oprichter Esteban Abaroa uit zijn eigen spaargeld wordt gefinancierd.",
     "members": {
-      "esteban": {
-        "role": "Bitsocial-oprichter, hoofdontwikkelaar 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial mede-oprichter, kernontwikkelaar."
+        "role": "Bitsocial mede-oprichter, kernontwikkelaar.",
+        "ask": "Vragen over <askLink>het protocol, nodes en antispam</askLink>"
       },
       "tommaso": {
-        "role": "Mede-oprichter en kernontwikkelaar van Bitsocial, oprichter en CEO van <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Mede-oprichter en kernontwikkelaar van Bitsocial, oprichter en CEO van <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Vragen over <askLink>apps, gehoste diensten, de website en documentatie</askLink>"
       }
     },
-    "memberProfileAlt": "Profielfoto van {{name}}"
+    "memberProfileAlt": "Profielfoto van {{name}}",
+    "organizations": "De code staat op GitHub, verdeeld over drie organisaties: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> en <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Steun Bitsocial",
+    "contributeCta": "Draag bij op GitHub",
+    "team": {
+      "title": "Kernteam"
+    },
+    "ask": {
+      "title": "Wie vraag je wat?",
+      "intro": "Vragen over een onderdeel van Bitsocial stel je aan de maintainer ervan, via Telegram of als issue in een van de bijbehorende repository's.",
+      "privateNote": "Sommige repository's zijn privé en staan hier niet bij.",
+      "telegramLabel": "Stuur {{name}} een bericht op Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protocol",
+        "description": "Hoe communities, posts, handtekeningen en uitdagingen over het netwerk werken; pkc-js en de API ervan."
+      },
+      "network": {
+        "name": "Nodes en netwerk",
+        "description": "Een node of community draaien, de CLI en RPC, .bso-namen, seeding, stemmen en vindbaarheid."
+      },
+      "antispam": {
+        "name": "Antispam",
+        "description": "Uitdagingen die een community kan vereisen voordat je post, en de spamblocker."
+      },
+      "apps": {
+        "name": "Apps",
+        "description": "5chan, Seedit en de andere clients, en de React-hooks waarop elke client is gebouwd."
+      },
+      "services": {
+        "name": "Gehoste diensten",
+        "description": "Forge Images, Forge RPC, de archieven van 5chan en Seedit, zoeken, linkvoorbeelden en bots."
+      },
+      "web": {
+        "name": "Website, documentatie en onderzoek",
+        "description": "bitsocial.net, de documentatie, netwerkstatistieken, protocolvoorstellen (BSIPs) en onderzoeksprojecten."
+      }
+    },
+    "growth": {
+      "title": "Hoe Bitsocial groeide",
+      "intro": "Commits per maand in alle openbare repository's van de drie organisaties, gestapeld per gebied.",
+      "commits_one": "commit door mensen",
+      "commits_other": "commits door mensen",
+      "repositories_one": "openbare repository",
+      "repositories_other": "openbare repository's",
+      "organizations_one": "GitHub-organisatie",
+      "organizations_other": "GitHub-organisaties",
+      "legendLabel": "Gebieden, van onder naar boven in de grafiek",
+      "axisLabel": "Commits per maand",
+      "chartLabel_one": "Gestapelde vlakgrafiek van commits door mensen per maand van {{start}} tot {{end}}, per gebied. {{year}} telt tot nu toe {{value}} commit, tegenover {{previousValue}} in {{previousYear}}.",
+      "chartLabel_other": "Gestapelde vlakgrafiek van commits door mensen per maand van {{start}} tot {{end}}, per gebied. {{year}} telt tot nu toe {{value}} commits, tegenover {{previousValue}} in {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, onvolledig",
+      "repositoriesAnnotation_one": "{{value}} repository eind {{year}}, nu {{now}}",
+      "repositoriesAnnotation_other": "{{value}} repository's eind {{year}}, nu {{now}}",
+      "startedAnnotation_one": "{{value}} daarvan kreeg de eerste commit in {{year}}",
+      "startedAnnotation_other": "{{value}} daarvan kregen hun eerste commit in {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} is onvolledig, tot de {{day}}e",
+      "caption": "Alleen commits door mensen: bots, release-automatisering en gekopieerde geschiedenis tellen niet mee. Sinds begin 2026 gebeurt de meeste ontwikkeling met hulp van AI-tools.",
+      "partialAnnotation_ordinal_one": "{{month}} is onvolledig, tot de {{day}}e",
+      "partialAnnotation_ordinal_two": "{{month}} is onvolledig, tot de {{day}}e",
+      "partialAnnotation_ordinal_few": "{{month}} is onvolledig, tot de {{day}}e",
+      "partialAnnotation_ordinal_many": "{{month}} is onvolledig, tot de {{day}}e"
+    },
+    "milestones": {
+      "title": "Mijlpalen",
+      "items": {
+        "specification": "Protocolspecificatie",
+        "protocolLibrary": "Eerste werkende protocolbibliotheek",
+        "reactHooks": "React-hooksbibliotheek om apps te bouwen",
+        "signedEncrypted": "Elke publicatie ondertekend en versleuteld",
+        "cliNode": "Eerste node die je vanaf de opdrachtregel draait",
+        "ed25519": "Ed25519-sleutels en AES-GCM-versleuteling",
+        "challenges": "Inplugbare antispamuitdagingen",
+        "fivechanRelease": "5chan 0.1.0, de eerste app op het netwerk",
+        "rpc": "Apps kunnen via RPC op een externe node draaien",
+        "commentUpdates": "Reactie-updates die meeschalen met grote communities",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Een community aanmaken en hosten vanuit de desktopapp",
+        "fivechanTypescript": "5chan herschreven in TypeScript",
+        "httpRouter": "HTTP-routingtracker vervangt de DHT",
+        "browserP2p": "Peer-to-peer in de browser, zonder gateway",
+        "pushNotifications": "Pushmeldingen op web, Android en desktop",
+        "boardDirectories": "5chan-boards bereikbaar via een directory, zoals /biz/",
+        "spamBlocker": "Spamblockerdienst",
+        "bsoNames": ".bso-namen verwijzen naar communities",
+        "aiModeration": "Uitdaging met AI-moderatie",
+        "pubsubVoting": "Trustless stemmen via pubsub",
+        "bsips": "Bitsocial-verbetervoorstellen (BSIPs)",
+        "archives": "Openbare archieven en zoekfunctie voor 5chan en Seedit",
+        "forgeImages": "Forge Images: gratis mediahosting voor apps"
+      }
+    },
+    "support": {
+      "title": "Steun Bitsocial",
+      "body": "Donaties gaan naar het Bitsocial-project als geheel.",
+      "donate": "Doneren",
+      "comingSoon": "Donatielink volgt binnenkort"
+    },
+    "thanks": {
+      "title": "Ook dank aan",
+      "intro": "Iedereen die verder een issue of pull request opende, of code committe, in een Bitsocial-repository, op volgorde van bijdragen.",
+      "wallLabel": "Bijdragers",
+      "contributions_one": "{{login}}, {{value}} bijdrage",
+      "contributions_other": "{{login}}, {{value}} bijdragen",
+      "nextLabel": "Jouw avatar kan de volgende zijn: zoek een open issue",
+      "cta": "Je avatar verschijnt hier na je eerste issue of pull request.",
+      "firstContribution": "Doe je eerste bijdrage"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Over Bitsocial | Kernteam",
-      "description": "Maak kennis met het Bitsocial-kernteam en ontdek het sociale peer-to-peerprotocol waaraan het team sinds begin 2022 bouwt."
+      "description": "Maak kennis met het Bitsocial-kernteam, zie bij wie je terechtkunt voor elk onderdeel van het project, en ontdek hoe het sinds begin 2022 is gegroeid en wie eraan heeft bijgedragen."
     },
     "blog": {
       "title": "Bitsocial-blog | Updates, releases en tutorials",

@@ -784,20 +784,140 @@
   },
   "about": {
     "sectionLabel": "אודותינו",
-    "title": "צוות הליבה של Bitsocial",
+    "title": "האנשים שבונים את Bitsocial",
     "subtitle": "Bitsocial נמצא בפיתוח פעיל מאז תחילת 2022, פרויקט שצמח מלמטה וממומן מהיום הראשון על ידי המייסד Esteban Abaroa מתוך חסכונותיו האישיים.",
     "members": {
-      "esteban": {
-        "role": "מייסד Bitsocial, מפתח ראשי 2022–2026."
-      },
       "rinse": {
-        "role": "מייסד שותף של Bitsocial, מפתח ליבה."
+        "role": "מייסד שותף של Bitsocial, מפתח ליבה.",
+        "ask": "שאלות על <askLink>הפרוטוקול, הצמתים והאנטי-ספאם</askLink>"
       },
       "tommaso": {
-        "role": "מייסד שותף ומפתח ליבה של Bitsocial, מייסד ומנכ\"ל <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "מייסד שותף ומפתח ליבה של Bitsocial, מייסד ומנכ\"ל <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "שאלות על <askLink>האפליקציות, השירותים המאוחסנים, האתר והתיעוד</askLink>"
       }
     },
-    "memberProfileAlt": "תמונת פרופיל של {{name}}"
+    "memberProfileAlt": "תמונת פרופיל של {{name}}",
+    "organizations": "הקוד נמצא ב-GitHub בשלושה ארגונים: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> ו-<bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "תמכו ב-Bitsocial",
+    "contributeCta": "תרמו ב-GitHub",
+    "team": {
+      "title": "צוות הליבה"
+    },
+    "ask": {
+      "title": "את מי לשאול על מה",
+      "intro": "שאלות על חלק מסוים ב-Bitsocial מופנות למתחזק שלו, ב-Telegram או כ-issue באחד המאגרים שלו.",
+      "privateNote": "חלק מהמאגרים פרטיים ואינם מופיעים ברשימה.",
+      "telegramLabel": "שליחת הודעה ל-{{name}} ב-Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "פרוטוקול",
+        "description": "איך קהילות, פוסטים, חתימות ואתגרים עובדים ברשת; pkc-js וה-API שלו."
+      },
+      "network": {
+        "name": "צמתים ורשת",
+        "description": "הפעלת צומת או קהילה, ה-CLI וה-RPC, שמות .bso, seeding, הצבעות וגילוי."
+      },
+      "antispam": {
+        "name": "אנטי-ספאם",
+        "description": "אתגרים שקהילה יכולה לדרוש לפני פרסום, וחוסם הספאם."
+      },
+      "apps": {
+        "name": "אפליקציות",
+        "description": "5chan, Seedit ושאר הלקוחות, וה-React hooks שעליהם בנוי כל לקוח."
+      },
+      "services": {
+        "name": "שירותים מאוחסנים",
+        "description": "Forge Images, Forge RPC, הארכיונים של 5chan ו-Seedit, חיפוש, תצוגות מקדימות של קישורים ובוטים."
+      },
+      "web": {
+        "name": "אתר, תיעוד ומחקר",
+        "description": "bitsocial.net, התיעוד, סטטיסטיקות הרשת, הצעות לפרוטוקול (BSIPs) ופרויקטי מחקר."
+      }
+    },
+    "growth": {
+      "title": "איך Bitsocial צמח",
+      "intro": "קומיטים לחודש בכל המאגרים הציבוריים של שלושת הארגונים, מוערמים לפי תחום.",
+      "commits_one": "קומיט אנושי",
+      "commits_two": "קומיטים אנושיים",
+      "commits_other": "קומיטים אנושיים",
+      "repositories_one": "מאגר ציבורי",
+      "repositories_two": "מאגרים ציבוריים",
+      "repositories_other": "מאגרים ציבוריים",
+      "organizations_one": "ארגון GitHub",
+      "organizations_two": "ארגוני GitHub",
+      "organizations_other": "ארגוני GitHub",
+      "legendLabel": "תחומים, מתחתית התרשים כלפי מעלה",
+      "axisLabel": "קומיטים לחודש",
+      "chartLabel_one": "תרשים שטח מוערם של קומיטים אנושיים לחודש מ-{{start}} עד {{end}}, לפי תחום. ב-{{year}} יש עד כה {{value}} קומיט, לעומת {{previousValue}} ב-{{previousYear}}.",
+      "chartLabel_two": "תרשים שטח מוערם של קומיטים אנושיים לחודש מ-{{start}} עד {{end}}, לפי תחום. ב-{{year}} יש עד כה {{value}} קומיטים, לעומת {{previousValue}} ב-{{previousYear}}.",
+      "chartLabel_other": "תרשים שטח מוערם של קומיטים אנושיים לחודש מ-{{start}} עד {{end}}, לפי תחום. ב-{{year}} יש עד כה {{value}} קומיטים, לעומת {{previousValue}} ב-{{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} קומיט. {{areas}}",
+      "periodSummary_two": "{{period}}: {{value}} קומיטים. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} קומיטים. {{areas}}",
+      "yearCommits_one": "{{value}} קומיט",
+      "yearCommits_two": "{{value}} קומיטים",
+      "yearCommits_other": "{{value}} קומיטים",
+      "partialMonthLabel": "{{month}}, חלקי",
+      "repositoriesAnnotation_one": "{{value}} מאגר בסוף {{year}}, {{now}} כיום",
+      "repositoriesAnnotation_two": "{{value}} מאגרים בסוף {{year}}, {{now}} כיום",
+      "repositoriesAnnotation_other": "{{value}} מאגרים בסוף {{year}}, {{now}} כיום",
+      "startedAnnotation_one": "ל-{{value}} מהם היה הקומיט הראשון ב-{{year}}",
+      "startedAnnotation_two": "ל-{{value}} מהם היה הקומיט הראשון ב-{{year}}",
+      "startedAnnotation_other": "ל-{{value}} מהם היה הקומיט הראשון ב-{{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} חלקי, עד ה-{{day}} בחודש",
+      "caption": "קומיטים אנושיים בלבד: בוטים, אוטומציה של גרסאות והיסטוריה שהועתקה ממאגרים אחרים אינם נכללים. מאז תחילת 2026 רוב הפיתוח נעשה בסיוע כלי בינה מלאכותית.",
+      "partialAnnotation_ordinal_one": "{{month}} חלקי, עד ה-{{day}} בחודש",
+      "partialAnnotation_ordinal_two": "{{month}} חלקי, עד ה-{{day}} בחודש",
+      "partialAnnotation_ordinal_few": "{{month}} חלקי, עד ה-{{day}} בחודש",
+      "partialAnnotation_ordinal_many": "{{month}} חלקי, עד ה-{{day}} בחודש"
+    },
+    "milestones": {
+      "title": "אבני דרך",
+      "items": {
+        "specification": "מפרט הפרוטוקול",
+        "protocolLibrary": "ספריית הפרוטוקול הראשונה שעובדת",
+        "reactHooks": "ספריית React hooks לבניית אפליקציות",
+        "signedEncrypted": "כל פרסום חתום ומוצפן",
+        "cliNode": "הצומת הראשון שאפשר להריץ משורת הפקודה",
+        "ed25519": "מפתחות Ed25519 והצפנת AES-GCM",
+        "challenges": "אתגרי אנטי-ספאם כתוספים",
+        "fivechanRelease": "5chan 0.1.0, האפליקציה הראשונה ברשת",
+        "rpc": "אפליקציות יכולות לרוץ על צומת מרוחק דרך RPC",
+        "commentUpdates": "עדכוני תגובות שמתאימים גם לקהילות גדולות",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "יצירה ואירוח של קהילה מאפליקציית המחשב",
+        "fivechanTypescript": "5chan נכתב מחדש ב-TypeScript",
+        "httpRouter": "טראקר ניתוב HTTP מחליף את ה-DHT",
+        "browserP2p": "peer-to-peer בדפדפן, בלי שער גישה",
+        "pushNotifications": "התראות פוש בווב, ב-Android ובמחשב",
+        "boardDirectories": "לוחות 5chan לפי תיקייה, כמו /biz/",
+        "spamBlocker": "שירות חוסם ספאם",
+        "bsoNames": "שמות .bso מפנים לקהילות",
+        "aiModeration": "אתגר מודרציה מבוסס AI",
+        "pubsubVoting": "הצבעה בלי צורך באמון דרך pubsub",
+        "bsips": "הצעות לשיפור Bitsocial (BSIPs)",
+        "archives": "ארכיונים ציבוריים וחיפוש ל-5chan ול-Seedit",
+        "forgeImages": "Forge Images: אחסון מדיה חינמי לאפליקציות"
+      }
+    },
+    "support": {
+      "title": "תמכו ב-Bitsocial",
+      "body": "התרומות הולכות לפרויקט Bitsocial כולו.",
+      "donate": "לתרומה",
+      "comingSoon": "קישור לתרומה יגיע בקרוב"
+    },
+    "thanks": {
+      "title": "תודה גם לכל אלה",
+      "intro": "כל השאר שפתחו issue או pull request, או ביצעו קומיט של קוד, במאגר של Bitsocial, לפי מספר התרומות.",
+      "wallLabel": "תורמים",
+      "contributions_one": "{{login}}, {{value}} תרומה",
+      "contributions_two": "{{login}}, {{value}} תרומות",
+      "contributions_other": "{{login}}, {{value}} תרומות",
+      "nextLabel": "האווטאר שלכם יכול להיות הבא: מצאו issue פתוח",
+      "cta": "האווטאר שלכם יופיע כאן אחרי ה-issue או ה-pull request הראשון שלכם.",
+      "firstContribution": "התחילו לתרום"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1079,7 @@
   "seo": {
     "about": {
       "title": "אודות Bitsocial | צוות הליבה",
-      "description": "הכירו את צוות הליבה של Bitsocial ולמדו על הפרוטוקול החברתי מסוג peer-to-peer שהצוות בונה מאז תחילת 2022."
+      "description": "הכירו את צוות הליבה של Bitsocial, גלו את מי לשאול על כל חלק בפרויקט, וראו איך הוא צמח מאז תחילת 2022 ואת כל מי שתרם לו."
     },
     "blog": {
       "title": "הבלוג של Bitsocial | עדכונים, גרסאות ומדריכים",

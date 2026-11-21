@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "आमच्याबद्दल",
-    "title": "Bitsocial कोअर टीम",
+    "title": "Bitsocial घडवणारे लोक",
     "subtitle": "Bitsocial चा सक्रिय विकास २०२२ च्या सुरुवातीपासून सुरू आहे, हा एक तळागाळातील प्रकल्प असून संस्थापक Esteban Abaroa यांनी पहिल्या दिवसापासून स्वतःच्या बचतीतून त्याला निधी पुरवला आहे.",
     "members": {
-      "esteban": {
-        "role": "बिटसोशल संस्थापक, प्रमुख डेव्हलपर 2022–2026."
-      },
       "rinse": {
-        "role": "बिटसोशियल सह-संस्थापक, मुख्य देव."
+        "role": "बिटसोशियल सह-संस्थापक, मुख्य देव.",
+        "ask": "<askLink>प्रोटोकॉल, नोड्स आणि अँटी-स्पॅम</askLink> बद्दल विचारा"
       },
       "tommaso": {
-        "role": "बिटसोशल सह-संस्थापक आणि मुख्य विकसक, <forgeLink>Bitsocial Forge</forgeLink> चे संस्थापक आणि मुख्य कार्यकारी अधिकारी"
+        "role": "बिटसोशल सह-संस्थापक आणि मुख्य विकसक, <forgeLink>Bitsocial Forge</forgeLink> चे संस्थापक आणि मुख्य कार्यकारी अधिकारी",
+        "ask": "<askLink>अॅप्स, होस्टेड सेवा, वेबसाइट आणि दस्तऐवज</askLink> बद्दल विचारा"
       }
     },
-    "memberProfileAlt": "{{name}} चा प्रोफाइल फोटो"
+    "memberProfileAlt": "{{name}} चा प्रोफाइल फोटो",
+    "organizations": "कोड GitHub वर तीन संस्थांमध्ये आहे: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> आणि <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Bitsocial ला पाठिंबा द्या",
+    "contributeCta": "GitHub वर योगदान द्या",
+    "team": {
+      "title": "कोअर टीम"
+    },
+    "ask": {
+      "title": "कशाबद्दल कोणाला विचारावे",
+      "intro": "Bitsocial च्या एखाद्या भागाबद्दलचे प्रश्न त्या भागाच्या मेंटेनरला विचारा, Telegram वर किंवा त्याच्या एखाद्या रिपॉझिटरीमध्ये इश्यू उघडून.",
+      "privateNote": "काही रिपॉझिटरी खाजगी आहेत आणि त्या इथे दाखवलेल्या नाहीत.",
+      "telegramLabel": "Telegram वर {{name}} यांना संदेश पाठवा"
+    },
+    "areas": {
+      "protocol": {
+        "name": "प्रोटोकॉल",
+        "description": "समुदाय, पोस्ट, स्वाक्षऱ्या आणि आव्हाने नेटवर्कवर कशी काम करतात; pkc-js आणि त्याचा API."
+      },
+      "network": {
+        "name": "नोड्स आणि नेटवर्क",
+        "description": "नोड किंवा समुदाय चालवणे, CLI आणि RPC, .bso नावे, सीडिंग, मतदान आणि शोध."
+      },
+      "antispam": {
+        "name": "अँटी-स्पॅम",
+        "description": "पोस्ट करण्यापूर्वी समुदाय मागू शकणारी आव्हाने, आणि स्पॅम ब्लॉकर."
+      },
+      "apps": {
+        "name": "अॅप्स",
+        "description": "5chan, Seedit आणि इतर क्लायंट, तसेच प्रत्येक क्लायंट ज्यांवर आधारित आहे ते React हुक्स."
+      },
+      "services": {
+        "name": "होस्टेड सेवा",
+        "description": "Forge Images, Forge RPC, 5chan आणि Seedit ची आर्काइव्ह्ज, शोध, लिंक प्रिव्ह्यू आणि बॉट्स."
+      },
+      "web": {
+        "name": "वेबसाइट, दस्तऐवज आणि संशोधन",
+        "description": "bitsocial.net, दस्तऐवज, नेटवर्क आकडेवारी, प्रोटोकॉल प्रस्ताव (BSIPs) आणि संशोधन प्रकल्प."
+      }
+    },
+    "growth": {
+      "title": "Bitsocial कसे वाढले",
+      "intro": "तिन्ही संस्थांमधील प्रत्येक सार्वजनिक रिपॉझिटरीतील दरमहा कमिट्स, क्षेत्रानुसार एकावर एक रचलेले.",
+      "commits_one": "माणसांनी केलेला कमिट",
+      "commits_other": "माणसांनी केलेले कमिट्स",
+      "repositories_one": "सार्वजनिक रिपॉझिटरी",
+      "repositories_other": "सार्वजनिक रिपॉझिटरीज",
+      "organizations_one": "GitHub संस्था",
+      "organizations_other": "GitHub संस्था",
+      "legendLabel": "क्षेत्रे, चार्टच्या तळापासून वर",
+      "axisLabel": "दरमहा कमिट्स",
+      "chartLabel_one": "{{start}} ते {{end}} या काळातील माणसांनी केलेल्या दरमहा कमिट्सचा क्षेत्रानुसार स्टॅक्ड एरिया चार्ट. {{year}} मध्ये आतापर्यंत {{value}} कमिट, तर {{previousYear}} मध्ये {{previousValue}}.",
+      "chartLabel_other": "{{start}} ते {{end}} या काळातील माणसांनी केलेल्या दरमहा कमिट्सचा क्षेत्रानुसार स्टॅक्ड एरिया चार्ट. {{year}} मध्ये आतापर्यंत {{value}} कमिट्स, तर {{previousYear}} मध्ये {{previousValue}}.",
+      "periodSummary_one": "{{period}}: {{value}} कमिट. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} कमिट्स. {{areas}}",
+      "yearCommits_one": "{{value}} कमिट",
+      "yearCommits_other": "{{value}} कमिट्स",
+      "partialMonthLabel": "{{month}}, अपूर्ण",
+      "repositoriesAnnotation_one": "{{year}} च्या अखेरीस {{value}} रिपॉझिटरी, आता {{now}}",
+      "repositoriesAnnotation_other": "{{year}} च्या अखेरीस {{value}} रिपॉझिटरीज, आता {{now}}",
+      "startedAnnotation_one": "त्यापैकी {{value}} चा पहिला कमिट {{year}} मध्ये झाला",
+      "startedAnnotation_other": "त्यापैकी {{value}} चे पहिले कमिट {{year}} मध्ये झाले",
+      "partialAnnotation_ordinal_other": "{{month}} अपूर्ण आहे, {{day}} तारखेपर्यंत",
+      "caption": "फक्त माणसांनी केलेले कमिट्स: बॉट्स, रिलीज ऑटोमेशन आणि दुसऱ्या रिपॉझिटरीतून कॉपी केलेला इतिहास वगळला आहे. २०२६ च्या सुरुवातीपासून बहुतेक विकास AI साधनांच्या मदतीने होतो.",
+      "partialAnnotation_ordinal_one": "{{month}} अपूर्ण आहे, {{day}} तारखेपर्यंत",
+      "partialAnnotation_ordinal_two": "{{month}} अपूर्ण आहे, {{day}} तारखेपर्यंत",
+      "partialAnnotation_ordinal_few": "{{month}} अपूर्ण आहे, {{day}} तारखेपर्यंत",
+      "partialAnnotation_ordinal_many": "{{month}} अपूर्ण आहे, {{day}} तारखेपर्यंत"
+    },
+    "milestones": {
+      "title": "महत्त्वाचे टप्पे",
+      "items": {
+        "specification": "प्रोटोकॉल स्पेसिफिकेशन",
+        "protocolLibrary": "पहिली कार्यरत प्रोटोकॉल लायब्ररी",
+        "reactHooks": "अॅप्स बनवण्यासाठी React हुक्स लायब्ररी",
+        "signedEncrypted": "प्रत्येक प्रकाशन स्वाक्षरीत आणि एन्क्रिप्टेड",
+        "cliNode": "कमांड लाइनवरून चालवता येणारा पहिला नोड",
+        "ed25519": "Ed25519 की आणि AES-GCM एन्क्रिप्शन",
+        "challenges": "प्लग करता येणारी अँटी-स्पॅम आव्हाने",
+        "fivechanRelease": "5chan 0.1.0, नेटवर्कवरील पहिले अॅप",
+        "rpc": "अॅप्स RPC द्वारे रिमोट नोडवर चालू शकतात",
+        "commentUpdates": "मोठ्या समुदायांपर्यंत स्केल होणारे कमेंट अपडेट्स",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "डेस्कटॉप अॅपमधून समुदाय तयार करा आणि होस्ट करा",
+        "fivechanTypescript": "5chan चे TypeScript मध्ये पुनर्लेखन",
+        "httpRouter": "HTTP राउटिंग ट्रॅकरने DHT ची जागा घेतली",
+        "browserP2p": "ब्राउझरमध्येच peer-to-peer, गेटवेशिवाय",
+        "pushNotifications": "वेब, Android आणि डेस्कटॉपवर पुश नोटिफिकेशन्स",
+        "boardDirectories": "/biz/ सारख्या डिरेक्टरीने ओळखले जाणारे 5chan बोर्ड",
+        "spamBlocker": "स्पॅम ब्लॉकर सेवा",
+        "bsoNames": ".bso नावांवरून समुदाय उघडतात",
+        "aiModeration": "AI मॉडरेशन आव्हान",
+        "pubsubVoting": "pubsub वर ट्रस्टलेस मतदान",
+        "bsips": "Bitsocial सुधारणा प्रस्ताव (BSIPs)",
+        "archives": "5chan आणि Seedit साठी सार्वजनिक आर्काइव्ह्ज आणि शोध",
+        "forgeImages": "Forge Images: अॅप्ससाठी मोफत मीडिया होस्टिंग"
+      }
+    },
+    "support": {
+      "title": "Bitsocial ला पाठिंबा द्या",
+      "body": "देणग्या संपूर्ण Bitsocial प्रकल्पासाठी वापरल्या जातात.",
+      "donate": "देणगी द्या",
+      "comingSoon": "देणगीची लिंक लवकरच"
+    },
+    "thanks": {
+      "title": "यांचेही आभार",
+      "intro": "Bitsocial रिपॉझिटरीमध्ये इश्यू किंवा पुल रिक्वेस्ट उघडणारे किंवा कोड कमिट करणारे इतर सर्वजण, योगदानाच्या क्रमाने.",
+      "wallLabel": "योगदानकर्ते",
+      "contributions_one": "{{login}}, {{value}} योगदान",
+      "contributions_other": "{{login}}, {{value}} योगदाने",
+      "nextLabel": "पुढचा अवतार तुमचा असू शकतो: एखादा खुला इश्यू शोधा",
+      "cta": "तुमच्या पहिल्या इश्यू किंवा पुल रिक्वेस्टनंतर तुमचा अवतार इथे दिसेल.",
+      "firstContribution": "तुमचे पहिले योगदान द्या"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial बद्दल | कोअर टीम",
-      "description": "Bitsocial कोअर टीमला भेटा आणि २०२२ च्या सुरुवातीपासून ते तयार करत असलेल्या peer-to-peer सोशल प्रोटोकॉलबद्दल जाणून घ्या."
+      "description": "Bitsocial कोअर टीमला भेटा, प्रकल्पाच्या प्रत्येक भागाबद्दल कोणाला विचारायचे ते पाहा, आणि २०२२ च्या सुरुवातीपासून तो कसा वाढला आणि योगदान देणारे सर्वजण जाणून घ्या."
     },
     "blog": {
       "title": "Bitsocial ब्लॉग | अपडेट्स, रिलीज आणि ट्युटोरियल्स",

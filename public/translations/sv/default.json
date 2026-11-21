@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Om oss",
-    "title": "Bitsocials kärnteam",
+    "title": "Människorna som bygger Bitsocial",
     "subtitle": "Bitsocial har varit under aktiv utveckling sedan början av 2022, ett gräsrotsprojekt finansierat från första dagen av grundaren Esteban Abaroa med hans egna besparingar.",
     "members": {
-      "esteban": {
-        "role": "Bitsocial-grundare, lead dev 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial medgrundare, kärnutvecklare."
+        "role": "Bitsocial medgrundare, kärnutvecklare.",
+        "ask": "Fråga om <askLink>protokollet, noder och antispam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial medgrundare och kärnutvecklare, grundare och VD för <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bitsocial medgrundare och kärnutvecklare, grundare och VD för <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Fråga om <askLink>appar, hostade tjänster, webbplatsen och dokumentationen</askLink>"
       }
     },
-    "memberProfileAlt": "Profilbild på {{name}}"
+    "memberProfileAlt": "Profilbild på {{name}}",
+    "organizations": "Koden finns på GitHub i tre organisationer: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> och <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Stöd Bitsocial",
+    "contributeCta": "Bidra på GitHub",
+    "team": {
+      "title": "Kärnteam"
+    },
+    "ask": {
+      "title": "Vem du ska fråga om vad",
+      "intro": "Frågor om en del av Bitsocial går till den som underhåller den, på Telegram eller som en issue i något av dess repositorier.",
+      "privateNote": "Vissa repositorier är privata och listas inte.",
+      "telegramLabel": "Skicka ett meddelande till {{name}} på Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokoll",
+        "description": "Hur communities, inlägg, signaturer och utmaningar fungerar över nätverket; pkc-js och dess API."
+      },
+      "network": {
+        "name": "Noder och nätverk",
+        "description": "Att köra en nod eller en community, CLI och RPC, .bso-namn, seedning, röstning och upptäckt."
+      },
+      "antispam": {
+        "name": "Antispam",
+        "description": "Utmaningar som en community kan kräva innan man publicerar, och spamblockeraren."
+      },
+      "apps": {
+        "name": "Appar",
+        "description": "5chan, Seedit och de andra klienterna, samt React-hooks som alla klienter bygger på."
+      },
+      "services": {
+        "name": "Hostade tjänster",
+        "description": "Forge Images, Forge RPC, arkiven för 5chan och Seedit, sökning, länkförhandsvisningar och botar."
+      },
+      "web": {
+        "name": "Webbplats, dokumentation och forskning",
+        "description": "bitsocial.net, dokumentationen, nätverksstatistik, protokollförslag (BSIPs) och forskningsprojekt."
+      }
+    },
+    "growth": {
+      "title": "Så växte Bitsocial",
+      "intro": "Commits per månad i alla publika repositorier i de tre organisationerna, staplade per område.",
+      "commits_one": "mänsklig commit",
+      "commits_other": "mänskliga commits",
+      "repositories_one": "publikt repositorium",
+      "repositories_other": "publika repositorier",
+      "organizations_one": "GitHub-organisation",
+      "organizations_other": "GitHub-organisationer",
+      "legendLabel": "Områden, från diagrammets botten och uppåt",
+      "axisLabel": "Commits per månad",
+      "chartLabel_one": "Staplat ytdiagram över mänskliga commits per månad från {{start}} till {{end}}, per område. {{year}} har hittills {{value}} commit, mot {{previousValue}} under {{previousYear}}.",
+      "chartLabel_other": "Staplat ytdiagram över mänskliga commits per månad från {{start}} till {{end}}, per område. {{year}} har hittills {{value}} commits, mot {{previousValue}} under {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, ofullständig",
+      "repositoriesAnnotation_one": "{{value}} repositorium i slutet av {{year}}, {{now}} nu",
+      "repositoriesAnnotation_other": "{{value}} repositorier i slutet av {{year}}, {{now}} nu",
+      "startedAnnotation_one": "{{value}} av dem fick sin första commit {{year}}",
+      "startedAnnotation_other": "{{value}} av dem fick sin första commit {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} är ofullständig, till och med den {{day}}:e",
+      "caption": "Endast commits gjorda av människor: botar, releaseautomatisering och historik som kopierats från andra repositorier räknas inte. Sedan början av 2026 sker det mesta av utvecklingen med hjälp av AI-verktyg.",
+      "partialAnnotation_ordinal_one": "{{month}} är ofullständig, till och med den {{day}}:a",
+      "partialAnnotation_ordinal_two": "{{month}} är ofullständig, till och med den {{day}}:e",
+      "partialAnnotation_ordinal_few": "{{month}} är ofullständig, till och med den {{day}}:e",
+      "partialAnnotation_ordinal_many": "{{month}} är ofullständig, till och med den {{day}}:e"
+    },
+    "milestones": {
+      "title": "Milstolpar",
+      "items": {
+        "specification": "Protokollspecifikation",
+        "protocolLibrary": "Första fungerande protokollbiblioteket",
+        "reactHooks": "React-hooks-bibliotek för att bygga appar",
+        "signedEncrypted": "Varje publicering signerad och krypterad",
+        "cliNode": "Första noden som går att köra från kommandoraden",
+        "ed25519": "Ed25519-nycklar och AES-GCM-kryptering",
+        "challenges": "Utbytbara antispam-utmaningar",
+        "fivechanRelease": "5chan 0.1.0, den första appen på nätverket",
+        "rpc": "Appar kan köras mot en fjärrnod via RPC",
+        "commentUpdates": "Kommentarsuppdateringar som skalar till stora communities",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Skapa och hosta en community från skrivbordsappen",
+        "fivechanTypescript": "5chan omskrivet i TypeScript",
+        "httpRouter": "HTTP-routningstracker ersätter DHT",
+        "browserP2p": "Peer-to-peer i webbläsaren, utan gateway",
+        "pushNotifications": "Pushnotiser på webben, Android och skrivbordet",
+        "boardDirectories": "5chan-boards adresserade som kataloger, som /biz/",
+        "spamBlocker": "Spamblockeringstjänst",
+        "bsoNames": ".bso-namn pekar ut communities",
+        "aiModeration": "AI-modereringsutmaning",
+        "pubsubVoting": "Förtroendelös röstning över pubsub",
+        "bsips": "Förbättringsförslag för Bitsocial (BSIPs)",
+        "archives": "Publika arkiv och sökning för 5chan och Seedit",
+        "forgeImages": "Forge Images: gratis mediehosting för appar"
+      }
+    },
+    "support": {
+      "title": "Stöd Bitsocial",
+      "body": "Donationer går till Bitsocial-projektet som helhet.",
+      "donate": "Donera",
+      "comingSoon": "Donationslänk kommer snart"
+    },
+    "thanks": {
+      "title": "Tack också till",
+      "intro": "Alla andra som har öppnat en issue eller en pull request, eller committat kod, i ett Bitsocial-repositorium, i ordning efter antal bidrag.",
+      "wallLabel": "Bidragsgivare",
+      "contributions_one": "{{login}}, {{value}} bidrag",
+      "contributions_other": "{{login}}, {{value}} bidrag",
+      "nextLabel": "Din avatar kan bli nästa: hitta en öppen issue",
+      "cta": "Din avatar hamnar här efter din första issue eller pull request.",
+      "firstContribution": "Gör ditt första bidrag"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Om Bitsocial | Kärnteam",
-      "description": "Möt Bitsocials kärnteam och läs om det sociala peer-to-peer-protokoll som de har byggt sedan början av 2022."
+      "description": "Möt Bitsocials kärnteam, ta reda på vem du ska fråga om varje del av projektet och se hur det har vuxit sedan början av 2022, och alla som har bidragit."
     },
     "blog": {
       "title": "Bitsocials blogg | Uppdateringar, releaser och guider",

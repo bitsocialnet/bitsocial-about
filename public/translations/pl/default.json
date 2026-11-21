@@ -784,20 +784,149 @@
   },
   "about": {
     "sectionLabel": "O nas",
-    "title": "Zespół główny Bitsocial",
+    "title": "Ludzie, którzy tworzą Bitsocial",
     "subtitle": "Bitsocial jest aktywnie rozwijany od początku 2022 roku — to oddolny projekt finansowany od pierwszego dnia przez założyciela Estebana Abaroę z jego własnych oszczędności.",
     "members": {
-      "esteban": {
-        "role": "Założyciel Bitsocial, główny programista 2022–2026."
-      },
       "rinse": {
-        "role": "Współzałożyciel Bitsocial, główny programista."
+        "role": "Współzałożyciel Bitsocial, główny programista.",
+        "ask": "Pytaj o <askLink>protokół, węzły i antyspam</askLink>"
       },
       "tommaso": {
-        "role": "Współzałożyciel i główny programista Bitsocial, założyciel i dyrektor generalny <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Współzałożyciel i główny programista Bitsocial, założyciel i dyrektor generalny <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Pytaj o <askLink>aplikacje, usługi hostowane, stronę i dokumentację</askLink>"
       }
     },
-    "memberProfileAlt": "Zdjęcie profilowe {{name}}"
+    "memberProfileAlt": "Zdjęcie profilowe {{name}}",
+    "organizations": "Kod znajduje się w serwisie GitHub, w trzech organizacjach: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> i <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Wesprzyj Bitsocial",
+    "contributeCta": "Współtwórz projekt na GitHub",
+    "team": {
+      "title": "Zespół główny"
+    },
+    "ask": {
+      "title": "Kogo o co pytać",
+      "intro": "Pytania dotyczące danej części Bitsocial kieruj do jej opiekuna, przez Telegram lub jako zgłoszenie (issue) w jednym z jej repozytoriów.",
+      "privateNote": "Niektóre repozytoria są prywatne i nie ma ich na liście.",
+      "telegramLabel": "Napisz do {{name}} przez Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokół",
+        "description": "Jak społeczności, posty, podpisy i wyzwania działają w sieci; pkc-js i jego API."
+      },
+      "network": {
+        "name": "Węzły i sieć",
+        "description": "Uruchamianie węzła lub społeczności, CLI i RPC, nazwy .bso, seedowanie, głosowanie i odkrywanie."
+      },
+      "antispam": {
+        "name": "Antyspam",
+        "description": "Wyzwania, których społeczność może wymagać przed opublikowaniem posta, oraz bloker spamu."
+      },
+      "apps": {
+        "name": "Aplikacje",
+        "description": "5chan, Seedit i inne klienty oraz hooki React, na których zbudowany jest każdy klient."
+      },
+      "services": {
+        "name": "Usługi hostowane",
+        "description": "Forge Images, Forge RPC, archiwa 5chan i Seedit, wyszukiwarka, podglądy linków i boty."
+      },
+      "web": {
+        "name": "Strona, dokumentacja i badania",
+        "description": "bitsocial.net, dokumentacja, statystyki sieci, propozycje zmian protokołu (BSIPs) i projekty badawcze."
+      }
+    },
+    "growth": {
+      "title": "Jak rósł Bitsocial",
+      "intro": "Commity miesięcznie we wszystkich publicznych repozytoriach trzech organizacji, ułożone warstwowo według obszarów.",
+      "commits_one": "commit autorstwa ludzi",
+      "commits_few": "commity autorstwa ludzi",
+      "commits_many": "commitów autorstwa ludzi",
+      "commits_other": "commita autorstwa ludzi",
+      "repositories_one": "publiczne repozytorium",
+      "repositories_few": "publiczne repozytoria",
+      "repositories_many": "publicznych repozytoriów",
+      "repositories_other": "publicznego repozytorium",
+      "organizations_one": "organizacja GitHub",
+      "organizations_few": "organizacje GitHub",
+      "organizations_many": "organizacji GitHub",
+      "organizations_other": "organizacji GitHub",
+      "legendLabel": "Obszary, od dołu wykresu w górę",
+      "axisLabel": "Commity miesięcznie",
+      "chartLabel_one": "Skumulowany wykres warstwowy commitów autorstwa ludzi w kolejnych miesiącach ({{start}} – {{end}}), według obszarów. W {{year}} r. jak dotąd {{value}} commit, wobec {{previousValue}} w {{previousYear}} r.",
+      "chartLabel_few": "Skumulowany wykres warstwowy commitów autorstwa ludzi w kolejnych miesiącach ({{start}} – {{end}}), według obszarów. W {{year}} r. jak dotąd {{value}} commity, wobec {{previousValue}} w {{previousYear}} r.",
+      "chartLabel_many": "Skumulowany wykres warstwowy commitów autorstwa ludzi w kolejnych miesiącach ({{start}} – {{end}}), według obszarów. W {{year}} r. jak dotąd {{value}} commitów, wobec {{previousValue}} w {{previousYear}} r.",
+      "chartLabel_other": "Skumulowany wykres warstwowy commitów autorstwa ludzi w kolejnych miesiącach ({{start}} – {{end}}), według obszarów. W {{year}} r. jak dotąd {{value}} commita, wobec {{previousValue}} w {{previousYear}} r.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_few": "{{period}}: {{value}} commity. {{areas}}",
+      "periodSummary_many": "{{period}}: {{value}} commitów. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commita. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_few": "{{value}} commity",
+      "yearCommits_many": "{{value}} commitów",
+      "yearCommits_other": "{{value}} commita",
+      "partialMonthLabel": "{{month}}, niepełny",
+      "repositoriesAnnotation_one": "{{value}} repozytorium na koniec {{year}} r., teraz {{now}}",
+      "repositoriesAnnotation_few": "{{value}} repozytoria na koniec {{year}} r., teraz {{now}}",
+      "repositoriesAnnotation_many": "{{value}} repozytoriów na koniec {{year}} r., teraz {{now}}",
+      "repositoriesAnnotation_other": "{{value}} repozytorium na koniec {{year}} r., teraz {{now}}",
+      "startedAnnotation_one": "{{value}} z nich miało pierwszy commit w {{year}} r.",
+      "startedAnnotation_few": "{{value}} z nich miały pierwszy commit w {{year}} r.",
+      "startedAnnotation_many": "{{value}} z nich miało pierwszy commit w {{year}} r.",
+      "startedAnnotation_other": "{{value}} z nich miało pierwszy commit w {{year}} r.",
+      "partialAnnotation_ordinal_other": "Dane za {{month}} są niepełne, do {{day}}. dnia miesiąca",
+      "caption": "Tylko commity autorstwa ludzi: boty, automatyzacja wydań i skopiowana historia są pominięte. Od początku 2026 roku większość prac rozwojowych odbywa się z pomocą narzędzi AI.",
+      "partialAnnotation_ordinal_one": "Dane za {{month}} są niepełne, do {{day}}. dnia miesiąca",
+      "partialAnnotation_ordinal_two": "Dane za {{month}} są niepełne, do {{day}}. dnia miesiąca",
+      "partialAnnotation_ordinal_few": "Dane za {{month}} są niepełne, do {{day}}. dnia miesiąca",
+      "partialAnnotation_ordinal_many": "Dane za {{month}} są niepełne, do {{day}}. dnia miesiąca"
+    },
+    "milestones": {
+      "title": "Kamienie milowe",
+      "items": {
+        "specification": "Specyfikacja protokołu",
+        "protocolLibrary": "Pierwsza działająca biblioteka protokołu",
+        "reactHooks": "Biblioteka hooków React do tworzenia aplikacji",
+        "signedEncrypted": "Każda publikacja podpisana i zaszyfrowana",
+        "cliNode": "Pierwszy węzeł uruchamiany z wiersza poleceń",
+        "ed25519": "Klucze Ed25519 i szyfrowanie AES-GCM",
+        "challenges": "Wymienne wyzwania antyspamowe",
+        "fivechanRelease": "5chan 0.1.0, pierwsza aplikacja w sieci",
+        "rpc": "Aplikacje mogą działać na zdalnym węźle przez RPC",
+        "commentUpdates": "Aktualizacje komentarzy skalujące się do dużych społeczności",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Tworzenie i hostowanie społeczności w aplikacji desktopowej",
+        "fivechanTypescript": "5chan przepisany na TypeScript",
+        "httpRouter": "Tracker routingu HTTP zastępuje DHT",
+        "browserP2p": "Peer-to-peer w przeglądarce, bez bramy",
+        "pushNotifications": "Powiadomienia push: web, Android i desktop",
+        "boardDirectories": "Tablice 5chan adresowane katalogiem, np. /biz/",
+        "spamBlocker": "Usługa blokowania spamu",
+        "bsoNames": "Nazwy .bso wskazują na społeczności",
+        "aiModeration": "Wyzwanie z moderacją AI",
+        "pubsubVoting": "Bezzaufaniowe głosowanie przez pubsub",
+        "bsips": "Propozycje ulepszeń Bitsocial (BSIPs)",
+        "archives": "Publiczne archiwa i wyszukiwarka dla 5chan i Seedit",
+        "forgeImages": "Forge Images: darmowy hosting multimediów dla aplikacji"
+      }
+    },
+    "support": {
+      "title": "Wesprzyj Bitsocial",
+      "body": "Darowizny trafiają do całego projektu Bitsocial.",
+      "donate": "Przekaż darowiznę",
+      "comingSoon": "Link do darowizn już wkrótce"
+    },
+    "thanks": {
+      "title": "Dziękujemy także",
+      "intro": "Wszystkim pozostałym, którzy otworzyli zgłoszenie lub pull request albo wnieśli kod do repozytorium Bitsocial, w kolejności według liczby wkładów.",
+      "wallLabel": "Współtwórcy",
+      "contributions_one": "{{login}}, {{value}} wkład",
+      "contributions_few": "{{login}}, {{value}} wkłady",
+      "contributions_many": "{{login}}, {{value}} wkładów",
+      "contributions_other": "{{login}}, {{value}} wkładu",
+      "nextLabel": "Twój awatar może być następny: znajdź otwarte zgłoszenie",
+      "cta": "Twój awatar pojawi się tu po pierwszym zgłoszeniu lub pull requeście.",
+      "firstContribution": "Wnieś swój pierwszy wkład"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1088,7 @@
   "seo": {
     "about": {
       "title": "O Bitsocial | Zespół główny",
-      "description": "Poznaj zespół główny Bitsocial i dowiedz się więcej o społecznościowym protokole peer-to-peer, który rozwija od początku 2022 roku."
+      "description": "Poznaj zespół główny Bitsocial, sprawdź, kogo pytać o poszczególne części projektu, i zobacz, jak rozwijał się od początku 2022 roku oraz kto go współtworzył."
     },
     "blog": {
       "title": "Blog Bitsocial | Aktualności, wydania i poradniki",

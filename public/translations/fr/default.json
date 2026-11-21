@@ -784,20 +784,140 @@
   },
   "about": {
     "sectionLabel": "À propos de nous",
-    "title": "Équipe principale de Bitsocial",
+    "title": "Les personnes qui construisent Bitsocial",
     "subtitle": "Bitsocial est en développement actif depuis début 2022, un projet citoyen financé dès le premier jour par son fondateur Esteban Abaroa sur ses propres économies.",
     "members": {
-      "esteban": {
-        "role": "Fondateur de Bitsocial, développeur principal 2022–2026."
-      },
       "rinse": {
-        "role": "Co-fondateur de Bitsocial, développeur principal."
+        "role": "Co-fondateur de Bitsocial, développeur principal.",
+        "ask": "Questions sur <askLink>le protocole, les nœuds et l’anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Co-fondateur et développeur principal de Bitsocial, fondateur et PDG de <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Co-fondateur et développeur principal de Bitsocial, fondateur et PDG de <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Questions sur <askLink>les applications, les services hébergés, le site web et la documentation</askLink>"
       }
     },
-    "memberProfileAlt": "Photo de profil de {{name}}"
+    "memberProfileAlt": "Photo de profil de {{name}}",
+    "organizations": "Le code est sur GitHub, réparti en trois organisations : <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> et <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Soutenir Bitsocial",
+    "contributeCta": "Contribuer sur GitHub",
+    "team": {
+      "title": "Équipe principale"
+    },
+    "ask": {
+      "title": "Qui contacter, et pour quoi",
+      "intro": "Les questions sur une partie de Bitsocial s’adressent à son mainteneur, sur Telegram ou via une issue dans l’un de ses dépôts.",
+      "privateNote": "Certains dépôts sont privés et ne sont pas listés.",
+      "telegramLabel": "Écrire à {{name}} sur Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protocole",
+        "description": "Le fonctionnement des communautés, publications, signatures et défis sur le réseau ; pkc-js et son API."
+      },
+      "network": {
+        "name": "Nœuds et réseau",
+        "description": "Faire tourner un nœud ou une communauté, la CLI et le RPC, les noms .bso, le seeding, le vote et la découverte."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Les défis qu’une communauté peut exiger avant de publier, et le bloqueur de spam."
+      },
+      "apps": {
+        "name": "Applications",
+        "description": "5chan, Seedit et les autres clients, ainsi que les hooks React sur lesquels repose chaque client."
+      },
+      "services": {
+        "name": "Services hébergés",
+        "description": "Forge Images, Forge RPC, les archives de 5chan et Seedit, la recherche, les aperçus de liens et les bots."
+      },
+      "web": {
+        "name": "Site web, documentation et recherche",
+        "description": "bitsocial.net, la documentation, les statistiques du réseau, les propositions de protocole (BSIPs) et les projets de recherche."
+      }
+    },
+    "growth": {
+      "title": "Comment Bitsocial a grandi",
+      "intro": "Commits par mois dans tous les dépôts publics des trois organisations, empilés par domaine.",
+      "commits_one": "commit humain",
+      "commits_many": "commits humains",
+      "commits_other": "commits humains",
+      "repositories_one": "dépôt public",
+      "repositories_many": "dépôts publics",
+      "repositories_other": "dépôts publics",
+      "organizations_one": "organisation GitHub",
+      "organizations_many": "organisations GitHub",
+      "organizations_other": "organisations GitHub",
+      "legendLabel": "Domaines, de la base du graphique vers le haut",
+      "axisLabel": "Commits par mois",
+      "chartLabel_one": "Graphique en aires empilées des commits humains par mois, de {{start}} à {{end}}, par domaine. {{year}} compte {{value}} commit à ce jour, contre {{previousValue}} en {{previousYear}}.",
+      "chartLabel_many": "Graphique en aires empilées des commits humains par mois, de {{start}} à {{end}}, par domaine. {{year}} compte {{value}} commits à ce jour, contre {{previousValue}} en {{previousYear}}.",
+      "chartLabel_other": "Graphique en aires empilées des commits humains par mois, de {{start}} à {{end}}, par domaine. {{year}} compte {{value}} commits à ce jour, contre {{previousValue}} en {{previousYear}}.",
+      "periodSummary_one": "{{period}} : {{value}} commit. {{areas}}",
+      "periodSummary_many": "{{period}} : {{value}} commits. {{areas}}",
+      "periodSummary_other": "{{period}} : {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_many": "{{value}} commits",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, partiel",
+      "repositoriesAnnotation_one": "{{value}} dépôt fin {{year}}, {{now}} aujourd’hui",
+      "repositoriesAnnotation_many": "{{value}} dépôts fin {{year}}, {{now}} aujourd’hui",
+      "repositoriesAnnotation_other": "{{value}} dépôts fin {{year}}, {{now}} aujourd’hui",
+      "startedAnnotation_one": "{{value}} d’entre eux a eu son premier commit en {{year}}",
+      "startedAnnotation_many": "{{value}} d’entre eux ont eu leur premier commit en {{year}}",
+      "startedAnnotation_other": "{{value}} d’entre eux ont eu leur premier commit en {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} est partiel, jusqu’au {{day}}",
+      "caption": "Commits humains uniquement : les bots, l’automatisation des versions et l’historique copié depuis d’autres dépôts sont exclus. Depuis début 2026, l’essentiel du développement se fait avec l’aide d’outils d’IA.",
+      "partialAnnotation_ordinal_one": "{{month}} est partiel, jusqu’au {{day}}er",
+      "partialAnnotation_ordinal_two": "{{month}} est partiel, jusqu’au {{day}}",
+      "partialAnnotation_ordinal_few": "{{month}} est partiel, jusqu’au {{day}}",
+      "partialAnnotation_ordinal_many": "{{month}} est partiel, jusqu’au {{day}}"
+    },
+    "milestones": {
+      "title": "Jalons",
+      "items": {
+        "specification": "Spécification du protocole",
+        "protocolLibrary": "Première bibliothèque de protocole fonctionnelle",
+        "reactHooks": "Bibliothèque de hooks React pour créer des applis",
+        "signedEncrypted": "Chaque publication signée et chiffrée",
+        "cliNode": "Premier nœud exécutable en ligne de commande",
+        "ed25519": "Clés Ed25519 et chiffrement AES-GCM",
+        "challenges": "Défis anti-spam modulaires",
+        "fivechanRelease": "5chan 0.1.0, la première appli du réseau",
+        "rpc": "Les applis peuvent utiliser un nœud distant via RPC",
+        "commentUpdates": "Mises à jour des commentaires adaptées aux grandes communautés",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Créer et héberger une communauté depuis l’appli de bureau",
+        "fivechanTypescript": "5chan réécrit en TypeScript",
+        "httpRouter": "Un tracker de routage HTTP remplace la DHT",
+        "browserP2p": "Le peer-to-peer dans le navigateur, sans passerelle",
+        "pushNotifications": "Notifications push sur le web, Android et bureau",
+        "boardDirectories": "Boards 5chan accessibles par répertoire, comme /biz/",
+        "spamBlocker": "Service de blocage du spam",
+        "bsoNames": "Les noms .bso pointent vers des communautés",
+        "aiModeration": "Défi de modération par IA",
+        "pubsubVoting": "Vote sans tiers de confiance via pubsub",
+        "bsips": "Propositions d’amélioration de Bitsocial (BSIPs)",
+        "archives": "Archives publiques et recherche pour 5chan et Seedit",
+        "forgeImages": "Forge Images : hébergement de médias gratuit pour les applis"
+      }
+    },
+    "support": {
+      "title": "Soutenir Bitsocial",
+      "body": "Les dons vont au projet Bitsocial dans son ensemble.",
+      "donate": "Faire un don",
+      "comingSoon": "Lien de don bientôt disponible"
+    },
+    "thanks": {
+      "title": "Merci aussi à",
+      "intro": "Toutes les autres personnes qui ont ouvert une issue ou une pull request, ou commité du code, dans un dépôt Bitsocial, par nombre de contributions.",
+      "wallLabel": "Contributeurs",
+      "contributions_one": "{{login}}, {{value}} contribution",
+      "contributions_many": "{{login}}, {{value}} contributions",
+      "contributions_other": "{{login}}, {{value}} contributions",
+      "nextLabel": "Votre avatar pourrait être le prochain : trouvez une issue ouverte",
+      "cta": "Votre avatar apparaîtra ici après votre première issue ou pull request.",
+      "firstContribution": "Faites votre première contribution"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1079,7 @@
   "seo": {
     "about": {
       "title": "À propos de Bitsocial | Équipe principale",
-      "description": "Découvrez l’équipe principale de Bitsocial et le protocole social peer-to-peer qu’elle développe depuis début 2022."
+      "description": "Découvrez l’équipe principale de Bitsocial, qui contacter pour chaque partie du projet, comment il a grandi depuis début 2022 et toutes les personnes qui y ont contribué."
     },
     "blog": {
       "title": "Blog Bitsocial | Actualités, versions et tutoriels",

@@ -784,20 +784,122 @@
   },
   "about": {
     "sectionLabel": "关于我们",
-    "title": "Bitsocial 核心团队",
+    "title": "打造 Bitsocial 的人",
     "subtitle": "Bitsocial 自 2022 年初以来一直在积极开发，这是一个草根项目，从第一天起就由创始人 Esteban Abaroa 用自己的积蓄资助。",
     "members": {
-      "esteban": {
-        "role": "Bitsocial 创始人、首席开发人员（2022–2026）"
-      },
       "rinse": {
-        "role": "Bitsocial 联合创始人、核心开发人员"
+        "role": "Bitsocial 联合创始人、核心开发人员",
+        "ask": "可咨询<askLink>协议、节点和反垃圾</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial 联合创始人兼核心开发人员、<forgeLink>Bitsocial Forge</forgeLink> 创始人兼首席执行官"
+        "role": "Bitsocial 联合创始人兼核心开发人员、<forgeLink>Bitsocial Forge</forgeLink> 创始人兼首席执行官",
+        "ask": "可咨询<askLink>应用、托管服务、网站和文档</askLink>"
       }
     },
-    "memberProfileAlt": "{{name}} 的个人资料照片"
+    "memberProfileAlt": "{{name}} 的个人资料照片",
+    "organizations": "代码托管在 GitHub 的三个组织中：<pkcprotocol>pkcprotocol</pkcprotocol>、<bitsocialnet>bitsocialnet</bitsocialnet> 和 <bitsocialforge>bitsocialforge</bitsocialforge>。",
+    "supportCta": "支持 Bitsocial",
+    "contributeCta": "在 GitHub 上贡献",
+    "team": {
+      "title": "核心团队"
+    },
+    "ask": {
+      "title": "什么问题该问谁",
+      "intro": "关于 Bitsocial 某一部分的问题，请通过 Telegram 联系其维护者，或在其仓库中提交 issue。",
+      "privateNote": "部分仓库为私有，未在此列出。",
+      "telegramLabel": "在 Telegram 上给 {{name}} 发消息"
+    },
+    "areas": {
+      "protocol": {
+        "name": "协议",
+        "description": "社区、帖子、签名和挑战在网络上如何运作；pkc-js 及其 API。"
+      },
+      "network": {
+        "name": "节点与网络",
+        "description": "运行节点或社区、CLI 与 RPC、.bso 名称、做种、投票与发现。"
+      },
+      "antispam": {
+        "name": "反垃圾",
+        "description": "社区可要求在发帖前完成的挑战，以及垃圾信息拦截服务。"
+      },
+      "apps": {
+        "name": "应用",
+        "description": "5chan、Seedit 等客户端，以及所有客户端赖以构建的 React hooks。"
+      },
+      "services": {
+        "name": "托管服务",
+        "description": "Forge Images、Forge RPC、5chan 和 Seedit 存档、搜索、链接预览和机器人。"
+      },
+      "web": {
+        "name": "网站、文档与研究",
+        "description": "bitsocial.net、文档、网络统计、协议提案（BSIPs）和研究项目。"
+      }
+    },
+    "growth": {
+      "title": "Bitsocial 的成长历程",
+      "intro": "三个组织中所有公开仓库的每月提交数，按领域堆叠。",
+      "commits_other": "由人完成的提交",
+      "repositories_other": "公开仓库",
+      "organizations_other": "GitHub 组织",
+      "legendLabel": "领域（自图表底部向上）",
+      "axisLabel": "每月提交数",
+      "chartLabel_other": "{{start}}至{{end}}每月由人完成的提交数堆叠面积图，按领域划分。{{year}} 年迄今已有 {{value}} 次提交，{{previousYear}} 年为 {{previousValue}} 次。",
+      "periodSummary_other": "{{period}}：{{value}} 次提交。{{areas}}",
+      "yearCommits_other": "{{value}} 次提交",
+      "partialMonthLabel": "{{month}}（不完整）",
+      "repositoriesAnnotation_other": "{{year}} 年底有 {{value}} 个仓库，现有 {{now}} 个",
+      "startedAnnotation_other": "其中 {{value}} 个在 {{year}} 年首次提交",
+      "partialAnnotation_ordinal_other": "{{month}}数据不完整，截至 {{day}} 日",
+      "caption": "仅统计由人完成的提交：机器人、发布自动化以及从其他仓库复制的历史均不计入。自 2026 年初起，大部分开发都借助了 AI 编程工具。",
+      "partialAnnotation_ordinal_one": "{{month}}数据不完整，截至 {{day}} 日",
+      "partialAnnotation_ordinal_two": "{{month}}数据不完整，截至 {{day}} 日",
+      "partialAnnotation_ordinal_few": "{{month}}数据不完整，截至 {{day}} 日",
+      "partialAnnotation_ordinal_many": "{{month}}数据不完整，截至 {{day}} 日"
+    },
+    "milestones": {
+      "title": "里程碑",
+      "items": {
+        "specification": "协议规范",
+        "protocolLibrary": "首个可用的协议库",
+        "reactHooks": "用于构建应用的 React hooks 库",
+        "signedEncrypted": "所有发布内容均签名并加密",
+        "cliNode": "首个可从命令行运行的节点",
+        "ed25519": "Ed25519 密钥与 AES-GCM 加密",
+        "challenges": "可插拔的反垃圾挑战",
+        "fivechanRelease": "5chan 0.1.0，网络上的首个应用",
+        "rpc": "应用可通过 RPC 使用远程节点",
+        "commentUpdates": "可扩展到大型社区的评论更新",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "在桌面应用中创建并托管社区",
+        "fivechanTypescript": "5chan 用 TypeScript 重写",
+        "httpRouter": "HTTP 路由追踪器取代 DHT",
+        "browserP2p": "浏览器内点对点，无需网关",
+        "pushNotifications": "网页、Android 和桌面端推送通知",
+        "boardDirectories": "5chan 版块按目录寻址，如 /biz/",
+        "spamBlocker": "垃圾信息拦截服务",
+        "bsoNames": ".bso 名称可解析到社区",
+        "aiModeration": "AI 审核挑战",
+        "pubsubVoting": "基于 pubsub 的去信任投票",
+        "bsips": "Bitsocial 改进提案（BSIPs）",
+        "archives": "5chan 和 Seedit 的公开存档与搜索",
+        "forgeImages": "Forge Images：为应用提供免费媒体托管"
+      }
+    },
+    "support": {
+      "title": "支持 Bitsocial",
+      "body": "捐款将用于整个 Bitsocial 项目。",
+      "donate": "捐款",
+      "comingSoon": "捐款链接即将上线"
+    },
+    "thanks": {
+      "title": "同样感谢",
+      "intro": "所有其他在 Bitsocial 仓库中提交过 issue、pull request 或代码的人，按贡献数排序。",
+      "wallLabel": "贡献者",
+      "contributions_other": "{{login}}，{{value}} 次贡献",
+      "nextLabel": "下一个头像可能就是你的：找一个未关闭的 issue",
+      "cta": "提交第一个 issue 或 pull request 后，你的头像就会出现在这里。",
+      "firstContribution": "做出你的第一次贡献"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1061,7 @@
   "seo": {
     "about": {
       "title": "关于 Bitsocial | 核心团队",
-      "description": "认识 Bitsocial 核心团队，了解他们自 2022 年初以来一直在构建的点对点社交协议。"
+      "description": "认识 Bitsocial 核心团队，了解项目各部分该问谁，看看它自 2022 年初以来如何成长，以及所有贡献者。"
     },
     "blog": {
       "title": "Bitsocial 博客 | 动态、版本发布与教程",

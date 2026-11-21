@@ -784,20 +784,122 @@
   },
   "about": {
     "sectionLabel": "私たちについて",
-    "title": "Bitsocial コアチーム",
+    "title": "Bitsocial をつくる人たち",
     "subtitle": "Bitsocial は2022年初頭から活発に開発が続けられており、創設者の Esteban Abaroa が初日から自身の貯蓄で資金を出してきた草の根のプロジェクトです。",
     "members": {
-      "esteban": {
-        "role": "Bitsocial 創設者、主任開発者（2022–2026）。"
-      },
       "rinse": {
-        "role": "Bitsocial 共同創設者、コア開発者。"
+        "role": "Bitsocial 共同創設者、コア開発者。",
+        "ask": "<askLink>プロトコル、ノード、スパム対策</askLink>について質問する"
       },
       "tommaso": {
-        "role": "Bitsocial の共同創設者兼コア開発者、<forgeLink>Bitsocial Forge</forgeLink> の創設者兼 CEO"
+        "role": "Bitsocial の共同創設者兼コア開発者、<forgeLink>Bitsocial Forge</forgeLink> の創設者兼 CEO",
+        "ask": "<askLink>アプリ、ホスティングサービス、Webサイト、ドキュメント</askLink>について質問する"
       }
     },
-    "memberProfileAlt": "{{name}} のプロフィール写真"
+    "memberProfileAlt": "{{name}} のプロフィール写真",
+    "organizations": "コードは GitHub 上の3つの組織で公開しています：<pkcprotocol>pkcprotocol</pkcprotocol>、<bitsocialnet>bitsocialnet</bitsocialnet>、<bitsocialforge>bitsocialforge</bitsocialforge>。",
+    "supportCta": "Bitsocial を支援する",
+    "contributeCta": "GitHub で貢献する",
+    "team": {
+      "title": "コアチーム"
+    },
+    "ask": {
+      "title": "誰に何を聞けばいいか",
+      "intro": "Bitsocial の各分野についての質問は、その担当メンテナーへ。Telegram で連絡するか、該当するリポジトリに issue を立ててください。",
+      "privateNote": "一部のリポジトリは非公開のため掲載していません。",
+      "telegramLabel": "Telegram で {{name}} にメッセージを送る"
+    },
+    "areas": {
+      "protocol": {
+        "name": "プロトコル",
+        "description": "コミュニティ、投稿、署名、チャレンジがネットワーク上でどう動くか。pkc-js とその API。"
+      },
+      "network": {
+        "name": "ノードとネットワーク",
+        "description": "ノードやコミュニティの運用、CLI と RPC、.bso 名、シーディング、投票、ディスカバリー。"
+      },
+      "antispam": {
+        "name": "スパム対策",
+        "description": "コミュニティが投稿前に課せるチャレンジと、スパムブロッカー。"
+      },
+      "apps": {
+        "name": "アプリ",
+        "description": "5chan、Seedit などのクライアントと、すべてのクライアントの土台となる React hooks。"
+      },
+      "services": {
+        "name": "ホスティングサービス",
+        "description": "Forge Images、Forge RPC、5chan と Seedit のアーカイブ、検索、リンクプレビュー、ボット。"
+      },
+      "web": {
+        "name": "Webサイト、ドキュメント、研究",
+        "description": "bitsocial.net、ドキュメント、ネットワーク統計、プロトコル提案（BSIPs）、研究プロジェクト。"
+      }
+    },
+    "growth": {
+      "title": "Bitsocial の成長",
+      "intro": "3つの組織のすべての公開リポジトリにおける月ごとのコミット数を、分野別に積み上げて表示しています。",
+      "commits_other": "人によるコミット",
+      "repositories_other": "公開リポジトリ",
+      "organizations_other": "GitHub 組織",
+      "legendLabel": "分野（グラフの下から順に）",
+      "axisLabel": "月ごとのコミット数",
+      "chartLabel_other": "{{start}}から{{end}}までの、人による月ごとのコミット数を分野別に示した積み上げ面グラフ。{{year}}年はこれまでに{{value}}件で、{{previousYear}}年は{{previousValue}}件でした。",
+      "periodSummary_other": "{{period}}：{{value}} コミット。{{areas}}",
+      "yearCommits_other": "{{value}} コミット",
+      "partialMonthLabel": "{{month}}（途中）",
+      "repositoriesAnnotation_other": "{{year}}年末に{{value}}リポジトリ、現在は{{now}}",
+      "startedAnnotation_other": "うち{{value}}件は{{year}}年に最初のコミット",
+      "partialAnnotation_ordinal_other": "{{month}}は{{day}}日までの途中集計",
+      "caption": "人によるコミットのみを集計しています。ボット、リリース自動化、他のリポジトリからコピーされた履歴は除外しています。2026年初頭からは、開発の大半が AI の支援を受けて行われています。",
+      "partialAnnotation_ordinal_one": "{{month}}は{{day}}日までの途中集計",
+      "partialAnnotation_ordinal_two": "{{month}}は{{day}}日までの途中集計",
+      "partialAnnotation_ordinal_few": "{{month}}は{{day}}日までの途中集計",
+      "partialAnnotation_ordinal_many": "{{month}}は{{day}}日までの途中集計"
+    },
+    "milestones": {
+      "title": "マイルストーン",
+      "items": {
+        "specification": "プロトコル仕様",
+        "protocolLibrary": "初めて動作したプロトコルライブラリ",
+        "reactHooks": "アプリ開発のための React hooks ライブラリ",
+        "signedEncrypted": "すべての投稿を署名・暗号化",
+        "cliNode": "コマンドラインで動かせる初のノード",
+        "ed25519": "Ed25519 鍵と AES-GCM 暗号化",
+        "challenges": "差し替え可能なスパム対策チャレンジ",
+        "fivechanRelease": "5chan 0.1.0、ネットワーク初のアプリ",
+        "rpc": "アプリが RPC 経由でリモートノードを利用可能に",
+        "commentUpdates": "大規模コミュニティにも対応するコメント更新",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "デスクトップアプリでコミュニティを作成・ホスト",
+        "fivechanTypescript": "5chan を TypeScript で書き直し",
+        "httpRouter": "HTTP ルーティングトラッカーが DHT を置き換え",
+        "browserP2p": "ゲートウェイ不要のブラウザ内ピアツーピア",
+        "pushNotifications": "Web、Android、デスクトップでのプッシュ通知",
+        "boardDirectories": "/biz/ のようなディレクトリで開ける 5chan の板",
+        "spamBlocker": "スパムブロッカーサービス",
+        "bsoNames": ".bso 名でコミュニティを名前解決",
+        "aiModeration": "AI モデレーションチャレンジ",
+        "pubsubVoting": "pubsub によるトラストレスな投票",
+        "bsips": "Bitsocial 改善提案（BSIPs）",
+        "archives": "5chan と Seedit の公開アーカイブと検索",
+        "forgeImages": "Forge Images：アプリ向けの無料メディアホスティング"
+      }
+    },
+    "support": {
+      "title": "Bitsocial を支援する",
+      "body": "寄付は Bitsocial プロジェクト全体のために使われます。",
+      "donate": "寄付する",
+      "comingSoon": "寄付リンクは近日公開予定"
+    },
+    "thanks": {
+      "title": "こちらの皆さんにも感謝します",
+      "intro": "Bitsocial のリポジトリで issue や pull request を作成した方、コードをコミットした方すべて（貢献数の多い順）。",
+      "wallLabel": "コントリビューター",
+      "contributions_other": "{{login}}、{{value}} 件の貢献",
+      "nextLabel": "次はあなたのアバターかもしれません：未解決の issue を探す",
+      "cta": "最初の issue か pull request を出すと、ここにあなたのアバターが表示されます。",
+      "firstContribution": "初めての貢献をする"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1061,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial について | コアチーム",
-      "description": "Bitsocial のコアチームを紹介し、2022年初頭から開発を続けているピアツーピアのソーシャルプロトコルについて解説します。"
+      "description": "Bitsocial のコアチーム、分野ごとの問い合わせ先、2022年初頭からの成長の歩み、そしてこれまで貢献してくれたすべての人を紹介します。"
     },
     "blog": {
       "title": "Bitsocial ブログ | 最新情報、リリース、チュートリアル",

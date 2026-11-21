@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "درباره ما",
-    "title": "تیم اصلی Bitsocial",
+    "title": "کسانی که Bitsocial را می‌سازند",
     "subtitle": "Bitsocial از اوایل سال ۲۰۲۲ در حال توسعهٔ فعال است؛ پروژه‌ای مردمی که از همان روز نخست توسط بنیان‌گذار آن، Esteban Abaroa، از پس‌انداز شخصی‌اش تأمین مالی شده است.",
     "members": {
-      "esteban": {
-        "role": "بنیانگذار Bitsocial، توسعه‌دهنده ارشد ۲۰۲۲–۲۰۲۶."
-      },
       "rinse": {
-        "role": "بنیانگذار Bitsocial، توسعه دهنده اصلی."
+        "role": "بنیانگذار Bitsocial، توسعه دهنده اصلی.",
+        "ask": "دربارهٔ <askLink>پروتکل، گره‌ها و ضداسپم</askLink> بپرسید"
       },
       "tommaso": {
-        "role": "بنیانگذار Bitsocial و توسعه دهنده اصلی، بنیانگذار و مدیر عامل <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "بنیانگذار Bitsocial و توسعه دهنده اصلی، بنیانگذار و مدیر عامل <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "دربارهٔ <askLink>برنامه‌ها، سرویس‌های میزبانی‌شده، وب‌سایت و مستندات</askLink> بپرسید"
       }
     },
-    "memberProfileAlt": "عکس نمایه {{name}}"
+    "memberProfileAlt": "عکس نمایه {{name}}",
+    "organizations": "کد در GitHub و در سه سازمان قرار دارد: <pkcprotocol>pkcprotocol</pkcprotocol>، <bitsocialnet>bitsocialnet</bitsocialnet> و <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "از Bitsocial حمایت کنید",
+    "contributeCta": "در GitHub مشارکت کنید",
+    "team": {
+      "title": "تیم اصلی"
+    },
+    "ask": {
+      "title": "هر سؤال را از چه کسی بپرسید",
+      "intro": "پرسش‌های مربوط به هر بخش از Bitsocial را از نگه‌دارندهٔ همان بخش بپرسید، در Telegram یا با ثبت ایشو در یکی از مخازن آن.",
+      "privateNote": "برخی مخازن خصوصی هستند و در این فهرست نیامده‌اند.",
+      "telegramLabel": "پیام به {{name}} در Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "پروتکل",
+        "description": "اینکه جامعه‌ها، پست‌ها، امضاها و چالش‌ها در سطح پروتکل چگونه کار می‌کنند؛ pkc-js و API آن."
+      },
+      "network": {
+        "name": "گره‌ها و شبکه",
+        "description": "اجرای یک گره یا جامعه، CLI و RPC، نام‌های .bso، سیدکردن، رأی‌گیری و کشف."
+      },
+      "antispam": {
+        "name": "ضداسپم",
+        "description": "چالش‌هایی که یک جامعه می‌تواند پیش از ارسال پست الزامی کند، و سرویس مسدودکنندهٔ اسپم."
+      },
+      "apps": {
+        "name": "برنامه‌ها",
+        "description": "5chan، Seedit و دیگر کلاینت‌ها، و هوک‌های React که همهٔ کلاینت‌ها بر پایهٔ آن‌ها ساخته می‌شوند."
+      },
+      "services": {
+        "name": "سرویس‌های میزبانی‌شده",
+        "description": "Forge Images، Forge RPC، آرشیوهای 5chan و Seedit، جستجو، پیش‌نمایش پیوندها و ربات‌ها."
+      },
+      "web": {
+        "name": "وب‌سایت، مستندات و پژوهش",
+        "description": "bitsocial.net، مستندات، آمار شبکه، پیشنهادهای پروتکل (BSIPs) و پروژه‌های پژوهشی."
+      }
+    },
+    "growth": {
+      "title": "Bitsocial چگونه رشد کرد",
+      "intro": "کامیت‌های ماهانه در همهٔ مخازن عمومی سه سازمان، به‌صورت انباشته و به تفکیک حوزه.",
+      "commits_one": "کامیت انسانی",
+      "commits_other": "کامیت انسانی",
+      "repositories_one": "مخزن عمومی",
+      "repositories_other": "مخزن عمومی",
+      "organizations_one": "سازمان GitHub",
+      "organizations_other": "سازمان GitHub",
+      "legendLabel": "حوزه‌ها، از پایین نمودار به بالا",
+      "axisLabel": "کامیت در ماه",
+      "chartLabel_one": "نمودار مساحتی انباشتهٔ کامیت‌های انسانی در هر ماه از {{start}} تا {{end}}، به تفکیک حوزه. سال {{year}} تاکنون {{value}} کامیت داشته است، در برابر {{previousValue}} در {{previousYear}}.",
+      "chartLabel_other": "نمودار مساحتی انباشتهٔ کامیت‌های انسانی در هر ماه از {{start}} تا {{end}}، به تفکیک حوزه. سال {{year}} تاکنون {{value}} کامیت داشته است، در برابر {{previousValue}} در {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} کامیت. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} کامیت. {{areas}}",
+      "yearCommits_one": "{{value}} کامیت",
+      "yearCommits_other": "{{value}} کامیت",
+      "partialMonthLabel": "{{month}}، ناقص",
+      "repositoriesAnnotation_one": "{{value}} مخزن در پایان {{year}}، اکنون {{now}}",
+      "repositoriesAnnotation_other": "{{value}} مخزن در پایان {{year}}، اکنون {{now}}",
+      "startedAnnotation_one": "نخستین کامیتِ {{value}} مورد از آن‌ها در {{year}} بود",
+      "startedAnnotation_other": "نخستین کامیتِ {{value}} مورد از آن‌ها در {{year}} بود",
+      "partialAnnotation_ordinal_other": "داده‌های {{month}} ناقص است، تا روز {{day}}",
+      "caption": "فقط کامیت‌های انسانی: ربات‌ها، خودکارسازی انتشار و تاریخچهٔ کپی‌شده از مخازن دیگر حساب نشده‌اند. از اوایل ۲۰۲۶ بیشتر توسعه با کمک هوش مصنوعی انجام می‌شود.",
+      "partialAnnotation_ordinal_one": "داده‌های {{month}} ناقص است، تا روز {{day}}",
+      "partialAnnotation_ordinal_two": "داده‌های {{month}} ناقص است، تا روز {{day}}",
+      "partialAnnotation_ordinal_few": "داده‌های {{month}} ناقص است، تا روز {{day}}",
+      "partialAnnotation_ordinal_many": "داده‌های {{month}} ناقص است، تا روز {{day}}"
+    },
+    "milestones": {
+      "title": "نقاط عطف",
+      "items": {
+        "specification": "مشخصات پروتکل",
+        "protocolLibrary": "نخستین کتابخانهٔ کارای پروتکل",
+        "reactHooks": "کتابخانهٔ هوک‌های React برای ساخت برنامه",
+        "signedEncrypted": "امضا و رمزگذاری همهٔ انتشارها",
+        "cliNode": "نخستین گره‌ای که از خط فرمان اجرا می‌شود",
+        "ed25519": "کلیدهای Ed25519 و رمزگذاری AES-GCM",
+        "challenges": "چالش‌های ضداسپم افزونه‌پذیر",
+        "fivechanRelease": "5chan 0.1.0، نخستین برنامه روی شبکه",
+        "rpc": "اجرای برنامه‌ها روی گره راه دور از طریق RPC",
+        "commentUpdates": "به‌روزرسانی دیدگاه‌ها، مقیاس‌پذیر برای جامعه‌های بزرگ",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "ساخت و میزبانی جامعه از برنامهٔ دسکتاپ",
+        "fivechanTypescript": "بازنویسی 5chan با TypeScript",
+        "httpRouter": "ردیاب مسیریابی HTTP جایگزین DHT شد",
+        "browserP2p": "همتا به همتا در مرورگر، بدون دروازه",
+        "pushNotifications": "اعلان‌های push در وب، Android و دسکتاپ",
+        "boardDirectories": "نشانی‌دهی بردهای 5chan با پوشه، مانند /biz/",
+        "spamBlocker": "سرویس مسدودکنندهٔ اسپم",
+        "bsoNames": "نام‌های .bso به جامعه‌ها اشاره می‌کنند",
+        "aiModeration": "چالش نظارت با هوش مصنوعی",
+        "pubsubVoting": "رأی‌گیری بی‌نیاز از اعتماد روی pubsub",
+        "bsips": "پیشنهادهای بهبود Bitsocial (BSIPs)",
+        "archives": "آرشیو عمومی و جستجو برای 5chan و Seedit",
+        "forgeImages": "Forge Images: میزبانی رایگان رسانه برای برنامه‌ها"
+      }
+    },
+    "support": {
+      "title": "از Bitsocial حمایت کنید",
+      "body": "کمک‌های مالی به کل پروژهٔ Bitsocial می‌رسد.",
+      "donate": "کمک مالی",
+      "comingSoon": "پیوند کمک مالی به‌زودی"
+    },
+    "thanks": {
+      "title": "همچنین سپاس از",
+      "intro": "همهٔ کسانی که در یکی از مخازن Bitsocial ایشو یا pull request باز کرده یا کد کامیت کرده‌اند، به ترتیب تعداد مشارکت‌ها.",
+      "wallLabel": "مشارکت‌کنندگان",
+      "contributions_one": "{{login}}، {{value}} مشارکت",
+      "contributions_other": "{{login}}، {{value}} مشارکت",
+      "nextLabel": "آواتار بعدی می‌تواند مال شما باشد: یک ایشوی باز پیدا کنید",
+      "cta": "آواتار شما پس از نخستین ایشو یا pull request اینجا نمایش داده می‌شود.",
+      "firstContribution": "نخستین مشارکت خود را انجام دهید"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "درباره Bitsocial | تیم اصلی",
-      "description": "با تیم اصلی Bitsocial آشنا شوید و دربارهٔ پروتکل اجتماعی همتا به همتایی که از اوایل سال ۲۰۲۲ در حال ساخت آن هستند بیشتر بدانید."
+      "description": "با تیم اصلی Bitsocial آشنا شوید، ببینید دربارهٔ هر بخش از پروژه از چه کسی بپرسید، و رشد آن از اوایل ۲۰۲۲ و همهٔ مشارکت‌کنندگانش را ببینید."
     },
     "blog": {
       "title": "وبلاگ Bitsocial | به‌روزرسانی‌ها، نسخه‌ها و آموزش‌ها",

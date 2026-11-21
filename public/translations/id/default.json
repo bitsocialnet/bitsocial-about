@@ -784,20 +784,122 @@
   },
   "about": {
     "sectionLabel": "Tentang kami",
-    "title": "Tim inti Bitsocial",
+    "title": "Orang-orang di balik Bitsocial",
     "subtitle": "Bitsocial telah dikembangkan secara aktif sejak awal 2022, sebuah proyek dari akar rumput yang didanai sejak hari pertama oleh pendirinya, Esteban Abaroa, dari tabungannya sendiri.",
     "members": {
-      "esteban": {
-        "role": "Pendiri Bitsocial, pengembang utama 2022–2026."
-      },
       "rinse": {
-        "role": "Co-Founder Bitsocial, pengembang inti."
+        "role": "Co-Founder Bitsocial, pengembang inti.",
+        "ask": "Tanya soal <askLink>protokol, node, dan anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Salah satu pendiri dan pengembang inti Bitsocial, pendiri & CEO <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Salah satu pendiri dan pengembang inti Bitsocial, pendiri & CEO <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Tanya soal <askLink>aplikasi, layanan yang di-hosting, situs web, dan dokumentasi</askLink>"
       }
     },
-    "memberProfileAlt": "Foto profil {{name}}"
+    "memberProfileAlt": "Foto profil {{name}}",
+    "organizations": "Kodenya ada di GitHub dalam tiga organisasi: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet>, dan <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Dukung Bitsocial",
+    "contributeCta": "Berkontribusi di GitHub",
+    "team": {
+      "title": "Tim inti"
+    },
+    "ask": {
+      "title": "Bertanya kepada siapa",
+      "intro": "Pertanyaan tentang suatu bagian Bitsocial ditujukan ke pengelolanya, lewat Telegram atau sebagai issue di salah satu repositorinya.",
+      "privateNote": "Beberapa repositori bersifat privat dan tidak dicantumkan.",
+      "telegramLabel": "Kirim pesan ke {{name}} di Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokol",
+        "description": "Cara kerja komunitas, postingan, tanda tangan, dan tantangan di jaringan; pkc-js dan API-nya."
+      },
+      "network": {
+        "name": "Node dan jaringan",
+        "description": "Menjalankan node atau komunitas, CLI dan RPC, nama .bso, seeding, voting, dan penemuan."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Tantangan yang bisa diwajibkan komunitas sebelum orang memposting, dan pemblokir spam."
+      },
+      "apps": {
+        "name": "Aplikasi",
+        "description": "5chan, Seedit, dan klien lainnya, serta React hooks yang menjadi dasar setiap klien."
+      },
+      "services": {
+        "name": "Layanan yang di-hosting",
+        "description": "Forge Images, Forge RPC, arsip 5chan dan Seedit, pencarian, pratinjau tautan, dan bot."
+      },
+      "web": {
+        "name": "Situs web, dokumentasi, dan riset",
+        "description": "bitsocial.net, dokumentasi, statistik jaringan, usulan protokol (BSIPs), dan proyek riset."
+      }
+    },
+    "growth": {
+      "title": "Bagaimana Bitsocial tumbuh",
+      "intro": "Commit per bulan di semua repositori publik dalam ketiga organisasi, ditumpuk per area.",
+      "commits_other": "commit oleh manusia",
+      "repositories_other": "repositori publik",
+      "organizations_other": "organisasi GitHub",
+      "legendLabel": "Area, dari dasar grafik ke atas",
+      "axisLabel": "Commit per bulan",
+      "chartLabel_other": "Grafik area bertumpuk commit oleh manusia per bulan dari {{start}} hingga {{end}}, per area. Sejauh ini {{year}} mencatat {{value}} commit, dibandingkan {{previousValue}} pada {{previousYear}}.",
+      "periodSummary_other": "{{period}}: {{value}} commit. {{areas}}",
+      "yearCommits_other": "{{value}} commit",
+      "partialMonthLabel": "{{month}}, sebagian",
+      "repositoriesAnnotation_other": "{{value}} repositori pada akhir {{year}}, kini {{now}}",
+      "startedAnnotation_other": "{{value}} di antaranya mendapat commit pertama pada {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} belum lengkap, hingga tanggal {{day}}",
+      "caption": "Hanya commit oleh manusia: bot, otomatisasi rilis, dan riwayat yang disalin dari repositori lain tidak dihitung. Sejak awal 2026, sebagian besar pengembangan dibantu alat AI.",
+      "partialAnnotation_ordinal_one": "{{month}} belum lengkap, hingga tanggal {{day}}",
+      "partialAnnotation_ordinal_two": "{{month}} belum lengkap, hingga tanggal {{day}}",
+      "partialAnnotation_ordinal_few": "{{month}} belum lengkap, hingga tanggal {{day}}",
+      "partialAnnotation_ordinal_many": "{{month}} belum lengkap, hingga tanggal {{day}}"
+    },
+    "milestones": {
+      "title": "Pencapaian",
+      "items": {
+        "specification": "Spesifikasi protokol",
+        "protocolLibrary": "Pustaka protokol pertama yang berfungsi",
+        "reactHooks": "Pustaka React hooks untuk membangun aplikasi",
+        "signedEncrypted": "Setiap publikasi ditandatangani dan dienkripsi",
+        "cliNode": "Node pertama yang bisa dijalankan dari baris perintah",
+        "ed25519": "Kunci Ed25519 dan enkripsi AES-GCM",
+        "challenges": "Tantangan anti-spam modular",
+        "fivechanRelease": "5chan 0.1.0, aplikasi pertama di jaringan",
+        "rpc": "Aplikasi bisa memakai node jarak jauh lewat RPC",
+        "commentUpdates": "Pembaruan komentar yang sanggup melayani komunitas besar",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Membuat dan meng-hosting komunitas dari aplikasi desktop",
+        "fivechanTypescript": "5chan ditulis ulang dengan TypeScript",
+        "httpRouter": "Pelacak routing HTTP menggantikan DHT",
+        "browserP2p": "Peer-to-peer di peramban, tanpa gateway",
+        "pushNotifications": "Notifikasi push di web, Android, dan desktop",
+        "boardDirectories": "Board 5chan dengan alamat direktori, seperti /biz/",
+        "spamBlocker": "Layanan pemblokir spam",
+        "bsoNames": "Nama .bso mengarah ke komunitas",
+        "aiModeration": "Tantangan moderasi AI",
+        "pubsubVoting": "Voting trustless lewat pubsub",
+        "bsips": "Proposal Peningkatan Bitsocial (BSIPs)",
+        "archives": "Arsip publik dan pencarian untuk 5chan dan Seedit",
+        "forgeImages": "Forge Images: hosting media gratis untuk aplikasi"
+      }
+    },
+    "support": {
+      "title": "Dukung Bitsocial",
+      "body": "Donasi diberikan untuk proyek Bitsocial secara keseluruhan.",
+      "donate": "Donasi",
+      "comingSoon": "Tautan donasi segera hadir"
+    },
+    "thanks": {
+      "title": "Terima kasih juga kepada",
+      "intro": "Semua orang lain yang pernah membuka issue atau pull request, atau meng-commit kode, di repositori Bitsocial, diurutkan menurut jumlah kontribusi.",
+      "wallLabel": "Kontributor",
+      "contributions_other": "{{login}}, {{value}} kontribusi",
+      "nextLabel": "Avatar Anda bisa jadi yang berikutnya: cari issue yang terbuka",
+      "cta": "Avatar Anda akan muncul di sini setelah issue atau pull request pertama Anda.",
+      "firstContribution": "Buat kontribusi pertama Anda"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1061,7 @@
   "seo": {
     "about": {
       "title": "Tentang Bitsocial | Tim Inti",
-      "description": "Kenali tim inti Bitsocial dan pelajari protokol sosial peer-to-peer yang telah mereka bangun sejak awal 2022."
+      "description": "Kenali tim inti Bitsocial, cari tahu kepada siapa bertanya tentang tiap bagian proyek, dan lihat pertumbuhannya sejak awal 2022 serta semua orang yang telah berkontribusi."
     },
     "blog": {
       "title": "Blog Bitsocial | Pembaruan, Rilis, dan Tutorial",

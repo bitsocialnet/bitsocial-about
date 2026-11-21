@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "ہمارے بارے میں",
-    "title": "Bitsocial کی بنیادی ٹیم",
+    "title": "Bitsocial بنانے والے لوگ",
     "subtitle": "Bitsocial 2022 کے اوائل سے فعال طور پر زیرِ تعمیر ہے، یہ ایک عوامی سطح کا منصوبہ ہے جسے پہلے دن سے بانی Esteban Abaroa نے اپنی ذاتی بچت سے مالی معاونت فراہم کی ہے۔",
     "members": {
-      "esteban": {
-        "role": "بٹسوشل بانی، لیڈ ڈیولپر 2022–2026۔"
-      },
       "rinse": {
-        "role": "بٹسوشل شریک بانی، بنیادی دیو۔"
+        "role": "بٹسوشل شریک بانی، بنیادی دیو۔",
+        "ask": "<askLink>پروٹوکول، نوڈز اور اینٹی اسپام</askLink> کے بارے میں پوچھیں"
       },
       "tommaso": {
-        "role": "بٹسوشل کے شریک بانی اور بنیادی ڈویلپر، [[فورج]] کے بانی اور سی ای او"
+        "role": "بٹسوشل کے شریک بانی اور بنیادی ڈویلپر، [[فورج]] کے بانی اور سی ای او",
+        "ask": "<askLink>ایپس، ہوسٹڈ سروسز، ویب سائٹ اور دستاویزات</askLink> کے بارے میں پوچھیں"
       }
     },
-    "memberProfileAlt": "{{name}} کی پروفائل تصویر"
+    "memberProfileAlt": "{{name}} کی پروفائل تصویر",
+    "organizations": "کوڈ GitHub پر تین تنظیموں میں موجود ہے: <pkcprotocol>pkcprotocol</pkcprotocol>، <bitsocialnet>bitsocialnet</bitsocialnet> اور <bitsocialforge>bitsocialforge</bitsocialforge>۔",
+    "supportCta": "Bitsocial کی حمایت کریں",
+    "contributeCta": "GitHub پر حصہ ڈالیں",
+    "team": {
+      "title": "بنیادی ٹیم"
+    },
+    "ask": {
+      "title": "کس بارے میں کس سے پوچھیں",
+      "intro": "Bitsocial کے کسی حصے کے بارے میں سوالات اس کے مینٹینر سے پوچھیں، Telegram پر یا اس کی کسی ریپوزٹری میں issue کے طور پر۔",
+      "privateNote": "کچھ ریپوزٹریز نجی ہیں اور فہرست میں شامل نہیں۔",
+      "telegramLabel": "Telegram پر {{name}} کو پیغام بھیجیں"
+    },
+    "areas": {
+      "protocol": {
+        "name": "پروٹوکول",
+        "description": "کمیونٹیز، پوسٹس، دستخط اور چیلنجز نیٹ ورک پر کیسے کام کرتے ہیں؛ pkc-js اور اس کا API۔"
+      },
+      "network": {
+        "name": "نوڈز اور نیٹ ورک",
+        "description": "نوڈ یا کمیونٹی چلانا، CLI اور RPC، .bso نام، سیڈنگ، ووٹنگ اور دریافت۔"
+      },
+      "antispam": {
+        "name": "اینٹی اسپام",
+        "description": "وہ چیلنجز جو کوئی کمیونٹی پوسٹ کرنے سے پہلے لازمی کر سکتی ہے، اور اسپام بلاکر۔"
+      },
+      "apps": {
+        "name": "ایپس",
+        "description": "5chan، Seedit اور دیگر کلائنٹس، اور وہ React hooks جن پر ہر کلائنٹ بنا ہے۔"
+      },
+      "services": {
+        "name": "ہوسٹڈ سروسز",
+        "description": "Forge Images، Forge RPC، 5chan اور Seedit کے آرکائیوز، سرچ، لنک پریویوز اور بوٹس۔"
+      },
+      "web": {
+        "name": "ویب سائٹ، دستاویزات اور تحقیق",
+        "description": "bitsocial.net، دستاویزات، نیٹ ورک کے اعداد و شمار، پروٹوکول کی تجاویز (BSIPs) اور تحقیقی منصوبے۔"
+      }
+    },
+    "growth": {
+      "title": "Bitsocial کیسے بڑھا",
+      "intro": "تینوں تنظیموں کی ہر عوامی ریپوزٹری میں ماہانہ کمٹس، شعبوں کے لحاظ سے تہہ در تہہ۔",
+      "commits_one": "انسانی کمٹ",
+      "commits_other": "انسانی کمٹس",
+      "repositories_one": "عوامی ریپوزٹری",
+      "repositories_other": "عوامی ریپوزٹریز",
+      "organizations_one": "GitHub تنظیم",
+      "organizations_other": "GitHub تنظیمیں",
+      "legendLabel": "شعبے، چارٹ کے نیچے سے اوپر کی طرف",
+      "axisLabel": "ماہانہ کمٹس",
+      "chartLabel_one": "{{start}} سے {{end}} تک انسانوں کے ماہانہ کمٹس کا شعبہ وار اسٹیکڈ ایریا چارٹ۔ {{year}} میں اب تک {{value}} کمٹ ہوا ہے، جبکہ {{previousYear}} میں {{previousValue}} تھے۔",
+      "chartLabel_other": "{{start}} سے {{end}} تک انسانوں کے ماہانہ کمٹس کا شعبہ وار اسٹیکڈ ایریا چارٹ۔ {{year}} میں اب تک {{value}} کمٹس ہوئے ہیں، جبکہ {{previousYear}} میں {{previousValue}} تھے۔",
+      "periodSummary_one": "{{period}}: {{value}} کمٹ۔ {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} کمٹس۔ {{areas}}",
+      "yearCommits_one": "{{value}} کمٹ",
+      "yearCommits_other": "{{value}} کمٹس",
+      "partialMonthLabel": "{{month}}، نامکمل",
+      "repositoriesAnnotation_one": "{{year}} کے آخر میں {{value}} ریپوزٹری، اب {{now}}",
+      "repositoriesAnnotation_other": "{{year}} کے آخر میں {{value}} ریپوزٹریز، اب {{now}}",
+      "startedAnnotation_one": "ان میں سے {{value}} کا پہلا کمٹ {{year}} میں ہوا",
+      "startedAnnotation_other": "ان میں سے {{value}} کا پہلا کمٹ {{year}} میں ہوا",
+      "partialAnnotation_ordinal_other": "{{month}} نامکمل ہے، {{day}} تاریخ تک",
+      "caption": "صرف انسانوں کے کمٹس: بوٹس، ریلیز آٹومیشن اور دوسری ریپوزٹریز سے نقل کی گئی ہسٹری شامل نہیں۔ 2026 کے اوائل سے زیادہ تر ڈیولپمنٹ AI کوڈنگ ٹولز کی مدد سے ہو رہی ہے۔",
+      "partialAnnotation_ordinal_one": "{{month}} نامکمل ہے، {{day}} تاریخ تک",
+      "partialAnnotation_ordinal_two": "{{month}} نامکمل ہے، {{day}} تاریخ تک",
+      "partialAnnotation_ordinal_few": "{{month}} نامکمل ہے، {{day}} تاریخ تک",
+      "partialAnnotation_ordinal_many": "{{month}} نامکمل ہے، {{day}} تاریخ تک"
+    },
+    "milestones": {
+      "title": "سنگ میل",
+      "items": {
+        "specification": "پروٹوکول کی اسپیسیفکیشن",
+        "protocolLibrary": "پہلی کارآمد پروٹوکول لائبریری",
+        "reactHooks": "ایپس بنانے کے لیے React hooks لائبریری",
+        "signedEncrypted": "ہر اشاعت دستخط شدہ اور انکرپٹڈ",
+        "cliNode": "کمانڈ لائن سے چلنے والا پہلا نوڈ",
+        "ed25519": "Ed25519 کیز اور AES-GCM انکرپشن",
+        "challenges": "پلگ ایبل اینٹی اسپام چیلنجز",
+        "fivechanRelease": "5chan 0.1.0، نیٹ ورک کی پہلی ایپ",
+        "rpc": "ایپس RPC کے ذریعے ریموٹ نوڈ پر چل سکتی ہیں",
+        "commentUpdates": "بڑی کمیونٹیز تک اسکیل ہونے والی کمنٹ اپ ڈیٹس",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "ڈیسک ٹاپ ایپ سے کمیونٹی بنائیں اور ہوسٹ کریں",
+        "fivechanTypescript": "5chan کو TypeScript میں دوبارہ لکھا گیا",
+        "httpRouter": "HTTP روٹنگ ٹریکر نے DHT کی جگہ لی",
+        "browserP2p": "براؤزر میں peer-to-peer، بغیر گیٹ وے کے",
+        "pushNotifications": "ویب، Android اور ڈیسک ٹاپ پر پش نوٹیفکیشنز",
+        "boardDirectories": "5chan بورڈز ڈائریکٹری کے پتے سے، جیسے /biz/",
+        "spamBlocker": "اسپام بلاکر سروس",
+        "bsoNames": ".bso نام کمیونٹیز تک پہنچاتے ہیں",
+        "aiModeration": "AI ماڈریشن چیلنج",
+        "pubsubVoting": "pubsub پر ایسی ووٹنگ جس میں اعتماد درکار نہیں",
+        "bsips": "Bitsocial بہتری کی تجاویز (BSIPs)",
+        "archives": "5chan اور Seedit کے عوامی آرکائیوز اور سرچ",
+        "forgeImages": "Forge Images: ایپس کے لیے مفت میڈیا ہوسٹنگ"
+      }
+    },
+    "support": {
+      "title": "Bitsocial کی حمایت کریں",
+      "body": "عطیات مجموعی طور پر Bitsocial منصوبے کو جاتے ہیں۔",
+      "donate": "عطیہ دیں",
+      "comingSoon": "عطیے کا لنک جلد آ رہا ہے"
+    },
+    "thanks": {
+      "title": "ان کا بھی شکریہ",
+      "intro": "باقی سب جنہوں نے کسی Bitsocial ریپوزٹری میں issue یا pull request کھولی، یا کوڈ کمٹ کیا، شراکتوں کی تعداد کے لحاظ سے۔",
+      "wallLabel": "معاونین",
+      "contributions_one": "{{login}}، {{value}} شراکت",
+      "contributions_other": "{{login}}، {{value}} شراکتیں",
+      "nextLabel": "اگلا اوتار آپ کا ہو سکتا ہے: کوئی کھلا issue تلاش کریں",
+      "cta": "آپ کے پہلے issue یا pull request کے بعد آپ کا اوتار یہاں آئے گا۔",
+      "firstContribution": "اپنی پہلی شراکت کریں"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial کے بارے میں | بنیادی ٹیم",
-      "description": "Bitsocial کی بنیادی ٹیم سے ملیں اور اس peer-to-peer سوشل پروٹوکول کے بارے میں جانیں جسے وہ 2022 کے اوائل سے بنا رہی ہے۔"
+      "description": "Bitsocial کی بنیادی ٹیم سے ملیں، جانیں کہ منصوبے کے ہر حصے کے بارے میں کس سے پوچھنا ہے، اور دیکھیں کہ یہ 2022 کے اوائل سے کیسے بڑھا اور کن سب نے اس میں حصہ ڈالا۔"
     },
     "blog": {
       "title": "Bitsocial بلاگ | اپ ڈیٹس، ریلیزز اور ٹیوٹوریلز",

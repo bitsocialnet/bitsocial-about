@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Hakkımızda",
-    "title": "Bitsocial çekirdek ekibi",
+    "title": "Bitsocial'ı geliştiren insanlar",
     "subtitle": "Bitsocial 2022'nin başından beri etkin olarak geliştiriliyor; kurucusu Esteban Abaroa tarafından ilk günden itibaren kendi birikimleriyle finanse edilen, tabandan gelen bir proje.",
     "members": {
-      "esteban": {
-        "role": "Bitsocial Kurucusu, baş geliştirici 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial Kurucu Ortağı, çekirdek geliştirici."
+        "role": "Bitsocial Kurucu Ortağı, çekirdek geliştirici.",
+        "ask": "<askLink>Protokol, düğümler ve anti-spam</askLink> hakkında sorun"
       },
       "tommaso": {
-        "role": "Bitsocial'ın kurucu ortağı ve temel geliştiricisi, <forgeLink>Bitsocial Forge</forgeLink> kurucusu ve CEO'su"
+        "role": "Bitsocial'ın kurucu ortağı ve temel geliştiricisi, <forgeLink>Bitsocial Forge</forgeLink> kurucusu ve CEO'su",
+        "ask": "<askLink>Uygulamalar, barındırılan hizmetler, web sitesi ve dokümantasyon</askLink> hakkında sorun"
       }
     },
-    "memberProfileAlt": "{{name}} profil fotoğrafı"
+    "memberProfileAlt": "{{name}} profil fotoğrafı",
+    "organizations": "Kod, GitHub'da üç organizasyonda yer alıyor: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> ve <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Bitsocial'ı destekleyin",
+    "contributeCta": "GitHub'da katkıda bulunun",
+    "team": {
+      "title": "Çekirdek ekip"
+    },
+    "ask": {
+      "title": "Hangi konuda kime sorulur",
+      "intro": "Bitsocial'ın bir bölümüyle ilgili sorular, o bölümün bakımını yapan kişiye Telegram üzerinden ya da ilgili depolardan birinde issue olarak iletilir.",
+      "privateNote": "Bazı depolar gizlidir ve listede yer almaz.",
+      "telegramLabel": "Telegram'da {{name}} ile mesajlaşın"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokol",
+        "description": "Toplulukların, gönderilerin, imzaların ve challenge'ların ağ üzerinde nasıl çalıştığı; pkc-js ve API'si."
+      },
+      "network": {
+        "name": "Düğümler ve ağ",
+        "description": "Düğüm ya da topluluk çalıştırmak, CLI ve RPC, .bso adları, seed etme, oylama ve keşif."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Bir topluluğun gönderi öncesinde isteyebileceği challenge'lar ve spam engelleyici."
+      },
+      "apps": {
+        "name": "Uygulamalar",
+        "description": "5chan, Seedit ve diğer istemciler ile tüm istemcilerin üzerine kurulduğu React hook'ları."
+      },
+      "services": {
+        "name": "Barındırılan hizmetler",
+        "description": "Forge Images, Forge RPC, 5chan ve Seedit arşivleri, arama, bağlantı önizlemeleri ve botlar."
+      },
+      "web": {
+        "name": "Web sitesi, dokümantasyon ve araştırma",
+        "description": "bitsocial.net, dokümantasyon, ağ istatistikleri, protokol önerileri (BSIPs) ve araştırma projeleri."
+      }
+    },
+    "growth": {
+      "title": "Bitsocial nasıl büyüdü",
+      "intro": "Üç organizasyondaki tüm herkese açık depolarda aylık commit sayısı, alanlara göre yığılmış.",
+      "commits_one": "insanların yaptığı commit",
+      "commits_other": "insanların yaptığı commit",
+      "repositories_one": "herkese açık depo",
+      "repositories_other": "herkese açık depo",
+      "organizations_one": "GitHub organizasyonu",
+      "organizations_other": "GitHub organizasyonu",
+      "legendLabel": "Alanlar, grafiğin tabanından yukarıya",
+      "axisLabel": "Aylık commit",
+      "chartLabel_one": "{{start}} – {{end}} arasında insanların yaptığı aylık commit'lerin alanlara göre yığılmış alan grafiği. {{year}} yılında şimdiye kadar {{value}} commit var; {{previousYear}} yılında {{previousValue}} idi.",
+      "chartLabel_other": "{{start}} – {{end}} arasında insanların yaptığı aylık commit'lerin alanlara göre yığılmış alan grafiği. {{year}} yılında şimdiye kadar {{value}} commit var; {{previousYear}} yılında {{previousValue}} idi.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commit. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commit",
+      "partialMonthLabel": "{{month}}, kısmi",
+      "repositoriesAnnotation_one": "{{year}} sonunda {{value}} depo, şimdi {{now}}",
+      "repositoriesAnnotation_other": "{{year}} sonunda {{value}} depo, şimdi {{now}}",
+      "startedAnnotation_one": "Bunlardan {{value}} tanesinin ilk commit'i {{year}} yılında yapıldı",
+      "startedAnnotation_other": "Bunlardan {{value}} tanesinin ilk commit'i {{year}} yılında yapıldı",
+      "partialAnnotation_ordinal_other": "{{month}} kısmi, ayın {{day}}. gününe kadar",
+      "caption": "Yalnızca insanların yaptığı commit'ler: botlar, sürüm otomasyonu ve başka depolardan kopyalanan geçmiş hariçtir. 2026'nın başından beri geliştirmenin çoğu yapay zekâ araçlarının desteğiyle yapılıyor.",
+      "partialAnnotation_ordinal_one": "{{month}} kısmi, ayın {{day}}. gününe kadar",
+      "partialAnnotation_ordinal_two": "{{month}} kısmi, ayın {{day}}. gününe kadar",
+      "partialAnnotation_ordinal_few": "{{month}} kısmi, ayın {{day}}. gününe kadar",
+      "partialAnnotation_ordinal_many": "{{month}} kısmi, ayın {{day}}. gününe kadar"
+    },
+    "milestones": {
+      "title": "Kilometre taşları",
+      "items": {
+        "specification": "Protokol spesifikasyonu",
+        "protocolLibrary": "İlk çalışan protokol kütüphanesi",
+        "reactHooks": "Uygulama geliştirmek için React hook kütüphanesi",
+        "signedEncrypted": "Her yayın imzalı ve şifreli",
+        "cliNode": "Komut satırından çalıştırılabilen ilk düğüm",
+        "ed25519": "Ed25519 anahtarları ve AES-GCM şifreleme",
+        "challenges": "Eklenebilir anti-spam challenge'ları",
+        "fivechanRelease": "5chan 0.1.0, ağdaki ilk uygulama",
+        "rpc": "Uygulamalar RPC ile uzak bir düğümde çalışabiliyor",
+        "commentUpdates": "Büyük topluluklara ölçeklenen yorum güncellemeleri",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Masaüstü uygulamasından topluluk oluşturma ve barındırma",
+        "fivechanTypescript": "5chan TypeScript ile yeniden yazıldı",
+        "httpRouter": "DHT yerine HTTP yönlendirme tracker'ı",
+        "browserP2p": "Tarayıcıda ağ geçidi olmadan peer-to-peer",
+        "pushNotifications": "Web, Android ve masaüstünde anlık bildirimler",
+        "boardDirectories": "/biz/ gibi dizinlerle adreslenen 5chan board'ları",
+        "spamBlocker": "Spam engelleme hizmeti",
+        "bsoNames": ".bso adları topluluklara çözümleniyor",
+        "aiModeration": "Yapay zekâ moderasyon challenge'ı",
+        "pubsubVoting": "pubsub üzerinden güven gerektirmeyen oylama",
+        "bsips": "Bitsocial İyileştirme Önerileri (BSIPs)",
+        "archives": "5chan ve Seedit için herkese açık arşivler ve arama",
+        "forgeImages": "Forge Images: uygulamalar için ücretsiz medya barındırma"
+      }
+    },
+    "support": {
+      "title": "Bitsocial'ı destekleyin",
+      "body": "Bağışlar bir bütün olarak Bitsocial projesine gider.",
+      "donate": "Bağış yap",
+      "comingSoon": "Bağış bağlantısı yakında"
+    },
+    "thanks": {
+      "title": "Ayrıca teşekkürler",
+      "intro": "Bir Bitsocial deposunda issue ya da pull request açan veya kod commit'leyen diğer herkes, katkı sayısına göre sıralı.",
+      "wallLabel": "Katkıda bulunanlar",
+      "contributions_one": "{{login}}, {{value}} katkı",
+      "contributions_other": "{{login}}, {{value}} katkı",
+      "nextLabel": "Sıradaki avatar sizinki olabilir: açık bir issue bulun",
+      "cta": "İlk issue'nuzdan ya da pull request'inizden sonra avatarınız burada yer alır.",
+      "firstContribution": "İlk katkınızı yapın"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Bitsocial Hakkında | Çekirdek Ekip",
-      "description": "Bitsocial çekirdek ekibiyle tanışın ve ekibin 2022'nin başından beri geliştirdiği peer-to-peer sosyal protokol hakkında bilgi edinin."
+      "description": "Bitsocial çekirdek ekibiyle tanışın, projenin her bölümü için kime soracağınızı öğrenin, 2022'nin başından beri nasıl büyüdüğünü ve katkıda bulunan herkesi görün."
     },
     "blog": {
       "title": "Bitsocial Blogu | Güncellemeler, Sürümler ve Eğitimler",

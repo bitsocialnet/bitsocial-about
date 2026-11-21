@@ -784,20 +784,167 @@
   },
   "about": {
     "sectionLabel": "من نحن",
-    "title": "فريق Bitsocial الأساسي",
+    "title": "الأشخاص الذين يبنون Bitsocial",
     "subtitle": "ظل Bitsocial قيد التطوير النشط منذ أوائل عام 2022، وهو مشروع نابع من القاعدة موّله المؤسس Esteban Abaroa من مدخراته الخاصة منذ اليوم الأول.",
     "members": {
-      "esteban": {
-        "role": "مؤسس Bitsocial، قائد التطوير 2022–2026."
-      },
       "rinse": {
-        "role": "المؤسس المشارك لشركة Bitsocial، شركة التطوير الأساسية."
+        "role": "المؤسس المشارك لشركة Bitsocial، شركة التطوير الأساسية.",
+        "ask": "اسأل عن <askLink>البروتوكول والعُقد ومكافحة الرسائل المزعجة</askLink>"
       },
       "tommaso": {
-        "role": "المؤسس المشارك لشركة Bitsocial والمطور الأساسي، المؤسس والرئيس التنفيذي لشركة <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "المؤسس المشارك لشركة Bitsocial والمطور الأساسي، المؤسس والرئيس التنفيذي لشركة <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "اسأل عن <askLink>التطبيقات والخدمات المستضافة والموقع والوثائق</askLink>"
       }
     },
-    "memberProfileAlt": "الصورة الشخصية لـ {{name}}"
+    "memberProfileAlt": "الصورة الشخصية لـ {{name}}",
+    "organizations": "الكود موجود على GitHub في ثلاث منظمات: <pkcprotocol>pkcprotocol</pkcprotocol> و<bitsocialnet>bitsocialnet</bitsocialnet> و<bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "ادعم Bitsocial",
+    "contributeCta": "ساهم على GitHub",
+    "team": {
+      "title": "الفريق الأساسي"
+    },
+    "ask": {
+      "title": "لمن توجّه سؤالك",
+      "intro": "توجَّه الأسئلة المتعلقة بأي جزء من Bitsocial إلى المسؤول عن صيانته، عبر Telegram أو كمشكلة في أحد مستودعاته.",
+      "privateNote": "بعض المستودعات خاصة وغير مدرجة هنا.",
+      "telegramLabel": "راسل {{name}} على Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "البروتوكول",
+        "description": "كيف تعمل المجتمعات والمنشورات والتواقيع والتحديات على مستوى البروتوكول؛ ومكتبة pkc-js وواجهتها البرمجية."
+      },
+      "network": {
+        "name": "العُقد والشبكة",
+        "description": "تشغيل عقدة أو مجتمع، وCLI وRPC، وأسماء .bso، والبذر، والتصويت، والاكتشاف."
+      },
+      "antispam": {
+        "name": "مكافحة الرسائل المزعجة",
+        "description": "التحديات التي يمكن للمجتمع أن يشترطها قبل النشر، وخدمة حظر الرسائل المزعجة."
+      },
+      "apps": {
+        "name": "التطبيقات",
+        "description": "5chan وSeedit وبقية العملاء، وReact hooks التي يُبنى عليها كل عميل."
+      },
+      "services": {
+        "name": "الخدمات المستضافة",
+        "description": "Forge Images وForge RPC، وأرشيفات 5chan وSeedit، والبحث، ومعاينات الروابط، والروبوتات."
+      },
+      "web": {
+        "name": "الموقع والوثائق والأبحاث",
+        "description": "bitsocial.net، والوثائق، وإحصاءات الشبكة، ومقترحات البروتوكول (BSIPs)، والمشاريع البحثية."
+      }
+    },
+    "growth": {
+      "title": "كيف نما Bitsocial",
+      "intro": "الإيداعات شهريًا في جميع المستودعات العامة في المنظمات الثلاث، مكدّسة حسب المجال.",
+      "commits_zero": "إيداع بشري",
+      "commits_one": "إيداع بشري",
+      "commits_two": "إيداعان بشريان",
+      "commits_few": "إيداعات بشرية",
+      "commits_many": "إيداعًا بشريًا",
+      "commits_other": "إيداع بشري",
+      "repositories_zero": "مستودع عام",
+      "repositories_one": "مستودع عام",
+      "repositories_two": "مستودعان عامان",
+      "repositories_few": "مستودعات عامة",
+      "repositories_many": "مستودعًا عامًا",
+      "repositories_other": "مستودع عام",
+      "organizations_zero": "منظمة على GitHub",
+      "organizations_one": "منظمة على GitHub",
+      "organizations_two": "منظمتان على GitHub",
+      "organizations_few": "منظمات على GitHub",
+      "organizations_many": "منظمةً على GitHub",
+      "organizations_other": "منظمة على GitHub",
+      "legendLabel": "المجالات، من أسفل المخطط إلى أعلاه",
+      "axisLabel": "الإيداعات شهريًا",
+      "chartLabel_zero": "مخطط مساحي مكدّس للإيداعات البشرية شهريًا من {{start}} إلى {{end}}، حسب المجال. سُجّل في {{year}} حتى الآن {{value}} إيداع، مقابل {{previousValue}} في {{previousYear}}.",
+      "chartLabel_one": "مخطط مساحي مكدّس للإيداعات البشرية شهريًا من {{start}} إلى {{end}}، حسب المجال. سُجّل في {{year}} حتى الآن {{value}} إيداع، مقابل {{previousValue}} في {{previousYear}}.",
+      "chartLabel_two": "مخطط مساحي مكدّس للإيداعات البشرية شهريًا من {{start}} إلى {{end}}، حسب المجال. سُجّل في {{year}} حتى الآن {{value}} إيداعان، مقابل {{previousValue}} في {{previousYear}}.",
+      "chartLabel_few": "مخطط مساحي مكدّس للإيداعات البشرية شهريًا من {{start}} إلى {{end}}، حسب المجال. سُجّلت في {{year}} حتى الآن {{value}} إيداعات، مقابل {{previousValue}} في {{previousYear}}.",
+      "chartLabel_many": "مخطط مساحي مكدّس للإيداعات البشرية شهريًا من {{start}} إلى {{end}}، حسب المجال. سُجّل في {{year}} حتى الآن {{value}} إيداعًا، مقابل {{previousValue}} في {{previousYear}}.",
+      "chartLabel_other": "مخطط مساحي مكدّس للإيداعات البشرية شهريًا من {{start}} إلى {{end}}، حسب المجال. سُجّل في {{year}} حتى الآن {{value}} إيداع، مقابل {{previousValue}} في {{previousYear}}.",
+      "periodSummary_zero": "{{period}}: {{value}} إيداع. {{areas}}",
+      "periodSummary_one": "{{period}}: {{value}} إيداع. {{areas}}",
+      "periodSummary_two": "{{period}}: {{value}} إيداعان. {{areas}}",
+      "periodSummary_few": "{{period}}: {{value}} إيداعات. {{areas}}",
+      "periodSummary_many": "{{period}}: {{value}} إيداعًا. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} إيداع. {{areas}}",
+      "yearCommits_zero": "{{value}} إيداع",
+      "yearCommits_one": "{{value}} إيداع",
+      "yearCommits_two": "{{value}} إيداعان",
+      "yearCommits_few": "{{value}} إيداعات",
+      "yearCommits_many": "{{value}} إيداعًا",
+      "yearCommits_other": "{{value}} إيداع",
+      "partialMonthLabel": "{{month}}، بيانات جزئية",
+      "repositoriesAnnotation_zero": "{{value}} مستودع في نهاية {{year}}، و{{now}} الآن",
+      "repositoriesAnnotation_one": "{{value}} مستودع في نهاية {{year}}، و{{now}} الآن",
+      "repositoriesAnnotation_two": "{{value}} مستودعان في نهاية {{year}}، و{{now}} الآن",
+      "repositoriesAnnotation_few": "{{value}} مستودعات في نهاية {{year}}، و{{now}} الآن",
+      "repositoriesAnnotation_many": "{{value}} مستودعًا في نهاية {{year}}، و{{now}} الآن",
+      "repositoriesAnnotation_other": "{{value}} مستودع في نهاية {{year}}، و{{now}} الآن",
+      "startedAnnotation_zero": "{{value}} منها سُجّل أول إيداع فيها في {{year}}",
+      "startedAnnotation_one": "{{value}} منها سُجّل أول إيداع فيه في {{year}}",
+      "startedAnnotation_two": "{{value}} منها سُجّل أول إيداع فيهما في {{year}}",
+      "startedAnnotation_few": "{{value}} منها سُجّل أول إيداع فيها في {{year}}",
+      "startedAnnotation_many": "{{value}} منها سُجّل أول إيداع فيها في {{year}}",
+      "startedAnnotation_other": "{{value}} منها سُجّل أول إيداع فيها في {{year}}",
+      "partialAnnotation_ordinal_other": "بيانات {{month}} جزئية، حتى يوم {{day}}",
+      "caption": "إيداعات البشر فقط: تُستبعد الروبوتات وأتمتة الإصدارات والسجل المنسوخ من مستودعات أخرى. ومنذ أوائل عام 2026 يجري معظم التطوير بمساعدة الذكاء الاصطناعي.",
+      "partialAnnotation_ordinal_one": "بيانات {{month}} جزئية، حتى يوم {{day}}",
+      "partialAnnotation_ordinal_two": "بيانات {{month}} جزئية، حتى يوم {{day}}",
+      "partialAnnotation_ordinal_few": "بيانات {{month}} جزئية، حتى يوم {{day}}",
+      "partialAnnotation_ordinal_many": "بيانات {{month}} جزئية، حتى يوم {{day}}"
+    },
+    "milestones": {
+      "title": "المعالم",
+      "items": {
+        "specification": "مواصفات البروتوكول",
+        "protocolLibrary": "أول مكتبة عاملة للبروتوكول",
+        "reactHooks": "مكتبة React hooks لبناء التطبيقات",
+        "signedEncrypted": "كل منشور موقَّع ومشفَّر",
+        "cliNode": "أول عقدة يمكن تشغيلها من سطر الأوامر",
+        "ed25519": "مفاتيح Ed25519 وتشفير AES-GCM",
+        "challenges": "تحديات قابلة للتبديل لمكافحة الرسائل المزعجة",
+        "fivechanRelease": "5chan 0.1.0، أول تطبيق على الشبكة",
+        "rpc": "يمكن للتطبيقات العمل على عقدة بعيدة عبر RPC",
+        "commentUpdates": "تحديثات للتعليقات تتسع للمجتمعات الكبيرة",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "إنشاء مجتمع واستضافته من تطبيق سطح المكتب",
+        "fivechanTypescript": "إعادة كتابة 5chan بلغة TypeScript",
+        "httpRouter": "متتبع توجيه HTTP يحل محل DHT",
+        "browserP2p": "نظير إلى نظير في المتصفح، بلا بوابة",
+        "pushNotifications": "إشعارات فورية على الويب وAndroid وسطح المكتب",
+        "boardDirectories": "عنونة لوحات 5chan بالمسار، مثل /biz/",
+        "spamBlocker": "خدمة حظر الرسائل المزعجة",
+        "bsoNames": "أسماء .bso تُحيل إلى المجتمعات",
+        "aiModeration": "تحدي الإشراف بالذكاء الاصطناعي",
+        "pubsubVoting": "تصويت لا يتطلب الثقة عبر pubsub",
+        "bsips": "مقترحات تحسين Bitsocial (BSIPs)",
+        "archives": "أرشيفات عامة وبحث لـ 5chan وSeedit",
+        "forgeImages": "Forge Images: استضافة وسائط مجانية للتطبيقات"
+      }
+    },
+    "support": {
+      "title": "ادعم Bitsocial",
+      "body": "تذهب التبرعات إلى مشروع Bitsocial ككل.",
+      "donate": "تبرّع",
+      "comingSoon": "رابط التبرع قريبًا"
+    },
+    "thanks": {
+      "title": "ونشكر أيضًا",
+      "intro": "كل من فتح مشكلة أو طلب سحب، أو أودع شيفرة، في أحد مستودعات Bitsocial، مرتبين حسب عدد المساهمات.",
+      "wallLabel": "المساهمون",
+      "contributions_zero": "{{login}}، {{value}} مساهمة",
+      "contributions_one": "{{login}}، {{value}} مساهمة",
+      "contributions_two": "{{login}}، {{value}} مساهمتان",
+      "contributions_few": "{{login}}، {{value}} مساهمات",
+      "contributions_many": "{{login}}، {{value}} مساهمةً",
+      "contributions_other": "{{login}}، {{value}} مساهمة",
+      "nextLabel": "قد تكون صورتك الرمزية التالية: ابحث عن مشكلة مفتوحة",
+      "cta": "تظهر صورتك الرمزية هنا بعد أول مشكلة أو طلب سحب تقدّمه.",
+      "firstContribution": "قدّم مساهمتك الأولى"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1106,7 @@
   "seo": {
     "about": {
       "title": "عن Bitsocial | الفريق الأساسي",
-      "description": "تعرّف على فريق Bitsocial الأساسي واطّلع على بروتوكول التواصل الاجتماعي القائم على تقنية نظير إلى نظير الذي يعمل على بنائه منذ أوائل عام 2022."
+      "description": "تعرّف على فريق Bitsocial الأساسي، واعرف لمن توجّه سؤالك عن كل جزء من المشروع، وشاهد كيف نما منذ أوائل عام 2022 وكل من ساهم فيه."
     },
     "blog": {
       "title": "مدونة Bitsocial | التحديثات والإصدارات والدروس التعليمية",

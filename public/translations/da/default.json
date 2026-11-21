@@ -777,20 +777,131 @@
   },
   "about": {
     "sectionLabel": "Om os",
-    "title": "Bitsocials kerneteam",
+    "title": "Folkene bag Bitsocial",
     "subtitle": "Bitsocial har været under aktiv udvikling siden begyndelsen af 2022, et græsrodsprojekt finansieret fra dag ét af grundlæggeren Esteban Abaroa af hans egen opsparing.",
     "members": {
-      "esteban": {
-        "role": "Bitsocial-grundlægger, lead dev 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocial medstifter, kerneudvikler."
+        "role": "Bitsocial medstifter, kerneudvikler.",
+        "ask": "Spørg om <askLink>protokollen, noder og antispam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial medstifter og kerneudvikler, grundlægger og administrerende direktør for <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bitsocial medstifter og kerneudvikler, grundlægger og administrerende direktør for <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Spørg om <askLink>apps, hostede tjenester, websitet og dokumentationen</askLink>"
       }
     },
-    "memberProfileAlt": "Profilbillede af {{name}}"
+    "memberProfileAlt": "Profilbillede af {{name}}",
+    "organizations": "Koden ligger på GitHub i tre organisationer: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> og <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Støt Bitsocial",
+    "contributeCta": "Bidrag på GitHub",
+    "team": {
+      "title": "Kerneteam"
+    },
+    "ask": {
+      "title": "Hvem du kan spørge om hvad",
+      "intro": "Spørgsmål om en del af Bitsocial går til den, der vedligeholder den, på Telegram eller som et issue i et af dens repositories.",
+      "privateNote": "Nogle repositories er private og vises ikke her.",
+      "telegramLabel": "Skriv til {{name}} på Telegram"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokol",
+        "description": "Hvordan fællesskaber, opslag, signaturer og udfordringer fungerer på protokolniveau; pkc-js og dets API."
+      },
+      "network": {
+        "name": "Noder og netværk",
+        "description": "Drift af en node eller et fællesskab, CLI og RPC, .bso-navne, seeding, afstemninger og opdagelse."
+      },
+      "antispam": {
+        "name": "Antispam",
+        "description": "Udfordringer, som et fællesskab kan kræve før opslag, og spamblokeringen."
+      },
+      "apps": {
+        "name": "Apps",
+        "description": "5chan, Seedit og de andre klienter samt de React-hooks, som alle klienter bygger på."
+      },
+      "services": {
+        "name": "Hostede tjenester",
+        "description": "Forge Images, Forge RPC, arkiverne for 5chan og Seedit, søgning, linkforhåndsvisninger og bots."
+      },
+      "web": {
+        "name": "Website, dokumentation og forskning",
+        "description": "bitsocial.net, dokumentationen, netværksstatistik, protokolforslag (BSIPs) og forskningsprojekter."
+      }
+    },
+    "growth": {
+      "title": "Sådan voksede Bitsocial",
+      "intro": "Commits pr. måned på tværs af alle offentlige repositories i de tre organisationer, stablet efter område.",
+      "commits_one": "commit fra mennesker",
+      "commits_other": "commits fra mennesker",
+      "repositories_one": "offentligt repository",
+      "repositories_other": "offentlige repositories",
+      "organizations_one": "GitHub-organisation",
+      "organizations_other": "GitHub-organisationer",
+      "legendLabel": "Områder, fra bunden af diagrammet og op",
+      "axisLabel": "Commits pr. måned",
+      "chartLabel_one": "Stablet områdediagram over commits fra mennesker pr. måned fra {{start}} til {{end}}, efter område. {{year}} har indtil videre {{value}} commit, mod {{previousValue}} i {{previousYear}}.",
+      "chartLabel_other": "Stablet områdediagram over commits fra mennesker pr. måned fra {{start}} til {{end}}, efter område. {{year}} har indtil videre {{value}} commits, mod {{previousValue}} i {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commits. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} commits",
+      "partialMonthLabel": "{{month}}, delvis",
+      "repositoriesAnnotation_one": "{{value}} repository ved udgangen af {{year}}, {{now}} nu",
+      "repositoriesAnnotation_other": "{{value}} repositories ved udgangen af {{year}}, {{now}} nu",
+      "startedAnnotation_one": "{{value}} af dem fik sit første commit i {{year}}",
+      "startedAnnotation_other": "{{value}} af dem fik deres første commit i {{year}}",
+      "partialAnnotation_ordinal_other": "Tallene for {{month}} går kun til den {{day}}.",
+      "caption": "Kun commits fra mennesker: bots, udgivelsesautomatisering og historik kopieret fra andre repositories er udeladt. Siden begyndelsen af 2026 foregår det meste af udviklingen med hjælp fra AI.",
+      "partialAnnotation_ordinal_one": "Tallene for {{month}} går kun til den {{day}}.",
+      "partialAnnotation_ordinal_two": "Tallene for {{month}} går kun til den {{day}}.",
+      "partialAnnotation_ordinal_few": "Tallene for {{month}} går kun til den {{day}}.",
+      "partialAnnotation_ordinal_many": "Tallene for {{month}} går kun til den {{day}}."
+    },
+    "milestones": {
+      "title": "Milepæle",
+      "items": {
+        "specification": "Protokolspecifikation",
+        "protocolLibrary": "Første fungerende protokolbibliotek",
+        "reactHooks": "React-hooks-bibliotek til at bygge apps",
+        "signedEncrypted": "Alle publikationer signeret og krypteret",
+        "cliNode": "Første node, du kan køre fra kommandolinjen",
+        "ed25519": "Ed25519-nøgler og AES-GCM-kryptering",
+        "challenges": "Udskiftelige antispam-udfordringer",
+        "fivechanRelease": "5chan 0.1.0, den første app på netværket",
+        "rpc": "Apps kan køre på en fjern node via RPC",
+        "commentUpdates": "Kommentaropdateringer, der skalerer til store fællesskaber",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Opret og host et fællesskab fra desktop-appen",
+        "fivechanTypescript": "5chan omskrevet i TypeScript",
+        "httpRouter": "HTTP-routing-tracker erstatter DHT'en",
+        "browserP2p": "Peer-to-peer i browseren, uden gateway",
+        "pushNotifications": "Push-notifikationer på web, Android og desktop",
+        "boardDirectories": "5chan-boards adresseret efter mappe, som /biz/",
+        "spamBlocker": "Spamblokeringstjeneste",
+        "bsoNames": ".bso-navne peger på fællesskaber",
+        "aiModeration": "AI-moderationsudfordring",
+        "pubsubVoting": "Tillidsløs afstemning over pubsub",
+        "bsips": "Bitsocial-forbedringsforslag (BSIPs)",
+        "archives": "Offentlige arkiver og søgning for 5chan og Seedit",
+        "forgeImages": "Forge Images: gratis mediehosting til apps"
+      }
+    },
+    "support": {
+      "title": "Støt Bitsocial",
+      "body": "Donationer går til Bitsocial-projektet som helhed.",
+      "donate": "Donér",
+      "comingSoon": "Donationslink kommer snart"
+    },
+    "thanks": {
+      "title": "Tak også til",
+      "intro": "Alle andre, der har oprettet et issue eller en pull request eller committet kode i et Bitsocial-repository, sorteret efter antal bidrag.",
+      "wallLabel": "Bidragydere",
+      "contributions_one": "{{login}}, {{value}} bidrag",
+      "contributions_other": "{{login}}, {{value}} bidrag",
+      "nextLabel": "Din avatar kan blive den næste: find et åbent issue",
+      "cta": "Din avatar kommer her efter dit første issue eller pull request.",
+      "firstContribution": "Giv dit første bidrag"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -952,7 +1063,7 @@
   "seo": {
     "about": {
       "title": "Om Bitsocial | Kerneteam",
-      "description": "Mød Bitsocials kerneteam, og læs om den sociale peer-to-peer-protokol, de har bygget på siden begyndelsen af 2022."
+      "description": "Mød Bitsocials kerneteam, find ud af, hvem du kan spørge om hver del af projektet, og se, hvordan det er vokset siden begyndelsen af 2022, og alle, der har bidraget."
     },
     "blog": {
       "title": "Bitsocial-blog | Opdateringer, udgivelser og guides",

@@ -784,20 +784,131 @@
   },
   "about": {
     "sectionLabel": "Tietoa meistä",
-    "title": "Bitsocialin ydintiimi",
+    "title": "Ihmiset Bitsocialin takana",
     "subtitle": "Bitsocialia on kehitetty aktiivisesti vuoden 2022 alusta lähtien. Se on ruohonjuuritason hanke, jota perustaja Esteban Abaroa on rahoittanut ensimmäisestä päivästä lähtien omilla säästöillään.",
     "members": {
-      "esteban": {
-        "role": "Bitsocialin perustaja, johtava kehittäjä 2022–2026."
-      },
       "rinse": {
-        "role": "Bitsocialin perustaja, ydinkehittäjä."
+        "role": "Bitsocialin perustaja, ydinkehittäjä.",
+        "ask": "Kysy <askLink>protokollasta, solmuista ja roskapostin estosta</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocialin toinen perustaja ja ydinkehittäjä, <forgeLink>Bitsocial Forge</forgeLink>:n perustaja ja toimitusjohtaja"
+        "role": "Bitsocialin toinen perustaja ja ydinkehittäjä, <forgeLink>Bitsocial Forge</forgeLink>:n perustaja ja toimitusjohtaja",
+        "ask": "Kysy <askLink>sovelluksista, isännöidyistä palveluista, verkkosivustosta ja dokumentaatiosta</askLink>"
       }
     },
-    "memberProfileAlt": "Profiilikuva henkilöstä {{name}}"
+    "memberProfileAlt": "Profiilikuva henkilöstä {{name}}",
+    "organizations": "Koodi on GitHubissa kolmessa organisaatiossa: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> ja <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Tue Bitsocialia",
+    "contributeCta": "Osallistu GitHubissa",
+    "team": {
+      "title": "Ydintiimi"
+    },
+    "ask": {
+      "title": "Keneltä kysyä mistäkin",
+      "intro": "Bitsocialin kutakin osaa koskevat kysymykset kuuluvat sen ylläpitäjälle Telegramissa tai issuena johonkin sen repositorioista.",
+      "privateNote": "Osa repositorioista on yksityisiä, eikä niitä ole listattu.",
+      "telegramLabel": "Lähetä viesti käyttäjälle {{name}} Telegramissa"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokolla",
+        "description": "Miten yhteisöt, viestit, allekirjoitukset ja haasteet toimivat verkossa; pkc-js ja sen API."
+      },
+      "network": {
+        "name": "Solmut ja verkko",
+        "description": "Solmun tai yhteisön ylläpito, CLI ja RPC, .bso-nimet, seedaus, äänestys ja löydettävyys."
+      },
+      "antispam": {
+        "name": "Roskapostin esto",
+        "description": "Haasteet, joita yhteisö voi vaatia ennen julkaisemista, sekä roskapostin estopalvelu."
+      },
+      "apps": {
+        "name": "Sovellukset",
+        "description": "5chan, Seedit ja muut asiakkaat sekä React-hookit, joiden varaan jokainen asiakas rakentuu."
+      },
+      "services": {
+        "name": "Isännöidyt palvelut",
+        "description": "Forge Images, Forge RPC, 5chanin ja Seeditin arkistot, haku, linkkien esikatselut ja botit."
+      },
+      "web": {
+        "name": "Verkkosivusto, dokumentaatio ja tutkimus",
+        "description": "bitsocial.net, dokumentaatio, verkon tilastot, protokollaehdotukset (BSIPs) ja tutkimusprojektit."
+      }
+    },
+    "growth": {
+      "title": "Näin Bitsocial kasvoi",
+      "intro": "Commitit kuukausittain kaikissa kolmen organisaation julkisissa repositorioissa, pinottuna alueittain.",
+      "commits_one": "ihmisen tekemä commit",
+      "commits_other": "ihmisten tekemää committia",
+      "repositories_one": "julkinen repositorio",
+      "repositories_other": "julkista repositoriota",
+      "organizations_one": "GitHub-organisaatio",
+      "organizations_other": "GitHub-organisaatiota",
+      "legendLabel": "Alueet kaavion alaosasta ylöspäin",
+      "axisLabel": "Commitit kuukaudessa",
+      "chartLabel_one": "Pinottu aluekaavio ihmisten tekemistä commiteista kuukausittain alueittain, {{start}}–{{end}}. Vuonna {{year}} on tähän mennessä {{value}} commit, kun vuonna {{previousYear}} niitä oli {{previousValue}}.",
+      "chartLabel_other": "Pinottu aluekaavio ihmisten tekemistä commiteista kuukausittain alueittain, {{start}}–{{end}}. Vuonna {{year}} on tähän mennessä {{value}} committia, kun vuonna {{previousYear}} niitä oli {{previousValue}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} committia. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_other": "{{value}} committia",
+      "partialMonthLabel": "{{month}}, kesken",
+      "repositoriesAnnotation_one": "{{value}} repositorio vuoden {{year}} lopussa, nyt {{now}}",
+      "repositoriesAnnotation_other": "{{value}} repositoriota vuoden {{year}} lopussa, nyt {{now}}",
+      "startedAnnotation_one": "Niistä {{value}} sai ensimmäisen commitinsa vuonna {{year}}",
+      "startedAnnotation_other": "Niistä {{value}} sai ensimmäisen commitinsa vuonna {{year}}",
+      "partialAnnotation_ordinal_other": "{{month}} on kesken, tiedot {{day}}. päivään asti",
+      "caption": "Vain ihmisten tekemät commitit: botit, julkaisuautomaatio ja muista repositorioista kopioitu historia eivät ole mukana. Vuoden 2026 alusta suurin osa kehityksestä on tehty tekoälytyökalujen avustuksella.",
+      "partialAnnotation_ordinal_one": "{{month}} on kesken, tiedot {{day}}. päivään asti",
+      "partialAnnotation_ordinal_two": "{{month}} on kesken, tiedot {{day}}. päivään asti",
+      "partialAnnotation_ordinal_few": "{{month}} on kesken, tiedot {{day}}. päivään asti",
+      "partialAnnotation_ordinal_many": "{{month}} on kesken, tiedot {{day}}. päivään asti"
+    },
+    "milestones": {
+      "title": "Virstanpylväät",
+      "items": {
+        "specification": "Protokollan määrittely",
+        "protocolLibrary": "Ensimmäinen toimiva protokollakirjasto",
+        "reactHooks": "React-hookkikirjasto sovellusten rakentamiseen",
+        "signedEncrypted": "Jokainen julkaisu allekirjoitettu ja salattu",
+        "cliNode": "Ensimmäinen komentoriviltä ajettava solmu",
+        "ed25519": "Ed25519-avaimet ja AES-GCM-salaus",
+        "challenges": "Vaihdettavat roskapostin estohaasteet",
+        "fivechanRelease": "5chan 0.1.0, verkon ensimmäinen sovellus",
+        "rpc": "Sovellukset voivat käyttää etäsolmua RPC:n kautta",
+        "commentUpdates": "Kommenttipäivitykset, jotka skaalautuvat suuriin yhteisöihin",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Yhteisön luonti ja isännöinti työpöytäsovelluksesta",
+        "fivechanTypescript": "5chan kirjoitettu uudelleen TypeScriptillä",
+        "httpRouter": "HTTP-reititystrackeri korvaa DHT:n",
+        "browserP2p": "Peer-to-peer selaimessa ilman yhdyskäytävää",
+        "pushNotifications": "Push-ilmoitukset verkossa, Androidilla ja työpöydällä",
+        "boardDirectories": "5chanin boardit hakemistopolulla, kuten /biz/",
+        "spamBlocker": "Roskapostin estopalvelu",
+        "bsoNames": ".bso-nimet ohjaavat yhteisöihin",
+        "aiModeration": "Tekoälymoderointihaaste",
+        "pubsubVoting": "Luottamukseton äänestys pubsubin kautta",
+        "bsips": "Bitsocialin parannusehdotukset (BSIPs)",
+        "archives": "Julkiset arkistot ja haku 5chanille ja Seeditille",
+        "forgeImages": "Forge Images: ilmainen mediahosting sovelluksille"
+      }
+    },
+    "support": {
+      "title": "Tue Bitsocialia",
+      "body": "Lahjoitukset menevät koko Bitsocial-projektille.",
+      "donate": "Lahjoita",
+      "comingSoon": "Lahjoituslinkki tulossa pian"
+    },
+    "thanks": {
+      "title": "Kiitos myös",
+      "intro": "Kaikille muille, jotka ovat avanneet issuen tai pull requestin tai commitoineet koodia johonkin Bitsocialin repositorioon, osallistumisten määrän mukaisessa järjestyksessä.",
+      "wallLabel": "Osallistujat",
+      "contributions_one": "{{login}}, {{value}} kontribuutio",
+      "contributions_other": "{{login}}, {{value}} kontribuutiota",
+      "nextLabel": "Sinun avatarisi voisi olla seuraava: etsi avoin issue",
+      "cta": "Avatarisi näkyy täällä ensimmäisen issuesi tai pull requestisi jälkeen.",
+      "firstContribution": "Tee ensimmäinen kontribuutiosi"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -959,7 +1070,7 @@
   "seo": {
     "about": {
       "title": "Tietoa Bitsocialista | Ydintiimi",
-      "description": "Tutustu Bitsocialin ydintiimiin ja peer-to-peer-pohjaiseen sosiaaliseen protokollaan, jota se on rakentanut vuoden 2022 alusta lähtien."
+      "description": "Tutustu Bitsocialin ydintiimiin, katso keneltä kysyä projektin eri osista ja miten projekti on kasvanut vuoden 2022 alusta, sekä kaikki siihen osallistuneet."
     },
     "blog": {
       "title": "Bitsocial-blogi | Päivitykset, julkaisut ja oppaat",

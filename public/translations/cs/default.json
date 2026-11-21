@@ -777,20 +777,149 @@
   },
   "about": {
     "sectionLabel": "O nás",
-    "title": "Jádrový tým Bitsocial",
+    "title": "Lidé, kteří tvoří Bitsocial",
     "subtitle": "Bitsocial se aktivně vyvíjí od začátku roku 2022 — je to projekt vzešlý zdola, který od prvního dne financuje zakladatel Esteban Abaroa z vlastních úspor.",
     "members": {
-      "esteban": {
-        "role": "Zakladatel Bitsocial, hlavní vývojář 2022–2026."
-      },
       "rinse": {
-        "role": "Spoluzakladatel Bitsocial, hlavní vývojář."
+        "role": "Spoluzakladatel Bitsocial, hlavní vývojář.",
+        "ask": "Ptejte se na <askLink>protokol, uzly a anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial spoluzakladatel a hlavní vývojář, zakladatel a CEO společnosti <forgeLink>Bitsocial Forge</forgeLink>"
+        "role": "Bitsocial spoluzakladatel a hlavní vývojář, zakladatel a CEO společnosti <forgeLink>Bitsocial Forge</forgeLink>",
+        "ask": "Ptejte se na <askLink>aplikace, hostované služby, web a dokumentaci</askLink>"
       }
     },
-    "memberProfileAlt": "Profilová fotka uživatele {{name}}"
+    "memberProfileAlt": "Profilová fotka uživatele {{name}}",
+    "organizations": "Kód je na GitHubu ve třech organizacích: <pkcprotocol>pkcprotocol</pkcprotocol>, <bitsocialnet>bitsocialnet</bitsocialnet> a <bitsocialforge>bitsocialforge</bitsocialforge>.",
+    "supportCta": "Podpořte Bitsocial",
+    "contributeCta": "Přispějte na GitHubu",
+    "team": {
+      "title": "Jádrový tým"
+    },
+    "ask": {
+      "title": "Na koho se s čím obrátit",
+      "intro": "Dotazy k určité části Bitsocialu směřujte na jejího správce, přes Telegram nebo jako issue v některém z jejích repozitářů.",
+      "privateNote": "Některé repozitáře jsou soukromé a nejsou zde uvedeny.",
+      "telegramLabel": "Zpráva pro {{name}} na Telegramu"
+    },
+    "areas": {
+      "protocol": {
+        "name": "Protokol",
+        "description": "Jak na úrovni protokolu fungují komunity, příspěvky, podpisy a výzvy; pkc-js a jeho API."
+      },
+      "network": {
+        "name": "Uzly a síť",
+        "description": "Provoz uzlu nebo komunity, CLI a RPC, jména .bso, seedování, hlasování a objevování."
+      },
+      "antispam": {
+        "name": "Anti-spam",
+        "description": "Výzvy, které může komunita vyžadovat před zveřejněním příspěvku, a blokátor spamu."
+      },
+      "apps": {
+        "name": "Aplikace",
+        "description": "5chan, Seedit a další klienti a React hooky, na kterých je postaven každý klient."
+      },
+      "services": {
+        "name": "Hostované služby",
+        "description": "Forge Images, Forge RPC, archivy 5chan a Seedit, vyhledávání, náhledy odkazů a boti."
+      },
+      "web": {
+        "name": "Web, dokumentace a výzkum",
+        "description": "bitsocial.net, dokumentace, statistiky sítě, návrhy protokolu (BSIPs) a výzkumné projekty."
+      }
+    },
+    "growth": {
+      "title": "Jak Bitsocial rostl",
+      "intro": "Commity za měsíc ve všech veřejných repozitářích tří organizací, skládané podle oblastí.",
+      "commits_one": "lidský commit",
+      "commits_few": "lidské commity",
+      "commits_many": "lidského commitu",
+      "commits_other": "lidských commitů",
+      "repositories_one": "veřejný repozitář",
+      "repositories_few": "veřejné repozitáře",
+      "repositories_many": "veřejného repozitáře",
+      "repositories_other": "veřejných repozitářů",
+      "organizations_one": "organizace na GitHubu",
+      "organizations_few": "organizace na GitHubu",
+      "organizations_many": "organizace na GitHubu",
+      "organizations_other": "organizací na GitHubu",
+      "legendLabel": "Oblasti, odspodu grafu nahoru",
+      "axisLabel": "Commity za měsíc",
+      "chartLabel_one": "Skládaný plošný graf lidských commitů za měsíc v období {{start}} – {{end}}, podle oblastí. Rok {{year}} má zatím {{value}} commit, oproti {{previousValue}} v roce {{previousYear}}.",
+      "chartLabel_few": "Skládaný plošný graf lidských commitů za měsíc v období {{start}} – {{end}}, podle oblastí. Rok {{year}} má zatím {{value}} commity, oproti {{previousValue}} v roce {{previousYear}}.",
+      "chartLabel_many": "Skládaný plošný graf lidských commitů za měsíc v období {{start}} – {{end}}, podle oblastí. Rok {{year}} má zatím {{value}} commitu, oproti {{previousValue}} v roce {{previousYear}}.",
+      "chartLabel_other": "Skládaný plošný graf lidských commitů za měsíc v období {{start}} – {{end}}, podle oblastí. Rok {{year}} má zatím {{value}} commitů, oproti {{previousValue}} v roce {{previousYear}}.",
+      "periodSummary_one": "{{period}}: {{value}} commit. {{areas}}",
+      "periodSummary_few": "{{period}}: {{value}} commity. {{areas}}",
+      "periodSummary_many": "{{period}}: {{value}} commitu. {{areas}}",
+      "periodSummary_other": "{{period}}: {{value}} commitů. {{areas}}",
+      "yearCommits_one": "{{value}} commit",
+      "yearCommits_few": "{{value}} commity",
+      "yearCommits_many": "{{value}} commitu",
+      "yearCommits_other": "{{value}} commitů",
+      "partialMonthLabel": "{{month}}, neúplná data",
+      "repositoriesAnnotation_one": "{{value}} repozitář na konci roku {{year}}, nyní {{now}}",
+      "repositoriesAnnotation_few": "{{value}} repozitáře na konci roku {{year}}, nyní {{now}}",
+      "repositoriesAnnotation_many": "{{value}} repozitáře na konci roku {{year}}, nyní {{now}}",
+      "repositoriesAnnotation_other": "{{value}} repozitářů na konci roku {{year}}, nyní {{now}}",
+      "startedAnnotation_one": "{{value}} z nich měl první commit v roce {{year}}",
+      "startedAnnotation_few": "{{value}} z nich měly první commit v roce {{year}}",
+      "startedAnnotation_many": "{{value}} z nich mělo první commit v roce {{year}}",
+      "startedAnnotation_other": "{{value}} z nich mělo první commit v roce {{year}}",
+      "partialAnnotation_ordinal_other": "Data za {{month}} jsou neúplná, jen do {{day}}. dne",
+      "caption": "Jen commity od lidí: boti, automatizace vydání a historie zkopírovaná z jiných repozitářů se nepočítají. Od začátku roku 2026 probíhá většina vývoje s pomocí AI.",
+      "partialAnnotation_ordinal_one": "Data za {{month}} jsou neúplná, jen do {{day}}. dne",
+      "partialAnnotation_ordinal_two": "Data za {{month}} jsou neúplná, jen do {{day}}. dne",
+      "partialAnnotation_ordinal_few": "Data za {{month}} jsou neúplná, jen do {{day}}. dne",
+      "partialAnnotation_ordinal_many": "Data za {{month}} jsou neúplná, jen do {{day}}. dne"
+    },
+    "milestones": {
+      "title": "Milníky",
+      "items": {
+        "specification": "Specifikace protokolu",
+        "protocolLibrary": "První funkční knihovna protokolu",
+        "reactHooks": "Knihovna React hooků pro tvorbu aplikací",
+        "signedEncrypted": "Každá publikace podepsaná a šifrovaná",
+        "cliNode": "První uzel spustitelný z příkazové řádky",
+        "ed25519": "Klíče Ed25519 a šifrování AES-GCM",
+        "challenges": "Modulární anti-spamové výzvy",
+        "fivechanRelease": "5chan 0.1.0, první aplikace v síti",
+        "rpc": "Aplikace mohou běžet na vzdáleném uzlu přes RPC",
+        "commentUpdates": "Aktualizace komentářů, které zvládnou i velké komunity",
+        "seeditRelease": "Seedit 0.1.0",
+        "desktopCommunities": "Založení a hostování komunity z desktopové aplikace",
+        "fivechanTypescript": "5chan přepsaný do TypeScriptu",
+        "httpRouter": "HTTP routovací tracker nahrazuje DHT",
+        "browserP2p": "Peer-to-peer v prohlížeči, bez brány",
+        "pushNotifications": "Push oznámení na webu, Androidu a desktopu",
+        "boardDirectories": "Boardy 5chan adresované jako adresáře, např. /biz/",
+        "spamBlocker": "Služba blokování spamu",
+        "bsoNames": "Jména .bso se překládají na komunity",
+        "aiModeration": "Výzva s moderací pomocí AI",
+        "pubsubVoting": "Hlasování bez nutnosti důvěry přes pubsub",
+        "bsips": "Návrhy na vylepšení Bitsocialu (BSIPs)",
+        "archives": "Veřejné archivy a vyhledávání pro 5chan a Seedit",
+        "forgeImages": "Forge Images: bezplatný hosting médií pro aplikace"
+      }
+    },
+    "support": {
+      "title": "Podpořte Bitsocial",
+      "body": "Dary jdou na projekt Bitsocial jako celek.",
+      "donate": "Přispět",
+      "comingSoon": "Odkaz pro dary již brzy"
+    },
+    "thanks": {
+      "title": "Děkujeme také",
+      "intro": "Všem dalším, kdo v některém repozitáři Bitsocialu otevřeli issue nebo pull request nebo commitnuli kód, seřazeno podle počtu příspěvků.",
+      "wallLabel": "Přispěvatelé",
+      "contributions_one": "{{login}}, {{value}} příspěvek",
+      "contributions_few": "{{login}}, {{value}} příspěvky",
+      "contributions_many": "{{login}}, {{value}} příspěvku",
+      "contributions_other": "{{login}}, {{value}} příspěvků",
+      "nextLabel": "Váš avatar může být další: najděte otevřené issue",
+      "cta": "Váš avatar se tu objeví po vašem prvním issue nebo pull requestu.",
+      "firstContribution": "Přispějte poprvé"
+    }
   },
   "arbitraryChallenges": {
     "sectionLabel": "Arbitrary Challenges",
@@ -952,7 +1081,7 @@
   "seo": {
     "about": {
       "title": "O Bitsocial | Jádrový tým",
-      "description": "Seznamte se s jádrovým týmem Bitsocial a zjistěte více o sociálním peer-to-peer protokolu, který vyvíjí od začátku roku 2022."
+      "description": "Seznamte se s jádrovým týmem Bitsocial, zjistěte, na koho se obrátit s kterou částí projektu, a podívejte se, jak od začátku roku 2022 rostl a kdo všechno přispěl."
     },
     "blog": {
       "title": "Blog Bitsocial | Novinky, vydání a návody",
