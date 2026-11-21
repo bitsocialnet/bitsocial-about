@@ -4,6 +4,10 @@
   "private": true,
   "description": "Bitsocial public landing and ecosystem site.",
   "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitsocialnet/bitsocial-about.git"
+  },
   "author": "Bitsocial Forge",
   "type": "module",
   "scripts": {
