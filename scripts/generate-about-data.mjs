@@ -121,7 +121,16 @@ async function syncClone(repo) {
   const dir = path.join(cacheDir, `${repo.full_name}.git`);
   const url = `https://github.com/${repo.full_name}.git`;
   if (existsSync(dir)) {
-    await git(["--git-dir", dir, "fetch", "--quiet", "--prune", url, "+refs/heads/*:refs/heads/*"]);
+    await git([
+      "--git-dir",
+      dir,
+      "fetch",
+      "--quiet",
+      "--prune",
+      "--filter=tree:0",
+      url,
+      "+refs/heads/*:refs/heads/*",
+    ]);
   } else {
     await mkdir(path.dirname(dir), { recursive: true });
     await git(["clone", "--quiet", "--bare", "--filter=tree:0", url, dir]);
@@ -130,21 +139,24 @@ async function syncClone(repo) {
 }
 
 async function readCommits(repo, dir) {
-  let stdout;
+  const branch = `refs/heads/${repo.default_branch}`;
   try {
-    stdout = await git([
-      "--git-dir",
-      dir,
-      "log",
-      `refs/heads/${repo.default_branch}`,
-      "--no-merges",
-      "-z",
-      "--format=%H%x1f%ae%x1f%an%x1f%aI%x1f%s",
-    ]);
+    await git(["--git-dir", dir, "rev-parse", "--verify", "--quiet", branch]);
   } catch {
-    // An empty repository has no default branch yet.
+    console.warn(
+      `warning: ${repo.full_name} has no ${repo.default_branch} branch; no commits read`,
+    );
     return [];
   }
+  const stdout = await git([
+    "--git-dir",
+    dir,
+    "log",
+    branch,
+    "--no-merges",
+    "-z",
+    "--format=%H%x1f%ae%x1f%an%x1f%aI%x1f%s",
+  ]);
   return stdout
     .split("\0")
     .filter(Boolean)
