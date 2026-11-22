@@ -1,0 +1,49 @@
+name: Refresh about page data
+
+# Regenerates src/data/about-stats.json (the /about growth chart, repository counts and
+# contributor wall) every week and commits it to master when it changed. The commit deploys
+# through Vercel like any other push to master.
+
+on:
+  schedule:
+    - cron: "41 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-about-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: corepack enable
+      # oxfmt from the lockfile formats the regenerated JSON so format checks stay clean.
+      - run: corepack yarn install --immutable
+      - name: Regenerate about page data
+        run: node scripts/generate-about-data.mjs
+        env:
+          # The workflow token reads public repositories, issues and pull requests in the
+          # other Bitsocial organizations too.
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit and push when the data changed
+        run: |
+          if git diff --quiet -- src/data/about-stats.json; then
+            echo "About page data unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/about-stats.json
+          git commit -m "chore(about): refresh about page data"
+          git push origin HEAD:master
