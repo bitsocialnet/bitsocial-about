@@ -923,7 +923,8 @@
     },
     "founder": {
       "title": "Zakladatel",
-      "role": "Založil Bitsocial v roce 2022 a v roce 2026 projekt ze zdravotních důvodů opustil."
+      "role": "Založil Bitsocial v roce 2022 a <farewellLink>v roce 2026 projekt ze zdravotních důvodů opustil</farewellLink>.",
+      "heading": "Zvláštní poděkování"
     }
   },
   "arbitraryChallenges": {

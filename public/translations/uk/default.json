@@ -930,7 +930,8 @@
     },
     "founder": {
       "title": "Засновник",
-      "role": "Заснував Bitsocial у 2022 році та залишив проєкт у 2026 році через стан здоров’я."
+      "role": "Заснував Bitsocial у 2022 році та <farewellLink>залишив проєкт у 2026 році через стан здоров’я</farewellLink>.",
+      "heading": "Окрема подяка"
     }
   },
   "arbitraryChallenges": {

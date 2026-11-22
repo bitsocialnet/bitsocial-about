@@ -930,7 +930,8 @@
     },
     "founder": {
       "title": "Założyciel",
-      "role": "Założył Bitsocial w 2022 roku i odszedł z projektu w 2026 roku z powodów zdrowotnych."
+      "role": "Założył Bitsocial w 2022 roku i <farewellLink>odszedł z projektu w 2026 roku z powodów zdrowotnych</farewellLink>.",
+      "heading": "Szczególne podziękowania dla"
     }
   },
   "arbitraryChallenges": {

@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "بنیان‌گذار",
-      "role": "Bitsocial را در سال ۲۰۲۲ آغاز کرد و در سال ۲۰۲۶ به دلایل سلامتی پروژه را ترک کرد."
+      "role": "Bitsocial را در سال ۲۰۲۲ آغاز کرد و <farewellLink>در سال ۲۰۲۶ به دلایل سلامتی پروژه را ترک کرد</farewellLink>.",
+      "heading": "سپاس ویژه از"
     }
   },
   "arbitraryChallenges": {

@@ -921,7 +921,8 @@
     },
     "founder": {
       "title": "Fundador",
-      "role": "Iniciou o Bitsocial em 2022 e deixou o projeto em 2026 por motivos de saúde."
+      "role": "Iniciou o Bitsocial em 2022 e <farewellLink>deixou o projeto em 2026 por motivos de saúde</farewellLink>.",
+      "heading": "Um agradecimento especial a"
     }
   },
   "arbitraryChallenges": {

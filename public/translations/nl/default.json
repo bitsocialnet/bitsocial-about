@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "Oprichter",
-      "role": "Begon Bitsocial in 2022 en verliet het project in 2026 om gezondheidsredenen."
+      "role": "Begon Bitsocial in 2022 en <farewellLink>verliet het project in 2026 om gezondheidsredenen</farewellLink>.",
+      "heading": "Speciale dank aan"
     }
   },
   "arbitraryChallenges": {

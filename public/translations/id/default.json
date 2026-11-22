@@ -903,7 +903,8 @@
     },
     "founder": {
       "title": "Pendiri",
-      "role": "Memulai Bitsocial pada 2022 dan meninggalkan proyek ini pada 2026 karena alasan kesehatan."
+      "role": "Memulai Bitsocial pada 2022 dan <farewellLink>meninggalkan proyek ini pada 2026 karena alasan kesehatan</farewellLink>.",
+      "heading": "Terima kasih khusus kepada"
     }
   },
   "arbitraryChallenges": {

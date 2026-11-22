@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "بانی",
-      "role": "2022 میں Bitsocial کا آغاز کیا اور 2026 میں صحت کی وجوہات کی بنا پر منصوبہ چھوڑ دیا۔"
+      "role": "2022 میں Bitsocial کا آغاز کیا اور <farewellLink>2026 میں صحت کی وجوہات کی بنا پر منصوبہ چھوڑ دیا</farewellLink>۔",
+      "heading": "خصوصی شکریہ"
     }
   },
   "arbitraryChallenges": {

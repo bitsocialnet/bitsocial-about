@@ -12,7 +12,7 @@ export const ABOUT_MAINTAINERS: Record<AboutMaintainerId, AboutMaintainer> = {
   tom: { name: "Tom Casaburi", githubLogin: "tomcasaburi", telegram: "https://t.me/tomcasaburi" },
 };
 
-/** Credited in its own row of the thank-you section, above the contributor wall. */
+/** Credited in its own section, just above the contributor wall. */
 export const ABOUT_FOUNDER = { name: "Esteban Abaroa", githubLogin: "estebanabaroa" };
 
 // The avatar host serves images by login directly; github.com/<login>.png redirects there and sets

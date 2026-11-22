@@ -948,7 +948,8 @@
     },
     "founder": {
       "title": "المؤسس",
-      "role": "أطلق Bitsocial في عام 2022 وغادر المشروع في عام 2026 لأسباب صحية."
+      "role": "أطلق Bitsocial في عام 2022 و<farewellLink>غادر المشروع في عام 2026 لأسباب صحية</farewellLink>.",
+      "heading": "شكر خاص إلى"
     }
   },
   "arbitraryChallenges": {

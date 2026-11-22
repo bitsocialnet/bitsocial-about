@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "संस्थापक",
-      "role": "2022 में Bitsocial की शुरुआत की और 2026 में स्वास्थ्य कारणों से परियोजना छोड़ दी।"
+      "role": "2022 में Bitsocial की शुरुआत की और <farewellLink>2026 में स्वास्थ्य कारणों से परियोजना छोड़ दी</farewellLink>।",
+      "heading": "विशेष धन्यवाद"
     }
   },
   "arbitraryChallenges": {

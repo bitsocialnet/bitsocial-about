@@ -1,6 +1,7 @@
 import { Github, Heart } from "lucide-react";
 import { Trans, useTranslation } from "react-i18next";
 import AboutAsk from "@/components/about-ask";
+import AboutFounder from "@/components/about-founder";
 import AboutGrowth from "@/components/about-growth";
 import AboutSupport from "@/components/about-support";
 import AboutTeam from "@/components/about-team";
@@ -65,6 +66,7 @@ export default function About() {
           <AboutAsk />
           <AboutGrowth />
           <AboutSupport />
+          <AboutFounder />
           <AboutThanks />
         </div>
       </main>

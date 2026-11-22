@@ -921,7 +921,8 @@
     },
     "founder": {
       "title": "מייסד",
-      "role": "הקים את Bitsocial ב-2022 ועזב את הפרויקט ב-2026 מסיבות בריאותיות."
+      "role": "הקים את Bitsocial ב-2022 ו<farewellLink>עזב את הפרויקט ב-2026 מסיבות בריאותיות</farewellLink>.",
+      "heading": "תודה מיוחדת"
     }
   },
   "arbitraryChallenges": {

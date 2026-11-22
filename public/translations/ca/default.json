@@ -921,7 +921,8 @@
     },
     "founder": {
       "title": "Fundador",
-      "role": "Va iniciar Bitsocial el 2022 i va deixar el projecte el 2026 per motius de salut."
+      "role": "Va iniciar Bitsocial el 2022 i <farewellLink>va deixar el projecte el 2026 per motius de salut</farewellLink>.",
+      "heading": "Un agraïment especial a"
     }
   },
   "arbitraryChallenges": {

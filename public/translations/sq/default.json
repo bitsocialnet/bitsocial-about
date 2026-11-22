@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "Themeluesi",
-      "role": "Nisi Bitsocial në vitin 2022 dhe u largua nga projekti në vitin 2026 për arsye shëndetësore."
+      "role": "Nisi Bitsocial në vitin 2022 dhe <farewellLink>u largua nga projekti në vitin 2026 për arsye shëndetësore</farewellLink>.",
+      "heading": "Falënderim i veçantë për"
     }
   },
   "arbitraryChallenges": {

@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "Kurucu",
-      "role": "Bitsocial'ı 2022'de başlattı ve 2026'da sağlık nedenleriyle projeden ayrıldı."
+      "role": "Bitsocial'ı 2022'de başlattı ve <farewellLink>2026'da sağlık nedenleriyle projeden ayrıldı</farewellLink>.",
+      "heading": "Özel teşekkür"
     }
   },
   "arbitraryChallenges": {

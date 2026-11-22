@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "Alapító",
-      "role": "2022-ben indította el a Bitsocialt, és 2026-ban egészségügyi okokból távozott a projektből."
+      "role": "2022-ben indította el a Bitsocialt, és <farewellLink>2026-ban egészségügyi okokból távozott a projektből</farewellLink>.",
+      "heading": "Külön köszönet"
     }
   },
   "arbitraryChallenges": {

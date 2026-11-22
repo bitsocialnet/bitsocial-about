@@ -903,7 +903,8 @@
     },
     "founder": {
       "title": "创始人",
-      "role": "于 2022 年创立 Bitsocial，2026 年因健康原因离开项目。"
+      "role": "于 2022 年创立 Bitsocial，<farewellLink>2026 年因健康原因离开项目</farewellLink>。",
+      "heading": "特别感谢"
     }
   },
   "arbitraryChallenges": {

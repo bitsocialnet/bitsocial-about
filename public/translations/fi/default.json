@@ -912,7 +912,8 @@
     },
     "founder": {
       "title": "Perustaja",
-      "role": "Aloitti Bitsocialin vuonna 2022 ja jätti projektin vuonna 2026 terveyssyistä."
+      "role": "Aloitti Bitsocialin vuonna 2022 ja <farewellLink>jätti projektin vuonna 2026 terveyssyistä</farewellLink>.",
+      "heading": "Erityiskiitos"
     }
   },
   "arbitraryChallenges": {

@@ -921,7 +921,8 @@
     },
     "founder": {
       "title": "Fondator",
-      "role": "A pornit Bitsocial în 2022 și a părăsit proiectul în 2026 din motive de sănătate."
+      "role": "A pornit Bitsocial în 2022 și <farewellLink>a părăsit proiectul în 2026 din motive de sănătate</farewellLink>.",
+      "heading": "Mulțumiri speciale"
     }
   },
   "arbitraryChallenges": {

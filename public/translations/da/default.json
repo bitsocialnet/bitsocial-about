@@ -905,7 +905,8 @@
     },
     "founder": {
       "title": "Grundlægger",
-      "role": "Startede Bitsocial i 2022 og forlod projektet i 2026 af helbredsmæssige årsager."
+      "role": "Startede Bitsocial i 2022 og <farewellLink>forlod projektet i 2026 af helbredsmæssige årsager</farewellLink>.",
+      "heading": "En særlig tak til"
     }
   },
   "arbitraryChallenges": {
