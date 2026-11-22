@@ -893,11 +893,11 @@
     },
     "thanks": {
       "title": "Xin cảm ơn cả",
-      "intro": "Tất cả những người khác đã mở issue hoặc pull request, hoặc commit mã, trong một kho mã Bitsocial, xếp theo số lượt đóng góp.",
+      "intro": "Tất cả những người khác có mã đã được hợp nhất vào một kho mã Bitsocial, xếp theo số lượt đóng góp.",
       "wallLabel": "Người đóng góp",
       "contributions_other": "{{login}}, {{value}} lượt đóng góp",
       "nextLabel": "Ảnh đại diện tiếp theo có thể là của bạn: tìm một issue đang mở",
-      "cta": "Ảnh đại diện của bạn sẽ xuất hiện ở đây sau issue hoặc pull request đầu tiên.",
+      "cta": "Ảnh đại diện của bạn sẽ xuất hiện ở đây khi pull request đầu tiên của bạn được hợp nhất.",
       "firstContribution": "Đóng góp lần đầu"
     }
   },

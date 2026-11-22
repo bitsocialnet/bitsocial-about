@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Danke auch an",
-      "intro": "Alle anderen, die in einem Bitsocial-Repository ein Issue oder einen Pull Request eröffnet oder Code committet haben, sortiert nach Anzahl der Beiträge.",
+      "intro": "Alle anderen, deren Code in ein Bitsocial-Repository gemergt wurde, sortiert nach Anzahl der Beiträge.",
       "wallLabel": "Mitwirkende",
       "contributions_one": "{{login}}, {{value}} Beitrag",
       "contributions_other": "{{login}}, {{value}} Beiträge",
       "nextLabel": "Dein Avatar könnte der nächste sein: Such dir ein offenes Issue",
-      "cta": "Dein Avatar erscheint hier nach deinem ersten Issue oder Pull Request.",
+      "cta": "Dein Avatar erscheint hier, sobald dein erster Pull Request gemergt ist.",
       "firstContribution": "Ersten Beitrag leisten"
     }
   },

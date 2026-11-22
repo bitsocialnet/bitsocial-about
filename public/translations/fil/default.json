@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Salamat din sa",
-      "intro": "Lahat ng iba pang nagbukas ng issue o pull request, o nag-commit ng code, sa isang repository ng Bitsocial, ayon sa dami ng kontribusyon.",
+      "intro": "Lahat ng iba pang na-merge ang code sa isang repository ng Bitsocial, ayon sa dami ng kontribusyon.",
       "wallLabel": "Mga contributor",
       "contributions_one": "{{login}}, {{value}} kontribusyon",
       "contributions_other": "{{login}}, {{value}} kontribusyon",
       "nextLabel": "Puwedeng ang avatar mo na ang susunod: maghanap ng bukas na issue",
-      "cta": "Lalabas dito ang avatar mo pagkatapos ng una mong issue o pull request.",
+      "cta": "Lalabas dito ang avatar mo kapag na-merge na ang una mong pull request.",
       "firstContribution": "Gawin ang una mong kontribusyon"
     }
   },

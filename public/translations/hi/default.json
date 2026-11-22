@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "इनका भी धन्यवाद",
-      "intro": "बाकी सभी लोग जिन्होंने किसी Bitsocial रिपॉज़िटरी में issue या pull request खोला या कोड कमिट किया, योगदान की संख्या के क्रम में।",
+      "intro": "बाकी सभी लोग जिनका कोड किसी Bitsocial रिपॉज़िटरी में मर्ज हुआ, योगदान की संख्या के क्रम में।",
       "wallLabel": "योगदानकर्ता",
       "contributions_one": "{{login}}, {{value}} योगदान",
       "contributions_other": "{{login}}, {{value}} योगदान",
       "nextLabel": "अगला अवतार आपका हो सकता है: कोई खुला issue ढूँढें",
-      "cta": "आपके पहले issue या pull request के बाद आपका अवतार यहाँ दिखेगा।",
+      "cta": "आपका पहला pull request मर्ज होते ही आपका अवतार यहाँ दिखेगा।",
       "firstContribution": "अपना पहला योगदान करें"
     }
   },

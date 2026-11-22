@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Ook dank aan",
-      "intro": "Iedereen die verder een issue of pull request opende, of code committe, in een Bitsocial-repository, op volgorde van bijdragen.",
+      "intro": "Iedereen van wie verder code is gemerged in een Bitsocial-repository, op volgorde van bijdragen.",
       "wallLabel": "Bijdragers",
       "contributions_one": "{{login}}, {{value}} bijdrage",
       "contributions_other": "{{login}}, {{value}} bijdragen",
       "nextLabel": "Jouw avatar kan de volgende zijn: zoek een open issue",
-      "cta": "Je avatar verschijnt hier na je eerste issue of pull request.",
+      "cta": "Je avatar verschijnt hier zodra je eerste pull request is gemerged.",
       "firstContribution": "Doe je eerste bijdrage"
     }
   },

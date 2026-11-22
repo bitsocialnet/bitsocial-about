@@ -893,11 +893,11 @@
     },
     "thanks": {
       "title": "こちらの皆さんにも感謝します",
-      "intro": "Bitsocial のリポジトリで issue や pull request を作成した方、コードをコミットした方すべて（貢献数の多い順）。",
+      "intro": "Bitsocial のリポジトリにコードがマージされた方すべて（貢献数の多い順）。",
       "wallLabel": "コントリビューター",
       "contributions_other": "{{login}}、{{value}} 件の貢献",
       "nextLabel": "次はあなたのアバターかもしれません：未解決の issue を探す",
-      "cta": "最初の issue か pull request を出すと、ここにあなたのアバターが表示されます。",
+      "cta": "最初の pull request がマージされると、ここにあなたのアバターが表示されます。",
       "firstContribution": "初めての貢献をする"
     }
   },

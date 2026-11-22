@@ -909,13 +909,13 @@
     },
     "thanks": {
       "title": "Grazie anche a",
-      "intro": "Tutte le altre persone che hanno aperto una issue o una pull request, o contribuito con codice, in un repository Bitsocial, in ordine di contributi.",
+      "intro": "Tutte le altre persone il cui codice è stato integrato in un repository Bitsocial, in ordine di contributi.",
       "wallLabel": "Contributori",
       "contributions_one": "{{login}}, {{value}} contributo",
       "contributions_many": "{{login}}, {{value}} contributi",
       "contributions_other": "{{login}}, {{value}} contributi",
       "nextLabel": "Il prossimo avatar potrebbe essere il tuo: trova una issue aperta",
-      "cta": "Il tuo avatar comparirà qui dopo la tua prima issue o pull request.",
+      "cta": "Il tuo avatar comparirà qui quando la tua prima pull request verrà integrata.",
       "firstContribution": "Dai il tuo primo contributo"
     }
   },

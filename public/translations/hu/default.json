@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Köszönjük nekik is",
-      "intro": "Mindenki más, aki issue-t vagy pull requestet nyitott, vagy kódot commitolt valamelyik Bitsocial-tárolóba, a hozzájárulások száma szerint sorba rendezve.",
+      "intro": "Mindenki más, akinek a kódját beolvasztották valamelyik Bitsocial-tárolóba, a hozzájárulások száma szerint sorba rendezve.",
       "wallLabel": "Közreműködők",
       "contributions_one": "{{login}}, {{value}} hozzájárulás",
       "contributions_other": "{{login}}, {{value}} hozzájárulás",
       "nextLabel": "A következő avatar a tiéd lehet: keress egy nyitott issue-t",
-      "cta": "Az első issue-d vagy pull requested után itt jelenik meg az avatarod.",
+      "cta": "Az avatarod itt jelenik meg, amint beolvasztják az első pull requestedet.",
       "firstContribution": "Tedd meg az első hozzájárulásodat"
     }
   },

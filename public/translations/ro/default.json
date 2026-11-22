@@ -909,13 +909,13 @@
     },
     "thanks": {
       "title": "Mulțumim și",
-      "intro": "Tuturor celorlalți care au deschis un issue sau un pull request ori au făcut commit de cod într-un depozit Bitsocial, în ordinea contribuțiilor.",
+      "intro": "Tuturor celorlalți al căror cod a fost integrat într-un depozit Bitsocial, în ordinea contribuțiilor.",
       "wallLabel": "Contributori",
       "contributions_one": "{{login}}, {{value}} contribuție",
       "contributions_few": "{{login}}, {{value}} contribuții",
       "contributions_other": "{{login}}, {{value}} de contribuții",
       "nextLabel": "Avatarul tău poate fi următorul: găsește un issue deschis",
-      "cta": "Avatarul tău apare aici după primul tău issue sau pull request.",
+      "cta": "Avatarul tău apare aici după ce primul tău pull request este integrat.",
       "firstContribution": "Fă-ți prima contribuție"
     }
   },

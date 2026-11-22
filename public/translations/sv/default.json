@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Tack också till",
-      "intro": "Alla andra som har öppnat en issue eller en pull request, eller committat kod, i ett Bitsocial-repositorium, i ordning efter antal bidrag.",
+      "intro": "Alla andra vars kod har mergats in i ett Bitsocial-repositorium, i ordning efter antal bidrag.",
       "wallLabel": "Bidragsgivare",
       "contributions_one": "{{login}}, {{value}} bidrag",
       "contributions_other": "{{login}}, {{value}} bidrag",
       "nextLabel": "Din avatar kan bli nästa: hitta en öppen issue",
-      "cta": "Din avatar hamnar här efter din första issue eller pull request.",
+      "cta": "Din avatar hamnar här när din första pull request har mergats.",
       "firstContribution": "Gör ditt första bidrag"
     }
   },

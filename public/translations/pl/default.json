@@ -917,14 +917,14 @@
     },
     "thanks": {
       "title": "Dziękujemy także",
-      "intro": "Wszystkim pozostałym, którzy otworzyli zgłoszenie lub pull request albo wnieśli kod do repozytorium Bitsocial, w kolejności według liczby wkładów.",
+      "intro": "Wszystkim pozostałym, których kod został scalony z repozytorium Bitsocial, w kolejności według liczby wkładów.",
       "wallLabel": "Współtwórcy",
       "contributions_one": "{{login}}, {{value}} wkład",
       "contributions_few": "{{login}}, {{value}} wkłady",
       "contributions_many": "{{login}}, {{value}} wkładów",
       "contributions_other": "{{login}}, {{value}} wkładu",
       "nextLabel": "Twój awatar może być następny: znajdź otwarte zgłoszenie",
-      "cta": "Twój awatar pojawi się tu po pierwszym zgłoszeniu lub pull requeście.",
+      "cta": "Twój awatar pojawi się tu, gdy Twój pierwszy pull request zostanie scalony.",
       "firstContribution": "Wnieś swój pierwszy wkład"
     }
   },

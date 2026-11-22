@@ -893,11 +893,11 @@
     },
     "thanks": {
       "title": "同样感谢",
-      "intro": "所有其他在 Bitsocial 仓库中提交过 issue、pull request 或代码的人，按贡献数排序。",
+      "intro": "所有其他代码被合并进 Bitsocial 仓库的人，按贡献数排序。",
       "wallLabel": "贡献者",
       "contributions_other": "{{login}}，{{value}} 次贡献",
       "nextLabel": "下一个头像可能就是你的：找一个未关闭的 issue",
-      "cta": "提交第一个 issue 或 pull request 后，你的头像就会出现在这里。",
+      "cta": "你的第一个 pull request 合并后，你的头像就会出现在这里。",
       "firstContribution": "做出你的第一次贡献"
     }
   },

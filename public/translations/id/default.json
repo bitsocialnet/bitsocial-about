@@ -893,11 +893,11 @@
     },
     "thanks": {
       "title": "Terima kasih juga kepada",
-      "intro": "Semua orang lain yang pernah membuka issue atau pull request, atau meng-commit kode, di repositori Bitsocial, diurutkan menurut jumlah kontribusi.",
+      "intro": "Semua orang lain yang kodenya sudah di-merge ke repositori Bitsocial, diurutkan menurut jumlah kontribusi.",
       "wallLabel": "Kontributor",
       "contributions_other": "{{login}}, {{value}} kontribusi",
       "nextLabel": "Avatar Anda bisa jadi yang berikutnya: cari issue yang terbuka",
-      "cta": "Avatar Anda akan muncul di sini setelah issue atau pull request pertama Anda.",
+      "cta": "Avatar Anda akan muncul di sini setelah pull request pertama Anda di-merge.",
       "firstContribution": "Buat kontribusi pertama Anda"
     }
   },

@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Ayrıca teşekkürler",
-      "intro": "Bir Bitsocial deposunda issue ya da pull request açan veya kod commit'leyen diğer herkes, katkı sayısına göre sıralı.",
+      "intro": "Kodu bir Bitsocial deposuna birleştirilen diğer herkes, katkı sayısına göre sıralı.",
       "wallLabel": "Katkıda bulunanlar",
       "contributions_one": "{{login}}, {{value}} katkı",
       "contributions_other": "{{login}}, {{value}} katkı",
       "nextLabel": "Sıradaki avatar sizinki olabilir: açık bir issue bulun",
-      "cta": "İlk issue'nuzdan ya da pull request'inizden sonra avatarınız burada yer alır.",
+      "cta": "İlk pull request'iniz birleştirildiğinde avatarınız burada yer alır.",
       "firstContribution": "İlk katkınızı yapın"
     }
   },

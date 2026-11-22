@@ -909,13 +909,13 @@
     },
     "thanks": {
       "title": "תודה גם לכל אלה",
-      "intro": "כל השאר שפתחו issue או pull request, או ביצעו קומיט של קוד, במאגר של Bitsocial, לפי מספר התרומות.",
+      "intro": "כל השאר שהקוד שלהם מוזג למאגר של Bitsocial, לפי מספר התרומות.",
       "wallLabel": "תורמים",
       "contributions_one": "{{login}}, {{value}} תרומה",
       "contributions_two": "{{login}}, {{value}} תרומות",
       "contributions_other": "{{login}}, {{value}} תרומות",
       "nextLabel": "האווטאר שלכם יכול להיות הבא: מצאו issue פתוח",
-      "cta": "האווטאר שלכם יופיע כאן אחרי ה-issue או ה-pull request הראשון שלכם.",
+      "cta": "האווטאר שלכם יופיע כאן ברגע שה-pull request הראשון שלכם ימוזג.",
       "firstContribution": "התחילו לתרום"
     }
   },

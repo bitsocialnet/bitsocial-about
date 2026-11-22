@@ -917,14 +917,14 @@
     },
     "thanks": {
       "title": "Спасибо также",
-      "intro": "Всем остальным, кто открывал issue или pull request либо коммитил код в репозитории Bitsocial, в порядке числа вкладов.",
+      "intro": "Всем остальным, чей код был влит в репозиторий Bitsocial, в порядке числа вкладов.",
       "wallLabel": "Участники",
       "contributions_one": "{{login}}, {{value}} вклад",
       "contributions_few": "{{login}}, {{value}} вклада",
       "contributions_many": "{{login}}, {{value}} вкладов",
       "contributions_other": "{{login}}, {{value}} вклада",
       "nextLabel": "Следующим может стать ваш аватар: найдите открытый issue",
-      "cta": "Ваш аватар появится здесь после первого issue или pull request.",
+      "cta": "Ваш аватар появится здесь, как только ваш первый pull request будет влит.",
       "firstContribution": "Сделайте первый вклад"
     }
   },

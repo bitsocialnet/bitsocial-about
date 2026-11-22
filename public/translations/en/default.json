@@ -1117,12 +1117,12 @@
     },
     "thanks": {
       "title": "Thank you also to",
-      "intro": "Everyone else who opened an issue or a pull request, or committed code, in a Bitsocial repository, in order of contributions.",
+      "intro": "Everyone else whose code was merged into a Bitsocial repository, in order of contributions.",
       "wallLabel": "Contributors",
       "contributions_one": "{{login}}, {{value}} contribution",
       "contributions_other": "{{login}}, {{value}} contributions",
       "nextLabel": "Your avatar could be next: find an open issue",
-      "cta": "Your avatar goes here after your first issue or pull request.",
+      "cta": "Your avatar goes here once your first pull request is merged.",
       "firstContribution": "Make your first contribution"
     }
   },

@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Faleminderit edhe",
-      "intro": "Të gjithë të tjerëve që hapën një issue ose pull request, ose bënë commit kodi, në një depo të Bitsocial, sipas numrit të kontributeve.",
+      "intro": "Të gjithë të tjerëve, kodi i të cilëve u bashkua në një depo të Bitsocial, sipas numrit të kontributeve.",
       "wallLabel": "Kontribuesit",
       "contributions_one": "{{login}}, {{value}} kontribut",
       "contributions_other": "{{login}}, {{value}} kontribute",
       "nextLabel": "Avatari yt mund të jetë i radhës: gjej një issue të hapur",
-      "cta": "Avatari yt shfaqet këtu pas issue-s ose pull request-it tënd të parë.",
+      "cta": "Avatari yt shfaqet këtu sapo të bashkohet pull request-i yt i parë.",
       "firstContribution": "Bëj kontributin tënd të parë"
     }
   },

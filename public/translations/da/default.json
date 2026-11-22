@@ -894,12 +894,12 @@
     },
     "thanks": {
       "title": "Tak også til",
-      "intro": "Alle andre, der har oprettet et issue eller en pull request eller committet kode i et Bitsocial-repository, sorteret efter antal bidrag.",
+      "intro": "Alle andre, hvis kode er blevet merget ind i et Bitsocial-repository, sorteret efter antal bidrag.",
       "wallLabel": "Bidragydere",
       "contributions_one": "{{login}}, {{value}} bidrag",
       "contributions_other": "{{login}}, {{value}} bidrag",
       "nextLabel": "Din avatar kan blive den næste: find et åbent issue",
-      "cta": "Din avatar kommer her efter dit første issue eller pull request.",
+      "cta": "Din avatar kommer her, når din første pull request er merget.",
       "firstContribution": "Giv dit første bidrag"
     }
   },

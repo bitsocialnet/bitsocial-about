@@ -910,14 +910,14 @@
     },
     "thanks": {
       "title": "Děkujeme také",
-      "intro": "Všem dalším, kdo v některém repozitáři Bitsocialu otevřeli issue nebo pull request nebo commitnuli kód, seřazeno podle počtu příspěvků.",
+      "intro": "Všem dalším, jejichž kód byl začleněn do některého repozitáře Bitsocialu, seřazeno podle počtu příspěvků.",
       "wallLabel": "Přispěvatelé",
       "contributions_one": "{{login}}, {{value}} příspěvek",
       "contributions_few": "{{login}}, {{value}} příspěvky",
       "contributions_many": "{{login}}, {{value}} příspěvku",
       "contributions_other": "{{login}}, {{value}} příspěvků",
       "nextLabel": "Váš avatar může být další: najděte otevřené issue",
-      "cta": "Váš avatar se tu objeví po vašem prvním issue nebo pull requestu.",
+      "cta": "Váš avatar se tu objeví, jakmile bude začleněn váš první pull request.",
       "firstContribution": "Přispějte poprvé"
     }
   },

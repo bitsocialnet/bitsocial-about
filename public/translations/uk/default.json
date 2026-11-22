@@ -917,14 +917,14 @@
     },
     "thanks": {
       "title": "Також дякуємо",
-      "intro": "Усім іншим, хто відкривав issue чи pull request або комітив код у репозиторії Bitsocial, у порядку кількості внесків.",
+      "intro": "Усім іншим, чий код було злито в репозиторій Bitsocial, у порядку кількості внесків.",
       "wallLabel": "Учасники",
       "contributions_one": "{{login}}, {{value}} внесок",
       "contributions_few": "{{login}}, {{value}} внески",
       "contributions_many": "{{login}}, {{value}} внесків",
       "contributions_other": "{{login}}, {{value}} внеску",
       "nextLabel": "Наступним може бути ваш аватар: знайдіть відкрите issue",
-      "cta": "Ваш аватар з'явиться тут після вашого першого issue чи pull request.",
+      "cta": "Ваш аватар з'явиться тут, щойно ваш перший pull request буде злито.",
       "firstContribution": "Зробіть свій перший внесок"
     }
   },

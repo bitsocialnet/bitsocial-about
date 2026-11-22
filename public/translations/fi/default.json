@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "Kiitos myös",
-      "intro": "Kaikille muille, jotka ovat avanneet issuen tai pull requestin tai commitoineet koodia johonkin Bitsocialin repositorioon, osallistumisten määrän mukaisessa järjestyksessä.",
+      "intro": "Kaikille muille, joiden koodi on yhdistetty johonkin Bitsocialin repositorioon, osallistumisten määrän mukaisessa järjestyksessä.",
       "wallLabel": "Osallistujat",
       "contributions_one": "{{login}}, {{value}} kontribuutio",
       "contributions_other": "{{login}}, {{value}} kontribuutiota",
       "nextLabel": "Sinun avatarisi voisi olla seuraava: etsi avoin issue",
-      "cta": "Avatarisi näkyy täällä ensimmäisen issuesi tai pull requestisi jälkeen.",
+      "cta": "Avatarisi näkyy täällä, kun ensimmäinen pull requestisi on yhdistetty.",
       "firstContribution": "Tee ensimmäinen kontribuutiosi"
     }
   },

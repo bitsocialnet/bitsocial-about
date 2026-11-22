@@ -901,12 +901,12 @@
     },
     "thanks": {
       "title": "ان کا بھی شکریہ",
-      "intro": "باقی سب جنہوں نے کسی Bitsocial ریپوزٹری میں issue یا pull request کھولی، یا کوڈ کمٹ کیا، شراکتوں کی تعداد کے لحاظ سے۔",
+      "intro": "باقی سب جن کا کوڈ کسی Bitsocial ریپوزٹری میں مرج ہوا، شراکتوں کی تعداد کے لحاظ سے۔",
       "wallLabel": "معاونین",
       "contributions_one": "{{login}}، {{value}} شراکت",
       "contributions_other": "{{login}}، {{value}} شراکتیں",
       "nextLabel": "اگلا اوتار آپ کا ہو سکتا ہے: کوئی کھلا issue تلاش کریں",
-      "cta": "آپ کے پہلے issue یا pull request کے بعد آپ کا اوتار یہاں آئے گا۔",
+      "cta": "آپ کی پہلی pull request مرج ہوتے ہی آپ کا اوتار یہاں آئے گا۔",
       "firstContribution": "اپنی پہلی شراکت کریں"
     }
   },

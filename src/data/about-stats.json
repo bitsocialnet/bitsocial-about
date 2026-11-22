@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-21",
+  "generatedAt": "2026-11-22",
   "organizations": ["pkcprotocol", "bitsocialnet", "bitsocialforge"],
   "publicRepositories": 61,
-  "totalCommits": 19841,
+  "totalCommits": 19857,
   "commitsByYear": {
     "2022": 2209,
     "2023": 3806,
     "2024": 3381,
     "2025": 3821,
-    "2026": 6624
+    "2026": 6640
   },
   "months": [
     "2022-01",
@@ -75,7 +75,7 @@
     "protocol": [
       79, 107, 178, 129, 169, 36, 178, 112, 138, 100, 73, 148, 203, 156, 213, 97, 127, 129, 45, 72,
       67, 124, 119, 95, 45, 98, 195, 33, 115, 106, 158, 205, 96, 125, 83, 50, 157, 125, 216, 256,
-      288, 193, 153, 25, 101, 176, 256, 172, 79, 183, 144, 213, 60, 56, 39, 39, 24, 97, 65
+      288, 193, 153, 25, 101, 176, 256, 172, 79, 183, 144, 213, 60, 56, 39, 39, 24, 97, 68
     ],
     "network": [
       0, 0, 0, 0, 0, 0, 0, 0, 4, 72, 86, 109, 4, 0, 20, 22, 0, 7, 8, 21, 1, 0, 33, 19, 2, 35, 55, 7,
@@ -85,7 +85,7 @@
     "antispam": [
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 70, 23, 155, 21, 0, 3, 134, 40, 30, 103, 53, 23, 24, 37, 38,
-      48, 101
+      48, 108
     ],
     "apps": [
       0, 9, 108, 18, 74, 18, 42, 117, 45, 43, 2, 15, 34, 124, 250, 242, 184, 155, 93, 115, 181, 279,
@@ -99,7 +99,7 @@
     "web": [
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 79, 148, 140, 62, 46, 120, 43, 104, 166,
-      320
+      326
     ]
   },
   "repositoriesByMonth": [
@@ -110,106 +110,26 @@
   "contributors": [
     {
       "login": "estebanabaroa",
-      "contributions": 2207
+      "contributions": 2134
     },
     {
       "login": "Megalukes",
-      "contributions": 8
-    },
-    {
-      "login": "doxometrist",
-      "contributions": 5
-    },
-    {
-      "login": "mad-ranger",
       "contributions": 4
     },
     {
       "login": "SujalChoudhari",
-      "contributions": 4
-    },
-    {
-      "login": "ivxvm",
-      "contributions": 4
-    },
-    {
-      "login": "ThaungThanHan",
       "contributions": 3
     },
     {
-      "login": "obtusebanana",
-      "contributions": 2
-    },
-    {
-      "login": "windowshater",
-      "contributions": 2
-    },
-    {
-      "login": "dejanmilo-dev",
-      "contributions": 2
-    },
-    {
-      "login": "DemonOfHell1",
+      "login": "doxometrist",
       "contributions": 1
     },
     {
-      "login": "sjehuda",
+      "login": "ThaungThanHan",
       "contributions": 1
     },
     {
       "login": "rafael-abaroa",
-      "contributions": 1
-    },
-    {
-      "login": "eltociear",
-      "contributions": 1
-    },
-    {
-      "login": "Trevoke",
-      "contributions": 1
-    },
-    {
-      "login": "rafaelcastrocouto",
-      "contributions": 1
-    },
-    {
-      "login": "NiKrause",
-      "contributions": 1
-    },
-    {
-      "login": "Tacinamo",
-      "contributions": 1
-    },
-    {
-      "login": "janlimpens",
-      "contributions": 1
-    },
-    {
-      "login": "codingnooob",
-      "contributions": 1
-    },
-    {
-      "login": "Tamir198",
-      "contributions": 1
-    },
-    {
-      "login": "dCo3lh0",
-      "contributions": 1
-    },
-    {
-      "login": "aidenybai",
-      "contributions": 1
-    },
-    {
-      "login": "PaxPax40",
-      "contributions": 1
-    },
-    {
-      "login": "katsugtgz",
-      "contributions": 1
-    },
-    {
-      "login": "trackoor",
       "contributions": 1
     }
   ]

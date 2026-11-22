@@ -909,13 +909,13 @@
     },
     "thanks": {
       "title": "Gràcies també a",
-      "intro": "Totes les altres persones que han obert una incidència o una pull request, o han fet commits de codi, en un repositori de Bitsocial, per ordre de contribucions.",
+      "intro": "Totes les altres persones que han vist el seu codi fusionat en un repositori de Bitsocial, per ordre de contribucions.",
       "wallLabel": "Col·laboradors",
       "contributions_one": "{{login}}, {{value}} contribució",
       "contributions_many": "{{login}}, {{value}} contribucions",
       "contributions_other": "{{login}}, {{value}} contribucions",
       "nextLabel": "El teu avatar podria ser el següent: troba una incidència oberta",
-      "cta": "El teu avatar apareixerà aquí després de la teva primera incidència o pull request.",
+      "cta": "El teu avatar apareixerà aquí quan es fusioni la teva primera pull request.",
       "firstContribution": "Fes la teva primera contribució"
     }
   },

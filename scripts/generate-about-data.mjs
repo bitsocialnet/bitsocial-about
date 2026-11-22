@@ -10,7 +10,8 @@
   treeless clone of each in the OS temp directory (fetched again on later runs), and reads
   the non-merge commits of every default branch. Commits by bots and release automation are
   dropped; commits made with AI agents stay, since people directed them. History copied
-  between repositories is counted once. Issues and pull requests come from the GitHub API.
+  between repositories is counted once. Merged pull requests come from the GitHub API. The
+  contributor wall lists people whose code was merged; issues alone do not count.
 
   The GitHub token comes from GITHUB_TOKEN, or from `gh auth token`. Set
   ABOUT_DATA_CACHE_DIR to keep the clones somewhere else. The output never contains
@@ -43,6 +44,9 @@ const BOT_PATTERN =
 // Accounts that are not people: AI coding agents and the placeholder for deleted users. Their
 // commits still count in the chart; they are left off the contributor wall.
 const NON_PERSON_LOGINS = new Set(["claude", "copilot", "cursoragent", "ghost"]);
+// Merged contributions (commits on a default branch, or merged pull requests) needed to appear on
+// the contributor wall. Raise it to keep one-off contributions off the wall.
+const MIN_WALL_CONTRIBUTIONS = 1;
 
 async function getToken() {
   if (process.env.GITHUB_TOKEN) return process.env.GITHUB_TOKEN;
@@ -280,17 +284,16 @@ async function main() {
     (month) => [...repoFirstMonth.values()].filter((start) => start <= month).length,
   );
 
-  // Contributor wall: commits resolved to GitHub logins, plus issues and pull requests opened.
+  // Contributor wall: merged code only. Commits on default branches resolved to GitHub logins, and
+  // merged pull requests for authors whose commit email is not linked to their account. Issues and
+  // unmerged pull requests do not put anyone on the wall.
   const contributors = new Map();
-  const credit = (login, amount, time) => {
+  const credit = (login, field, amount, time) => {
     const keyLogin = login.toLowerCase();
-    const entry = contributors.get(keyLogin);
-    if (entry) {
-      entry.contributions += amount;
-      entry.first = Math.min(entry.first, time);
-    } else {
-      contributors.set(keyLogin, { login, contributions: amount, first: time });
-    }
+    const entry = contributors.get(keyLogin) ?? { login, commits: 0, mergedPulls: 0, first: time };
+    entry[field] += amount;
+    entry.first = Math.min(entry.first, time);
+    contributors.set(keyLogin, entry);
   };
 
   let unresolvedCommits = 0;
@@ -306,11 +309,12 @@ async function main() {
     if (!isPersonLogin(login, commit.author.type) || maintainerLogins.has(login.toLowerCase())) {
       return;
     }
-    credit(login, author.commits, author.first);
+    credit(login, "commits", author.commits, author.first);
   });
 
   let issueCount = 0;
   let pullCount = 0;
+  let mergedPullCount = 0;
   await mapLimit(repos, 4, async (repo) => {
     let items = await api.getAllPages(
       `/repos/${repo.full_name}/issues?state=all&per_page=100`,
@@ -323,20 +327,32 @@ async function main() {
     }
     for (const item of items) {
       if (!item.user) continue;
-      if (item.pull_request) pullCount += 1;
-      else issueCount += 1;
+      if (!item.pull_request) {
+        issueCount += 1;
+        continue;
+      }
+      pullCount += 1;
+      // The issues endpoint nests merged_at under pull_request; the pulls endpoint has it on the item.
+      const mergedAt = item.pull_request.merged_at ?? item.merged_at;
+      if (!mergedAt) continue;
+      mergedPullCount += 1;
       const { login, type } = item.user;
       if (!isPersonLogin(login, type) || maintainerLogins.has(login.toLowerCase())) continue;
-      credit(login, 1, Date.parse(item.created_at));
+      credit(login, "mergedPulls", 1, Date.parse(mergedAt));
     }
   });
 
-  const wall = [...contributors.values()].sort(
-    (a, b) =>
-      b.contributions - a.contributions ||
-      a.first - b.first ||
-      a.login.toLowerCase().localeCompare(b.login.toLowerCase()),
-  );
+  // A merged pull request lands at least one commit, so the larger of the two counts is the
+  // person's merged contributions; it only differs when commit emails are not linked to GitHub.
+  const wall = [...contributors.values()]
+    .map((entry) => ({ ...entry, contributions: Math.max(entry.commits, entry.mergedPulls) }))
+    .filter((entry) => entry.contributions >= MIN_WALL_CONTRIBUTIONS)
+    .sort(
+      (a, b) =>
+        b.contributions - a.contributions ||
+        a.first - b.first ||
+        a.login.toLowerCase().localeCompare(b.login.toLowerCase()),
+    );
 
   const output = {
     generatedAt,
@@ -363,7 +379,7 @@ async function main() {
   console.log(
     `Repositories: ${endOfLastYear >= 0 ? repositoriesByMonth[endOfLastYear] : 0} at the end of ${lastYear}, ${repositoriesByMonth.at(-1)} now`,
   );
-  console.log(`Issues: ${issueCount}, pull requests: ${pullCount}`);
+  console.log(`Issues: ${issueCount}, pull requests: ${pullCount} (${mergedPullCount} merged)`);
   console.log(`Commits with no GitHub login (chart only): ${unresolvedCommits}`);
   console.log(
     `Contributor wall: ${wall.length} (${wall
