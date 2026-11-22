@@ -1008,8 +1008,9 @@
         "ask": "Ask about <askLink>the protocol, nodes and anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Co-Founder and Core Developer, Founder & CEO of <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Ask about <askLink>apps, hosted services, the website and docs</askLink>"
+        "role": "Co-Founder and Core Developer",
+        "ask": "Ask about <askLink>apps, hosted services, the website and docs</askLink>",
+        "forgeRole": "Founder & CEO of <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Profile photo of {{name}}",
@@ -1127,7 +1128,7 @@
     },
     "founder": {
       "title": "Founder",
-      "role": "Started Bitsocial in 2022"
+      "role": "Started Bitsocial in 2022 and left the project in 2026 for health reasons."
     }
   },
   "seo": {

@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial está en desarrollo activo desde principios de 2022, un proyecto comunitario financiado desde el primer día por su fundador Esteban Abaroa con sus propios ahorros.",
     "members": {
       "rinse": {
-        "role": "Cofundador de Bitsocial, desarrollo central.",
+        "role": "Cofundador y desarrollador principal",
         "ask": "Pregunta sobre <askLink>el protocolo, los nodos y el anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Cofundador y desarrollador principal de Bitsocial, fundador y director ejecutivo de <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Pregunta sobre <askLink>las apps, los servicios alojados, el sitio web y la documentación</askLink>"
+        "role": "Cofundador y desarrollador principal",
+        "ask": "Pregunta sobre <askLink>las apps, los servicios alojados, el sitio web y la documentación</askLink>",
+        "forgeRole": "Fundador y director ejecutivo de <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Foto de perfil de {{name}}",
@@ -920,7 +921,7 @@
     },
     "founder": {
       "title": "Fundador",
-      "role": "Inició Bitsocial en 2022"
+      "role": "Inició Bitsocial en 2022 y dejó el proyecto en 2026 por motivos de salud."
     }
   },
   "arbitraryChallenges": {

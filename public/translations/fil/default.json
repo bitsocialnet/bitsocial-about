@@ -788,12 +788,13 @@
     "subtitle": "Aktibong binubuo ang Bitsocial simula pa noong unang bahagi ng 2022, isang proyektong mula sa hanay ng mga ordinaryong tao na pinondohan mula sa unang araw ng tagapagtatag nitong si Esteban Abaroa mula sa sarili niyang ipon.",
     "members": {
       "rinse": {
-        "role": "Bitsocial Co-Founder, core dev.",
+        "role": "Co-founder at pangunahing developer",
         "ask": "Magtanong tungkol sa <askLink>protocol, mga node at anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial co-founder at pangunahing developer, founder at CEO ng <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Magtanong tungkol sa <askLink>mga app, hosted na serbisyo, website at docs</askLink>"
+        "role": "Co-founder at pangunahing developer",
+        "ask": "Magtanong tungkol sa <askLink>mga app, hosted na serbisyo, website at docs</askLink>",
+        "forgeRole": "Founder at CEO ng <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Larawan sa profile ni {{name}}",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Tagapagtatag",
-      "role": "Sinimulan ang Bitsocial noong 2022"
+      "role": "Sinimulan ang Bitsocial noong 2022 at umalis sa proyekto noong 2026 dahil sa kalusugan."
     }
   },
   "arbitraryChallenges": {

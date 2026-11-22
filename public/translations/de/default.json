@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial befindet sich seit Anfang 2022 in aktiver Entwicklung, ein basisdemokratisches Projekt, das vom ersten Tag an von Gründer Esteban Abaroa aus eigenen Ersparnissen finanziert wird.",
     "members": {
       "rinse": {
-        "role": "Bitsocial-Mitbegründer, Kernentwickler.",
+        "role": "Mitgründer und Kernentwickler",
         "ask": "Fragen zu <askLink>Protokoll, Nodes und Anti-Spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial-Mitbegründer und Kernentwickler, Gründer und CEO von <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Fragen zu <askLink>Apps, gehosteten Diensten, Website und Dokumentation</askLink>"
+        "role": "Mitgründer und Kernentwickler",
+        "ask": "Fragen zu <askLink>Apps, gehosteten Diensten, Website und Dokumentation</askLink>",
+        "forgeRole": "Gründer und CEO von <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Profilfoto von {{name}}",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Gründer",
-      "role": "Startete Bitsocial 2022"
+      "role": "Startete Bitsocial 2022 und verließ das Projekt 2026 aus gesundheitlichen Gründen."
     }
   },
   "arbitraryChallenges": {

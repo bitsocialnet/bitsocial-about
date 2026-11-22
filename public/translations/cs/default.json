@@ -781,12 +781,13 @@
     "subtitle": "Bitsocial se aktivně vyvíjí od začátku roku 2022 — je to projekt vzešlý zdola, který od prvního dne financuje zakladatel Esteban Abaroa z vlastních úspor.",
     "members": {
       "rinse": {
-        "role": "Spoluzakladatel Bitsocial, hlavní vývojář.",
+        "role": "Spoluzakladatel a hlavní vývojář",
         "ask": "Ptejte se na <askLink>protokol, uzly a anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial spoluzakladatel a hlavní vývojář, zakladatel a CEO společnosti <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Ptejte se na <askLink>aplikace, hostované služby, web a dokumentaci</askLink>"
+        "role": "Spoluzakladatel a hlavní vývojář",
+        "ask": "Ptejte se na <askLink>aplikace, hostované služby, web a dokumentaci</askLink>",
+        "forgeRole": "Zakladatel a CEO společnosti <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Profilová fotka uživatele {{name}}",
@@ -922,7 +923,7 @@
     },
     "founder": {
       "title": "Zakladatel",
-      "role": "Založil Bitsocial v roce 2022"
+      "role": "Založil Bitsocial v roce 2022 a v roce 2026 projekt ze zdravotních důvodů opustil."
     }
   },
   "arbitraryChallenges": {

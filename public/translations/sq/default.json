@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial ka qenë në zhvillim aktiv që nga fillimi i vitit 2022, një projekt i nisur nga baza dhe i financuar që nga dita e parë nga themeluesi Esteban Abaroa me kursimet e tij personale.",
     "members": {
       "rinse": {
-        "role": "Bashkëthemeluesi i Bitsocial, zhvilluesi kryesor.",
+        "role": "Bashkëthemelues dhe zhvillues kryesor",
         "ask": "Pyet për <askLink>protokollin, nyjet dhe anti-spam-in</askLink>"
       },
       "tommaso": {
-        "role": "Bashkëthemeluesi dhe zhvilluesi kryesor i Bitsocial, themeluesi dhe CEO i <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Pyet për <askLink>aplikacionet, shërbimet e hostuara, faqen dhe dokumentacionin</askLink>"
+        "role": "Bashkëthemelues dhe zhvillues kryesor",
+        "ask": "Pyet për <askLink>aplikacionet, shërbimet e hostuara, faqen dhe dokumentacionin</askLink>",
+        "forgeRole": "Themelues dhe CEO i <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Fotografia e profilit të {{name}}",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Themeluesi",
-      "role": "Nisi Bitsocial në vitin 2022"
+      "role": "Nisi Bitsocial në vitin 2022 dhe u largua nga projekti në vitin 2026 për arsye shëndetësore."
     }
   },
   "arbitraryChallenges": {

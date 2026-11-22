@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial 2022'nin başından beri etkin olarak geliştiriliyor; kurucusu Esteban Abaroa tarafından ilk günden itibaren kendi birikimleriyle finanse edilen, tabandan gelen bir proje.",
     "members": {
       "rinse": {
-        "role": "Bitsocial Kurucu Ortağı, çekirdek geliştirici.",
+        "role": "Kurucu ortak ve çekirdek geliştirici",
         "ask": "<askLink>Protokol, düğümler ve anti-spam</askLink> hakkında sorun"
       },
       "tommaso": {
-        "role": "Bitsocial'ın kurucu ortağı ve temel geliştiricisi, <forgeLink>Bitsocial Forge</forgeLink> kurucusu ve CEO'su",
-        "ask": "<askLink>Uygulamalar, barındırılan hizmetler, web sitesi ve dokümantasyon</askLink> hakkında sorun"
+        "role": "Kurucu ortak ve çekirdek geliştirici",
+        "ask": "<askLink>Uygulamalar, barındırılan hizmetler, web sitesi ve dokümantasyon</askLink> hakkında sorun",
+        "forgeRole": "<forgeLink>Bitsocial Forge</forgeLink> kurucusu ve CEO'su"
       }
     },
     "memberProfileAlt": "{{name}} profil fotoğrafı",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Kurucu",
-      "role": "Bitsocial'ı 2022'de başlattı"
+      "role": "Bitsocial'ı 2022'de başlattı ve 2026'da sağlık nedenleriyle projeden ayrıldı."
     }
   },
   "arbitraryChallenges": {

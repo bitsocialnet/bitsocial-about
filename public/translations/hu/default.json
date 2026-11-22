@@ -788,12 +788,13 @@
     "subtitle": "A Bitsocial 2022 eleje óta aktív fejlesztés alatt áll; egy alulról szerveződő projekt, amelyet az első naptól kezdve Esteban Abaroa alapító finanszíroz a saját megtakarításaiból.",
     "members": {
       "rinse": {
-        "role": "A Bitsocial társalapítója, fő fejlesztője.",
+        "role": "Társalapító és fő fejlesztő",
         "ask": "Kérdezz tőle: <askLink>protokoll, csomópontok és spamvédelem</askLink>"
       },
       "tommaso": {
-        "role": "A Bitsocial társalapítója és fő fejlesztője, a <forgeLink>Bitsocial Forge</forgeLink> alapítója és vezérigazgatója",
-        "ask": "Kérdezz tőle: <askLink>appok, hosztolt szolgáltatások, weboldal és dokumentáció</askLink>"
+        "role": "Társalapító és fő fejlesztő",
+        "ask": "Kérdezz tőle: <askLink>appok, hosztolt szolgáltatások, weboldal és dokumentáció</askLink>",
+        "forgeRole": "A <forgeLink>Bitsocial Forge</forgeLink> alapítója és vezérigazgatója"
       }
     },
     "memberProfileAlt": "{{name}} profilfotója",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Alapító",
-      "role": "2022-ben indította el a Bitsocialt"
+      "role": "2022-ben indította el a Bitsocialt, és 2026-ban egészségügyi okokból távozott a projektből."
     }
   },
   "arbitraryChallenges": {

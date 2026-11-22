@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial đã được phát triển tích cực từ đầu năm 2022, một dự án phát triển từ cộng đồng được nhà sáng lập Esteban Abaroa tự bỏ tiền túi tài trợ ngay từ ngày đầu tiên.",
     "members": {
       "rinse": {
-        "role": "Đồng sáng lập Bitsocial, nhà phát triển cốt lõi.",
+        "role": "Đồng sáng lập và nhà phát triển cốt lõi",
         "ask": "Hỏi về <askLink>giao thức, nút và chống spam</askLink>"
       },
       "tommaso": {
-        "role": "Đồng sáng lập và nhà phát triển cốt lõi của Bitsocial, người sáng lập và CEO của <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Hỏi về <askLink>ứng dụng, dịch vụ do nhóm vận hành, trang web và tài liệu</askLink>"
+        "role": "Đồng sáng lập và nhà phát triển cốt lõi",
+        "ask": "Hỏi về <askLink>ứng dụng, dịch vụ do nhóm vận hành, trang web và tài liệu</askLink>",
+        "forgeRole": "Người sáng lập và CEO của <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Ảnh hồ sơ của {{name}}",
@@ -902,7 +903,7 @@
     },
     "founder": {
       "title": "Nhà sáng lập",
-      "role": "Khởi xướng Bitsocial vào năm 2022"
+      "role": "Khởi xướng Bitsocial vào năm 2022 và rời dự án vào năm 2026 vì lý do sức khỏe."
     }
   },
   "arbitraryChallenges": {

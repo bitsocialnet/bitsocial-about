@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial este în dezvoltare activă încă de la începutul anului 2022, un proiect pornit de la firul ierbii, finanțat din prima zi de fondatorul Esteban Abaroa din propriile economii.",
     "members": {
       "rinse": {
-        "role": "Co-fondator Bitsocial, dezvoltator de bază.",
+        "role": "Co-fondator și dezvoltator de bază",
         "ask": "Întreabă despre <askLink>protocol, noduri și anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Co-fondator Bitsocial și dezvoltator de bază, fondator și CEO al <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Întreabă despre <askLink>aplicații, servicii găzduite, site și documentație</askLink>"
+        "role": "Co-fondator și dezvoltator de bază",
+        "ask": "Întreabă despre <askLink>aplicații, servicii găzduite, site și documentație</askLink>",
+        "forgeRole": "Fondator și CEO al <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Fotografia de profil a lui {{name}}",
@@ -920,7 +921,7 @@
     },
     "founder": {
       "title": "Fondator",
-      "role": "A pornit Bitsocial în 2022"
+      "role": "A pornit Bitsocial în 2022 și a părăsit proiectul în 2026 din motive de sănătate."
     }
   },
   "arbitraryChallenges": {

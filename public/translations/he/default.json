@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial נמצא בפיתוח פעיל מאז תחילת 2022, פרויקט שצמח מלמטה וממומן מהיום הראשון על ידי המייסד Esteban Abaroa מתוך חסכונותיו האישיים.",
     "members": {
       "rinse": {
-        "role": "מייסד שותף של Bitsocial, מפתח ליבה.",
+        "role": "מייסד שותף ומפתח ליבה",
         "ask": "שאלות על <askLink>הפרוטוקול, הצמתים והאנטי-ספאם</askLink>"
       },
       "tommaso": {
-        "role": "מייסד שותף ומפתח ליבה של Bitsocial, מייסד ומנכ\"ל <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "שאלות על <askLink>האפליקציות, השירותים המאוחסנים, האתר והתיעוד</askLink>"
+        "role": "מייסד שותף ומפתח ליבה",
+        "ask": "שאלות על <askLink>האפליקציות, השירותים המאוחסנים, האתר והתיעוד</askLink>",
+        "forgeRole": "מייסד ומנכ\"ל <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "תמונת פרופיל של {{name}}",
@@ -920,7 +921,7 @@
     },
     "founder": {
       "title": "מייסד",
-      "role": "הקים את Bitsocial ב-2022"
+      "role": "הקים את Bitsocial ב-2022 ועזב את הפרויקט ב-2026 מסיבות בריאותיות."
     }
   },
   "arbitraryChallenges": {

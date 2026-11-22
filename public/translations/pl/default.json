@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial jest aktywnie rozwijany od początku 2022 roku — to oddolny projekt finansowany od pierwszego dnia przez założyciela Estebana Abaroę z jego własnych oszczędności.",
     "members": {
       "rinse": {
-        "role": "Współzałożyciel Bitsocial, główny programista.",
+        "role": "Współzałożyciel i główny programista",
         "ask": "Pytaj o <askLink>protokół, węzły i antyspam</askLink>"
       },
       "tommaso": {
-        "role": "Współzałożyciel i główny programista Bitsocial, założyciel i dyrektor generalny <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Pytaj o <askLink>aplikacje, usługi hostowane, stronę i dokumentację</askLink>"
+        "role": "Współzałożyciel i główny programista",
+        "ask": "Pytaj o <askLink>aplikacje, usługi hostowane, stronę i dokumentację</askLink>",
+        "forgeRole": "Założyciel i dyrektor generalny <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Zdjęcie profilowe {{name}}",
@@ -929,7 +930,7 @@
     },
     "founder": {
       "title": "Założyciel",
-      "role": "Założył Bitsocial w 2022 roku"
+      "role": "Założył Bitsocial w 2022 roku i odszedł z projektu w 2026 roku z powodów zdrowotnych."
     }
   },
   "arbitraryChallenges": {

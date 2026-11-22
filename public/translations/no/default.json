@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial har vært under aktiv utvikling siden begynnelsen av 2022, et folkelig prosjekt finansiert fra første dag av grunnlegger Esteban Abaroa med hans egne sparepenger.",
     "members": {
       "rinse": {
-        "role": "Bitsocial medgründer, kjerneutvikler.",
+        "role": "Medgründer og kjerneutvikler",
         "ask": "Spør om <askLink>protokollen, noder og antispam</askLink>"
       },
       "tommaso": {
-        "role": "Bitsocial medgründer og kjerneutvikler, grunnlegger og administrerende direktør i <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Spør om <askLink>apper, driftede tjenester, nettstedet og dokumentasjonen</askLink>"
+        "role": "Medgründer og kjerneutvikler",
+        "ask": "Spør om <askLink>apper, driftede tjenester, nettstedet og dokumentasjonen</askLink>",
+        "forgeRole": "Grunnlegger og administrerende direktør i <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Profilbilde til {{name}}",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Grunnlegger",
-      "role": "Startet Bitsocial i 2022"
+      "role": "Startet Bitsocial i 2022 og forlot prosjektet i 2026 av helsemessige årsaker."
     }
   },
   "arbitraryChallenges": {

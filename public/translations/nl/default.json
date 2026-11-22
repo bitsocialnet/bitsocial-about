@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial is sinds begin 2022 in actieve ontwikkeling, een project vanuit de basis dat vanaf dag één door oprichter Esteban Abaroa uit zijn eigen spaargeld wordt gefinancierd.",
     "members": {
       "rinse": {
-        "role": "Bitsocial mede-oprichter, kernontwikkelaar.",
+        "role": "Mede-oprichter en kernontwikkelaar",
         "ask": "Vragen over <askLink>het protocol, nodes en antispam</askLink>"
       },
       "tommaso": {
-        "role": "Mede-oprichter en kernontwikkelaar van Bitsocial, oprichter en CEO van <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Vragen over <askLink>apps, gehoste diensten, de website en documentatie</askLink>"
+        "role": "Mede-oprichter en kernontwikkelaar",
+        "ask": "Vragen over <askLink>apps, gehoste diensten, de website en documentatie</askLink>",
+        "forgeRole": "Oprichter en CEO van <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Profielfoto van {{name}}",
@@ -911,7 +912,7 @@
     },
     "founder": {
       "title": "Oprichter",
-      "role": "Begon Bitsocial in 2022"
+      "role": "Begon Bitsocial in 2022 en verliet het project in 2026 om gezondheidsredenen."
     }
   },
   "arbitraryChallenges": {

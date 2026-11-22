@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial は2022年初頭から活発に開発が続けられており、創設者の Esteban Abaroa が初日から自身の貯蓄で資金を出してきた草の根のプロジェクトです。",
     "members": {
       "rinse": {
-        "role": "Bitsocial 共同創設者、コア開発者。",
+        "role": "共同創設者兼コア開発者",
         "ask": "<askLink>プロトコル、ノード、スパム対策</askLink>について質問する"
       },
       "tommaso": {
-        "role": "Bitsocial の共同創設者兼コア開発者、<forgeLink>Bitsocial Forge</forgeLink> の創設者兼 CEO",
-        "ask": "<askLink>アプリ、ホスティングサービス、Webサイト、ドキュメント</askLink>について質問する"
+        "role": "共同創設者兼コア開発者",
+        "ask": "<askLink>アプリ、ホスティングサービス、Webサイト、ドキュメント</askLink>について質問する",
+        "forgeRole": "<forgeLink>Bitsocial Forge</forgeLink> の創設者兼 CEO"
       }
     },
     "memberProfileAlt": "{{name}} のプロフィール写真",
@@ -902,7 +903,7 @@
     },
     "founder": {
       "title": "創設者",
-      "role": "2022年に Bitsocial を始動"
+      "role": "2022年に Bitsocial を始動し、2026年に健康上の理由でプロジェクトを離れました。"
     }
   },
   "arbitraryChallenges": {

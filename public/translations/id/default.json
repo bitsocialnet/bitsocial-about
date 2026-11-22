@@ -788,12 +788,13 @@
     "subtitle": "Bitsocial telah dikembangkan secara aktif sejak awal 2022, sebuah proyek dari akar rumput yang didanai sejak hari pertama oleh pendirinya, Esteban Abaroa, dari tabungannya sendiri.",
     "members": {
       "rinse": {
-        "role": "Co-Founder Bitsocial, pengembang inti.",
+        "role": "Salah satu pendiri dan pengembang inti",
         "ask": "Tanya soal <askLink>protokol, node, dan anti-spam</askLink>"
       },
       "tommaso": {
-        "role": "Salah satu pendiri dan pengembang inti Bitsocial, pendiri & CEO <forgeLink>Bitsocial Forge</forgeLink>",
-        "ask": "Tanya soal <askLink>aplikasi, layanan yang di-hosting, situs web, dan dokumentasi</askLink>"
+        "role": "Salah satu pendiri dan pengembang inti",
+        "ask": "Tanya soal <askLink>aplikasi, layanan yang di-hosting, situs web, dan dokumentasi</askLink>",
+        "forgeRole": "Pendiri & CEO <forgeLink>Bitsocial Forge</forgeLink>"
       }
     },
     "memberProfileAlt": "Foto profil {{name}}",
@@ -902,7 +903,7 @@
     },
     "founder": {
       "title": "Pendiri",
-      "role": "Memulai Bitsocial pada 2022"
+      "role": "Memulai Bitsocial pada 2022 dan meninggalkan proyek ini pada 2026 karena alasan kesehatan."
     }
   },
   "arbitraryChallenges": {
