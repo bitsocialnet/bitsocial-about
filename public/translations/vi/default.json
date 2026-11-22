@@ -899,6 +899,10 @@
       "nextLabel": "Ảnh đại diện tiếp theo có thể là của bạn: tìm một issue đang mở",
       "cta": "Ảnh đại diện của bạn sẽ xuất hiện ở đây khi pull request đầu tiên của bạn được hợp nhất.",
       "firstContribution": "Đóng góp lần đầu"
+    },
+    "founder": {
+      "title": "Nhà sáng lập",
+      "role": "Khởi xướng Bitsocial vào năm 2022"
     }
   },
   "arbitraryChallenges": {

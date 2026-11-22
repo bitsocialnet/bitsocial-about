@@ -908,6 +908,10 @@
       "nextLabel": "Το avatar σας θα μπορούσε να είναι το επόμενο: βρείτε ένα ανοιχτό ζήτημα",
       "cta": "Το avatar σας εμφανίζεται εδώ μόλις συγχωνευτεί το πρώτο σας pull request.",
       "firstContribution": "Κάντε την πρώτη σας συνεισφορά"
+    },
+    "founder": {
+      "title": "Ιδρυτής",
+      "role": "Ξεκίνησε το Bitsocial το 2022"
     }
   },
   "arbitraryChallenges": {

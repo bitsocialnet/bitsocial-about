@@ -908,6 +908,10 @@
       "nextLabel": "Din avatar kan bli nästa: hitta en öppen issue",
       "cta": "Din avatar hamnar här när din första pull request har mergats.",
       "firstContribution": "Gör ditt första bidrag"
+    },
+    "founder": {
+      "title": "Grundare",
+      "role": "Startade Bitsocial 2022"
     }
   },
   "arbitraryChallenges": {

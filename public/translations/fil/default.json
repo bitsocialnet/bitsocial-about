@@ -908,6 +908,10 @@
       "nextLabel": "Puwedeng ang avatar mo na ang susunod: maghanap ng bukas na issue",
       "cta": "Lalabas dito ang avatar mo kapag na-merge na ang una mong pull request.",
       "firstContribution": "Gawin ang una mong kontribusyon"
+    },
+    "founder": {
+      "title": "Tagapagtatag",
+      "role": "Sinimulan ang Bitsocial noong 2022"
     }
   },
   "arbitraryChallenges": {

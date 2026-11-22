@@ -899,6 +899,10 @@
       "nextLabel": "Avatar Anda bisa jadi yang berikutnya: cari issue yang terbuka",
       "cta": "Avatar Anda akan muncul di sini setelah pull request pertama Anda di-merge.",
       "firstContribution": "Buat kontribusi pertama Anda"
+    },
+    "founder": {
+      "title": "Pendiri",
+      "role": "Memulai Bitsocial pada 2022"
     }
   },
   "arbitraryChallenges": {

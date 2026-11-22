@@ -899,6 +899,10 @@
       "nextLabel": "다음 아바타는 당신일 수 있습니다: 열린 이슈 찾기",
       "cta": "첫 풀 리퀘스트가 병합되면 여기에 아바타가 표시됩니다.",
       "firstContribution": "첫 기여 시작하기"
+    },
+    "founder": {
+      "title": "창립자",
+      "role": "2022년에 Bitsocial을 시작"
     }
   },
   "arbitraryChallenges": {

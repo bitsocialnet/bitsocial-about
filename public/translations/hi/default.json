@@ -908,6 +908,10 @@
       "nextLabel": "अगला अवतार आपका हो सकता है: कोई खुला issue ढूँढें",
       "cta": "आपका पहला pull request मर्ज होते ही आपका अवतार यहाँ दिखेगा।",
       "firstContribution": "अपना पहला योगदान करें"
+    },
+    "founder": {
+      "title": "संस्थापक",
+      "role": "2022 में Bitsocial की शुरुआत की"
     }
   },
   "arbitraryChallenges": {

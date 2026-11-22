@@ -899,6 +899,10 @@
       "nextLabel": "下一个头像可能就是你的：找一个未关闭的 issue",
       "cta": "你的第一个 pull request 合并后，你的头像就会出现在这里。",
       "firstContribution": "做出你的第一次贡献"
+    },
+    "founder": {
+      "title": "创始人",
+      "role": "于 2022 年创立 Bitsocial"
     }
   },
   "arbitraryChallenges": {

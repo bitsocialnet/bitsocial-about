@@ -917,6 +917,10 @@
       "nextLabel": "האווטאר שלכם יכול להיות הבא: מצאו issue פתוח",
       "cta": "האווטאר שלכם יופיע כאן ברגע שה-pull request הראשון שלכם ימוזג.",
       "firstContribution": "התחילו לתרום"
+    },
+    "founder": {
+      "title": "מייסד",
+      "role": "הקים את Bitsocial ב-2022"
     }
   },
   "arbitraryChallenges": {

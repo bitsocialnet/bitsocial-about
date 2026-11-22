@@ -908,6 +908,10 @@
       "nextLabel": "Jouw avatar kan de volgende zijn: zoek een open issue",
       "cta": "Je avatar verschijnt hier zodra je eerste pull request is gemerged.",
       "firstContribution": "Doe je eerste bijdrage"
+    },
+    "founder": {
+      "title": "Oprichter",
+      "role": "Begon Bitsocial in 2022"
     }
   },
   "arbitraryChallenges": {

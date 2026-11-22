@@ -901,6 +901,10 @@
       "nextLabel": "Din avatar kan blive den næste: find et åbent issue",
       "cta": "Din avatar kommer her, når din første pull request er merget.",
       "firstContribution": "Giv dit første bidrag"
+    },
+    "founder": {
+      "title": "Grundlægger",
+      "role": "Startede Bitsocial i 2022"
     }
   },
   "arbitraryChallenges": {

@@ -899,6 +899,10 @@
       "nextLabel": "次はあなたのアバターかもしれません：未解決の issue を探す",
       "cta": "最初の pull request がマージされると、ここにあなたのアバターが表示されます。",
       "firstContribution": "初めての貢献をする"
+    },
+    "founder": {
+      "title": "創設者",
+      "role": "2022年に Bitsocial を始動"
     }
   },
   "arbitraryChallenges": {

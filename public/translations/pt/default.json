@@ -917,6 +917,10 @@
       "nextLabel": "Seu avatar pode ser o próximo: encontre uma issue aberta",
       "cta": "Seu avatar aparece aqui quando seu primeiro pull request for incorporado.",
       "firstContribution": "Faça sua primeira contribuição"
+    },
+    "founder": {
+      "title": "Fundador",
+      "role": "Iniciou o Bitsocial em 2022"
     }
   },
   "arbitraryChallenges": {

@@ -908,6 +908,10 @@
       "nextLabel": "Sıradaki avatar sizinki olabilir: açık bir issue bulun",
       "cta": "İlk pull request'iniz birleştirildiğinde avatarınız burada yer alır.",
       "firstContribution": "İlk katkınızı yapın"
+    },
+    "founder": {
+      "title": "Kurucu",
+      "role": "Bitsocial'ı 2022'de başlattı"
     }
   },
   "arbitraryChallenges": {

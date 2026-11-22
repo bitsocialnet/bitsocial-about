@@ -1124,6 +1124,10 @@
       "nextLabel": "Your avatar could be next: find an open issue",
       "cta": "Your avatar goes here once your first pull request is merged.",
       "firstContribution": "Make your first contribution"
+    },
+    "founder": {
+      "title": "Founder",
+      "role": "Started Bitsocial in 2022"
     }
   },
   "seo": {

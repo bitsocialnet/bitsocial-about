@@ -917,6 +917,10 @@
       "nextLabel": "El teu avatar podria ser el següent: troba una incidència oberta",
       "cta": "El teu avatar apareixerà aquí quan es fusioni la teva primera pull request.",
       "firstContribution": "Fes la teva primera contribució"
+    },
+    "founder": {
+      "title": "Fundador",
+      "role": "Va iniciar Bitsocial el 2022"
     }
   },
   "arbitraryChallenges": {

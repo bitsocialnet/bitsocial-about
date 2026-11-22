@@ -9,6 +9,9 @@
       "github": "tomcasaburi"
     }
   ],
+  "founder": {
+    "github": "estebanabaroa"
+  },
   "repoLabels": {
     "bitsocialnet/bitsocial-about": "bitsocial.net"
   },

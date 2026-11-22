@@ -919,6 +919,10 @@
       "nextLabel": "Váš avatar může být další: najděte otevřené issue",
       "cta": "Váš avatar se tu objeví, jakmile bude začleněn váš první pull request.",
       "firstContribution": "Přispějte poprvé"
+    },
+    "founder": {
+      "title": "Zakladatel",
+      "role": "Založil Bitsocial v roce 2022"
     }
   },
   "arbitraryChallenges": {

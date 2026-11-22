@@ -917,6 +917,10 @@
       "nextLabel": "Avatarul tău poate fi următorul: găsește un issue deschis",
       "cta": "Avatarul tău apare aici după ce primul tău pull request este integrat.",
       "firstContribution": "Fă-ți prima contribuție"
+    },
+    "founder": {
+      "title": "Fondator",
+      "role": "A pornit Bitsocial în 2022"
     }
   },
   "arbitraryChallenges": {

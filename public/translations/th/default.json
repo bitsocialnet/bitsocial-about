@@ -899,6 +899,10 @@
       "nextLabel": "อวตารของคุณอาจเป็นรายต่อไป: หา issue ที่เปิดอยู่",
       "cta": "อวตารของคุณจะแสดงที่นี่เมื่อ pull request แรกของคุณได้รับการ merge",
       "firstContribution": "เริ่มมีส่วนร่วมครั้งแรก"
+    },
+    "founder": {
+      "title": "ผู้ก่อตั้ง",
+      "role": "เริ่มต้น Bitsocial ในปี 2022"
     }
   },
   "arbitraryChallenges": {

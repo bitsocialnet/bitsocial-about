@@ -908,6 +908,10 @@
       "nextLabel": "Sinun avatarisi voisi olla seuraava: etsi avoin issue",
       "cta": "Avatarisi näkyy täällä, kun ensimmäinen pull requestisi on yhdistetty.",
       "firstContribution": "Tee ensimmäinen kontribuutiosi"
+    },
+    "founder": {
+      "title": "Perustaja",
+      "role": "Aloitti Bitsocialin vuonna 2022"
     }
   },
   "arbitraryChallenges": {

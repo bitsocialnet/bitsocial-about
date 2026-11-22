@@ -926,6 +926,10 @@
       "nextLabel": "Twój awatar może być następny: znajdź otwarte zgłoszenie",
       "cta": "Twój awatar pojawi się tu, gdy Twój pierwszy pull request zostanie scalony.",
       "firstContribution": "Wnieś swój pierwszy wkład"
+    },
+    "founder": {
+      "title": "Założyciel",
+      "role": "Założył Bitsocial w 2022 roku"
     }
   },
   "arbitraryChallenges": {

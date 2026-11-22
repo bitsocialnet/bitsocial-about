@@ -12,6 +12,9 @@ export const ABOUT_MAINTAINERS: Record<AboutMaintainerId, AboutMaintainer> = {
   tom: { name: "Tom Casaburi", githubLogin: "tomcasaburi", telegram: "https://t.me/tomcasaburi" },
 };
 
+/** Credited in its own row of the thank-you section, linking to GitHub only. */
+export const ABOUT_FOUNDER = { name: "Esteban Abaroa", githubLogin: "estebanabaroa" };
+
 // The avatar host serves images by login directly; github.com/<login>.png redirects there and sets
 // github.com cookies, which browsers reject and log as console errors in a cross-site page.
 export function getGithubAvatarUrl(login: string, size: number) {

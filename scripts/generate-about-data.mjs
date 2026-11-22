@@ -197,8 +197,9 @@ async function main() {
     const repos = [...area.groups.flatMap((group) => group.repos), ...area.unlisted];
     for (const fullName of repos) repoArea.set(fullName.toLowerCase(), area.id);
   }
-  const maintainerLogins = new Set(
-    areasConfig.maintainers.map((maintainer) => maintainer.github.toLowerCase()),
+  // The founder and the maintainers have their own cards on the page, so they stay off the wall.
+  const featuredLogins = new Set(
+    [...areasConfig.maintainers, areasConfig.founder].map((person) => person.github.toLowerCase()),
   );
 
   const api = createApi(await getToken());
@@ -306,7 +307,7 @@ async function main() {
       unresolvedCommits += author.commits;
       return;
     }
-    if (!isPersonLogin(login, commit.author.type) || maintainerLogins.has(login.toLowerCase())) {
+    if (!isPersonLogin(login, commit.author.type) || featuredLogins.has(login.toLowerCase())) {
       return;
     }
     credit(login, "commits", author.commits, author.first);
@@ -337,7 +338,7 @@ async function main() {
       if (!mergedAt) continue;
       mergedPullCount += 1;
       const { login, type } = item.user;
-      if (!isPersonLogin(login, type) || maintainerLogins.has(login.toLowerCase())) continue;
+      if (!isPersonLogin(login, type) || featuredLogins.has(login.toLowerCase())) continue;
       credit(login, "mergedPulls", 1, Date.parse(mergedAt));
     }
   });

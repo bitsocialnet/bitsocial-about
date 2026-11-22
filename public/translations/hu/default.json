@@ -908,6 +908,10 @@
       "nextLabel": "A következő avatar a tiéd lehet: keress egy nyitott issue-t",
       "cta": "Az avatarod itt jelenik meg, amint beolvasztják az első pull requestedet.",
       "firstContribution": "Tedd meg az első hozzájárulásodat"
+    },
+    "founder": {
+      "title": "Alapító",
+      "role": "2022-ben indította el a Bitsocialt"
     }
   },
   "arbitraryChallenges": {

@@ -908,6 +908,10 @@
       "nextLabel": "Dein Avatar könnte der nächste sein: Such dir ein offenes Issue",
       "cta": "Dein Avatar erscheint hier, sobald dein erster Pull Request gemergt ist.",
       "firstContribution": "Ersten Beitrag leisten"
+    },
+    "founder": {
+      "title": "Gründer",
+      "role": "Startete Bitsocial 2022"
     }
   },
   "arbitraryChallenges": {

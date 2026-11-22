@@ -926,6 +926,10 @@
       "nextLabel": "Следующим может стать ваш аватар: найдите открытый issue",
       "cta": "Ваш аватар появится здесь, как только ваш первый pull request будет влит.",
       "firstContribution": "Сделайте первый вклад"
+    },
+    "founder": {
+      "title": "Основатель",
+      "role": "Основал Bitsocial в 2022 году"
     }
   },
   "arbitraryChallenges": {
