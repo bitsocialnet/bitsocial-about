@@ -85,7 +85,7 @@ const SCENARIOS: Scenario[] = [
   },
   {
     name: "iPad landscape touch",
-    expectCompact: false,
+    expectCompact: true,
     hasTouch: true,
     viewport: { height: 768, width: 1024 },
   },
@@ -108,7 +108,7 @@ const LOCALE_SCENARIOS: LocaleScenario[] = [
     name: "Korean single-character labels on an iPad",
     expectedLabel: "앱",
     lang: "ko",
-    scenario: SCENARIOS[4],
+    scenario: SCENARIOS[3],
   },
   {
     name: "Arabic right-to-left labels on a desktop",

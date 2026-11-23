@@ -24,7 +24,8 @@
     "goToBottom": "一番下へ移動",
     "backToPrevious": "元の位置に戻る",
     "faq": "よくある質問",
-    "chain": "チェーン"
+    "chain": "チェーン",
+    "about": "私たちについて"
   },
   "footer": {
     "tagline": "ソーシャルアプリ向けオープンソースP2Pネットワーク",

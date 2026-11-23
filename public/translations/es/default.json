@@ -24,7 +24,8 @@
     "goToBottom": "Ir abajo",
     "backToPrevious": "Volver al punto anterior",
     "faq": "FAQ",
-    "chain": "Chain"
+    "chain": "Chain",
+    "about": "Nosotros"
   },
   "footer": {
     "tagline": "Red P2P de código abierto para aplicaciones sociales",

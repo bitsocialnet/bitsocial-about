@@ -25,7 +25,8 @@
     "goToBottom": "Go to bottom",
     "backToPrevious": "Back to where you were",
     "faq": "FAQ",
-    "chain": "Chain"
+    "chain": "Chain",
+    "about": "About"
   },
   "languageSelector": {
     "title": "Select Language",

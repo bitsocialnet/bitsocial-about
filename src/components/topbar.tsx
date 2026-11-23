@@ -368,6 +368,7 @@ export default function Topbar() {
   const blogLabel = t("nav.blog");
   const docsLabel = t("nav.docs");
   const statsLabel = t("nav.status");
+  const aboutLabel = t("nav.about");
   const faqLabel = t("nav.faq");
   const routeLinks = [
     { label: appsLabel, to: APPS_DIRECTORY_HREF },
@@ -375,6 +376,7 @@ export default function Topbar() {
     { label: blogLabel, to: "/blog" },
     { label: docsLabel, to: DOCS_LINKS.home },
     { label: statsLabel, to: STATS_LINKS.home },
+    { label: aboutLabel, to: "/about" },
   ].filter((link) => isRouteAccessible(link.to));
 
   return (

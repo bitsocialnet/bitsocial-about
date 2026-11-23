@@ -24,7 +24,8 @@
     "goToBottom": "Siirry alas",
     "backToPrevious": "Takaisin edelliseen kohtaan",
     "faq": "UKK",
-    "chain": "Chain"
+    "chain": "Chain",
+    "about": "Meistä"
   },
   "footer": {
     "tagline": "Avoimen lähdekoodin P2P-verkko sosiaalisille sovelluksille",
