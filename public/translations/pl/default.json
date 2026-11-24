@@ -25,7 +25,9 @@
     "backToPrevious": "Powrót do poprzedniego miejsca",
     "faq": "Najczęstsze pytania",
     "chain": "Chain",
-    "about": "O nas"
+    "about": "O nas",
+    "forum": "Forum",
+    "soon": "wkrótce"
   },
   "footer": {
     "tagline": "Sieć P2P open source dla aplikacji społecznościowych",
@@ -34,7 +36,6 @@
     "docs": "Dokumentacja",
     "status": "Status",
     "resources": "Zasoby",
-    "blog": "Blog",
     "about": "O nas",
     "community": "Społeczność",
     "github": "GitHub",
@@ -1043,7 +1044,6 @@
       }
     },
     "docsCta": "Jak P2P działa w przeglądarce",
-    "liveCta": "Obejrzyj na blogu",
     "sectionLabel": "Przeglądarka P2P",
     "supporting": "Otwórz aplikację internetową Bitsocial w zwykłej karcie, a sama dołączy do sieci: pobierze posty od innych peerów i opublikuje twoje. To właśnie jest ta trudna część — i powód, dla którego każda inna zdecentralizowana sieć społecznościowa wciąż trzyma serwer pośrodku.",
     "title": "Przełomem jest sama przeglądarka."
@@ -1096,10 +1096,6 @@
     "about": {
       "title": "O Bitsocial | Zespół główny",
       "description": "Poznaj zespół główny Bitsocial, sprawdź, kogo pytać o poszczególne części projektu, i zobacz, jak rozwijał się od początku 2022 roku oraz kto go współtworzył."
-    },
-    "blog": {
-      "title": "Blog Bitsocial | Aktualności, wydania i poradniki",
-      "description": "Oficjalny blog Bitsocial prowadzony przez głównych programistów i publikowany jako niepowstrzymany kanał peer-to-peer. Czytaj aktualności o produkcie, informacje o wydaniach i poradniki w dowolnej aplikacji Bitsocial."
     },
     "appDetail": {
       "title": "{{name}} | Katalog projektów Bitsocial"

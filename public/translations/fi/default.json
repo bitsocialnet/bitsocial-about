@@ -25,7 +25,9 @@
     "backToPrevious": "Takaisin edelliseen kohtaan",
     "faq": "UKK",
     "chain": "Chain",
-    "about": "Meistä"
+    "about": "Meistä",
+    "forum": "Foorumi",
+    "soon": "pian"
   },
   "footer": {
     "tagline": "Avoimen lähdekoodin P2P-verkko sosiaalisille sovelluksille",
@@ -34,7 +36,6 @@
     "docs": "Dokumentaatio",
     "status": "Tila",
     "resources": "Resurssit",
-    "blog": "Blogi",
     "about": "Tietoja meistä",
     "community": "Yhteisö",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Kuinka P2P toimii selaimessa",
-    "liveCta": "Näe blogissa",
     "sectionLabel": "Selain P2P",
     "supporting": "Avaa Bitsocialin verkkosovellus tavallisessa välilehdessä, niin se liittyy verkkoon itse: hakee julkaisuja muilta vertaisilta ja julkaisee sinun omasi. Juuri tämä on se vaikea osuus – ja syy siihen, miksi jokainen muu hajautettu sosiaalinen verkosto pitää edelleen palvelimen välissä.",
     "title": "Selain on läpimurto."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Tietoa Bitsocialista | Ydintiimi",
       "description": "Tutustu Bitsocialin ydintiimiin, katso keneltä kysyä projektin eri osista ja miten projekti on kasvanut vuoden 2022 alusta, sekä kaikki siihen osallistuneet."
-    },
-    "blog": {
-      "title": "Bitsocial-blogi | Päivitykset, julkaisut ja oppaat",
-      "description": "Bitsocialin ydinkehittäjien virallinen blogi, joka julkaistaan pysäyttämättömänä peer-to-peer-syötteenä. Lue tuotepäivitykset, julkaisutiedot ja oppaat millä tahansa Bitsocial-sovelluksella."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial-projektihakemisto"

@@ -25,7 +25,9 @@
     "backToPrevious": "이전 위치로 돌아가기",
     "faq": "자주 묻는 질문",
     "chain": "체인",
-    "about": "소개"
+    "about": "소개",
+    "forum": "포럼",
+    "soon": "곧 공개"
   },
   "footer": {
     "tagline": "소셜 앱을 위한 오픈소스 P2P 네트워크",
@@ -34,7 +36,6 @@
     "docs": "문서",
     "status": "상태",
     "resources": "리소스",
-    "blog": "블로그",
     "about": "회사 소개",
     "community": "커뮤니티",
     "github": "GitHub",
@@ -1016,7 +1017,6 @@
       }
     },
     "docsCta": "브라우저에서 P2P 작동 방식",
-    "liveCta": "블로그에서 보기",
     "sectionLabel": "브라우저 P2P",
     "supporting": "평범한 탭에서 Bitsocial 웹 앱을 열면 그 탭이 곧바로 네트워크에 참여해 다른 피어에게서 게시물을 받아오고 여러분의 게시물을 퍼뜨립니다. 바로 이 부분이 가장 어려운 지점이며, 다른 탈중앙 소셜 네트워크가 여전히 중간에 서버를 두는 이유이기도 합니다.",
     "title": "브라우저가 곧 돌파구입니다."
@@ -1069,10 +1069,6 @@
     "about": {
       "title": "Bitsocial 소개 | 핵심 팀",
       "description": "Bitsocial 핵심 팀을 만나고, 프로젝트 분야별 문의처를 확인하고, 2022년 초부터의 성장 과정과 기여한 모든 분을 살펴보세요."
-    },
-    "blog": {
-      "title": "Bitsocial 블로그 | 업데이트, 릴리스, 튜토리얼",
-      "description": "Bitsocial 핵심 개발자들이 운영하는 공식 블로그로, 멈출 수 없는 P2P 피드로 발행됩니다. 어떤 Bitsocial 앱에서든 제품 업데이트, 릴리스 노트, 튜토리얼을 읽어보세요."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial 프로젝트 디렉터리"

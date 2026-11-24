@@ -25,7 +25,9 @@
     "backToPrevious": "Tilbage til forrige sted",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Om os"
+    "about": "Om os",
+    "forum": "Forum",
+    "soon": "snart"
   },
   "footer": {
     "tagline": "Open Source P2P-netværk til sociale apps",
@@ -34,7 +36,6 @@
     "docs": "Dokumentation",
     "status": "Status",
     "resources": "Ressourcer",
-    "blog": "Blog",
     "about": "Om os",
     "community": "Fællesskab",
     "github": "GitHub",
@@ -1018,7 +1019,6 @@
       }
     },
     "docsCta": "Sådan fungerer P2P i browseren",
-    "liveCta": "Se på bloggen",
     "sectionLabel": "Browser P2P",
     "supporting": "Åbn en Bitsocial-webapp i en helt almindelig fane, og den kobler sig selv på netværket – henter opslag fra andre peers og udgiver dine egne. Det er den svære del, og grunden til at alle andre decentrale sociale netværk stadig har en server i midten.",
     "title": "Browseren er gennembruddet."
@@ -1071,10 +1071,6 @@
     "about": {
       "title": "Om Bitsocial | Kerneteam",
       "description": "Mød Bitsocials kerneteam, find ud af, hvem du kan spørge om hver del af projektet, og se, hvordan det er vokset siden begyndelsen af 2022, og alle, der har bidraget."
-    },
-    "blog": {
-      "title": "Bitsocial-blog | Opdateringer, udgivelser og guides",
-      "description": "Den officielle Bitsocial-blog fra kerneudviklerne, udgivet som et ustoppeligt peer-to-peer-feed. Læs produktopdateringer, udgivelsesnoter og guides i enhver Bitsocial-app."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial-projektoversigt"

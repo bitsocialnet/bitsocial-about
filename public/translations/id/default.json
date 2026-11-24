@@ -25,7 +25,9 @@
     "backToPrevious": "Kembali ke posisi sebelumnya",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Tentang"
+    "about": "Tentang",
+    "forum": "Forum",
+    "soon": "segera"
   },
   "footer": {
     "tagline": "Jaringan P2P sumber terbuka untuk aplikasi sosial",
@@ -34,7 +36,6 @@
     "docs": "Dokumentasi",
     "status": "Status",
     "resources": "Sumber Daya",
-    "blog": "Blog",
     "about": "Tentang Kami",
     "community": "Komunitas",
     "github": "GitHub",
@@ -1016,7 +1017,6 @@
       }
     },
     "docsCta": "Cara kerja P2P di browser",
-    "liveCta": "Lihat di blog",
     "sectionLabel": "Peramban P2P",
     "supporting": "Buka aplikasi web Bitsocial di tab biasa dan aplikasinya langsung bergabung ke jaringan: mengambil kiriman dari peer lain dan menerbitkan kiriman Anda. Itulah bagian yang sulit — dan alasan semua jejaring sosial terdesentralisasi lainnya masih menaruh server di tengah.",
     "title": "Terobosannya ada di peramban."
@@ -1069,10 +1069,6 @@
     "about": {
       "title": "Tentang Bitsocial | Tim Inti",
       "description": "Kenali tim inti Bitsocial, cari tahu kepada siapa bertanya tentang tiap bagian proyek, dan lihat pertumbuhannya sejak awal 2022 serta semua orang yang telah berkontribusi."
-    },
-    "blog": {
-      "title": "Blog Bitsocial | Pembaruan, Rilis, dan Tutorial",
-      "description": "Blog resmi Bitsocial dari para pengembang inti, diterbitkan sebagai umpan peer-to-peer yang tak terhentikan. Baca pembaruan produk, catatan rilis, dan tutorial dari aplikasi Bitsocial mana pun."
     },
     "appDetail": {
       "title": "{{name}} | Direktori Proyek Bitsocial"

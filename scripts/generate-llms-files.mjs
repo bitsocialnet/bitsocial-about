@@ -1146,7 +1146,7 @@ function buildSiteLlms(docs, landing, apps) {
 
 > Bitsocial is an open-source peer-to-peer social network and app ecosystem. This site is the public entry point for the network overview, project directory, privacy notice, and documentation covering protocol notes, apps, anti-spam modules, infrastructure, and contributor workflows.
 
-Use \`${siteOrigin}/\` for the public product overview and \`${docsOrigin}/\` for deeper technical documentation. Ignore \`/about\` and \`/blog\` if they appear in source code or local builds; those routes exist in the web app but are currently development-only, not public production surfaces.
+Use \`${siteOrigin}/\` for the public product overview and \`${docsOrigin}/\` for deeper technical documentation. Ignore \`/about\` if it appears in source code or local builds; that route exists in the web app but is currently development-only, not a public production surface.
 
 ## Main site
 
@@ -1265,7 +1265,7 @@ Use this file when you want a single context bundle for Bitsocial instead of fol
 Two interpretation notes matter:
 
 - Bitsocial is not a centralized social platform. The core model is peer-to-peer publishing, key-controlled ownership, and app-level choice instead of one company-controlled backend.
-- Some routes exist in the React app for development (\`/about\` and \`/blog\`) but are not part of the current public production site. Do not treat them as canonical public content.
+- One route exists in the React app for development (\`/about\`) but is not part of the current public production site. Do not treat it as canonical public content.
 
 ## Public site surfaces
 

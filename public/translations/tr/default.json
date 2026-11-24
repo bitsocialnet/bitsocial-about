@@ -25,7 +25,9 @@
     "backToPrevious": "Önceki konuma dön",
     "faq": "SSS",
     "chain": "Chain",
-    "about": "Hakkımızda"
+    "about": "Hakkımızda",
+    "forum": "Forum",
+    "soon": "yakında"
   },
   "footer": {
     "tagline": "Sosyal uygulamalar için açık kaynak P2P ağı",
@@ -34,7 +36,6 @@
     "docs": "Dokümantasyon",
     "status": "Durum",
     "resources": "Kaynaklar",
-    "blog": "Blog",
     "about": "Hakkımızda",
     "community": "Topluluk",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Tarayıcıda P2P nasıl çalışır",
-    "liveCta": "Blogda görün",
     "sectionLabel": "Tarayıcı P2P",
     "supporting": "Bitsocial web uygulamasını sıradan bir sekmede açın; sekme ağa kendi başına katılır, diğer eşlerden gönderileri çeker ve sizinkileri yayımlar. İşin zor kısmı tam olarak budur; diğer bütün merkeziyetsiz sosyal ağların hâlâ ortada bir sunucu tutmasının nedeni de budur.",
     "title": "Asıl atılım tarayıcının kendisi."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Bitsocial Hakkında | Çekirdek Ekip",
       "description": "Bitsocial çekirdek ekibiyle tanışın, projenin her bölümü için kime soracağınızı öğrenin, 2022'nin başından beri nasıl büyüdüğünü ve katkıda bulunan herkesi görün."
-    },
-    "blog": {
-      "title": "Bitsocial Blogu | Güncellemeler, Sürümler ve Eğitimler",
-      "description": "Çekirdek geliştiricilerin resmi Bitsocial blogu, durdurulamaz bir peer-to-peer akış olarak yayımlanır. Ürün güncellemelerini, sürüm notlarını ve eğitimleri herhangi bir Bitsocial uygulamasından okuyun."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial Proje Dizini"

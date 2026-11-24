@@ -25,7 +25,9 @@
     "backToPrevious": "Torna al punto precedente",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Chi siamo"
+    "about": "Chi siamo",
+    "forum": "Forum",
+    "soon": "presto"
   },
   "footer": {
     "tagline": "Rete P2P open source per app social",
@@ -34,7 +36,6 @@
     "docs": "Documentazione",
     "status": "Stato",
     "resources": "Risorse",
-    "blog": "Blog",
     "about": "Chi siamo",
     "community": "Comunità",
     "github": "GitHub",
@@ -1034,7 +1035,6 @@
       }
     },
     "docsCta": "Come funziona P2P nel browser",
-    "liveCta": "Guardalo sul blog",
     "sectionLabel": "Browser P2P",
     "supporting": "Apri un'app web Bitsocial in una normale scheda e si unisce alla rete da sola: recupera i post dagli altri peer e pubblica i tuoi. È questa la parte difficile, ed è il motivo per cui ogni altro social network decentralizzato tiene ancora un server nel mezzo.",
     "title": "La svolta è il browser."
@@ -1087,10 +1087,6 @@
     "about": {
       "title": "Informazioni su Bitsocial | Team centrale",
       "description": "Conosci il team centrale di Bitsocial, scopri a chi chiedere per ogni parte del progetto, come è cresciuto dall’inizio del 2022 e chi ha contribuito."
-    },
-    "blog": {
-      "title": "Blog di Bitsocial | Aggiornamenti, release e tutorial",
-      "description": "Il blog ufficiale degli sviluppatori principali di Bitsocial, pubblicato come feed peer-to-peer inarrestabile. Leggi aggiornamenti di prodotto, note di rilascio e tutorial da qualsiasi app Bitsocial."
     },
     "appDetail": {
       "title": "{{name}} | Directory dei progetti Bitsocial"

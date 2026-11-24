@@ -22,6 +22,31 @@ const compactNavigationTriggerBufferPx = 160;
 const MOBILE_MENU_INTERACTION_GUARD_ATTRIBUTE = "data-mobile-menu-interaction-guard";
 const APPS_DIRECTORY_HREF = "/projects?category=apps";
 
+type RouteLink = { label: string; to: string };
+// An announced destination that has no page yet: shown in the navigation, but not a link.
+type UpcomingLink = { label: string; soonLabel: string };
+type NavItem = RouteLink | UpcomingLink;
+
+function isUpcomingLink(item: NavItem): item is UpcomingLink {
+  return "soonLabel" in item;
+}
+
+function UpcomingNavItem({ item, className }: { item: UpcomingLink; className?: string }) {
+  return (
+    <span
+      className={cn(
+        "flex min-h-11 cursor-default items-center gap-1.5 px-2 font-display text-lg leading-none text-muted-foreground/60 md:text-base",
+        className,
+      )}
+    >
+      {item.label}
+      <span className="rounded-full border border-border px-1.5 py-0.5 text-[0.625rem] uppercase leading-none tracking-wider">
+        {item.soonLabel}
+      </span>
+    </span>
+  );
+}
+
 function opensInNewTab(to: string) {
   return isDocsPath(to) || isStatsPath(to) || to.startsWith(CHAIN_SITE_URL);
 }
@@ -105,21 +130,25 @@ function TopbarLinks({
   onNavClick: () => void;
   onAppsClick: (event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => void;
   onFaqClick: (event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => void;
-  routeLinks: Array<{ label: string; to: string }>;
+  routeLinks: NavItem[];
 }) {
   return (
     <div className="topbar-links flex items-center gap-5 whitespace-nowrap">
-      {routeLinks.map((link) => (
-        <NavLink
-          key={link.to}
-          to={link.to}
-          onClick={link.to === APPS_DIRECTORY_HREF ? onAppsClick : onNavClick}
-          className={desktopNavLinkClassName}
-          noUnderline
-        >
-          {link.label}
-        </NavLink>
-      ))}
+      {routeLinks.map((link) =>
+        isUpcomingLink(link) ? (
+          <UpcomingNavItem key={link.label} item={link} className="h-11" />
+        ) : (
+          <NavLink
+            key={link.to}
+            to={link.to}
+            onClick={link.to === APPS_DIRECTORY_HREF ? onAppsClick : onNavClick}
+            className={desktopNavLinkClassName}
+            noUnderline
+          >
+            {link.label}
+          </NavLink>
+        ),
+      )}
       <NavLink
         to={`/${FAQ_HASH}`}
         onClick={onFaqClick}
@@ -144,7 +173,7 @@ function DesktopNavigation({
   onNavClick: () => void;
   onAppsClick: (event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => void;
   onFaqClick: (event: MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => void;
-  routeLinks: Array<{ label: string; to: string }>;
+  routeLinks: NavItem[];
   includeNoJsControls?: boolean;
 }) {
   return (
@@ -177,13 +206,7 @@ function DesktopNavigation({
   );
 }
 
-function NoJsMobileMenu({
-  routeLinks,
-  faqLabel,
-}: {
-  routeLinks: Array<{ label: string; to: string }>;
-  faqLabel: string;
-}) {
+function NoJsMobileMenu({ routeLinks, faqLabel }: { routeLinks: NavItem[]; faqLabel: string }) {
   return (
     <details className="nojs-mobile-menu">
       <summary className="nojs-mobile-summary flex h-11 w-11 list-none cursor-pointer items-center justify-center rounded-full text-muted-foreground hover:text-foreground [&::-webkit-details-marker]:hidden">
@@ -197,16 +220,22 @@ function NoJsMobileMenu({
 
       <div className="nojs-mobile-panel px-4 py-6">
         <nav className="flex flex-col gap-1">
-          {routeLinks.map((link) => (
-            <a
-              key={link.to}
-              href={link.to}
-              className={navLinkClassName}
-              {...(opensInNewTab(link.to) ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            >
-              {link.label}
-            </a>
-          ))}
+          {routeLinks.map((link) =>
+            isUpcomingLink(link) ? (
+              <UpcomingNavItem key={link.label} item={link} />
+            ) : (
+              <a
+                key={link.to}
+                href={link.to}
+                className={navLinkClassName}
+                {...(opensInNewTab(link.to)
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
+                {link.label}
+              </a>
+            ),
+          )}
           <a href={`/${FAQ_HASH}`} className={navLinkClassName}>
             {faqLabel}
           </a>
@@ -365,19 +394,18 @@ export default function Topbar() {
 
   const appsLabel = t("nav.apps");
   const chainLabel = t("nav.chain");
-  const blogLabel = t("nav.blog");
   const docsLabel = t("nav.docs");
   const statsLabel = t("nav.status");
   const aboutLabel = t("nav.about");
   const faqLabel = t("nav.faq");
-  const routeLinks = [
+  const routeLinks: NavItem[] = [
     { label: appsLabel, to: APPS_DIRECTORY_HREF },
     { label: chainLabel, to: CHAIN_SITE_URL },
-    { label: blogLabel, to: "/blog" },
+    { label: t("nav.forum"), soonLabel: t("nav.soon") },
     { label: docsLabel, to: DOCS_LINKS.home },
     { label: statsLabel, to: STATS_LINKS.home },
     { label: aboutLabel, to: "/about" },
-  ].filter((link) => isRouteAccessible(link.to));
+  ].filter((link) => isUpcomingLink(link) || isRouteAccessible(link.to));
 
   return (
     <>
@@ -460,16 +488,20 @@ export default function Topbar() {
             onExitComplete={() => setIsMenuExpanded(false)}
           >
             <div className="flex flex-col gap-1">
-              {routeLinks.map((link) => (
-                <NavLink
-                  key={link.to}
-                  to={link.to}
-                  onClick={link.to === APPS_DIRECTORY_HREF ? handleAppsClick : handleNavClick}
-                  noUnderline
-                >
-                  {link.label}
-                </NavLink>
-              ))}
+              {routeLinks.map((link) =>
+                isUpcomingLink(link) ? (
+                  <UpcomingNavItem key={link.label} item={link} />
+                ) : (
+                  <NavLink
+                    key={link.to}
+                    to={link.to}
+                    onClick={link.to === APPS_DIRECTORY_HREF ? handleAppsClick : handleNavClick}
+                    noUnderline
+                  >
+                    {link.label}
+                  </NavLink>
+                ),
+              )}
               <NavLink to={`/${FAQ_HASH}`} onClick={handleFaqClick} noUnderline>
                 {faqLabel}
               </NavLink>

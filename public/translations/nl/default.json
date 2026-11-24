@@ -25,7 +25,9 @@
     "backToPrevious": "Terug naar de vorige plek",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Over ons"
+    "about": "Over ons",
+    "forum": "Forum",
+    "soon": "binnenkort"
   },
   "footer": {
     "tagline": "Open Source P2P-netwerk voor sociale apps",
@@ -34,7 +36,6 @@
     "docs": "Documentatie",
     "status": "Status",
     "resources": "Bronnen",
-    "blog": "Blog",
     "about": "Over ons",
     "community": "Gemeenschap",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Hoe P2P in de browser werkt",
-    "liveCta": "Bekijk op de blog",
     "sectionLabel": "Browser P2P",
     "supporting": "Open een Bitsocial-webapp in een gewoon tabblad en hij sluit zichzelf aan op het netwerk: hij haalt berichten op bij andere peers en publiceert die van jou. Dat is het moeilijke deel — en de reden dat elk ander gedecentraliseerd sociaal netwerk nog altijd een server in het midden houdt.",
     "title": "De browser is de doorbraak."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Over Bitsocial | Kernteam",
       "description": "Maak kennis met het Bitsocial-kernteam, zie bij wie je terechtkunt voor elk onderdeel van het project, en ontdek hoe het sinds begin 2022 is gegroeid en wie eraan heeft bijgedragen."
-    },
-    "blog": {
-      "title": "Bitsocial-blog | Updates, releases en tutorials",
-      "description": "De officiële Bitsocial-blog van de kernontwikkelaars, gepubliceerd als een onstuitbare peer-to-peerfeed. Lees productupdates, release notes en tutorials in elke Bitsocial-app."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial-projectdirectory"

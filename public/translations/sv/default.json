@@ -25,7 +25,9 @@
     "backToPrevious": "Tillbaka till föregående plats",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Om oss"
+    "about": "Om oss",
+    "forum": "Forum",
+    "soon": "snart"
   },
   "footer": {
     "tagline": "Öppen källkod P2P-nätverk för sociala appar",
@@ -34,7 +36,6 @@
     "docs": "Dokumentation",
     "status": "Status",
     "resources": "Resurser",
-    "blog": "Blogg",
     "about": "Om oss",
     "community": "Gemenskap",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Hur P2P fungerar i webbläsaren",
-    "liveCta": "Se på bloggen",
     "sectionLabel": "Webbläsare P2P",
     "supporting": "Öppna en Bitsocial-webbapp i en helt vanlig flik, så ansluter den sig själv till nätverket – hämtar inlägg från andra peers och publicerar dina egna. Det är den svåra biten, och skälet till att alla andra decentraliserade sociala nätverk fortfarande har en server i mitten.",
     "title": "Webbläsaren är genombrottet."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Om Bitsocial | Kärnteam",
       "description": "Möt Bitsocials kärnteam, ta reda på vem du ska fråga om varje del av projektet och se hur det har vuxit sedan början av 2022, och alla som har bidragit."
-    },
-    "blog": {
-      "title": "Bitsocials blogg | Uppdateringar, releaser och guider",
-      "description": "Bitsocials officiella blogg från kärnutvecklarna, publicerad som ett ostoppbart peer-to-peer-flöde. Läs produktuppdateringar, versionsinformation och guider i valfri Bitsocial-app."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocials projektkatalog"

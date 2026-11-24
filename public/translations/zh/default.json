@@ -25,7 +25,9 @@
     "backToPrevious": "返回之前的位置",
     "faq": "常见问题",
     "chain": "链",
-    "about": "关于我们"
+    "about": "关于我们",
+    "forum": "论坛",
+    "soon": "即将推出"
   },
   "footer": {
     "tagline": "面向社交应用的开放源码 P2P 网络",
@@ -34,7 +36,6 @@
     "docs": "文档",
     "status": "状态",
     "resources": "资源",
-    "blog": "博客",
     "about": "关于我们",
     "community": "社区",
     "github": "GitHub",
@@ -1016,7 +1017,6 @@
       }
     },
     "docsCta": "浏览器中的P2P如何工作",
-    "liveCta": "在博客上查看",
     "sectionLabel": "浏览器 P2P",
     "supporting": "在普通标签页里打开 Bitsocial 网页应用，它自己就成了网络的一部分：从其他节点获取帖子，也把你的帖子发布出去。这才是最难的一步，也是其他去中心化社交网络至今仍要在中间放一台服务器的原因。",
     "title": "浏览器本身就是突破。"
@@ -1069,10 +1069,6 @@
     "about": {
       "title": "关于 Bitsocial | 核心团队",
       "description": "认识 Bitsocial 核心团队，了解项目各部分该问谁，看看它自 2022 年初以来如何成长，以及所有贡献者。"
-    },
-    "blog": {
-      "title": "Bitsocial 博客 | 动态、版本发布与教程",
-      "description": "由 Bitsocial 核心开发者撰写的官方博客，以无法被阻止的点对点信息流发布。在任意 Bitsocial 应用中阅读产品动态、版本说明和教程。"
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial 项目目录"

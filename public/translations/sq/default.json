@@ -25,7 +25,9 @@
     "backToPrevious": "Kthehu te vendi i mëparshëm",
     "faq": "Pyetje të shpeshta",
     "chain": "Chain",
-    "about": "Rreth nesh"
+    "about": "Rreth nesh",
+    "forum": "Forum",
+    "soon": "së shpejti"
   },
   "footer": {
     "tagline": "Rrjet P2P me burim të hapur për aplikacione sociale",
@@ -34,7 +36,6 @@
     "docs": "Dokumentacioni",
     "status": "Statusi",
     "resources": "Burime",
-    "blog": "Blog",
     "about": "Rreth Nesh",
     "community": "Komuniteti",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Si funksionon P2P në shfletuesin",
-    "liveCta": "Shih në blog",
     "sectionLabel": "Shfletues P2P",
     "supporting": "Hap një aplikacion web të Bitsocial në një skedë të zakonshme dhe ai i bashkohet vetë rrjetit: merr postimet nga nyjet e tjera dhe publikon të tuat. Kjo është pjesa e vështirë — dhe arsyeja pse çdo rrjet tjetër social i decentralizuar ende mban një server në mes.",
     "title": "Shfletuesi është kthesa vendimtare."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Rreth Bitsocial | Ekipi qendror",
       "description": "Njihuni me ekipin qendror të Bitsocial, shihni kë të pyesni për secilën pjesë të projektit, si është rritur që nga fillimi i 2022 dhe të gjithë ata që kanë kontribuar."
-    },
-    "blog": {
-      "title": "Blogu i Bitsocial | Përditësime, versione dhe udhëzues",
-      "description": "Blogu zyrtar i Bitsocial nga zhvilluesit kryesorë, i publikuar si një feed peer-to-peer i pandalshëm. Lexoni përditësime të produktit, shënime versionesh dhe udhëzues në çdo aplikacion Bitsocial."
     },
     "appDetail": {
       "title": "{{name}} | Drejtoria e projekteve të Bitsocial"

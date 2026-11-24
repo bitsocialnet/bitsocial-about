@@ -485,51 +485,6 @@ function buildAboutSeoMetadata(urlState: SeoUrlState, t?: TFunction): SeoMetadat
   };
 }
 
-function buildBlogSeoMetadata(urlState: SeoUrlState, t?: TFunction): SeoMetadata {
-  const canonicalUrl = toAbsoluteUrl("/blog");
-
-  return {
-    title: translateSeoValue(
-      t,
-      "seo.blog.title",
-      "Bitsocial Blog | Updates, Releases, and Tutorials",
-    ),
-    description: truncateDescription(
-      translateSeoValue(
-        t,
-        "seo.blog.description",
-        "The official Bitsocial blog from the core devs, published as an unstoppable peer-to-peer feed. Read product updates, release notes, and tutorials from any Bitsocial app.",
-      ),
-    ),
-    ...buildIndexingMetadata("/blog", urlState),
-    ogType: "website",
-    imageUrl: toAbsoluteUrl(DEFAULT_IMAGE_PATH),
-    imageAlt: "Bitsocial blog preview",
-    structuredData: createStructuredData([
-      buildOrganizationSchema(),
-      buildWebsiteSchema(),
-      {
-        "@type": "Blog",
-        "@id": `${canonicalUrl}#webpage`,
-        url: canonicalUrl,
-        name: "Bitsocial Blog",
-        description:
-          "The official Bitsocial blog from the core devs, published as an unstoppable peer-to-peer feed.",
-        isPartOf: {
-          "@id": `${SITE_ORIGIN}/#website`,
-        },
-        publisher: {
-          "@id": `${SITE_ORIGIN}/#organization`,
-        },
-      },
-      buildBreadcrumbSchema([
-        { name: SITE_NAME, url: toAbsoluteUrl("/") },
-        { name: "Blog", url: canonicalUrl },
-      ]),
-    ]),
-  };
-}
-
 function getApplicationCategory(category: AppCategorySlug) {
   switch (category) {
     case "apps":
@@ -691,10 +646,6 @@ function resolveKnownSeoMetadata(
     return buildAboutSeoMetadata(urlState, t);
   }
 
-  if (normalizedPath === "/blog") {
-    return buildBlogSeoMetadata(urlState, t);
-  }
-
   const appSlugMatch = normalizedPath.match(/^\/projects\/([^/]+)$/);
   if (appSlugMatch?.[1]) {
     const app = getAppBySlug(appSlugMatch[1]);
@@ -728,7 +679,6 @@ export function getStaticSeoRoutes(): StaticSeoRoute[] {
     "/projects",
     "/privacy",
     "/about",
-    "/blog",
     ...APPS.map((app) => `/projects/${app.slug}`),
   ].flatMap((pathname) =>
     SUPPORTED_LANGUAGE_CODES.map((language) => ({

@@ -25,7 +25,9 @@
     "backToPrevious": "Bumalik sa dating posisyon",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Tungkol sa amin"
+    "about": "Tungkol sa amin",
+    "forum": "Forum",
+    "soon": "malapit na"
   },
   "footer": {
     "tagline": "Open Source na P2P Network para sa mga Social App",
@@ -34,7 +36,6 @@
     "docs": "Mga Dokumento",
     "status": "Status",
     "resources": "Mga Mapagkukunan",
-    "blog": "Blog",
     "about": "Tungkol sa Amin",
     "community": "Komunidad",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Paano gumagana ang P2P sa browser",
-    "liveCta": "Panoorin sa blog",
     "sectionLabel": "Browser P2P",
     "supporting": "Buksan ang isang Bitsocial web app sa ordinaryong tab at kusa na itong sasali sa network: kinukuha nito ang mga post mula sa ibang peer at inilalathala ang sa iyo. Iyan ang mahirap na bahagi — at iyan din ang dahilan kung bakit bawat ibang desentralisadong social network ay may server pa rin sa gitna.",
     "title": "Ang browser mismo ang breakthrough."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Tungkol sa Bitsocial | Pangunahing Koponan",
       "description": "Kilalanin ang pangunahing koponan ng Bitsocial, alamin kung kanino magtatanong tungkol sa bawat bahagi ng proyekto, at tingnan kung paano ito lumago mula unang bahagi ng 2022 at ang lahat ng nag-ambag."
-    },
-    "blog": {
-      "title": "Bitsocial Blog | Mga Update, Release, at Tutorial",
-      "description": "Ang opisyal na Bitsocial blog mula sa mga core dev, na inilalathala bilang isang hindi mapipigilang peer-to-peer feed. Basahin ang mga product update, release note, at tutorial mula sa anumang Bitsocial app."
     },
     "appDetail": {
       "title": "{{name}} | Direktoryo ng mga Proyekto ng Bitsocial"

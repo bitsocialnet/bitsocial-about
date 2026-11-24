@@ -90,7 +90,7 @@ for (const { name, viewport } of [
         expect(hydrationErrors()).toEqual([]);
         expect(localeBundleRequests, "the payload already carries this locale").toEqual([]);
         // Keys the locale has not translated render English, as in the server render.
-        await expect(page.locator("body")).not.toContainText("nav.blog");
+        await expect(page.locator("body")).not.toContainText("nav.forum");
       });
     }
   });

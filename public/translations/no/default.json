@@ -25,7 +25,9 @@
     "backToPrevious": "Tilbake til forrige sted",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Om oss"
+    "about": "Om oss",
+    "forum": "Forum",
+    "soon": "snart"
   },
   "footer": {
     "tagline": "Åpen kildekode P2P-nettverk for sosiale apper",
@@ -34,7 +36,6 @@
     "docs": "Dokumentasjon",
     "status": "Status",
     "resources": "Ressurser",
-    "blog": "Blog",
     "about": "Om oss",
     "community": "Fellesskap",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Hvordan P2P fungerer i nettleseren",
-    "liveCta": "Se på bloggen",
     "sectionLabel": "Nettleser P2P",
     "supporting": "Åpne en Bitsocial-nettapp i en helt vanlig fane, så kobler den seg til nettverket selv – henter innlegg fra andre peers og publiserer dine egne. Det er den vanskelige delen, og grunnen til at alle andre desentraliserte sosiale nettverk fortsatt har en server i midten.",
     "title": "Nettleseren er gjennombruddet."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "Om Bitsocial | Kjerneteam",
       "description": "Møt Bitsocials kjerneteam, finn ut hvem du kan spørre om hver del av prosjektet, og se hvordan det har vokst siden tidlig i 2022 og alle som har bidratt."
-    },
-    "blog": {
-      "title": "Bitsocial-blogg | Oppdateringer, utgivelser og guider",
-      "description": "Den offisielle Bitsocial-bloggen fra kjerneutviklerne, publisert som en ustoppelig peer-to-peer-feed. Les produktoppdateringer, versjonsnotater og guider i hvilken som helst Bitsocial-app."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial-prosjektkatalog"

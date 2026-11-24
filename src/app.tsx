@@ -1,16 +1,14 @@
-import { useEffect, useLayoutEffect, useRef, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Home from "@/pages/home";
 import Apps from "@/pages/apps";
 import About from "@/pages/about";
 import Privacy from "@/pages/privacy";
 import AppDetail from "@/pages/app-detail";
-import Blog from "@/pages/blog";
 import PageViewTracker from "@/components/page-view-tracker";
 import PolygonMeshBackground from "@/components/polygon-mesh-background";
 import SeoHead from "@/components/seo-head";
-import { isRouteAccessible } from "@/lib/dev-only-routes";
 import { preloadDeferredComponents } from "@/lib/deferred-component";
 import { markInitialRenderCommitted } from "@/lib/initial-render";
 import { normalizeInitialHomeScrollPosition } from "@/lib/initial-scroll";
@@ -47,16 +45,6 @@ function RouteScrollReset() {
   }, [location.pathname]);
 
   return null;
-}
-
-function DevelopmentOnlyRoute({ children }: { children: ReactNode }) {
-  const location = useLocation();
-
-  if (isRouteAccessible(location.pathname)) {
-    return <>{children}</>;
-  }
-
-  return <Navigate to="/" replace state={{ unavailablePath: location.pathname }} />;
 }
 
 function AppFrame({
@@ -99,14 +87,6 @@ function AppFrame({
             <Route path="/projects/:slug" element={<AppDetail />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/about" element={<About />} />
-            <Route
-              path="/blog"
-              element={
-                <DevelopmentOnlyRoute>
-                  <Blog />
-                </DevelopmentOnlyRoute>
-              }
-            />
           </Routes>
         </div>
       </div>

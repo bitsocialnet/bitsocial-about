@@ -2,7 +2,7 @@
 
 > Bitsocial is an open-source peer-to-peer social network and app ecosystem. This site is the public entry point for the network overview, project directory, privacy notice, and documentation covering protocol notes, apps, anti-spam modules, infrastructure, and contributor workflows.
 
-Use `https://bitsocial.net/` for the public product overview and `https://docs.bitsocial.net/` for deeper technical documentation. Ignore `/about` and `/blog` if they appear in source code or local builds; those routes exist in the web app but are currently development-only, not public production surfaces.
+Use `https://bitsocial.net/` for the public product overview and `https://docs.bitsocial.net/` for deeper technical documentation. Ignore `/about` if it appears in source code or local builds; that route exists in the web app but is currently development-only, not a public production surface.
 
 ## Main site
 

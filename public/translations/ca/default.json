@@ -25,7 +25,9 @@
     "backToPrevious": "Torna al punt anterior",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Qui som"
+    "about": "Qui som",
+    "forum": "Fòrum",
+    "soon": "aviat"
   },
   "footer": {
     "tagline": "Xarxa P2P de codi obert per a aplicacions socials",
@@ -34,7 +36,6 @@
     "docs": "Documentació",
     "status": "Estat",
     "resources": "Recursos",
-    "blog": "Blog",
     "about": "Sobre Nosaltres",
     "community": "Comunitat",
     "github": "GitHub",
@@ -1034,7 +1035,6 @@
       }
     },
     "docsCta": "Com funciona P2P al navegador",
-    "liveCta": "Veu-ho al blog",
     "sectionLabel": "Navegador P2P",
     "supporting": "Obre una aplicació web de Bitsocial en una pestanya normal i s'uneix a la xarxa pel seu compte: recupera publicacions d'altres parells i publica les teves. Aquesta és la part difícil, i el motiu pel qual qualsevol altra xarxa social descentralitzada encara manté un servidor pel mig.",
     "title": "El navegador és la clau de tot."
@@ -1087,10 +1087,6 @@
     "about": {
       "title": "Sobre Bitsocial | Equip central",
       "description": "Coneix l'equip central de Bitsocial, descobreix a qui preguntar sobre cada part del projecte i mira com ha crescut des de principis del 2022 i tothom qui hi ha contribuït."
-    },
-    "blog": {
-      "title": "Blog de Bitsocial | Novetats, versions i tutorials",
-      "description": "El blog oficial dels desenvolupadors principals de Bitsocial, publicat com un feed peer-to-peer imparable. Llegiu novetats del producte, notes de versió i tutorials des de qualsevol aplicació Bitsocial."
     },
     "appDetail": {
       "title": "{{name}} | Directori de projectes de Bitsocial"

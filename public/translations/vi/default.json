@@ -25,7 +25,9 @@
     "backToPrevious": "Quay lại vị trí trước đó",
     "faq": "Câu hỏi thường gặp",
     "chain": "Chain",
-    "about": "Giới thiệu"
+    "about": "Giới thiệu",
+    "forum": "Diễn đàn",
+    "soon": "sắp ra mắt"
   },
   "footer": {
     "tagline": "Mạng P2P mã nguồn mở cho ứng dụng xã hội",
@@ -34,7 +36,6 @@
     "docs": "Tài liệu",
     "status": "Trạng thái",
     "resources": "Tài nguyên",
-    "blog": "Blog",
     "about": "Về chúng tôi",
     "community": "Cộng đồng",
     "github": "GitHub",
@@ -1016,7 +1017,6 @@
       }
     },
     "docsCta": "P2P hoạt động như thế nào trong trình duyệt",
-    "liveCta": "Xem trên blog",
     "sectionLabel": "Trình duyệt P2P",
     "supporting": "Mở ứng dụng web Bitsocial trong một thẻ trình duyệt bình thường và nó tự tham gia mạng lưới: lấy bài đăng từ các peer khác và phát bài của bạn đi. Đó mới là phần khó — và là lý do mọi mạng xã hội phi tập trung khác vẫn phải đặt một máy chủ ở giữa.",
     "title": "Chính trình duyệt là bước đột phá."
@@ -1069,10 +1069,6 @@
     "about": {
       "title": "Giới thiệu Bitsocial | Nhóm cốt lõi",
       "description": "Gặp gỡ nhóm cốt lõi Bitsocial, biết nên hỏi ai về từng phần của dự án, và xem dự án đã phát triển ra sao từ đầu năm 2022 cùng tất cả những người đã đóng góp."
-    },
-    "blog": {
-      "title": "Blog Bitsocial | Cập nhật, bản phát hành và hướng dẫn",
-      "description": "Blog chính thức của Bitsocial từ các nhà phát triển cốt lõi, được xuất bản dưới dạng nguồn cấp ngang hàng không thể ngăn chặn. Đọc cập nhật sản phẩm, ghi chú phát hành và hướng dẫn trên bất kỳ ứng dụng Bitsocial nào."
     },
     "appDetail": {
       "title": "{{name}} | Thư mục dự án Bitsocial"

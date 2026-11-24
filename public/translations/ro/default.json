@@ -25,7 +25,9 @@
     "backToPrevious": "Înapoi la locul anterior",
     "faq": "FAQ",
     "chain": "Chain",
-    "about": "Despre noi"
+    "about": "Despre noi",
+    "forum": "Forum",
+    "soon": "în curând"
   },
   "footer": {
     "tagline": "Rețea P2P open source pentru aplicații sociale",
@@ -34,7 +36,6 @@
     "docs": "Documentație",
     "status": "Status",
     "resources": "Resurse",
-    "blog": "Blog",
     "about": "Despre noi",
     "community": "Comunitate",
     "github": "GitHub",
@@ -1034,7 +1035,6 @@
       }
     },
     "docsCta": "Cum funcționează P2P în browser",
-    "liveCta": "Vezi pe blog",
     "sectionLabel": "Browser P2P",
     "supporting": "Deschide o aplicație web Bitsocial într-o filă obișnuită și se conectează singură la rețea: aduce postări de la ceilalți peers și le publică pe ale tale. Aceasta e partea grea — și motivul pentru care orice altă rețea socială descentralizată ține în continuare un server la mijloc.",
     "title": "Browserul este saltul decisiv."
@@ -1087,10 +1087,6 @@
     "about": {
       "title": "Despre Bitsocial | Echipa de bază",
       "description": "Cunoaște echipa de bază Bitsocial, află pe cine să întrebi despre fiecare parte a proiectului și vezi cum a crescut de la începutul lui 2022, precum și pe toți cei care au contribuit."
-    },
-    "blog": {
-      "title": "Blogul Bitsocial | Noutăți, versiuni și tutoriale",
-      "description": "Blogul oficial Bitsocial, scris de dezvoltatorii de bază și publicat ca un flux peer-to-peer de neoprit. Citește noutăți despre produs, note de versiune și tutoriale în orice aplicație Bitsocial."
     },
     "appDetail": {
       "title": "{{name}} | Directorul de proiecte Bitsocial"

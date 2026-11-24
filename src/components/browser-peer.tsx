@@ -144,9 +144,6 @@ export default function BrowserPeer() {
           {...reveal(20, 0.45)}
           className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <CardInlineCta href="/blog" className={`${prominentCtaClassName} w-full sm:w-auto`}>
-            {t("browserPeer.liveCta")}
-          </CardInlineCta>
           <CardInlineCta
             href={DOCS_LINKS.browserP2P}
             className={`${prominentCtaClassName} w-full sm:w-auto`}

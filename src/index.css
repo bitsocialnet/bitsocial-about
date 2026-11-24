@@ -42,24 +42,6 @@
   .optical-display-start {
     margin-left: -0.035em;
   }
-
-  .country-flag-sprite {
-    display: inline-block;
-  }
-
-  .country-flag-emoji {
-    display: none;
-  }
-
-  @media (min-resolution: 2dppx) {
-    .country-flag-sprite {
-      display: none;
-    }
-
-    .country-flag-emoji {
-      display: inline-block;
-    }
-  }
 }
 
 @layer base {
@@ -560,18 +542,6 @@
   }
 
   .dark .deep-comparison-modal-surface {
-    background: var(--glass-card-fill);
-  }
-
-  /* Blog "P2P status" modal sits on a dark scrim. In light mode the translucent
-     glass fill muddies to grey, so use a calm neutral panel; the data cells use
-     the site's usual grey-box tint (foreground-alpha, set on the cells). Dark
-     mode already reads correctly as glass, so it is preserved. */
-  .blog-p2p-modal-surface {
-    background: linear-gradient(180deg, hsl(0 0% 99%), hsl(0 0% 96.5%));
-  }
-
-  .dark .blog-p2p-modal-surface {
     background: var(--glass-card-fill);
   }
 

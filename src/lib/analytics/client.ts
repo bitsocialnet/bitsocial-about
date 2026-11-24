@@ -4,7 +4,7 @@ import { isAnalyticsEnabled, type NewsletterSignupOutcome } from "./shared";
 
 export const NOT_FOUND_PATH = "/not-found";
 
-const STATIC_ROUTES = new Set(["/", "/projects", "/privacy", "/about", "/blog"]);
+const STATIC_ROUTES = new Set(["/", "/projects", "/privacy", "/about"]);
 const PROJECT_PATH = /^\/projects\/([^/]+)$/;
 // Only the five standard campaign tags are kept: any other utm_ name could itself carry an identifier.
 const UTM_KEYS = new Set(["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]);

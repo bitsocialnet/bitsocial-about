@@ -122,7 +122,7 @@ Load details when needed: [hooks](docs/agent-playbooks/hooks-setup.md), [verific
 
 - Treat this repository as the landing/about project for Bitsocial as a whole. When you need the user-facing wording for it, prefer “about site” over “landing page” unless the task is specifically about the home route.
 - Keep app source rules in [`src/AGENTS.md`](./src/AGENTS.md) authoritative for `src/**`.
-- Do not expand this site into the long-term home for the apps dashboard or the blog. Those are intended to become separate projects.
+- Do not expand this site into the long-term home for the apps dashboard. That is intended to become a separate project.
 - The SSR server bundle builds to `dist-server/`, which must stay outside `dist/`: Vercel serves everything in `dist/` as public files, and `api/ssr.ts` loads the bundle from `dist-server/`.
 - Project logos listed in `syncedAppLogos` in `vite.config.ts` (currently MintPass, ModelSwarm and WeTube) are copied from each project's repository on every build. Change them in that repository, not in `public/assets/apps/`; commit the refreshed copy when a build updates it. Add a logo to that list when it is an unmodified file from the project's repository.
 - The llms generator and checker also cover the docs and Chain sites. They read `../bitsocial-docs` and `../bitsocial-chain/site` (override with `BITSOCIAL_DOCS_DIR` and `BITSOCIAL_CHAIN_SITE_DIR`); without those checkouts the generator writes nothing and the checker verifies only this site's files.

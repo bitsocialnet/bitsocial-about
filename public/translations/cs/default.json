@@ -25,7 +25,9 @@
     "backToPrevious": "Zpět na předchozí místo",
     "faq": "Časté dotazy",
     "chain": "Chain",
-    "about": "O nás"
+    "about": "O nás",
+    "forum": "Fórum",
+    "soon": "brzy"
   },
   "footer": {
     "tagline": "Síť P2P s otevřeným zdrojovým kódem pro sociální aplikace",
@@ -34,7 +36,6 @@
     "docs": "Dokumentace",
     "status": "Stav",
     "resources": "Zdroje",
-    "blog": "Blog",
     "about": "O nás",
     "community": "Komunita",
     "github": "GitHub",
@@ -1036,7 +1037,6 @@
       }
     },
     "docsCta": "Jak funguje P2P v prohlížeči",
-    "liveCta": "Sledujte na blogu",
     "sectionLabel": "Prohlížeč P2P",
     "supporting": "Otevřete webovou aplikaci Bitsocial v běžné záložce a sama se připojí k síti – načítá příspěvky od ostatních peerů a publikuje ty vaše. Právě tohle je ta těžká část a důvod, proč každá jiná decentralizovaná sociální síť pořád drží uprostřed server.",
     "title": "Průlom je samotný prohlížeč."
@@ -1089,10 +1089,6 @@
     "about": {
       "title": "O Bitsocial | Jádrový tým",
       "description": "Seznamte se s jádrovým týmem Bitsocial, zjistěte, na koho se obrátit s kterou částí projektu, a podívejte se, jak od začátku roku 2022 rostl a kdo všechno přispěl."
-    },
-    "blog": {
-      "title": "Blog Bitsocial | Novinky, vydání a návody",
-      "description": "Oficiální blog Bitsocial od hlavních vývojářů, publikovaný jako nezastavitelný peer-to-peer kanál. Čtěte novinky o produktu, poznámky k vydání a návody v jakékoli aplikaci Bitsocial."
     },
     "appDetail": {
       "title": "{{name}} | Adresář projektů Bitsocial"

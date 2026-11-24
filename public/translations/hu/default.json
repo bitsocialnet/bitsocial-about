@@ -25,7 +25,9 @@
     "backToPrevious": "Vissza az előző helyre",
     "faq": "GYIK",
     "chain": "Chain",
-    "about": "Rólunk"
+    "about": "Rólunk",
+    "forum": "Fórum",
+    "soon": "hamarosan"
   },
   "footer": {
     "tagline": "Nyílt forráskódú P2P hálózat közösségi alkalmazásokhoz",
@@ -34,7 +36,6 @@
     "docs": "Dokumentáció",
     "status": "Állapot",
     "resources": "Erőforrások",
-    "blog": "Blog",
     "about": "Rólunk",
     "community": "Közösség",
     "github": "GitHub",
@@ -1025,7 +1026,6 @@
       }
     },
     "docsCta": "Hogyan működik a P2P a böngészőben",
-    "liveCta": "Lásd a blogon",
     "sectionLabel": "Böngésző P2P",
     "supporting": "Nyiss meg egy Bitsocial webalkalmazást egy hétköznapi lapon, és magától csatlakozik a hálózathoz: bejegyzéseket tölt le a többi peertől, a tieidet pedig közzéteszi. Pontosan ez a nehéz rész – és ezért tart még mindig szervert középen az összes többi decentralizált közösségi hálózat.",
     "title": "Maga a böngésző az áttörés."
@@ -1078,10 +1078,6 @@
     "about": {
       "title": "A Bitsocialról | Magcsapat",
       "description": "Ismerd meg a Bitsocial magcsapatát, nézd meg, kitől mit kérdezhetsz a projekt egyes részeiről, hogyan nőtt 2022 eleje óta, és kik járultak hozzá."
-    },
-    "blog": {
-      "title": "Bitsocial-blog | Frissítések, kiadások és útmutatók",
-      "description": "A Bitsocial fő fejlesztőinek hivatalos blogja, amely megállíthatatlan peer-to-peer hírcsatornaként jelenik meg. Olvasd a termékfrissítéseket, a kiadási megjegyzéseket és az útmutatókat bármelyik Bitsocial-alkalmazásban."
     },
     "appDetail": {
       "title": "{{name}} | Bitsocial-projektkönyvtár"

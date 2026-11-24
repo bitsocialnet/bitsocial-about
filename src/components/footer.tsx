@@ -30,10 +30,9 @@ export default function Footer() {
     { label: t("footer.docs"), to: DOCS_LINKS.home },
     { label: t("footer.status"), to: STATS_LINKS.home },
   ].filter((link) => isRouteAccessible(link.to));
-  const resourceLinks = [
-    { label: t("footer.blog"), to: "/blog" },
-    { label: t("footer.about"), to: "/about" },
-  ].filter((link) => isRouteAccessible(link.to));
+  const resourceLinks = [{ label: t("footer.about"), to: "/about" }].filter((link) =>
+    isRouteAccessible(link.to),
+  );
 
   const handleNewsletterClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -116,6 +115,14 @@ export default function Footer() {
               {t("footer.resources")}
             </h3>
             <ul className="space-y-2.5">
+              <li>
+                <span className="touch-target inline-flex cursor-default items-center gap-1.5 text-sm text-muted-foreground/60">
+                  {t("nav.forum")}
+                  <span className="rounded-full border border-border px-1.5 py-0.5 text-[0.625rem] uppercase leading-none tracking-wider">
+                    {t("nav.soon")}
+                  </span>
+                </span>
+              </li>
               {resourceLinks.map((link) => (
                 <li key={link.to}>
                   <Link
