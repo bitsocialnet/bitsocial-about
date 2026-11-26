@@ -608,8 +608,8 @@
           "tagline": "En udviklerklient til at inspicere protokoldata i Bitsocial.",
           "description": "Inspicer protokoldataene bag feeds, fællesskaber, opslag og svar på Bitsocial. Se kald til React-hooks, rå JSON, klienttilstande og fejlfindingslogfiler, mens du tester ændringer med rigtige fællesskaber."
         },
-        "spam-blocker": {
-          "description": "Spam Blocker evaluerer publikationer og returnerer en risikoscore, som fællesskaber kan kombinere med deres egen moderationslogik. Dens hostede tjeneste forbinder også signeringsnøgler første gang set fra samme IP, så en bruger, der fortsætter med at oprette nye konti for at undgå et fællesskabsforbud eller fremstille en samtale, ser sin risikoscore stige, mens nogle få signaturværdier forbliver tilladt til legitim brug på flere enheder.",
+        "spamblocker": {
+          "description": "SpamBlocker evaluerer publikationer og returnerer en risikoscore, som fællesskaber kan kombinere med deres egen moderationslogik. Dens hostede tjeneste forbinder også signeringsnøgler første gang set fra samme IP, så en bruger, der fortsætter med at oprette nye konti for at undgå et fællesskabsforbud eller fremstille en samtale, ser sin risikoscore stige, mens nogle få signaturværdier forbliver tilladt til legitim brug på flere enheder.",
           "tagline": "Hostet risikoscoringstjeneste, der hjælper fællesskaber med at filtrere spam og omgåelse af udelukkelser."
         },
         "image-classifier-bot": {

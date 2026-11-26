@@ -608,8 +608,8 @@
           "tagline": "Klient pro vývojáře ke zkoumání dat protokolu Bitsocial.",
           "description": "Prozkoumejte data protokolu, která stojí za kanály, komunitami, příspěvky a odpověďmi na Bitsocialu. Při testování změn na skutečných komunitách sledujte volání React hooků, surová data JSON, stavy klientů a ladicí protokoly."
         },
-        "spam-blocker": {
-          "description": "Spam Blocker vyhodnocuje příspěvky a vrací skóre rizika, které mohou komunity kombinovat se svou vlastní logikou moderace. Její hostovaná služba také propojuje podpisové klíče poprvé viditelné ze stejné IP adresy, takže uživatel, který stále vytváří nové účty, aby se vyhnul zákazu komunity nebo vytvořil konverzaci, vidí nárůst svého skóre rizika, zatímco několik podepisovatelů zůstane povoleno pro legitimní použití více zařízení.",
+        "spamblocker": {
+          "description": "SpamBlocker vyhodnocuje příspěvky a vrací skóre rizika, které mohou komunity kombinovat se svou vlastní logikou moderace. Její hostovaná služba také propojuje podpisové klíče poprvé viditelné ze stejné IP adresy, takže uživatel, který stále vytváří nové účty, aby se vyhnul zákazu komunity nebo vytvořil konverzaci, vidí nárůst svého skóre rizika, zatímco několik podepisovatelů zůstane povoleno pro legitimní použití více zařízení.",
           "tagline": "Hostovaná služba hodnocení rizika, která komunitám pomáhá filtrovat spam a obcházení banů."
         },
         "image-classifier-bot": {

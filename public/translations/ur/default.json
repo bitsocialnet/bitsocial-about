@@ -568,9 +568,9 @@
           "tagline": "Bitsocial پر Reddit-style communities، web، Android، اور desktop کے لیے۔",
           "description": "Seedit Reddit-style discussion کو Bitsocial میں لاتا ہے: ایسی communities جنہیں کوئی بھی بنا سکتا اور اپنی ملکیت میں رکھ سکتا ہے، voting، threaded comments، اور ایسی moderation جو ہر community کا مالک طے کرتا ہے۔ browser، Android phone، یا desktop app سے network کے forum side کو آزمانے کا یہ سب سے تیز طریقہ ہے۔"
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "hosted risk-scoring service جو communities کو spam اور ban evasion کو filter کرنے میں مدد دیتی ہے۔",
-          "description": "Spam Blocker اشاعتوں کا جائزہ لیتا ہے اور خطرے کا اسکور واپس کرتا ہے جو کمیونٹیز اپنی اپنی نگرانی کی منطق کے ساتھ یکجا کر سکتے ہیں۔ اس کی میزبانی والی سروس ایک ہی IP سے پہلے دیکھی گئی دستخط کی چابیوں کو بھی منسلک کرتی ہے، لہذا ایک صارف جو کمیونٹی پابندی سے بچنے یا بات چیت کی تیاری کے لیے نئے اکاؤنٹس بنانا جاری رکھتا ہے اپنے خطرے کا اسکور بڑھتے ہوئے دیکھتا ہے، جبکہ کچھ دستخط کنندگان قانونی متعدد آلات کے استعمال کے لیے اجازت باقی رہتے ہیں۔"
+          "description": "SpamBlocker اشاعتوں کا جائزہ لیتا ہے اور خطرے کا اسکور واپس کرتا ہے جو کمیونٹیز اپنی اپنی نگرانی کی منطق کے ساتھ یکجا کر سکتے ہیں۔ اس کی میزبانی والی سروس ایک ہی IP سے پہلے دیکھی گئی دستخط کی چابیوں کو بھی منسلک کرتی ہے، لہذا ایک صارف جو کمیونٹی پابندی سے بچنے یا بات چیت کی تیاری کے لیے نئے اکاؤنٹس بنانا جاری رکھتا ہے اپنے خطرے کا اسکور بڑھتے ہوئے دیکھتا ہے، جبکہ کچھ دستخط کنندگان قانونی متعدد آلات کے استعمال کے لیے اجازت باقی رہتے ہیں۔"
         },
         "captcha-canvas-challenge": {
           "tagline": "human verification چاہنے والی communities کے لیے custom image captchas۔",

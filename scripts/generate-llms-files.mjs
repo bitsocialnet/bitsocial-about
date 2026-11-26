@@ -1171,7 +1171,7 @@ ${renderBulletList(apps)}
 - [Build your own client](${docsOrigin}/build-your-own-client/): Builder guide for shipping independent Bitsocial clients.
 - [CLI](${docsOrigin}/developer-tools/cli/): Command-line documentation for the Bitsocial protocol tooling.
 - [Bitsocial React Hooks](${hooksOrigin}/): Developer docs, API reference, and playground for building React clients with \`@bitsocial/bitsocial-react-hooks\`.
-- [Spam Blocker](${docsOrigin}/anti-spam/spam-blocker/): Technical documentation for the centralized risk-scoring anti-spam service.
+- [SpamBlocker](${docsOrigin}/anti-spam/spamblocker/): Technical documentation for the centralized risk-scoring anti-spam service.
 
 ## Optional
 

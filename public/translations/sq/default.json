@@ -568,9 +568,9 @@
           "tagline": "Komunitete në stil Reddit në Bitsocial, për web, Android dhe desktop.",
           "description": "Seedit sjell diskutimin në stil Reddit në Bitsocial: komunitete që kushdo mund t'i krijojë dhe t'i zotërojë, votim, komente në thread-e dhe moderim të caktuar nga pronari i secilit komunitet. Është mënyra më e shpejtë për të provuar anën e forumit të rrjetit nga browser, telefon Android ose app desktop."
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "Shërbim i hostuar vlerësimi rreziku që i ndihmon komunitetet të filtrojnë spam-in dhe shmangien e ndalimeve.",
-          "description": "Spam Blocker vlerëson publikime dhe kthen një rezultat rreziku që komunitetet mund të kombinojnë me logjikën e tyre të moderimit. Shërbimi i përbyra i tij gjithashtu lidh çelësat e nënshkruesit të parë të parë nga i njëjti IP, kështu që një përdorues i cili vazhdon të prodhojë llogari të reja për të shmangur ndalimin e komunitetit ose për të prodhuar një bisedë sheh rezultatin e tij të rrezikut të rritet, ndërsa disa nënshkrues mbeten të lejuar për përdorim legjitime multi-pajisje."
+          "description": "SpamBlocker vlerëson publikime dhe kthen një rezultat rreziku që komunitetet mund të kombinojnë me logjikën e tyre të moderimit. Shërbimi i përbyra i tij gjithashtu lidh çelësat e nënshkruesit të parë të parë nga i njëjti IP, kështu që një përdorues i cili vazhdon të prodhojë llogari të reja për të shmangur ndalimin e komunitetit ose për të prodhuar një bisedë sheh rezultatin e tij të rrezikut të rritet, ndërsa disa nënshkrues mbeten të lejuar për përdorim legjitime multi-pajisje."
         },
         "captcha-canvas-challenge": {
           "tagline": "Captcha me imazh të personalizuara për komunitete që duan verifikim njerëzor.",

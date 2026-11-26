@@ -568,9 +568,9 @@
           "tagline": "Reddit-stílusú közösségek a Bitsocialon webre, Androidra és desktopra.",
           "description": "A Seedit Reddit-szerű beszélgetést hoz a Bitsocialba: közösségek, amelyeket bárki létrehozhat és birtokolhat, szavazás, szálakba rendezett kommentek, valamint az egyes közösségek tulajdonosa által meghatározott moderálás. Ez a leggyorsabb módja annak, hogy a hálózat fórum oldalát böngészőből, Android telefonról vagy desktop appból kipróbáld."
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "Hosztolt kockázatpontozó szolgáltatás, amely segít a közösségeknek kiszűrni a spamet és a kitiltások megkerülését.",
-          "description": "A Spam Blocker kiértékeli a publikációkat és egy kockázati pontszámot ad vissza, amelyet a közösségek saját moderációs logikájukkal kombinálhatnak. Az üzemeltetett szolgáltatása az ugyanarról az IP-címről először látott aláíró kulcsokat is összekapcsolja, így az a felhasználó, aki folyamatosan új fiókokat hoz létre, hogy elkerülje a közösségi tilalmat vagy beszélgetést fabrikáljon, a kockázati pontszáma emelkedését látja, míg néhány aláíró marad megengedett az össze-, legális többeszköz-használatra."
+          "description": "A SpamBlocker kiértékeli a publikációkat és egy kockázati pontszámot ad vissza, amelyet a közösségek saját moderációs logikájukkal kombinálhatnak. Az üzemeltetett szolgáltatása az ugyanarról az IP-címről először látott aláíró kulcsokat is összekapcsolja, így az a felhasználó, aki folyamatosan új fiókokat hoz létre, hogy elkerülje a közösségi tilalmat vagy beszélgetést fabrikáljon, a kockázati pontszáma emelkedését látja, míg néhány aláíró marad megengedett az össze-, legális többeszköz-használatra."
         },
         "captcha-canvas-challenge": {
           "tagline": "Egyedi képes captcha-k azoknak a közösségeknek, amelyek emberi ellenőrzést akarnak.",

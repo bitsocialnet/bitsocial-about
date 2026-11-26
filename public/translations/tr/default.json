@@ -568,9 +568,9 @@
           "tagline": "Bitsocial üzerinde Reddit tarzı topluluklar; web, Android ve desktop için.",
           "description": "Seedit, Reddit tarzı tartışmayı Bitsocial'a getirir: herkesin oluşturup sahip olabileceği topluluklar, oylama, iç içe yorumlar ve her topluluğun sahibinin belirlediği moderasyon. Ağın forum tarafını bir tarayıcıdan, Android telefondan veya desktop uygulamasından denemenin en hızlı yoludur."
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "Toplulukların spam'i ve ban atlatmayı filtrelemesine yardımcı olan barındırılan risk puanlama hizmeti.",
-          "description": "Spam Blocker yayınları değerlendirir ve toplulukların kendi ılımlılık mantığıyla birleştirebileceği bir risk puanı döndürür. Barındırılan hizmeti, aynı IP'den ilk kez görülen imzalayan anahtarları da bağlantılandırır, bu nedenle topluluk yasakından kaçınmak veya konuşma üretmek için yeni hesaplar oluşturmaya devam eden bir kullanıcı, risk puanının arttığını görürken, birkaç imzalayan, yasal çok cihazlı kullanım için izin verilmiş kalır."
+          "description": "SpamBlocker yayınları değerlendirir ve toplulukların kendi ılımlılık mantığıyla birleştirebileceği bir risk puanı döndürür. Barındırılan hizmeti, aynı IP'den ilk kez görülen imzalayan anahtarları da bağlantılandırır, bu nedenle topluluk yasakından kaçınmak veya konuşma üretmek için yeni hesaplar oluşturmaya devam eden bir kullanıcı, risk puanının arttığını görürken, birkaç imzalayan, yasal çok cihazlı kullanım için izin verilmiş kalır."
         },
         "captcha-canvas-challenge": {
           "tagline": "İnsan doğrulaması isteyen topluluklar için özel görsel captcha'lar.",
