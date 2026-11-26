@@ -882,6 +882,7 @@ export const APPS: AppData[] = [
     categories: ["anti-spam", "identity"],
     tags: ["Risk scores", "Moderation"],
     icon: "shield",
+    logoSrc: "/assets/apps/spam-blocker.svg",
     githubRepo: "bitsocialnet/spam-blocker",
     links: [
       {
