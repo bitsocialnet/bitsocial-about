@@ -888,7 +888,16 @@ export const APPS: AppData[] = [
     ],
     relatedSlugs: ["ai-moderation-challenge", "r9k-challenge", "captcha-canvas-challenge"],
     status: "ready",
-    searchTerms: ["filtering", "risk", "moderation", "sybil", "ban evasion", "signers", "accounts"],
+    searchTerms: [
+      "spam blocker",
+      "filtering",
+      "risk",
+      "moderation",
+      "sybil",
+      "ban evasion",
+      "signers",
+      "accounts",
+    ],
   },
   {
     slug: "r9k-challenge",
