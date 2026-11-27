@@ -569,9 +569,9 @@
           "tagline": "Społeczności w stylu Reddit na Bitsocial, w wersjach web, Android i desktop.",
           "description": "Seedit przenosi dyskusję w stylu Reddit do Bitsocial: społeczności, które każdy może założyć i mieć na własność, głosowanie, komentarze w wątkach i moderacja ustalana przez właściciela każdej społeczności. To najszybszy sposób, by wypróbować forumową stronę sieci z przeglądarki, telefonu Android lub aplikacji desktopowej."
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "Hostowana usługa oceny ryzyka, która pomaga społecznościom filtrować spam i obchodzenie banów.",
-          "description": "Spam Blocker ocenia publikacje i zwraca wynik ryzyka, który społeczności mogą połączyć z własną logiką moderacji. Usługa hostowana również łączy klucze podpisu po raz pierwszy widoczne z tego samego adresu IP, więc użytkownik, który wciąż tworzy nowe konta, aby uniknąć zakazu społeczności lub wytworzenia rozmowy, widzi, że wynik ryzyka wzrasta, podczas gdy kilku podpisujących pozostaje dozwolonych dla legalnego użytku wielu urządzeń."
+          "description": "SpamBlocker ocenia publikacje i zwraca wynik ryzyka, który społeczności mogą połączyć z własną logiką moderacji. Usługa hostowana również łączy klucze podpisu po raz pierwszy widoczne z tego samego adresu IP, więc użytkownik, który wciąż tworzy nowe konta, aby uniknąć zakazu społeczności lub wytworzenia rozmowy, widzi, że wynik ryzyka wzrasta, podczas gdy kilku podpisujących pozostaje dozwolonych dla legalnego użytku wielu urządzeń."
         },
         "captcha-canvas-challenge": {
           "tagline": "Niestandardowe image captcha dla społeczności, które chcą weryfikacji człowieka.",

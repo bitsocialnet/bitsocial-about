@@ -33,7 +33,7 @@ Use `https://bitsocial.net/` for the public product overview and `https://docs.b
 - [bitbones](https://bitsocial.net/projects/bitbones): A developer client for inspecting Bitsocial protocol data.
 - [AI Moderation Challenge](https://bitsocial.net/projects/ai-moderation-challenge): Checks each post against the community's rules with an AI model the owner chooses.
 - [Image Classifier Bot](https://bitsocial.net/projects/image-classifier-bot): Mod-queue bot that only approves posts whose image matches what the community allows.
-- [Spam Blocker](https://bitsocial.net/projects/spam-blocker): Hosted risk-scoring service that helps communities filter spam and ban evasion.
+- [SpamBlocker](https://bitsocial.net/projects/spamblocker): Hosted risk-scoring service that helps communities filter spam and ban evasion.
 - [R9K Challenge](https://bitsocial.net/projects/r9k-challenge): Robot9000-style rule that rejects any post repeating text already posted in the community.
 - [Wordfilter Challenge](https://bitsocial.net/projects/wordfilter-challenge): Community wordfilters enforced as a posting rule instead of a display filter.
 - [Base64 Challenge](https://bitsocial.net/projects/base64-challenge): Rejects publications that hide images or other files in their text as base64 data.
@@ -79,7 +79,7 @@ Use `https://bitsocial.net/` for the public product overview and `https://docs.b
 - [Build your own client](https://docs.bitsocial.net/build-your-own-client/): Builder guide for shipping independent Bitsocial clients.
 - [CLI](https://docs.bitsocial.net/developer-tools/cli/): Command-line documentation for the Bitsocial protocol tooling.
 - [Bitsocial React Hooks](https://hooks.bitsocial.net/): Developer docs, API reference, and playground for building React clients with `@bitsocial/bitsocial-react-hooks`.
-- [Spam Blocker](https://docs.bitsocial.net/anti-spam/spam-blocker/): Technical documentation for the centralized risk-scoring anti-spam service.
+- [SpamBlocker](https://docs.bitsocial.net/anti-spam/spamblocker/): Technical documentation for the centralized risk-scoring anti-spam service.
 
 ## Optional
 

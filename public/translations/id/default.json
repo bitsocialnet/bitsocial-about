@@ -569,9 +569,9 @@
           "tagline": "Komunitas ala Reddit di Bitsocial, untuk web, Android, dan desktop.",
           "description": "Seedit membawa diskusi ala Reddit ke Bitsocial: komunitas yang bisa dibuat dan dimiliki siapa saja, voting, komentar berutas, dan moderasi yang ditentukan oleh pemilik setiap komunitas. Ini cara tercepat untuk mencoba sisi forum jaringan dari browser, ponsel Android, atau aplikasi desktop."
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "Layanan penilaian risiko ter-hosting yang membantu komunitas menyaring spam dan penghindaran ban.",
-          "description": "Spam Blocker mengevaluasi publikasi dan mengembalikan skor risiko yang dapat dipadukan komunitas dengan logika moderasi mereka sendiri. Layanan tertempat menetapkan juga menghubungkan kunci penanda tangan yang pertama kali terlihat dari IP yang sama, sehingga pengguna yang terus membuat akun baru untuk menghindari larangan komunitas atau menciptakan percakapan melihat skor risiko mereka meningkat, sementara beberapa penanda tangan tetap diizinkan untuk penggunaan multi-perangkat yang sah."
+          "description": "SpamBlocker mengevaluasi publikasi dan mengembalikan skor risiko yang dapat dipadukan komunitas dengan logika moderasi mereka sendiri. Layanan tertempat menetapkan juga menghubungkan kunci penanda tangan yang pertama kali terlihat dari IP yang sama, sehingga pengguna yang terus membuat akun baru untuk menghindari larangan komunitas atau menciptakan percakapan melihat skor risiko mereka meningkat, sementara beberapa penanda tangan tetap diizinkan untuk penggunaan multi-perangkat yang sah."
         },
         "captcha-canvas-challenge": {
           "tagline": "Captcha gambar kustom untuk komunitas yang ingin verifikasi manusia.",

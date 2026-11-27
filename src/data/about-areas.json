@@ -63,7 +63,7 @@
         {
           "maintainers": ["rinse"],
           "repos": [
-            "bitsocialnet/spam-blocker",
+            "bitsocialnet/spamblocker",
             "bitsocialnet/captcha-canvas-challenge",
             "bitsocialnet/voucher-challenge",
             "bitsocialnet/evm-contract-challenge",
@@ -75,7 +75,7 @@
         {
           "maintainers": ["tom"],
           "repos": [
-            "bitsocialnet/spam-blocker",
+            "bitsocialnet/spamblocker",
             "bitsocialnet/ai-moderation-challenge",
             "bitsocialnet/flags-challenge",
             "bitsocialnet/r9k-challenge",

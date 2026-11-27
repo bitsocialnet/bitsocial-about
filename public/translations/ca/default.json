@@ -569,9 +569,9 @@
           "tagline": "Comunitats a l’estil Reddit a Bitsocial, per a web, Android i escriptori.",
           "description": "Seedit porta a Bitsocial la conversa a l’estil Reddit: comunitats que qualsevol pot crear i tenir en propietat, votacions, comentaris en fils i una moderació que decideix el propietari de cada comunitat. És la manera més ràpida de provar la cara més de fòrum de la xarxa des d’un navegador, un mòbil Android o una app d’escriptori."
         },
-        "spam-blocker": {
+        "spamblocker": {
           "tagline": "Servei allotjat de puntuació de risc que ajuda les comunitats a filtrar l’spam i l’evasió de bans.",
-          "description": "Spam Blocker avalua les publicacions i retorna una puntuació de risc que les comunitats poden combinar amb la seva pròpia lògica de moderació. El seu servei allotjat també enllaça les claus de signant detectades per primera vegada des de la mateixa IP, de manera que un usuari que segueix creant nous comptes per esquivar una prohibició comunitària o fabricar una conversa veu augmentar la seva puntuació de risc, mentre que alguns signants es mantenen autoritzats per a ús legítim multi-dispositiu."
+          "description": "SpamBlocker avalua les publicacions i retorna una puntuació de risc que les comunitats poden combinar amb la seva pròpia lògica de moderació. El seu servei allotjat també enllaça les claus de signant detectades per primera vegada des de la mateixa IP, de manera que un usuari que segueix creant nous comptes per esquivar una prohibició comunitària o fabricar una conversa veu augmentar la seva puntuació de risc, mentre que alguns signants es mantenen autoritzats per a ús legítim multi-dispositiu."
         },
         "captcha-canvas-challenge": {
           "tagline": "CAPTCHA d’imatge personalitzats per a comunitats que volen verificació humana.",

@@ -117,8 +117,8 @@ const syncedAppLogos = [
   { file: "mintpass.svg", source: "bitsocialnet/mintpass/master/web/public/mintpass.svg" },
   { file: "modelswarm.svg", source: "bitsocialnet/modelswarm/master/public/logo.svg" },
   {
-    file: "spam-blocker.svg",
-    source: "bitsocialnet/spam-blocker/master/design/logo/spam-blocker-mark.svg",
+    file: "spamblocker.svg",
+    source: "bitsocialnet/spamblocker/master/design/logo/spam-blocker-mark.svg",
   },
   { file: "wetube.svg", source: "bitsocialnet/wetube/master/design/logo/wetube-favicon.svg" },
 ];

@@ -69,6 +69,13 @@
       "dest": "/api/ssr"
     },
     {
+      "src": "^/projects/spam-blocker/?$",
+      "status": 308,
+      "headers": {
+        "Location": "/projects/spamblocker"
+      }
+    },
+    {
       "src": "^/projects/[^/]+/?$",
       "dest": "/api/ssr"
     },
