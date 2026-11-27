@@ -378,7 +378,8 @@
       "expand": "Saber más",
       "collapse": "Ocultar explicación",
       "sourcesLabel": "Fuentes:",
-      "docsLink": "Lee la comparación completa en la documentación"
+      "docsLink": "Lee la comparación completa en la documentación",
+      "docsLinksLabel": "Comparaciones completas en la documentación:"
     }
   },
   "masterPlan": {

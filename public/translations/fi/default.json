@@ -378,7 +378,8 @@
       "expand": "Lisätietoja",
       "collapse": "Piilota selitys",
       "sourcesLabel": "Lähteet:",
-      "docsLink": "Lue koko vertailu dokumentaatiosta"
+      "docsLink": "Lue koko vertailu dokumentaatiosta",
+      "docsLinksLabel": "Täydet vertailut dokumentaatiossa:"
     }
   },
   "masterPlan": {

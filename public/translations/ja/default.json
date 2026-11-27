@@ -378,7 +378,8 @@
       "expand": "もっと見る",
       "collapse": "説明を隠す",
       "sourcesLabel": "出典:",
-      "docsLink": "ドキュメントで比較の全文を読む"
+      "docsLink": "ドキュメントで比較の全文を読む",
+      "docsLinksLabel": "ドキュメントの詳しい比較："
     }
   },
   "masterPlan": {

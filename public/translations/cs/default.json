@@ -378,7 +378,8 @@
       "expand": "Zjistit víc",
       "collapse": "Skrýt vysvětlení",
       "sourcesLabel": "Zdroje:",
-      "docsLink": "Přečtěte si celé srovnání v dokumentaci"
+      "docsLink": "Přečtěte si celé srovnání v dokumentaci",
+      "docsLinksLabel": "Úplná srovnání v dokumentaci:"
     }
   },
   "masterPlan": {

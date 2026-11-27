@@ -394,7 +394,8 @@
       "expand": "Learn more",
       "collapse": "Hide explanation",
       "sourcesLabel": "Sources:",
-      "docsLink": "Read the full comparison in the docs"
+      "docsLink": "Read the full comparison in the docs",
+      "docsLinksLabel": "Full comparisons in the docs:"
     }
   },
   "arbitraryChallenges": {

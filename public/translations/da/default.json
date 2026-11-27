@@ -378,7 +378,8 @@
       "expand": "Lær mere",
       "collapse": "Skjul forklaring",
       "sourcesLabel": "Kilder:",
-      "docsLink": "Læs hele sammenligningen i dokumentationen"
+      "docsLink": "Læs hele sammenligningen i dokumentationen",
+      "docsLinksLabel": "Fulde sammenligninger i dokumentationen:"
     }
   },
   "masterPlan": {

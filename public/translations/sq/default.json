@@ -378,7 +378,8 @@
       "expand": "Mëso më shumë",
       "collapse": "Fshih shpjegimin",
       "sourcesLabel": "Burimet:",
-      "docsLink": "Lexo krahasimin e plotë në dokumentacion"
+      "docsLink": "Lexo krahasimin e plotë në dokumentacion",
+      "docsLinksLabel": "Krahasime të plota në dokumentacion:"
     }
   },
   "masterPlan": {

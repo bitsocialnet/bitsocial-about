@@ -378,7 +378,8 @@
       "expand": "Matuto pa",
       "collapse": "Itago ang paliwanag",
       "sourcesLabel": "Mga sanggunian:",
-      "docsLink": "Basahin ang buong paghahambing sa docs"
+      "docsLink": "Basahin ang buong paghahambing sa docs",
+      "docsLinksLabel": "Mga buong paghahambing sa docs:"
     }
   },
   "masterPlan": {

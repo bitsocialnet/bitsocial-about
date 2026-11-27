@@ -2292,6 +2292,29 @@ export default function SanctuaryCommunication() {
                 </button>
               </div>
             </m.form>
+            {/* Plain links so crawlers reach the docs pages; the form above only opens an overlay. */}
+            <m.p
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="mx-auto mt-4 max-w-2xl text-balance text-center text-sm text-muted-foreground"
+            >
+              {t("sanctuary.deepComparison.docsLinksLabel")}{" "}
+              {deepComparisons.map((comparison, index) => (
+                <Fragment key={comparison.id}>
+                  {index > 0 ? <span aria-hidden="true"> · </span> : null}
+                  <a
+                    href={comparison.docsHref}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="whitespace-nowrap font-semibold text-foreground/85 underline decoration-blue-core/35 underline-offset-4 transition-colors hover:text-blue-glow hover:decoration-blue-glow"
+                  >
+                    {comparison.label}
+                  </a>
+                </Fragment>
+              ))}
+            </m.p>
             <DeepComparisonOverlay
               comparison={selectedDeepComparison}
               open={deepComparisonOpen}

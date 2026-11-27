@@ -378,7 +378,8 @@
       "expand": "Pelajari lebih lanjut",
       "collapse": "Sembunyikan penjelasan",
       "sourcesLabel": "Sumber:",
-      "docsLink": "Baca perbandingan lengkapnya di dokumentasi"
+      "docsLink": "Baca perbandingan lengkapnya di dokumentasi",
+      "docsLinksLabel": "Perbandingan lengkap di dokumentasi:"
     }
   },
   "masterPlan": {

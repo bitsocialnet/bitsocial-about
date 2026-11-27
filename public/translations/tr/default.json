@@ -378,7 +378,8 @@
       "expand": "Daha fazla bilgi",
       "collapse": "Açıklamayı gizle",
       "sourcesLabel": "Kaynaklar:",
-      "docsLink": "Karşılaştırmanın tamamını belgelerde okuyun"
+      "docsLink": "Karşılaştırmanın tamamını belgelerde okuyun",
+      "docsLinksLabel": "Belgelerdeki tam karşılaştırmalar:"
     }
   },
   "masterPlan": {

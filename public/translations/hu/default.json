@@ -378,7 +378,8 @@
       "expand": "Tudj meg többet",
       "collapse": "Magyarázat elrejtése",
       "sourcesLabel": "Források:",
-      "docsLink": "Olvasd el a teljes összehasonlítást a dokumentációban"
+      "docsLink": "Olvasd el a teljes összehasonlítást a dokumentációban",
+      "docsLinksLabel": "Teljes összehasonlítások a dokumentációban:"
     }
   },
   "masterPlan": {

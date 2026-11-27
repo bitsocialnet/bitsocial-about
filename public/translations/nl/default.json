@@ -378,7 +378,8 @@
       "expand": "Meer lezen",
       "collapse": "Uitleg verbergen",
       "sourcesLabel": "Bronnen:",
-      "docsLink": "Lees de volledige vergelijking in de documentatie"
+      "docsLink": "Lees de volledige vergelijking in de documentatie",
+      "docsLinksLabel": "Volledige vergelijkingen in de documentatie:"
     }
   },
   "masterPlan": {

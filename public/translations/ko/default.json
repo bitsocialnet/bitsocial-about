@@ -378,7 +378,8 @@
       "expand": "더 알아보기",
       "collapse": "설명 숨기기",
       "sourcesLabel": "출처:",
-      "docsLink": "문서에서 전체 비교 읽기"
+      "docsLink": "문서에서 전체 비교 읽기",
+      "docsLinksLabel": "문서의 전체 비교:"
     }
   },
   "masterPlan": {
